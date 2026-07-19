@@ -21,9 +21,25 @@ async function totalSize(paths) {
   return total;
 }
 
+let skipped = 0;
+
+// A single unreadable/misnamed file (e.g. a PNG with a .jpg extension) makes
+// the whole batch exit non-zero, so fall back to per-file on batch failure.
 async function inBatches(files, fn) {
   for (let i = 0; i < files.length; i += BATCH) {
-    await fn(files.slice(i, i + BATCH));
+    const batch = files.slice(i, i + BATCH);
+    try {
+      await fn(batch);
+    } catch {
+      for (const file of batch) {
+        try {
+          await fn([file]);
+        } catch {
+          skipped++;
+          console.log(`  skip (not optimizable): ${file}`);
+        }
+      }
+    }
     if (i > 0 && i % 1000 === 0) console.log(`  ${i}/${files.length}`);
   }
 }
@@ -58,7 +74,7 @@ if (pngs.length && (await have("oxipng"))) {
 
 const after = (await totalSize(jpegs)) + (await totalSize(pngs));
 console.log(
-  `CLI optimization done: ${(before / 1e6).toFixed(1)} MB -> ${(after / 1e6).toFixed(1)} MB (saved ${((before - after) / 1e6).toFixed(1)} MB)`,
+  `CLI optimization done: ${(before / 1e6).toFixed(1)} MB -> ${(after / 1e6).toFixed(1)} MB (saved ${((before - after) / 1e6).toFixed(1)} MB, ${skipped} skipped)`,
 );
 
 // Sync the sharp optimizer's state to the new file sizes so the next
