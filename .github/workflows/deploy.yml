@@ -40,6 +40,22 @@ jobs:
             media-${{ hashFiles('content/media-manifest.json') }}-
             media-
 
+      # On a cold cache, seed the mirror from the release asset instead of
+      # bulk-fetching ~5,000 files from the WordPress host (which rate-limits
+      # sustained request streams). The downloader then only fetches deltas.
+      - name: Seed media mirror from release
+        if: hashFiles('public/media/**') == ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release download media-seed --pattern media-mirror.tar.gz --dir /tmp 2>/dev/null; then
+            tar xzf /tmp/media-mirror.tar.gz
+            rm /tmp/media-mirror.tar.gz
+            echo "Seeded $(find public/media -type f | wc -l) files from release"
+          else
+            echo "No media-seed release found; falling back to origin download"
+          fi
+
       - name: Download missing media from WordPress
         env:
           MEDIA_CONCURRENCY: 4

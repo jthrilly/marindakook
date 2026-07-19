@@ -54,8 +54,11 @@ WordPress (CMS)  ──sync──▶  content/*.json + public/media  ──build
 Two GitHub Actions workflows:
 
 - **`deploy.yml`** — on every push to `main` (and manually): restores the media mirror
-  from the Actions cache, downloads anything new, optimizes, builds and publishes to
-  GitHub Pages. Configuration via repository variables (Settings → Secrets and
+  from the Actions cache (cold caches are seeded from the `media-seed` GitHub release
+  because the WordPress host rate-limits bulk downloads — refresh it occasionally with
+  `tar czf media-mirror.tar.gz public/media content/media-optimized.json &&
+  gh release upload media-seed media-mirror.tar.gz --clobber`), downloads anything
+  new, optimizes, builds and publishes to GitHub Pages. Configuration via repository variables (Settings → Secrets and
   variables → Actions → Variables): `SITE_URL` (origin only, no path — currently
   `https://morsontologica.com`) and `BASE_PATH` (default `/marindakook`).
   For a dedicated custom domain later: set `SITE_URL=https://marindakook.co.za`,
