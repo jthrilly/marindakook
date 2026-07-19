@@ -1,0 +1,123 @@
+{
+ "id": 7519,
+ "slug": "meksikaanserys",
+ "title": "Meksikaanserys",
+ "date": "2024-09-11T08:57:17",
+ "modified": "2024-09-11T09:00:11",
+ "excerpt": "",
+ "categories": [
+  33,
+  308,
+  321
+ ],
+ "tags": [
+  393,
+  347,
+  330
+ ],
+ "featured": {
+  "alt": "Meksikaanserys",
+  "card": {
+   "src": "/media/uploads/2024/09/Meksikaanse-rys-760x760.jpeg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2024/09/Meksikaanse-rys-760x960.jpeg",
+   "width": 760,
+   "height": 960
+  },
+  "thumb": {
+   "src": "/media/uploads/2024/09/Meksikaanse-rys-150x150.jpeg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Meksikaanserys - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2024/09/Meksikaanse-rys-bestanddele-1024x768.jpeg\" alt class=\"wp-image-7521\" srcset=\"/media/uploads/2024/09/Meksikaanse-rys-bestanddele-1024x768.jpeg 1024w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-300x225.jpeg 300w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-768x576.jpeg 768w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-750x563.jpeg 750w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-500x375.jpeg 500w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-380x285.jpeg 380w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-760x570.jpeg 760w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-800x600.jpeg 800w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2024/09/Meksikaanse-rys-naby-1024x768.jpeg\" alt class=\"wp-image-7522\" srcset=\"/media/uploads/2024/09/Meksikaanse-rys-naby-1024x768.jpeg 1024w, /media/uploads/2024/09/Meksikaanse-rys-naby-300x225.jpeg 300w, /media/uploads/2024/09/Meksikaanse-rys-naby-768x576.jpeg 768w, /media/uploads/2024/09/Meksikaanse-rys-naby-750x563.jpeg 750w, /media/uploads/2024/09/Meksikaanse-rys-naby-500x375.jpeg 500w, /media/uploads/2024/09/Meksikaanse-rys-naby-380x285.jpeg 380w, /media/uploads/2024/09/Meksikaanse-rys-naby-760x570.jpeg 760w, /media/uploads/2024/09/Meksikaanse-rys-naby-800x600.jpeg 800w, /media/uploads/2024/09/Meksikaanse-rys-naby.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"707\" src=\"/media/uploads/2024/09/Meksikaanse-rys-Spekko-1024x707.jpeg\" alt class=\"wp-image-7520\" srcset=\"/media/uploads/2024/09/Meksikaanse-rys-Spekko-1024x707.jpeg 1024w, /media/uploads/2024/09/Meksikaanse-rys-Spekko-300x207.jpeg 300w, /media/uploads/2024/09/Meksikaanse-rys-Spekko-768x530.jpeg 768w, /media/uploads/2024/09/Meksikaanse-rys-Spekko-750x518.jpeg 750w, /media/uploads/2024/09/Meksikaanse-rys-Spekko-380x262.jpeg 380w, /media/uploads/2024/09/Meksikaanse-rys-Spekko-760x525.jpeg 760w, /media/uploads/2024/09/Meksikaanse-rys-Spekko-800x553.jpeg 800w, /media/uploads/2024/09/Meksikaanse-rys-Spekko.jpeg 1125w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Meksikaanserys",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2024/09/Meksikaanse-rys-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Meksikaanserys"
+  },
+  "courses": [
+   "Bykosse, Hoofgereg, Rys"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "20",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "20",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "250 ml Spekko langkorrel witrys",
+     "2 chillies fyngekap ( jy kan meer insit as jy hou van sterkkos)",
+     "2 knoffelhuisies fyngekap",
+     "1 ui fyngekap",
+     "20 ml fynkomyn",
+     "50g tamatiepaste",
+     "375 ml hoenderaftreksel ( los 1 blokkie op in 375ml kookwater)",
+     "1 rooi soetpeper in blokkies gesny",
+     "60 ml olie vir braai",
+     "vars koriander vir bo-op sit"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Braai die uie vir 5 minute.  Voeg die knoffel, chillies, rooipeper en komyn by en braai vir nog 3 minute.",
+     "Gooi die rys by en braai die rys vir 2 minute.",
+     "Roer die tamatiespaste by die hoenderaftreksel en gooi dit oor die rys.  Roer dit deur.",
+     "Sit die deksel op en laat die rys sagkook.  Roer gereeld en vul aan met water.",
+     "As die rys gaar is, skep dit in ’n mooi bak en breek die koriander op dit."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

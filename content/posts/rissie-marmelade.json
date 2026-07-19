@@ -1,0 +1,153 @@
+{
+ "id": 7466,
+ "slug": "rissie-marmelade",
+ "title": "Rissie-marmelade",
+ "date": "2024-02-25T22:00:33",
+ "modified": "2024-02-25T22:00:36",
+ "excerpt": "",
+ "categories": [
+  309
+ ],
+ "tags": [
+  390,
+  391,
+  389
+ ],
+ "featured": {
+  "alt": "Rissie-marmelade",
+  "card": {
+   "src": "/media/uploads/2024/02/Rissie-marmelade-1-760x760.jpeg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2024/02/Rissie-marmelade-1-760x1040.jpeg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2024/02/Rissie-marmelade-1-150x150.jpeg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Rissie-marmelade - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"858\" height=\"1024\" src=\"/media/uploads/2024/02/Rissie-marmelade-858x1024.jpeg\" alt class=\"wp-image-7467\" srcset=\"/media/uploads/2024/02/Rissie-marmelade-858x1024.jpeg 858w, /media/uploads/2024/02/Rissie-marmelade-251x300.jpeg 251w, /media/uploads/2024/02/Rissie-marmelade-768x917.jpeg 768w, /media/uploads/2024/02/Rissie-marmelade-750x896.jpeg 750w, /media/uploads/2024/02/Rissie-marmelade-380x454.jpeg 380w, /media/uploads/2024/02/Rissie-marmelade-760x907.jpeg 760w, /media/uploads/2024/02/Rissie-marmelade-800x955.jpeg 800w, /media/uploads/2024/02/Rissie-marmelade.jpeg 1072w\" sizes=\"auto, (max-width: 858px) 100vw, 858px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"956\" height=\"1024\" src=\"/media/uploads/2024/02/Rissie-marmelade-3-956x1024.jpeg\" alt class=\"wp-image-7468\" srcset=\"/media/uploads/2024/02/Rissie-marmelade-3-956x1024.jpeg 956w, /media/uploads/2024/02/Rissie-marmelade-3-280x300.jpeg 280w, /media/uploads/2024/02/Rissie-marmelade-3-768x823.jpeg 768w, /media/uploads/2024/02/Rissie-marmelade-3-750x803.jpeg 750w, /media/uploads/2024/02/Rissie-marmelade-3-380x407.jpeg 380w, /media/uploads/2024/02/Rissie-marmelade-3-760x814.jpeg 760w, /media/uploads/2024/02/Rissie-marmelade-3-800x857.jpeg 800w, /media/uploads/2024/02/Rissie-marmelade-3.jpeg 1195w\" sizes=\"auto, (max-width: 956px) 100vw, 956px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"769\" src=\"/media/uploads/2024/02/Rissie-marmelade-2-1024x769.jpeg\" alt class=\"wp-image-7469\" srcset=\"/media/uploads/2024/02/Rissie-marmelade-2-1024x769.jpeg 1024w, /media/uploads/2024/02/Rissie-marmelade-2-300x225.jpeg 300w, /media/uploads/2024/02/Rissie-marmelade-2-768x577.jpeg 768w, /media/uploads/2024/02/Rissie-marmelade-2-750x563.jpeg 750w, /media/uploads/2024/02/Rissie-marmelade-2-500x375.jpeg 500w, /media/uploads/2024/02/Rissie-marmelade-2-380x285.jpeg 380w, /media/uploads/2024/02/Rissie-marmelade-2-760x571.jpeg 760w, /media/uploads/2024/02/Rissie-marmelade-2-800x601.jpeg 800w, /media/uploads/2024/02/Rissie-marmelade-2.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Rissie-marmelade",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2024/02/Rissie-marmelade-1-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Rissie-marmelade"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "200 gram soetrissies (robotpepers,geel, groen, rooi. Enige kleur)",
+     "150 gram rissies (chillies)",
+     "2 uie",
+     "5 knoffelhuisies",
+     "875 ml/3.5 koppies suiker",
+     "250 ml/1 koppie asyn",
+     "10 ml gemengde speserye (“mixed spice”)",
+     "10 ml sout",
+     "(400g) 1 blikkie tamatiepuree"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Kap die soetrissies, rissies, uie en knoffel grof in jou voedselverwerker.",
+     "Gooi nou al die bestanddele in n pot en kook vir 1 uur op medium hitte. Roer gereeld en oppas vir vasbrand. Proe en pas aan na jou smaak. Die sous raak donker en dik.",
+     "Steriliseer jou flessies. Gooi die sous in jou flessies."
+    ]
+   }
+  ],
+  "notesTitle": "Notas",
+  "notes": [
+   "Heerlik saam met &#8216;n kaarbord, saam met vleis of op &#8216;n worsrolletjie.",
+   "Wenk: Proe die rissies rou. As dit baie sterk is, krap die pitte uit of verminder jou rissies.",
+   "Ek het my groente fyngekap, maar nie verpulp nie."
+  ],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 6594,
+   "parent": 6565,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-03-06T09:04:11",
+   "html": "<p>Melinda dis so lekker om te deel.  Geniet elke happie.</p>"
+  },
+  {
+   "id": 6593,
+   "parent": 6578,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-03-06T09:03:38",
+   "html": "<p>So bly jy geniet dit.  Dis net liefde.</p>"
+  },
+  {
+   "id": 6578,
+   "parent": 0,
+   "author": "Lourenca",
+   "avatar": "https://secure.gravatar.com/avatar/033e12570d838e23ada4a1b97483e187209a66dd24667fe34195d772ed0b4e33?s=96&d=mm&r=g",
+   "date": "2024-02-28T17:51:20",
+   "html": "<p>Marinda dankie vir jou lekker huiskos resepte<br>\nNet soos waarmee ek groot geword het.</p>"
+  },
+  {
+   "id": 6565,
+   "parent": 0,
+   "author": "Melinda",
+   "avatar": "https://secure.gravatar.com/avatar/56a318472295ebd72480ebe14d74eec29f237295a5bbba6f259b29b333d7235c?s=96&d=mm&r=g",
+   "date": "2024-02-26T08:33:40",
+   "html": "<p>Baie dankie vir jou resepte.   Waardeer so reg uit my hart.  Dankie dat jy nie suinige is vir jou resepte nie. liefdetjies.</p>"
+  }
+ ]
+}

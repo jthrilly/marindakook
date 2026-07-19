@@ -1,0 +1,105 @@
+{
+ "id": 966,
+ "slug": "paptert-verby-lekker",
+ "sourceHash": "0b55de323b22fae9a9368bfae072ca3cb8e92870",
+ "title": "Pap Bake – beyond delicious",
+ "excerpt": "A braai with a pap bake is the real McCoy. The pap bake can be made the day before and just put in the oven on the day of the braai. You can give a pap bake various flavours and tastes. It's just like a kiss – you kiss as you please. …",
+ "seo": {
+  "title": "Paptert - verby lekker - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">A braai with a pap bake is the real McCoy. The pap bake can be made the day before and just put in the oven on the day of the braai. You can give a pap bake various flavours and tastes.  It's just like a kiss &#8211; you kiss as you please. It stays delicious!</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<p class=\"wp-block-paragraph\"></p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"/media/uploads/2017/10/pap-blog-049.jpg\"><img src=\"/media/uploads/2017/10/pap-blog-049-1024x768.jpg\" alt=\"pap blog 049\" class=\"wp-image-982\" loading=\"lazy\"></a></figure></div>\n\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Pap Bake – beyond delicious",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2017/10/featured-pap-blog-049-1024x768.jpg",
+   "srcset": "/media/uploads/2017/10/featured-pap-blog-049-1024x768.jpg 1024w, /media/uploads/2017/10/featured-pap-blog-049-600x450.jpg 600w, /media/uploads/2017/10/featured-pap-blog-049-300x225.jpg 300w, /media/uploads/2017/10/featured-pap-blog-049-768x576.jpg 768w, /media/uploads/2017/10/featured-pap-blog-049.jpg 1500w",
+   "width": 800,
+   "height": 600,
+   "alt": "Paptert - verby lekker"
+  },
+  "courses": [
+   "Sides, Baking, Bakes"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "3 cups maize meal <br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-023.jpg\" target=\"_blank\"><img src=\"/media/uploads/2017/10/pap-blog-023-768x1024.jpg\" title=\"Paptert - verby lekker\" alt=\"pap blog 023\" class=\"direction-step-image\" loading=\"lazy\"></a>",
+     "3 cups milk",
+     "4 cups water",
+     "60ml butter",
+     "1 packet bacon",
+     "1 onion sliced into rings<br>",
+     "30 ml oil<br>",
+     "1 tin tomato and onion mix<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-011.jpg\" target=\"_blank\"><img src=\"/media/uploads/2017/10/pap-blog-011-768x1024.jpg\" title=\"Paptert - verby lekker\" alt=\"pap blog 011\" class=\"direction-step-image\" loading=\"lazy\"></a>",
+     "10 ml mixed herbs<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-014.jpg\" target=\"_blank\"><img src=\"/media/uploads/2017/10/pap-blog-014-768x1024.jpg\" title=\"Paptert - verby lekker\" alt=\"pap blog 014\" class=\"direction-step-image\" loading=\"lazy\"></a>",
+     "4 cheese grillers (if you have them, otherwise leave them out)",
+     "1 tin whole kernel corn<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-027.jpg\" target=\"_blank\"><img src=\"/media/uploads/2017/10/pap-blog-027-768x1024.jpg\" title=\"Paptert - verby lekker\" alt=\"pap blog 027\" class=\"direction-step-image\" loading=\"lazy\"></a>",
+     "2 cups grated cheese of your choice<br>",
+     "salt and pepper"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Fry the onions in 30 ml oil.<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-002.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pap-blog-002.jpg\" class=\"direction-step-image\" alt=\"pap blog 002\" title=\"Paptert - verby lekker\"></a>",
+     "Chop the bacon and fry it together with the onions.",
+     "Slice the grillers into rings and fry them along with the bacon.<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-003.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pap-blog-003.jpg\" class=\"direction-step-image\" alt=\"pap blog 003\" title=\"Paptert - verby lekker\"></a>",
+     "Stir in 10ml mixed herbs and the tin of tomato mix and cook through for 10 minutes &#8211; then set the mixture aside.<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-016.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pap-blog-016.jpg\" class=\"direction-step-image\" alt=\"pap blog 016\" title=\"Paptert - verby lekker\"></a>",
+     "Heat the milk and water in a pot.<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-021.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pap-blog-021.jpg\" class=\"direction-step-image\" alt=\"pap blog 021\" title=\"Paptert - verby lekker\"></a>",
+     "Add the maize meal, salt and pepper and stir so it doesn't form lumps &#8211; let it simmer for 15 minutes.",
+     "Stir the butter into the pap.<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-030.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pap-blog-030.jpg\" class=\"direction-step-image\" alt=\"pap blog 030\" title=\"Paptert - verby lekker\"></a>",
+     "Stir the whole kernel corn into the pap.<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-034.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pap-blog-034.jpg\" class=\"direction-step-image\" alt=\"pap blog 034\" title=\"Paptert - verby lekker\"></a>",
+     "Grease an ovenproof dish and spoon a layer of pap into the bottom of the dish.<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-037.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pap-blog-037.jpg\" class=\"direction-step-image\" alt=\"pap blog 037\" title=\"Paptert - verby lekker\"></a>",
+     "Followed by a layer of the bacon and onion mixture.<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-038.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pap-blog-038.jpg\" class=\"direction-step-image\" alt=\"pap blog 038\" title=\"Paptert - verby lekker\"></a>",
+     "Followed by a layer of cheese, repeat the layers once more.<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-041.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pap-blog-041.jpg\" class=\"direction-step-image\" alt=\"pap blog 041\" title=\"Paptert - verby lekker\"></a>",
+     "Finish right at the top with a layer of cheese.<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-046.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pap-blog-046.jpg\" class=\"direction-step-image\" alt=\"pap blog 046\" title=\"Paptert - verby lekker\"></a>",
+     "Bake it for 40 minutes at 180 degrees Celsius.<br><a rel aria-label href=\"/media/uploads/2017/10/pap-blog-047.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pap-blog-047.jpg\" class=\"direction-step-image\" alt=\"pap blog 047\" title=\"Paptert - verby lekker\"></a>"
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "You can use any filling you like. The bacon can be replaced with vegetables. I used an aniseed cheese in the pap bake. The choice of cheese also comes down to personal preference. I've even made this bake with delicious blue cheese."
+  ],
+  "videoHtml": null
+ }
+}

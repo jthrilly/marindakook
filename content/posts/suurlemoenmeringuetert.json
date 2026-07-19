@@ -1,0 +1,124 @@
+{
+ "id": 7096,
+ "slug": "suurlemoenmeringuetert",
+ "title": "Suurlemoenmeringuetert",
+ "date": "2022-04-06T12:01:00",
+ "modified": "2022-03-30T12:06:58",
+ "excerpt": "Jy kan menige mens in ’n wip vang met die tert. Ek het vir Koos Kombuis in my wip gevang. Gebruik ’n losboomtertbak – die resep behoort aan Mari-Louis Guy en is ’n wenner.",
+ "categories": [
+  5,
+  319
+ ],
+ "tags": [
+  94
+ ],
+ "featured": {
+  "alt": "Suurlemoenmeringuetert",
+  "card": {
+   "src": "/media/uploads/2022/03/Suurlemoentert-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Suurlemoentert-760x856.jpg",
+   "width": 760,
+   "height": 856
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Suurlemoentert-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Suurlemoenmeringuetert - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Jy kan menige mens in ’n wip vang met die tert.&nbsp; Ek het vir Koos Kombuis in my wip gevang.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Gebruik ’n losboomtertbak – die resep behoort aan Mari-Louis Guy en is ’n wenner.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Suurlemoenmeringuetert",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Suurlemoentert-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Suurlemoenmeringuetert"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 pakkies tennisbeskuitjies, fyngekrummel",
+     "80 g sagte botter",
+     "2 blikkies kondensmelk",
+     "4 suurlemoene se sap",
+     "4 suurlemoene se skil, fyngerasper",
+     "4 eiergele",
+     "5 ml mielieblom (Maizena)",
+     "125 ml ekstra suurlemoensap",
+     "8 eierwitte",
+     "500 g strooisuiker"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Meng die koekiekrummels en botter deeglik en druk dit stewig vas in ’n gesmeerde tertbak.",
+     "Bak vir 15 minute by 170 °C. Sit dit eenkant om af te koel.",
+     "Meng die kondensmelk, 4 suurlemoene se sap en skil in ’n mengbak.",
+     "Klits die eiergele en mielieblom saam tot ’n gladde pasta en voeg dit by die kondensmelkmengsel tot dit goed gemeng is.",
+     "Voeg die 125 ml suurlemoensap by en meng goed.",
+     "Skep die suurlemoenmengsel binne-in die kors.",
+     "Klits die eierwitte tot sagtepuntstadium en voeg die strooisuiker stadig by tot stywe punte gevorm word.",
+     "Skep dit bo-op die suurlemoenmengsel.",
+     "Bak vir 20 minute by 170 °C tot goudbruin bo-op en laat dit heeltemal afkoel."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

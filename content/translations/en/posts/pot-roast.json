@@ -1,0 +1,97 @@
+{
+ "id": 7052,
+ "slug": "pot-roast",
+ "sourceHash": "9f4cabd46f2bba818ceab681f1fcfcf3c19669c6",
+ "title": "Pot roast",
+ "excerpt": "Jenny is my English sister. We laugh about the same things, we love the same things, and we're crazy about cooking. It was such a treat to share my kitchen with her.",
+ "seo": {
+  "title": "Pot roast - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Jenny is my English sister.&nbsp; We laugh about the same things, we love the same things, and we're crazy about cooking.&nbsp; It was such a treat to share my kitchen with her.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Pot roast",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Pot-Roast-800x530.png",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Pot roast"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "30 ml olive oil",
+     "1,5 kg boneless chuck roast",
+     "salt and pepper",
+     "1 onion, sliced into rings",
+     "4 garlic cloves, finely chopped",
+     "500 ml beef stock",
+     "250 ml red wine",
+     "2 fresh sprigs of thyme",
+     "2 sprigs of rosemary",
+     "2 bay leaves",
+     "5 potatoes, peeled and halved",
+     "6 large carrots, peeled and cut into quarters"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Preheat the oven to 180 °C.",
+     "Heat the oil in a heavy-based pot that can go into the oven.",
+     "Season the meat with salt and pepper and brown it in the pot.",
+     "Remove the meat and brown the onions, and then also the garlic, in the same pot.",
+     "Add the rest of the ingredients, except the potatoes and carrots, to the pot.",
+     "Put the lid on and leave it in the oven for 2 hours.",
+     "Add the potatoes and carrots and season with salt and pepper to taste.",
+     "Close up the pot again and put it in the oven for another hour, or until the meat is tender."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

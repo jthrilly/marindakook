@@ -1,0 +1,88 @@
+{
+ "id": 6330,
+ "slug": "lamsrak-met-n-senqu-river-pistachio-krummelkors",
+ "sourceHash": "1be455ce63ed052e264b4cd18e10052fd9af4260",
+ "title": "Rack of Lamb with a Senqu River Pistachio Crumb Crust",
+ "excerpt": "I know that lamb is more expensive than other meat, but a treat every now and then can't do anyone any harm. I don't have the little bones cleaned, because we love the fat on the chops.",
+ "seo": {
+  "title": "Rack of Lamb with a Senqu River Pistachio Crumb Crust - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">I know that lamb is more expensive than other meat, but a treat every now and then can't do anyone any harm. &nbsp;I don't have the little bones cleaned, because we love the fat on the chops.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-large\"><img src=\"/media/uploads/2021/09/IMG_4477-2-1-768x1024.jpg\" alt class=\"wp-image-6337\" loading=\"lazy\"></figure></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Rack of Lamb with a Senqu River Pistachio Crumb Crust",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2021/09/IMG_4470-3-800x530.jpg",
+   "srcset": "/media/uploads/2021/09/IMG_4470-3-800x530.jpg 800w, /media/uploads/2021/09/IMG_4470-3-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Lamsrak met 'n Senqu River Pistachio-krummelkors"
+  },
+  "courses": [
+   "Lamb"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "600 g whole rack of lamb",
+     "250 ml finely chopped pistachio nuts (I used the fantastic Senqu River nuts)",
+     "250 ml breadcrumbs",
+     "15 ml finely chopped rosemary",
+     "20 ml olive oil",
+     "30 ml mustard"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Sear the fat side of the rack of lamb in a hot pan on the stove until the fat is nicely browned. Let the meat cool.",
+     "Spread the fat side of the chops with mustard.",
+     "Mix the rest of the ingredients and spread it over the mustard-covered section.<img loading=\"lazy\" width=\"1536\" height=\"2048\" src=\"/media/uploads/2021/09/IMG_4440.jpg\" class=\"direction-step-image\" alt title=\"IMG_4440\"><img loading=\"lazy\" width=\"1536\" height=\"2048\" src=\"/media/uploads/2021/09/IMG_4456-2-1.jpg\" class=\"direction-step-image\" alt title=\"IMG_4456 2\">",
+     "Place a rack inside a roasting dish and place the rack of lamb on the rack.",
+     "Bake uncovered at 180C for 15-20 min. The lamb will then still be nicely pink. If you'd like it more well done, leave it in the oven longer."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

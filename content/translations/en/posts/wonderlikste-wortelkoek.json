@@ -1,0 +1,125 @@
+{
+ "id": 6266,
+ "slug": "wonderlikste-wortelkoek",
+ "sourceHash": "bd2e224c1c84c5ccd3d2d10ee2df262ab901697c",
+ "title": "Most Wonderful Carrot Cake",
+ "excerpt": "Carrot cake has never been so easy. It may sound like a lot of ingredients, but it's really just tossing them together. I mixed everything by hand so as not to overwork it. It was just me and the wooden spoon.",
+ "seo": {
+  "title": "Most Wonderful Carrot Cake - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Carrot cake has never been so easy.&nbsp; It may sound like a lot of ingredients, but it's really just tossing them together.&nbsp; I mixed everything by hand so as not to overwork it.&nbsp; It was just me and the wooden spoon.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Most Wonderful Carrot Cake",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2021/07/IMG_2855-800x530.jpg",
+   "srcset": "/media/uploads/2021/07/IMG_2855-800x530.jpg 800w, /media/uploads/2021/07/IMG_2855-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Wonderlikste Wortelkoek"
+  },
+  "courses": [
+   "Baking, Cakes"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": "Dry ingredients",
+    "items": [
+     "500 ml cake flour",
+     "375 ml sugar",
+     "125 ml brown sugar",
+     "250 ml chopped pecan nuts, plus a little extra for sprinkling on top",
+     "10 ml baking soda",
+     "7,5 ml baking powder",
+     "Pinch of salt",
+     "5 ml ground cinnamon",
+     "5 ml ground ginger",
+     "2,5 ml ground cloves"
+    ]
+   },
+   {
+    "title": "Wet ingredients",
+    "items": [
+     "750 ml finely grated carrots",
+     "4 eggs, beaten",
+     "125 ml plain yoghurt",
+     "180 ml sunflower oil",
+     "1 (328g) tin crushed pineapple, well drained",
+     "5 ml vanilla essence"
+    ]
+   },
+   {
+    "title": "Icing",
+    "items": [
+     "250 g cream cheese",
+     "125 ml soft butter",
+     "2,5 ml vanilla essence",
+     "Pinch of salt",
+     "750 ml icing sugar",
+     "10 ml finely grated lemon zest (optional)"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Preheat your oven to 180C and grease two cake tins. I lined the bottom of my cake tins with baking paper.",
+     "In a bowl, mix all your dry ingredients.",
+     "In another bowl, mix all your wet ingredients.",
+     "Now stir the wet ingredients into the dry ingredients. Don't overwork it. A wooden spoon is good enough.",
+     "Divide the batter between your 2 cake tins. Tap them lightly on your kitchen counter to get all the air bubbles out. Bake for 45 minutes and test with a skewer to see if it's done.",
+     "Let it rest in the tins for 10 minutes. Turn it out onto a wire rack and let it cool before you decorate it."
+    ]
+   },
+   {
+    "title": "For the icing",
+    "steps": [
+     "Beat the butter and cream cheese until creamy and well combined.",
+     "Beat in the vanilla essence",
+     "Beat in the icing sugar",
+     "Beat in the lemon zest if you prefer",
+     "Spread the icing between the two layers and on top of the cake. Sprinkle pecan nuts and finely grated lemon zest over."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

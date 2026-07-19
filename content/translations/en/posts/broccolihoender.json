@@ -1,0 +1,99 @@
+{
+ "id": 5080,
+ "slug": "broccolihoender",
+ "sourceHash": "356094b730108260321fb1518510e0c75b127cc6",
+ "title": "Broccoli chicken",
+ "excerpt": "Broccoli chicken",
+ "seo": {
+  "title": "Broccoli chicken - Marinda Kook",
+  "description": null
+ },
+ "html": "<h3 class=\"wp-block-heading\"></h3>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<h3 class=\"wp-block-heading\"><img loading=\"lazy\" class=\"alignnone size-large wp-image-5081\" src=\"/media/uploads/2018/10/Broccoli-Hoender-2-1024x576.png\" alt=\"Broccolihoender\" width=\"530\" height=\"298\" srcset=\"/media/uploads/2018/10/Broccoli-Hoender-2-1024x576.png 1024w, /media/uploads/2018/10/Broccoli-Hoender-2-600x338.png 600w, /media/uploads/2018/10/Broccoli-Hoender-2-300x169.png 300w, /media/uploads/2018/10/Broccoli-Hoender-2-768x432.png 768w, /media/uploads/2018/10/Broccoli-Hoender-2.png 1920w\" sizes=\"auto, (max-width: 530px) 100vw, 530px\"></h3>",
+ "recipe": {
+  "style": "default",
+  "title": "Broccoli chicken",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-1024x683.jpg",
+   "srcset": "/media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-1024x683.jpg 1024w, /media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-600x400.jpg 600w, /media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-300x200.jpg 300w, /media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-768x512.jpg 768w",
+   "width": 800,
+   "height": 534,
+   "alt": "Broccolihoender"
+  },
+  "courses": [
+   "Chicken"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "Oil to fry the onion in",
+     "1 onion, diced",
+     "500 ml white wine",
+     "250 ml water",
+     "2 cloves",
+     "2 sprigs each of rosemary and thyme",
+     "4 chicken breasts or one whole chicken",
+     "Salt and pepper",
+     "300 g broccoli, broken into pieces",
+     "1 packet mushroom soup powder",
+     "500 ml milk",
+     "Curry powder to taste",
+     "250 ml mayonnaise",
+     "40 ml lemon juice",
+     "350 ml grated cheese"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "In a large pot, heat the oil and fry the onion until glassy. Add the white wine, water, cloves, rosemary, thyme and chicken and season to taste with salt and pepper. Cook the chicken until tender.",
+     "Take the chicken out of the pot, but keep the cooking liquid.",
+     "Shred the chicken and remove the skin and bones. Place the shredded chicken in an ovenproof dish and set aside.",
+     "Add the broccoli to the chicken stock and cook until just tender. Drain and place the broccoli on top of the shredded chicken.",
+     "In a separate pot, mix the mushroom soup powder and milk and heat slowly until it starts to thicken. Add the curry powder, mayonnaise and lemon juice and cook for about 4 minutes. Remove from the heat and pour over the chicken and broccoli. Sprinkle the cheese over and bake in a preheated oven for 30 minutes at 180º C or until the cheese has melted and the chicken is hot. Easy!"
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "Serves 6 with oven-roasted vegetables."
+  ],
+  "videoHtml": null
+ }
+}

@@ -1,0 +1,259 @@
+{
+ "id": 7202,
+ "slug": "tuisgemaakte-sausage-roll",
+ "title": "Tuisgemaakte sausage roll",
+ "date": "2022-06-04T10:40:09",
+ "modified": "2022-06-04T11:03:46",
+ "excerpt": "Ek wou nog altyd my eie sausage roll maak, maar het nog nooit so ver gekom nie. Nou na dese sal ek nooit weer een koop nie.",
+ "categories": [
+  313,
+  308
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Tuisgemaakte sausage roll",
+  "card": {
+   "src": "/media/uploads/2022/06/Sausage-roll-1-760x760.jpeg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/06/Sausage-roll-1-760x768.jpeg",
+   "width": 760,
+   "height": 768
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/06/Sausage-roll-1-150x150.jpeg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Tuisgemaakte sausage roll - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Ek wou nog altyd my eie sausage roll maak, maar het nog nooit so ver gekom nie.  Nou na dese sal ek nooit weer een koop nie.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2022/06/Sausage-roll-2.jpeg\" alt class=\"wp-image-7204\" srcset=\"/media/uploads/2022/06/Sausage-roll-2.jpeg 1024w, /media/uploads/2022/06/Sausage-roll-2-600x450.jpeg 600w, /media/uploads/2022/06/Sausage-roll-2-300x225.jpeg 300w, /media/uploads/2022/06/Sausage-roll-2-768x576.jpeg 768w, /media/uploads/2022/06/Sausage-roll-2-750x563.jpeg 750w, /media/uploads/2022/06/Sausage-roll-2-500x375.jpeg 500w, /media/uploads/2022/06/Sausage-roll-2-380x285.jpeg 380w, /media/uploads/2022/06/Sausage-roll-2-760x570.jpeg 760w, /media/uploads/2022/06/Sausage-roll-2-800x600.jpeg 800w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Tuisgemaakte sausage roll",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/06/Sausage-roll-1-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Tuisgemaakte sausage roll"
+  },
+  "courses": [
+   "Beesvleis, Hoofgereg"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 g varkwors (nie bangers nie , regte wors)",
+     "500 g beesswors",
+     "1 ui baie fyn gekap",
+     "60 ml broodkrummels",
+     "90 ml Worcestersous",
+     "¼ teelepel fyn neut",
+     "¼ teelepel fyn komyn",
+     "¼ teelepel gedroogde origanum",
+     "2 rolle skilferkosdeeg ( puff pastry)",
+     "1 eier",
+     "15 ml melk"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Stel die oond op 180 C en sit bakpapier op ‘n bakplaat",
+     "Laat die deeg ontdooi – ek haal dit al die vorige aand uit.",
+     "Haal die worsies uit hulle dermpies en gooi in ‘n bak.",
+     "Meng die ui, Worcestersous , neut, boodkrummels,komyn en origanum met jou hande goed deur die vleis.",
+     "Gooi bietjie meel op jou oppervlak en rol een van die skilferkorsdeegrolle oop.",
+     "Maak ‘n “wors” met helfte van die vleis en plaas dit so 7 cm van die langkant af op die deeg.",
+     "Rol die deeg styf op in een lang wors.  Sny dit in 4 en plaas op jou bakplaat met die naat na onder.",
+     "Herhaal met die ander rol deeg en orige vleis.",
+     "Laat dit rus in die yskas vir ten minste 1 uur.",
+     "Vat ‘n sker en knip 3 kepies op elke rou worsroletjie",
+     "Klits die eier en melk saam en verf oor die worsrolletjies.",
+     "Bak in die oond vir 40 minute of tot die vleis gaar is en die deeg bros en bruin is."
+    ]
+   }
+  ],
+  "notesTitle": "Notas",
+  "notes": [
+   "Jy kan ook die rolletjies Kleiner maak as happies vir by ‘n glasie wyn.",
+   "Ek het 2 van myne in my airfryer gaargemaak en dit het net so mooi uitgekom. 180C vir 10 minute aan ‘n kant. Jy moet dit maar dophou.",
+   "Ons eet dit graag met tamatiesous."
+  ],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 10362,
+   "parent": 10361,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2025-02-24T14:40:46",
+   "html": "<p>Ek is so bly.  Jy moet lekker kook en eet.<br>\nmarinda</p>"
+  },
+  {
+   "id": 10361,
+   "parent": 0,
+   "author": "Anita",
+   "avatar": "https://secure.gravatar.com/avatar/cbc22d33269120708e5085f9dc18c2e0c5a28403f1dcbc2e4ebda4d2526a1c39?s=96&d=mm&r=g",
+   "date": "2025-02-24T14:07:52",
+   "html": "<p>AL jou resepte is regte wensresepte/  dis maklik om te maak en altyd heerlik</p>"
+  },
+  {
+   "id": 4479,
+   "parent": 4386,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-09-01T07:51:31",
+   "html": "<p>Hester baie dankie.  Geniet jou frikkies.</p>"
+  },
+  {
+   "id": 4477,
+   "parent": 4428,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-09-01T07:50:30",
+   "html": "<p>Dit is altyd in &#8216;n houertjie in ons huis vir peusel.</p>"
+  },
+  {
+   "id": 4428,
+   "parent": 0,
+   "author": "Carrol Venter",
+   "avatar": "https://secure.gravatar.com/avatar/c002c6f01f2e3a7c386385e41789e59a94a2841589f8e843c7095b817e9420eb?s=96&d=mm&r=g",
+   "date": "2022-08-23T16:13:17",
+   "html": "<p>Ek het die Hawermoutkoekies gemaak en my dogter is mal daaroor.</p>"
+  },
+  {
+   "id": 4386,
+   "parent": 0,
+   "author": "Hester",
+   "avatar": "https://secure.gravatar.com/avatar/810665b5f8cc91d264dd173c0cac4b04029726ab4a2b405c54318a39b9743a1e?s=96&d=mm&r=g",
+   "date": "2022-08-14T23:43:44",
+   "html": "<p>Hallo Marinda. Ek volg jou al van Kokkedoor se tyd af. Hou baie van jou resepte. Ek het nou kom google of jy nie dalk snoek frikkadele resep het nie en sowaar, hier is hy. Dit klink te heerlik. Ek gaan dit beslis maak. Baie dankie. Ek geniet so jou program op tv en mis dit vir niks. Groete. Hester. Moorreesburg.</p>"
+  },
+  {
+   "id": 4144,
+   "parent": 4109,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-06-08T21:46:50",
+   "html": "<p>Baie dankie.</p>"
+  },
+  {
+   "id": 4143,
+   "parent": 4112,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-06-08T21:46:36",
+   "html": "<p>Baie dankie.</p>"
+  },
+  {
+   "id": 4142,
+   "parent": 4113,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-06-08T21:46:23",
+   "html": "<p>So bly.</p>"
+  },
+  {
+   "id": 4141,
+   "parent": 4116,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-06-08T21:46:00",
+   "html": "<p>Geniet</p>"
+  },
+  {
+   "id": 4140,
+   "parent": 4118,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-06-08T21:45:47",
+   "html": "<p>Geniet.</p>"
+  },
+  {
+   "id": 4118,
+   "parent": 0,
+   "author": "Mariet",
+   "avatar": "https://secure.gravatar.com/avatar/893605f2669dfd5c222015faf3950c9e31ff3cf844393c77ee005bb093f58212?s=96&d=mm&r=g",
+   "date": "2022-06-05T08:18:20",
+   "html": "<p>.Baie dankie gaan die worsrolle maak</p>"
+  },
+  {
+   "id": 4116,
+   "parent": 0,
+   "author": "Katheleen",
+   "avatar": "https://secure.gravatar.com/avatar/8a87aa321fb4d0a97539f4a9fc943aa84a9771fe354e6c08eefb71052441af8d?s=96&d=mm&r=g",
+   "date": "2022-06-04T20:31:05",
+   "html": "<p>Dankie</p>"
+  },
+  {
+   "id": 4113,
+   "parent": 0,
+   "author": "Shanell",
+   "avatar": "https://secure.gravatar.com/avatar/66aeebfbd1bf6ea7c4a26ec219e795d47af42f12442543f455e1fcefc06a174b?s=96&d=mm&r=g",
+   "date": "2022-06-04T17:08:28",
+   "html": "<p>Baie dankie vir die resep. Dit was soo lekker. Gaan dit weer en weer maak 👍🏻😉🌹</p>"
+  },
+  {
+   "id": 4112,
+   "parent": 0,
+   "author": "Wilna Griezel",
+   "avatar": "https://secure.gravatar.com/avatar/65c931962a7fd666ea7c2b0c47099d1686815019c221ffd0908867961fdbb240?s=96&d=mm&r=g",
+   "date": "2022-06-04T13:50:51",
+   "html": "<p>Your recipies is to die for</p>"
+  },
+  {
+   "id": 4109,
+   "parent": 0,
+   "author": "Christine Oberholzero",
+   "avatar": "https://secure.gravatar.com/avatar/d5f8700a4092dbd373b78f81be4b34ce3eb070b2e0e5de614c9c53e2fad4287a?s=96&d=mm&r=g",
+   "date": "2022-06-04T12:47:45",
+   "html": "<p>Ek geniet jou resepte baie. Baie dankie.</p>"
+  }
+ ]
+}

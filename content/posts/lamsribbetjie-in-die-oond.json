@@ -1,0 +1,152 @@
+{
+ "id": 7008,
+ "slug": "lamsribbetjie-in-die-oond",
+ "title": "Lamsribbetjie in die oond",
+ "date": "2022-03-17T20:14:12",
+ "modified": "2022-03-18T15:13:21",
+ "excerpt": "Amanda het so baie van die lamsribbetjie gehou dat sy met ’n barakat huistoe gevlieg het. Ek dink die persoon wat langs haar op die vliegtuig gesit het, moes wonder oor die lekker reuk wat uit haar handsak gekom het.",
+ "categories": [
+  308,
+  270
+ ],
+ "tags": [
+  120,
+  371
+ ],
+ "featured": {
+  "alt": "Lamsribbetjie in die oond",
+  "card": {
+   "src": "/media/uploads/2022/03/Lamsribbetjie-e1647540905385-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Lamsribbetjie-e1647540905385-760x846.jpg",
+   "width": 760,
+   "height": 846
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Lamsribbetjie-e1647540905385-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Lamsribbetjie in die oond - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Amanda het so baie van die lamsribbetjie gehou dat sy met ’n barakat huistoe<strong> </strong>gevlieg het.&nbsp; Ek dink die persoon wat langs haar op die vliegtuig gesit het, moes wonder oor die lekker reuk wat uit haar handsak gekom het.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Lamsribbetjie in die oond",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Lamsribbetjie-e1647540905385-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Lamsribbetjie in die oond"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": "Bestanddele vir vooraf kook tot net sag",
+    "items": [
+     "2 kg lamsrib",
+     "’n paar stukkies vars gemmer, geskil en gesny",
+     "1 botteltjie Savanna-appelsider",
+     "90 g bruinsuiker",
+     "2 steranyse",
+     "2 kaneelstokkies",
+     "sout",
+     "2 liter vleisaftreksel"
+    ]
+   },
+   {
+    "title": "Bestanddele vir die gaarmaak van die marinade",
+    "items": [
+     "1 bottel Savanna-appelsider",
+     "skil van 1 suurlemoen",
+     "250 ml bruinsuiker",
+     "60 ml vars gemmer, gerasper",
+     "30 ml Chinese speserye",
+     "125 ml heuning",
+     "60 ml sojasous",
+     "10 ml fyn komyn",
+     "’n knippie sout"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Meng al die bestanddele en kook vir een uur totdat die vleis net sag begin word.",
+     "Dreineer en hou die rib eenkant.",
+     "Meng al die bestanddele vir die marinade saam.",
+     "Sit die rib in die sous en marineer oornag of vir ten minste 2 ure.",
+     "Verhit die oond tot 190 °C.",
+     "Sit die rib met die marinade in ’n oondpan.",
+     "Bak die ribbetjie tot sag en totdat die sous klewerig raak."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 5154,
+   "parent": 5153,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-12-22T08:47:07",
+   "html": "<p>Jy kry dit by chinesewinkels, maar jy kan dit regtig uitlos en net lekker komyn en koljander oorgooi.</p>"
+  },
+  {
+   "id": 5153,
+   "parent": 0,
+   "author": "Vos",
+   "avatar": "https://secure.gravatar.com/avatar/4165e3c99dff7a37ddb0d2e878992e1e71af648e61b1693cc3a4190a48f104ac?s=96&d=mm&r=g",
+   "date": "2022-12-22T07:29:49",
+   "html": "<p>Hallo Marinda </p>\n<p>Chinese spesery!<br>\nHet geen idee, kan jy my dalk meer inligting stuur hiervan Asb!</p>"
+  }
+ ]
+}

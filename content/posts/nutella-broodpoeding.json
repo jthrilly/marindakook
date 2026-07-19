@@ -1,0 +1,151 @@
+{
+ "id": 7084,
+ "slug": "nutella-broodpoeding",
+ "title": "Nutella broodpoeding",
+ "date": "2022-03-30T11:45:21",
+ "modified": "2022-03-30T11:46:25",
+ "excerpt": "Die poeding is een van my kinders se gunstelinge. As jy nie croissante het nie kan jy dagoud brood gebruik.",
+ "categories": [
+  8
+ ],
+ "tags": [
+  334
+ ],
+ "featured": {
+  "alt": "Nutella broodpoeding",
+  "card": {
+   "src": "/media/uploads/2022/03/Nutella-broodbpoeding-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Nutella-broodbpoeding-760x851.jpg",
+   "width": 760,
+   "height": 851
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Nutella-broodbpoeding-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Nutella broodpoeding - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Die poeding is een van my kinders se gunstelinge.&nbsp;As jy nie croissante het nie kan jy dagoud brood gebruik.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Nutella broodpoeding",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Nutella-broodbpoeding-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Nutella broodpoeding"
+  },
+  "courses": [
+   "Nagereg"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "8 croissante",
+     "1 potjie Nutella-sjokoladesmeer",
+     "500 ml room",
+     "250 ml melk",
+     "4 eiers",
+     "5 ml vanieljegeursel",
+     "125 ml strooisuiker"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Sny die croissante middeldeur en smeer dit dik met die Nutella.",
+     "Pak die gesmeerde croissante soos dakteëls oormekaar in ’n oondvaste bak.",
+     "Meng die room, melk, eiers, vanieljegeursel en strooisuiker goed.",
+     "Gooi dit oor die croissante.",
+     "Laat dit staan vir 60 minute.",
+     "Bak dit dan vir 40 minute by 180 °C.",
+     "Haal dit uit die oond en sit dit voor met vla of roomys."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 3881,
+   "parent": 3870,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-04-10T11:11:22",
+   "html": "<p>Baie dankie.  Die resepte kom uit my hart.</p>"
+  },
+  {
+   "id": 3870,
+   "parent": 0,
+   "author": "Carol",
+   "avatar": "https://secure.gravatar.com/avatar/84dfaeb56d475e7b85355c49a95aaf95d95668da62a8c1c0526a344587cb02ed?s=96&d=mm&r=g",
+   "date": "2022-04-08T14:27:19",
+   "html": "<p>Baie dankie vir heerlike resepte Marinda en &#8216;n puik program. Wees geseend.</p>"
+  },
+  {
+   "id": 3861,
+   "parent": 3848,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-04-06T09:52:29",
+   "html": "<p>Dis net liefde uit my hart.</p>"
+  },
+  {
+   "id": 3848,
+   "parent": 0,
+   "author": "Margaret Nel",
+   "avatar": "https://secure.gravatar.com/avatar/f9b1491b0546900600ed7b40205527a88b2e268276595a9c7a8c0b804f4a6ea1?s=96&d=mm&r=g",
+   "date": "2022-04-01T07:17:09",
+   "html": "<p>Dankie Marinda..👏.ek mis nooit jou Program nie&#8230; want jy gee altyd sulke lekker vinnige &#8220;maklike&#8221; Resepte wat nooit flop nie..ennnn mens het meeste bestandele in die huis..dis nie  &#8220;fensie&#8221; goed nodig nie..Baie dankie..💞💞💞</p>"
+  }
+ ]
+}

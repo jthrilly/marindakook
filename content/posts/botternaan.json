@@ -1,0 +1,134 @@
+{
+ "id": 7437,
+ "slug": "botternaan",
+ "title": "Botternaan",
+ "date": "2023-10-29T11:15:05",
+ "modified": "2023-10-29T11:15:10",
+ "excerpt": "",
+ "categories": [
+  33
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Botternaan",
+  "card": {
+   "src": "/media/uploads/2023/10/3633b196-b4d7-4ca8-9f67-a33906ff6ff0-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2023/10/3633b196-b4d7-4ca8-9f67-a33906ff6ff0-760x768.jpg",
+   "width": 760,
+   "height": 768
+  },
+  "thumb": {
+   "src": "/media/uploads/2023/10/3633b196-b4d7-4ca8-9f67-a33906ff6ff0-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Botternaan - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2023/10/3633b196-b4d7-4ca8-9f67-a33906ff6ff0.jpg\" alt class=\"wp-image-7439\" srcset=\"/media/uploads/2023/10/3633b196-b4d7-4ca8-9f67-a33906ff6ff0.jpg 1024w, /media/uploads/2023/10/3633b196-b4d7-4ca8-9f67-a33906ff6ff0-300x225.jpg 300w, /media/uploads/2023/10/3633b196-b4d7-4ca8-9f67-a33906ff6ff0-768x576.jpg 768w, /media/uploads/2023/10/3633b196-b4d7-4ca8-9f67-a33906ff6ff0-750x563.jpg 750w, /media/uploads/2023/10/3633b196-b4d7-4ca8-9f67-a33906ff6ff0-500x375.jpg 500w, /media/uploads/2023/10/3633b196-b4d7-4ca8-9f67-a33906ff6ff0-380x285.jpg 380w, /media/uploads/2023/10/3633b196-b4d7-4ca8-9f67-a33906ff6ff0-760x570.jpg 760w, /media/uploads/2023/10/3633b196-b4d7-4ca8-9f67-a33906ff6ff0-800x600.jpg 800w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Naan",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2023/10/764ff159-2ed4-418a-92e3-9c5f64364195-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Naan"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "1",
+      "unit": "minute"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "10 ml gis",
+     "5 ml suiker",
+     "60 ml louwater",
+     "250 ml x 4 koekmeel ( 4 koppies)",
+     "knippie sout",
+     "185 ml griekse jogurt",
+     "30 ml olie",
+     "180 ml loumelk"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Meng die gis, suiker en 60 ml louwater in &#8216;n beker.  Los dit vir 10 min tot dit begin gis. (borrels maak)",
+     "In &#8216;n mengbak roer die meel en sout saam.",
+     "Maak &#8216;n holte in die meel en meng die gismengsel met &#8216;n houtlepel in.",
+     "Roer nou die jogurt, olie en melk in die meel. Roer tot alles mooi bymekaar kom.",
+     "Strooi meel op &#8216;n oppervlak en knie die deeg vir 5 minute tot alles mooi bymekaar kom.  Sit die deeg in &#8216;n bak en maak dit toe met gladwrap.  Los dit op &#8216;n warm plek tot dit verdubbel het.",
+     "Verdeel die deeg in 12 porsies.  Rol klein balletjies en rol elke balletjie in &#8216;n sirkel.",
+     "In &#8216;n warm pan wat klein bietjie olie in het, braai die naan vir 1 tot 2 minute aan &#8216;n kant.",
+     "Soos die naan uit die pan kom, smeer dit met gesmelte botter.",
+     "As jy wil, kan jy fyngekapte knoffel saam met die botter smelt en knoffelbotter smeer oor die naan.  Ek het danja by my botter geroer."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 6290,
+   "parent": 6284,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-12-02T12:18:58",
+   "html": "<p>Ek kan dit vir &#8216;n maaltyd eet!</p>"
+  },
+  {
+   "id": 6284,
+   "parent": 0,
+   "author": "Surina Nel",
+   "avatar": "https://secure.gravatar.com/avatar/fd02ed705e054a21148e98d0835de47cc4c8f28857e1420e34d91b51d1be60f8?s=96&d=mm&r=g",
+   "date": "2023-12-01T18:29:15",
+   "html": "<p>Absolutely Love the Naan!!!!</p>"
+  }
+ ]
+}

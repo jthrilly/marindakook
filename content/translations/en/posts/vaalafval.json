@@ -1,0 +1,99 @@
+{
+ "id": 7000,
+ "slug": "vaalafval",
+ "sourceHash": "a4673813cd167205f6ebef223c709f70e95edd26",
+ "title": "Pale Offal",
+ "excerpt": "Offal eaters are a group all on their own. You either love offal or you just can't resist it. Peter Veldsman wanted pale offal, and so we made it for him. I got to teach him a thing or two about offal as well. He took all the leftover offal home with him.",
+ "seo": {
+  "title": "Pale Offal - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Offal eaters are a group all on their own.&nbsp; You either love offal or you just can't resist it.&nbsp; Peter Veldsman wanted pale offal, and so we made it for him.&nbsp; I got to teach him a thing or two about offal as well.&nbsp; He took all the leftover offal home with him.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Pale Offal",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Afval-800x530.jpg",
+   "srcset": "/media/uploads/2022/03/Afval-800x530.jpg 800w, /media/uploads/2022/03/Afval-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Vaalafval"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1 clean offal with trotters, tripe etc. (Delico's is in my opinion the cleanest and best)",
+     "4 clean pork trotters",
+     "500 ml water",
+     "90 ml vinegar",
+     "1 onion, sliced into rings",
+     "2.5 ml black pepper",
+     "4 whole cloves",
+     "2.5 ml ground nutmeg",
+     "2 bay leaves",
+     "6 whole white peppercorns",
+     "2.5 ml ground coriander",
+     "20 ml sugar",
+     "4 slices mutton neck",
+     "10 small onions (baby onions)",
+     "10 baby potatoes, peeled"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Cook the offal, including the pork trotters, water, vinegar, onion, black pepper, cloves, nutmeg, bay leaves, white pepper, ground coriander and sugar, for 2 to 3 hours. (Keep an eye on the water level. Not too much water, this isn't soup. The offal will start to become tender.)",
+     "Add the mutton neck and cook for another 1 hour.",
+     "Add the onions and potatoes and cook until soft and the meat starts falling off the bones.",
+     "Taste and adjust to your liking if needed.",
+     "Serve on white rice."
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "It's always tasty when the offal is left to stand for a while until it turns nice and sticky."
+  ],
+  "videoHtml": null
+ }
+}

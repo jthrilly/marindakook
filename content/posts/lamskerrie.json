@@ -1,0 +1,129 @@
+{
+ "id": 6026,
+ "slug": "lamskerrie",
+ "title": "Lamskerrie",
+ "date": "2020-08-12T10:50:30",
+ "modified": "2022-06-16T12:53:52",
+ "excerpt": "Die lamskerrie het ek vir Corné Krige gemaak. En hy was so beïndruk met dit dat hy vir my gevra het vir die resep. En toe besluit ek maar dan deel ek dit met julle ook.",
+ "categories": [
+  366,
+  11
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Lamskerrie",
+  "card": {
+   "src": "/media/uploads/2020/08/Lamskerrie-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2020/08/Lamskerrie-760x1040.jpg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2020/08/Lamskerrie-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "closed",
+ "seo": {
+  "title": "Lamskerrie - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Die lamskerrie het ek vir Corné Krige gemaak. En hy was so beïndruk met dit dat hy vir my gevra het vir die resep. En toe besluit ek maar dan deel ek dit met julle ook.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img loading=\"lazy\" width=\"2048\" height=\"1695\" src=\"/media/uploads/2020/08/Lamskerrie.jpg\" alt class=\"wp-image-6027\" srcset=\"/media/uploads/2020/08/Lamskerrie.jpg 2048w, /media/uploads/2020/08/Lamskerrie-600x497.jpg 600w, /media/uploads/2020/08/Lamskerrie-300x248.jpg 300w, /media/uploads/2020/08/Lamskerrie-1024x848.jpg 1024w, /media/uploads/2020/08/Lamskerrie-768x636.jpg 768w, /media/uploads/2020/08/Lamskerrie-1536x1271.jpg 1536w, /media/uploads/2020/08/Lamskerrie-750x621.jpg 750w, /media/uploads/2020/08/Lamskerrie-380x315.jpg 380w, /media/uploads/2020/08/Lamskerrie-760x629.jpg 760w, /media/uploads/2020/08/Lamskerrie-800x662.jpg 800w\" sizes=\"auto, (max-width: 2048px) 100vw, 2048px\"></figure></div>\n\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Lamskerrie",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2020/08/Lamskerrie-800x530.jpg",
+   "srcset": "/media/uploads/2020/08/Lamskerrie-800x530.jpg 800w, /media/uploads/2020/08/Lamskerrie-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Lamskerrie"
+  },
+  "courses": [
+   "Rooivleis"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 uie in ringe gesny<br>1,5kg lamsvleis",
+     "30 ml olie",
+     "5 knoffelhuisies fyngedruk",
+     "Gemmer duim grootte gerasper",
+     "10 ml koljander",
+     "10 ml komyn",
+     "10 ml rissievlokkies",
+     "15 ml asyn",
+     "15 ml suiker",
+     "15 ml appelkooskonfyt",
+     "15 ml borrie",
+     "30 ml sterk kerrie",
+     "1 steranys",
+     "3 kardemonpeule gekneus",
+     "1 blikkie tamatiepuree",
+     "250 ml stock (1 blokkie opgelos in 250 ml kookwater)",
+     "Sout en peper",
+     "3 aartappels in blokkies gesny"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Braai die ui liggies in olie",
+     "Braai nou die knoffel en gemmer saam met die uie",
+     "Braai die kerrie, borrie komyn, koljander saam met die ui.",
+     "Gooi die vleis by en braai vinnig deur speserye",
+     "Meng die res van die betanddele en gooi by die vleismengsel",
+     "Sit die deksel op en laat dit prut vir 45 minute. Proe nou of jy nog rissies, suiker of asyn wil byvoeg.",
+     "Gooi nou die aartappels by.",
+     "Kook totdat die vleis en aartappels sag is."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

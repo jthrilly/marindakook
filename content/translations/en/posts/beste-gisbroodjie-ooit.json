@@ -1,0 +1,89 @@
+{
+ "id": 7591,
+ "slug": "beste-gisbroodjie-ooit",
+ "sourceHash": "0e225f104a10e6000acf97c3cb2b627fa924f4b1",
+ "title": "Best yeast bread ever",
+ "excerpt": "You don't even have to knead it.",
+ "seo": {
+  "title": "Best yeast bread ever - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">You don't even have to knead it.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2025/06/Gisbrood-botter-en-kaas-1024x768.jpeg\" alt class=\"wp-image-7593\" srcset=\"/media/uploads/2025/06/Gisbrood-botter-en-kaas-1024x768.jpeg 1024w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-300x225.jpeg 300w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-768x576.jpeg 768w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-750x563.jpeg 750w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-500x375.jpeg 500w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-380x285.jpeg 380w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-760x570.jpeg 760w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-800x600.jpeg 800w, /media/uploads/2025/06/Gisbrood-botter-en-kaas.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Best yeast bread ever",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2025/06/Gisbrood-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Beste gisbroodjie ooit"
+  },
+  "courses": [
+   "Bread, Baking"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "15",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "750 ml cake flour",
+     "5 ml salt",
+     "5 ml sugar",
+     "1 packet instant yeast",
+     "375 ml lukewarm water"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Set your oven to 180 C",
+     "Mix all the dry ingredients together",
+     "Stir the lukewarm water into the flour mixture with a wooden spoon. Don't mix too much. It's a slack dough",
+     "Spray a small bread pan or grease it with butter. Scrape the dough out into your pan. Dip your hands in flour and smooth your dough out with your hands <img loading=\"lazy\" width=\"1280\" height=\"960\" src=\"/media/uploads/2025/06/Gisbrood-voor-bak.jpeg\" class=\"direction-step-image\" alt=\"Yeast bread before oven\" title=\"Yeast bread before baking\">",
+     "Put the pan in a plastic bag and let it rise until double in size<img loading=\"lazy\" width=\"1280\" height=\"960\" src=\"/media/uploads/2025/06/Gisbrood-in-sak.jpeg\" class=\"direction-step-image\" alt title=\"Yeast bread in bag\">",
+     "Bake for 30 min at 180 C <img loading=\"lazy\" width=\"1280\" height=\"960\" src=\"/media/uploads/2025/06/Gisbrood-heel.jpeg\" class=\"direction-step-image\" alt title=\"Yeast bread whole\">",
+     "Spread butter over the crust<img loading=\"lazy\" width=\"1280\" height=\"960\" src=\"/media/uploads/2025/06/Gisbrood-botter.jpeg\" class=\"direction-step-image\" alt title=\"Yeast bread butter\">"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

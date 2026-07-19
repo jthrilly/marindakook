@@ -1,0 +1,92 @@
+{
+ "id": 7042,
+ "slug": "peppermint-crips-tert",
+ "sourceHash": "1b42ba8e59bd4f293c1863144029dac00edfbfe4",
+ "title": "Peppermint Crisp Tart",
+ "excerpt": "In every one of our childhood homes there was a Peppermint Crisp tart. Albert Maritz has a sweet tooth and asked me to make this tart for him.",
+ "seo": {
+  "title": "Peppermint Crisp Tart - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">In every one of our childhood homes there was a Peppermint Crisp tart.&nbsp; Albert Maritz has a sweet tooth and asked me to make this tart for him.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Peppermint Crisp Tart",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Peppermint-Crisp-tert-e1647609505573-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Peppermint Crips-tert"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 ml cream (“whipping cream”)",
+     "3 tins caramel treat",
+     "2 Nestlé Peppermint Crisp chocolates (150 g each), broken into pieces",
+     "2 packets Tennis biscuits",
+     "2 Nestlé Aero Peppermint chocolates (85 g each)",
+     "fresh mint leaves"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Whip the cream to soft peak stage.",
+     "Soften the caramel in a bowl by stirring it with a spoon.",
+     "Stir the caramel into the cream.",
+     "Fold in the Peppermint Crisp chocolate.",
+     "Place one packet of Tennis biscuits at the bottom of a greased dish and spread half the mixture over.",
+     "Place another layer of Tennis biscuits on top and spread the remaining mixture over.",
+     "Break the Aero into rough pieces and sprinkle on top.",
+     "Cover with cling wrap and leave in the fridge overnight.",
+     "Finish off with the mint leaves."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

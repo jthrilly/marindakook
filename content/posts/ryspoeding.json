@@ -1,0 +1,123 @@
+{
+ "id": 7153,
+ "slug": "ryspoeding",
+ "title": "Ryspoeding",
+ "date": "2022-04-27T20:21:29",
+ "modified": "2022-04-27T20:21:32",
+ "excerpt": "Vir Lize Beekman het ek gewone ryspoeding geneem en dit ‘n ander smaak gegee. Probeer dit gerus.",
+ "categories": [
+  8
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Ryspoeding",
+  "card": {
+   "src": "/media/uploads/2022/04/Ryspoeding-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/04/Ryspoeding-760x857.jpg",
+   "width": 760,
+   "height": 857
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/04/Ryspoeding-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Ryspoeding - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Vir Lize Beekman het ek gewone ryspoeding geneem en dit ‘n ander smaak gegee. Probeer dit gerus.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Ryspoeding",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/04/Ryspoeding-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Ryspoeding"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "30 ml botter",
+     "330 ml rys",
+     "2 blikkies klapperroom",
+     "125 ml suiker",
+     "1 vanieljepeul of 5 ml vanielje-ekstrak",
+     "1 kaneelstokkie",
+     "3 kardamomsade, gekneus",
+     "knippie sout",
+     "sjokoladeplak van jou keuse – kan melksjokolade, donker, lig of gemeng wees"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Smelt die botter in ’n kastrol en roerbraai die rys tot al die korreltjies blink is.",
+     "Gooi al die res van die bestanddele behalwe die sjokolade by.",
+     "Nou moet jy deurentyd roer – dit kan maklik vasbrand.",
+     "Na 20 minute behoort dit so ’n romerige tekstuur te hê. Proe daaraan. Die korrels moenie pap wees nie.",
+     "Haal die vanieljepeul, kardamom en kaneelstokkies uit en gooi dit weg.",
+     "Haal van die plaat af en roer die sjokolade by."
+    ]
+   },
+   {
+    "title": "Stroop",
+    "steps": [
+     "Gooi 125 g bessies (enige soort), 100 ml suiker en 100 ml water in ’n mikrogolfbestande bak.",
+     "Mikrogolf vir so 5 minute – roer en druk van die bessies pap.",
+     "Skep nou die ryspoeding in ’n mooi houer en skep die bessies bo-oor."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

@@ -1,0 +1,111 @@
+{
+ "id": 7426,
+ "slug": "haddock-pastei",
+ "sourceHash": "83e2e4955505de95d62c2dc6288dfc1e20ce364d",
+ "title": "Haddock Pie",
+ "excerpt": "Haddock Pie",
+ "seo": {
+  "title": "Haddock Pie - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2023/09/Haddock-pastei-2.jpeg\" alt class=\"wp-image-7428\" srcset=\"/media/uploads/2023/09/Haddock-pastei-2.jpeg 1024w, /media/uploads/2023/09/Haddock-pastei-2-300x225.jpeg 300w, /media/uploads/2023/09/Haddock-pastei-2-768x576.jpeg 768w, /media/uploads/2023/09/Haddock-pastei-2-750x563.jpeg 750w, /media/uploads/2023/09/Haddock-pastei-2-500x375.jpeg 500w, /media/uploads/2023/09/Haddock-pastei-2-380x285.jpeg 380w, /media/uploads/2023/09/Haddock-pastei-2-760x570.jpeg 760w, /media/uploads/2023/09/Haddock-pastei-2-800x600.jpeg 800w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"1024\" height=\"974\" src=\"/media/uploads/2023/09/Haddock-pastei-1.jpeg\" alt class=\"wp-image-7427\" srcset=\"/media/uploads/2023/09/Haddock-pastei-1.jpeg 1024w, /media/uploads/2023/09/Haddock-pastei-1-300x285.jpeg 300w, /media/uploads/2023/09/Haddock-pastei-1-768x731.jpeg 768w, /media/uploads/2023/09/Haddock-pastei-1-750x713.jpeg 750w, /media/uploads/2023/09/Haddock-pastei-1-380x361.jpeg 380w, /media/uploads/2023/09/Haddock-pastei-1-760x723.jpeg 760w, /media/uploads/2023/09/Haddock-pastei-1-800x761.jpeg 800w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Haddock Pie",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2023/09/Haddock-pastei-3-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Haddock-pastei"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1.2 kg haddock",
+     "6 black peppercorns",
+     "750 ml milk"
+    ]
+   },
+   {
+    "title": "Cheese sauce",
+    "items": [
+     "125 ml butter",
+     "125 ml cake flour",
+     "750 ml milk (use the milk you cooked the fish in. If it's too little, top it up)",
+     "250 ml grated cheese",
+     "2.5 ml mustard powder",
+     "Salt and pepper to taste"
+    ]
+   },
+   {
+    "title": "Mashed potatoes",
+    "items": [
+     "5 large potatoes, cooked",
+     "125 ml warm milk",
+     "90 ml butter",
+     "Salt and pepper",
+     "Paprika, optional, to sprinkle on top"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Cook the fish in the milk with the peppercorns until done.",
+     "Take it out of the milk (keep the milk for your cheese sauce) and flake the fish. Discard the peppercorns.",
+     "For the cheese sauce, melt the butter in a small pot.",
+     "Stir in the flour with a whisk.",
+     "Add the milk you kept from the fish and stir with the whisk until smooth. Let it simmer for 5 minutes.",
+     "Taste and season with salt and pepper to taste.",
+     "Stir in the cheese.",
+     "Stir in the flaked fish and spoon into an oven dish.",
+     "Make your mashed potatoes by stirring the butter and warm milk into the hot potatoes. Mash well with a masher.",
+     "Season with salt and pepper to taste.",
+     "Spoon over your fish in the oven dish and sprinkle paprika on top if you enjoy a bit of a kick.",
+     "Bake for 30 minutes at 180 degrees Celsius."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "id": 7519,
+ "slug": "meksikaanserys",
+ "sourceHash": "acabd8338ec5957bfb263af27f4bd1a2693e9528",
+ "title": "Mexican Rice",
+ "excerpt": "Mexican Rice",
+ "seo": {
+  "title": "Mexican Rice - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2024/09/Meksikaanse-rys-bestanddele-1024x768.jpeg\" alt class=\"wp-image-7521\" srcset=\"/media/uploads/2024/09/Meksikaanse-rys-bestanddele-1024x768.jpeg 1024w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-300x225.jpeg 300w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-768x576.jpeg 768w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-750x563.jpeg 750w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-500x375.jpeg 500w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-380x285.jpeg 380w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-760x570.jpeg 760w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele-800x600.jpeg 800w, /media/uploads/2024/09/Meksikaanse-rys-bestanddele.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2024/09/Meksikaanse-rys-naby-1024x768.jpeg\" alt class=\"wp-image-7522\" srcset=\"/media/uploads/2024/09/Meksikaanse-rys-naby-1024x768.jpeg 1024w, /media/uploads/2024/09/Meksikaanse-rys-naby-300x225.jpeg 300w, /media/uploads/2024/09/Meksikaanse-rys-naby-768x576.jpeg 768w, /media/uploads/2024/09/Meksikaanse-rys-naby-750x563.jpeg 750w, /media/uploads/2024/09/Meksikaanse-rys-naby-500x375.jpeg 500w, /media/uploads/2024/09/Meksikaanse-rys-naby-380x285.jpeg 380w, /media/uploads/2024/09/Meksikaanse-rys-naby-760x570.jpeg 760w, /media/uploads/2024/09/Meksikaanse-rys-naby-800x600.jpeg 800w, /media/uploads/2024/09/Meksikaanse-rys-naby.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"707\" src=\"/media/uploads/2024/09/Meksikaanse-rys-Spekko-1024x707.jpeg\" alt class=\"wp-image-7520\" srcset=\"/media/uploads/2024/09/Meksikaanse-rys-Spekko-1024x707.jpeg 1024w, /media/uploads/2024/09/Meksikaanse-rys-Spekko-300x207.jpeg 300w, /media/uploads/2024/09/Meksikaanse-rys-Spekko-768x530.jpeg 768w, /media/uploads/2024/09/Meksikaanse-rys-Spekko-750x518.jpeg 750w, /media/uploads/2024/09/Meksikaanse-rys-Spekko-380x262.jpeg 380w, /media/uploads/2024/09/Meksikaanse-rys-Spekko-760x525.jpeg 760w, /media/uploads/2024/09/Meksikaanse-rys-Spekko-800x553.jpeg 800w, /media/uploads/2024/09/Meksikaanse-rys-Spekko.jpeg 1125w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Mexican Rice",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2024/09/Meksikaanse-rys-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Meksikaanserys"
+  },
+  "courses": [
+   "Side dishes, Main course, Rice"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "20",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "20",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "250 ml Spekko long-grain white rice",
+     "2 chillies finely chopped (you can add more if you like spicy food)",
+     "2 garlic cloves finely chopped",
+     "1 onion finely chopped",
+     "20 ml ground cumin",
+     "50g tomato paste",
+     "375 ml chicken stock (dissolve 1 stock cube in 375ml boiling water)",
+     "1 red pepper cut into blocks",
+     "60 ml oil for frying",
+     "fresh coriander for serving on top"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Fry the onions for 5 minutes.  Add the garlic, chillies, red pepper and cumin and fry for another 3 minutes.",
+     "Add the rice and fry the rice for 2 minutes.",
+     "Stir the tomato paste into the chicken stock and pour it over the rice.  Stir it through.",
+     "Put the lid on and let the rice simmer gently.  Stir regularly and top up with water.",
+     "Once the rice is done, spoon it into a nice bowl and break the coriander over it."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

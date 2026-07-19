@@ -1,0 +1,205 @@
+{
+ "id": 7016,
+ "slug": "aartappelslaai",
+ "title": "Aartappelslaai",
+ "date": "2022-03-17T20:18:25",
+ "modified": "2022-03-18T15:13:11",
+ "excerpt": "Wie hou nie van ‘n aartappelslaai nie? Wys my daardie persoon! Altyd ‘n wenner op die tafel.",
+ "categories": [
+  33,
+  12
+ ],
+ "tags": [
+  177
+ ],
+ "featured": {
+  "alt": "Aartappelslaai",
+  "card": {
+   "src": "/media/uploads/2022/03/Aartappelslaai-e1647541024719-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Aartappelslaai-e1647541024719-760x840.jpg",
+   "width": 760,
+   "height": 840
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Aartappelslaai-e1647541024719-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Aartappelslaai - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Wie hou nie van ‘n aartappelslaai nie?&nbsp; Wys my daardie persoon!&nbsp; Altyd ‘n wenner op die tafel.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Aartappelslaai",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Aartappelslaai-e1647541024719-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Aartappelslaai"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "6 aartappels",
+     "1 ui, fyngekap",
+     "½ k pietersielie, fyngekap",
+     "250 ml (1 k) mayonnaise",
+     "125 ml (½ k) Griekse jogurt",
+     "60 ml melk",
+     "15 ml suiker",
+     "sout en peper",
+     "60 ml mosterd (korrelmosterd)",
+     "2 hardgekookte eiers",
+     "1 wieletjie fetakaas"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Kook die aartappels sag en sny in blokkies.",
+     "Gooi die gekapte ui bo-oor.",
+     "Strooi die gesnipperde pietersielie oor.",
+     "Meng die mayonnaise, jogurt, melk, suiker, sout, peper en mosterd saam en gooi dit oor die aartappels.",
+     "Roer versigtig deur sonder om die aartappels te breek.",
+     "Rasper die eiers oor.",
+     "Krummel die feta oor.",
+     "Sprinkel nog pietersielie oor vir groenigheid."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 22458,
+   "parent": 22070,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2025-12-01T09:13:49",
+   "html": "<p>My hart sing</p>"
+  },
+  {
+   "id": 22455,
+   "parent": 22387,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2025-12-01T09:12:59",
+   "html": "<p>Al my resepte is op die blad.  Loer bietjie rond.</p>"
+  },
+  {
+   "id": 22387,
+   "parent": 0,
+   "author": "Ado bekker",
+   "avatar": "https://secure.gravatar.com/avatar/99cc604c2f731e012ae089fe3a470d3431817cbf379f8c57808695f366ea7dd8?s=96&d=mm&r=g",
+   "date": "2025-11-29T18:43:53",
+   "html": "<p>Ek soek na n lekker sharkalaka slaai saam met baaivleis, en n maklike gesondheids brood resepte asb.</p>"
+  },
+  {
+   "id": 22070,
+   "parent": 0,
+   "author": "Mathilda",
+   "avatar": "https://secure.gravatar.com/avatar/f1b45a82f1fae4f47e0a2de22ea7430a8b92c4e889229867c7b023dfb7245c50?s=96&d=mm&r=g",
+   "date": "2025-11-20T14:34:47",
+   "html": "<p>Met enige resep wat ek oor twyfel Google ek net maklik met Marinda. My man sê al, vra vir maklik met Marinda x</p>"
+  },
+  {
+   "id": 7472,
+   "parent": 7439,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-07-29T15:19:06",
+   "html": "<p>Dis my terapie.</p>"
+  },
+  {
+   "id": 7470,
+   "parent": 7443,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-07-29T15:18:35",
+   "html": "<p>Kom ons hou duimvas.</p>"
+  },
+  {
+   "id": 7443,
+   "parent": 0,
+   "author": "Elaine Schalkwyk",
+   "avatar": "https://secure.gravatar.com/avatar/89a1227561fa8977be55344f5cb02fdd26aa25211f203c835c8c45fa5beca6a6?s=96&d=mm&r=g",
+   "date": "2024-07-24T07:27:15",
+   "html": "<p>Ek is resep verslaaf en soek altyd maklike bekostigbare resepte. Ek het jou programme almal opgeneem en omdat my decoder vol geraak het moes ek toe nou afskryf en verwyder maar dit was moeilik want jy het baie keer nie hoeveelheid aangedui nie want jy het so klets met die gaste en veral as daai bottel wyn eers oopgemaak is. Oe ê ê. Maar dis die beste program daai. Wanneer kom daar nog op want dis die lekkerste kos program wat ek ken.</p>"
+  },
+  {
+   "id": 7439,
+   "parent": 0,
+   "author": "Threska",
+   "avatar": "https://secure.gravatar.com/avatar/d1a968af4be00864e060740f20df97f1db366b9bfd55beeac22cdf07cc979f6b?s=96&d=mm&r=g",
+   "date": "2024-07-23T16:14:21",
+   "html": "<p>LOVE KOSMAAK</p>"
+  },
+  {
+   "id": 5264,
+   "parent": 5175,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-01-12T17:03:23",
+   "html": "<p>Liefde uit my hart</p>"
+  },
+  {
+   "id": 5175,
+   "parent": 0,
+   "author": "Sandra Gerber",
+   "avatar": "https://secure.gravatar.com/avatar/8ae96cf8700029d6efde5f2544bdae8594bde93ec1bc549e94866e75d22ce758?s=96&d=mm&r=g",
+   "date": "2022-12-24T06:44:58",
+   "html": "<p>Jou resepte lyk so heerlik en gaan die Gammon en soet mosterd resep definitief uittoets. Dankie vir die blog.</p>"
+  }
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "id": 5080,
+ "slug": "broccolihoender",
+ "title": "Broccolihoender",
+ "date": "2018-10-11T16:15:32",
+ "modified": "2022-02-13T18:23:15",
+ "excerpt": "",
+ "categories": [
+  7
+ ],
+ "tags": [
+  29,
+  27,
+  28
+ ],
+ "featured": {
+  "alt": "Broccolihoender potjies",
+  "card": {
+   "src": "/media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-1024x683.jpg",
+   "width": 1024,
+   "height": 683
+  },
+  "portrait": {
+   "src": "/media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-1024x683.jpg",
+   "width": 1024,
+   "height": 683
+  },
+  "thumb": {
+   "src": "/media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Broccolihoender - Marinda Kook",
+  "description": null
+ },
+ "html": "<h3 class=\"wp-block-heading\"></h3>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<h3 class=\"wp-block-heading\"><img loading=\"lazy\" class=\"alignnone size-large wp-image-5081\" src=\"/media/uploads/2018/10/Broccoli-Hoender-2-1024x576.png\" alt=\"Broccolihoender\" width=\"530\" height=\"298\" srcset=\"/media/uploads/2018/10/Broccoli-Hoender-2-1024x576.png 1024w, /media/uploads/2018/10/Broccoli-Hoender-2-600x338.png 600w, /media/uploads/2018/10/Broccoli-Hoender-2-300x169.png 300w, /media/uploads/2018/10/Broccoli-Hoender-2-768x432.png 768w, /media/uploads/2018/10/Broccoli-Hoender-2.png 1920w\" sizes=\"auto, (max-width: 530px) 100vw, 530px\"></h3>",
+ "recipe": {
+  "style": "default",
+  "title": "Broccolihoender",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-1024x683.jpg",
+   "srcset": "/media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-1024x683.jpg 1024w, /media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-600x400.jpg 600w, /media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-300x200.jpg 300w, /media/uploads/2018/10/Louise-Engelbrecht-Broccoli-Hoender-768x512.jpg 768w",
+   "width": 800,
+   "height": 534,
+   "alt": "Broccolihoender"
+  },
+  "courses": [
+   "Hoender"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "Olie om uie in te braai",
+     "1 ui, in blokkies gesny",
+     "500 ml witwyn",
+     "250 ml water",
+     "2 naeltjies",
+     "2 takkies elk, roosmaryn en tiemie",
+     "4 hoenderborsies of een heel hoender",
+     "Sout en peper",
+     "300 g broccoli, opgebreek in stukke",
+     "1 pakkie sampioensoppoeier",
+     "500 ml melk",
+     "Kerriepoeier na smaak",
+     "250 ml mayonnaise",
+     "40 ml suurlemoensap",
+     "350 ml gerasperde kaas"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "In ‘n groot pot, verhit die olie en braai die uie tot glaserig. Voeg die witwyn, water, naeltjies, roosmaryn, tiemie en hoender by en geur na smaak met sout en peper. Kook die hoender tot sag.",
+     "Haal die hoender uit die pot, maar behou die kookvloeistof.",
+     "Vlok die hoender en verwyder die vel en bene. Plaas die gevlokte hoender in ‘n oondvaste bak en plaas opsy.",
+     "Plaas die broccoli in die hoenderaftreksel en kook tot net sag. Dreineer en plaas die broccoli bo-op die gevlokte hoender.",
+     "In ‘n aparte pot, meng die sampioensoppoeier en melk en verhit stadig totdat dit begin verdik. Voeg die kerriepoeier, mayonnaise en suurlemoensap by en kook vir om en by 4 minute. Verwyder van die hitte en gooi oor die hoender en broccoli. Sprinkel die kaas oor en bak in ‘n voorverhitte oond vir 30 minute teen 180º C of totdat die kaas gesmelt het en die hoender warm is. Maklik!"
+    ]
+   }
+  ],
+  "notesTitle": "Notas",
+  "notes": [
+   "Bedien 6 porsies met oond-geroosterde groente."
+  ],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 7792,
+   "parent": 7640,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-09-10T17:27:02",
+   "html": "<p>My hart sing.</p>"
+  },
+  {
+   "id": 7640,
+   "parent": 0,
+   "author": "Vina Pienaar",
+   "avatar": "https://secure.gravatar.com/avatar/917576926a7daaad86bddd375e3e93e326e6fce380fe2119a21e0b5c6022695f?s=96&d=mm&r=g",
+   "date": "2024-08-28T14:21:10",
+   "html": "<p>Dankie vir jou heerlike resepte. My seun wat in Engeland bly wil vir sy skoonfamilie in Romenie &#8216;n regte SA dis gaan maak. Ek stel toe Bobotie, geelrys met rosyntjies en Malvapoeding voor.<br>\nDit was so maklik om jou resepte vir hom aan te stuur. Hy vra toe vir &#8216;n vinnige Chutney resep, want hy kan dit nie saamneem nie. En&#8230; maklik kyk net op Marinda se blad, alles is daar.<br>\nNou hoef hy my ook nie meer te vra nie, hy weet nou van jou blad. Groete</p>"
+  },
+  {
+   "id": 7276,
+   "parent": 6958,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-07-02T17:27:59",
+   "html": "<p>Net liefde uit my. hart.</p>"
+  },
+  {
+   "id": 6958,
+   "parent": 0,
+   "author": "Mimi Scholtz",
+   "avatar": "https://secure.gravatar.com/avatar/42300eaa69d676150ad264987ae2ac1e5d5d701bbefeae61510fdc0ad8edb66d?s=96&d=mm&r=g",
+   "date": "2024-06-02T17:30:57",
+   "html": "<p>ek geniet jou resepte sommer baie. dis Afrikaans en lekker en soos ons nou wil eet en leef. baie dankie!</p>"
+  }
+ ]
+}

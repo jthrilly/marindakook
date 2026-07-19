@@ -1,0 +1,133 @@
+{
+ "id": 7078,
+ "slug": "bobotie-met-n-appelkrummellaag",
+ "sourceHash": "c62b8e9ac04f5edcd865cf513d5cc84c7ebde67d",
+ "title": "Bobotie with an apple crumble topping",
+ "excerpt": "If I can grow old like Min, I'll be a happy woman. Feminine, beautiful and sharp is she. It was such a great honour to be able to cook for her.",
+ "seo": {
+  "title": "Bobotie with an apple crumble topping - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">If I can grow old like Min, I'll be a happy woman.&nbsp;&nbsp; Feminine, beautiful and sharp is she.&nbsp; It was such a great honour to be able to cook for her.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Bobotie with an apple crumble topping",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Bobotie-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Bobotie met 'n appelkrummellaag"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "a little cooking oil",
+     "2 large onions, finely chopped",
+     "30 ml curry powder",
+     "10 ml turmeric",
+     "5 ml cumin",
+     "1 kg mince",
+     "20 ml apricot jam",
+     "60 ml meat stock",
+     "1 small tin tomato paste",
+     "90 ml chutney",
+     "50 ml vinegar",
+     "20 ml sugar",
+     "10 ml fresh ginger, finely grated",
+     "salt and freshly ground black pepper to taste"
+    ]
+   },
+   {
+    "title": "Apple layer",
+    "items": [
+     "1 tin pie apples",
+     "10 ml flour",
+     "10 ml white sugar",
+     "5 ml butter",
+     "250 ml golden sultanas, soaked in rooibos tea"
+    ]
+   },
+   {
+    "title": "Top crust",
+    "items": [
+     "250 ml flour",
+     "5 ml baking powder",
+     "5 ml sugar",
+     "125 g butter",
+     "250 ml grated cheddar cheese"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Preheat the oven to 180 °C.",
+     "Grease an oven dish.",
+     "Pour a small amount of oil into a saucepan and fry the onions until soft and translucent.",
+     "Add curry powder, turmeric and cumin and fry together.",
+     "Add the mince and fry until it just starts to colour.",
+     "Mix the rest of the ingredients in a jug and then pour it over the meat.",
+     "Let it simmer for about 10 minutes and then pour it into an oven dish."
+    ]
+   },
+   {
+    "title": "Apple layer",
+    "steps": [
+     "Slowly cook all the ingredients for the apple layer together until it becomes thick.",
+     "Mash it and spoon evenly over the meat layer in the oven dish."
+    ]
+   },
+   {
+    "title": "Top crust",
+    "steps": [
+     "Mix all the ingredients well until it looks like sand.",
+     "Crumble it over the apple layer.",
+     "Bake the bobotie for 30 minutes until the crust turns a nice golden brown."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

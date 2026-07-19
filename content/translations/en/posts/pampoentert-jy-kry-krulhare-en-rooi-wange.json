@@ -1,0 +1,94 @@
+{
+ "id": 645,
+ "slug": "pampoentert-jy-kry-krulhare-en-rooi-wange",
+ "sourceHash": "b85dd9ccd85f3084a64773bf5776793be36f4466",
+ "title": "Pumpkin tart – it puts curls in your hair and colour in your cheeks",
+ "excerpt": "Pumpkin tart is something between a vegetable and a pudding. Eat it as a side dish, and before you get up from the table, take a scoop for pudding.",
+ "seo": {
+  "title": "Pumpkin tart - it puts curls in your hair and colour in your cheeks - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Pumpkin tart is something between a vegetable and a pudding.&nbsp; Eat it as a side dish, and before you get up from the table, take a scoop for pudding.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"/media/uploads/2017/10/pampoentert-vir-blog-012.jpg\"><img src=\"/media/uploads/2017/10/pampoentert-vir-blog-012-1024x768.jpg\" alt=\"pampoentert vir blog 012\" class=\"wp-image-655\" loading=\"lazy\"></a></figure></div>\n\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Pumpkin tart – it puts curls in your hair and colour in your cheeks",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2017/10/featured-pampoentert-vir-blog-012-1024x768.jpg",
+   "srcset": "/media/uploads/2017/10/featured-pampoentert-vir-blog-012-1024x768.jpg 1024w, /media/uploads/2017/10/featured-pampoentert-vir-blog-012-600x450.jpg 600w, /media/uploads/2017/10/featured-pampoentert-vir-blog-012-300x225.jpg 300w, /media/uploads/2017/10/featured-pampoentert-vir-blog-012-768x576.jpg 768w, /media/uploads/2017/10/featured-pampoentert-vir-blog-012.jpg 1500w",
+   "width": 800,
+   "height": 600,
+   "alt": "Pampoentert - jy kry krulhare en rooi wange"
+  },
+  "courses": [
+   "Side dishes, Vegetables"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "750 ml cooked pumpkin (3 cups)",
+     "1 tin ideal milk or 150 ml milk and 150 ml cream",
+     "3 eggs",
+     "15 ml baking powder (3 teaspoons)",
+     "250 ml cake flour (1 cup)",
+     "250 ml sugar (1 cup)",
+     "pinch of salt",
+     "cinnamon sugar"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Cook your pumpkin with a cinnamon stick until soft.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/broccoli-hoender-blog-073.jpg\" class=\"direction-step-image\" alt title=\"broccoli-hoender-blog-073\">",
+     "Drain it and mash it smooth.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/broccoli-hoender-blog-094.jpg\" class=\"direction-step-image\" alt title=\"broccoli-hoender-blog-094\">",
+     "Put the eggs, ideal milk, flour, sugar, baking powder and salt in a mixing bowl and whisk well.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/broccoli-hoender-blog-090.jpg\" class=\"direction-step-image\" alt title=\"broccoli-hoender-blog-090\">",
+     "Add the pumpkin to the mixture and stir well.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/broccoli-hoender-blog-101.jpg\" class=\"direction-step-image\" alt title=\"broccoli-hoender-blog-101\">",
+     "Spray or grease an oven dish and pour the loose pumpkin mixture into the oven dish.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/broccoli-hoender-blog-109.jpg\" class=\"direction-step-image\" alt title=\"broccoli-hoender-blog-109\">",
+     "Bake for 60 minutes at 180 degrees celsius.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pampoentert-vir-blog-003.jpg\" class=\"direction-step-image\" alt title=\"pampoentert-vir-blog-003\">",
+     "Sprinkle cinnamon sugar over (125 ml white sugar and 10 ml ground cinnamon mixed).<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pampoentert-vir-blog-004.jpg\" class=\"direction-step-image\" alt title=\"pampoentert-vir-blog-004\">"
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "Now your gut will just have to decide for itself whether this is a vegetable or a pudding."
+  ],
+  "videoHtml": null
+ }
+}

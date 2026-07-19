@@ -1,0 +1,129 @@
+{
+ "id": 7038,
+ "slug": "roomkaas-met-pekaneute-en-heuning",
+ "title": "Roomkaas met pekaneute en heuning",
+ "date": "2022-02-16T15:15:00",
+ "modified": "2022-03-18T15:17:04",
+ "excerpt": "Dit is nou ’n vinnige haas om uit n hoed te ruk vir die onverwagte gaste.",
+ "categories": [
+  311,
+  16
+ ],
+ "tags": [
+  355
+ ],
+ "featured": {
+  "alt": "Roomkaas met pekaneute en heuning",
+  "card": {
+   "src": "/media/uploads/2022/03/Roomkaas-met-pekaneute-en-heuning-e1647609299910-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Roomkaas-met-pekaneute-en-heuning-e1647609299910-760x820.jpg",
+   "width": 760,
+   "height": 820
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Roomkaas-met-pekaneute-en-heuning-e1647609299910-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Roomkaas met pekaneute en heuning - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Dit is nou ’n vinnige haas om uit n hoed te ruk vir die onverwagte gaste.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Roomkaas met pekaneute en heuning",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Roomkaas-met-pekaneute-en-heuning-e1647609299910-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Roomkaas met pekaneute en heuning"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1 houer Philadelphia roomkaas",
+     "125 ml pekanneute, gerooster",
+     "100 ml heuning",
+     "growwe sout"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Rooster die pekanneute in ’n pan en laat dit afkoel.",
+     "Sit die kaas op ’n mooi bord en gooi die heuning en pekanneute bo-oor.",
+     "Strooi ’n klein bietjie growwe sout oor."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 21047,
+   "parent": 19951,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2025-10-16T09:00:18",
+   "html": "<p>Dit is op die blog</p>"
+  },
+  {
+   "id": 19951,
+   "parent": 0,
+   "author": "Maritha Garman",
+   "avatar": "https://secure.gravatar.com/avatar/806467356412c220bfd46515346aac3d8a3aeb5127fdd4f22f7923350baf0e5f?s=96&d=mm&r=g",
+   "date": "2025-09-16T00:54:31",
+   "html": "<p>Resep pepperment crisp tert</p>"
+  }
+ ]
+}

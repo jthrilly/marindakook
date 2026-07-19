@@ -1,0 +1,123 @@
+{
+ "id": 6977,
+ "slug": "konfyttert-met-belee-cheddarkaas",
+ "title": "Konfyttert met beleë cheddarkaas",
+ "date": "2022-03-04T09:17:11",
+ "modified": "2022-03-18T15:13:53",
+ "excerpt": "Nou kyk hier het Jenny vir my ‘n ding geleer. Dit is nou een van my gunstelinge terte in die hele wereld.",
+ "categories": [
+  1
+ ],
+ "tags": [
+  369,
+  368
+ ],
+ "featured": {
+  "alt": "Konfyttert met beleë cheddarkaas",
+  "card": {
+   "src": "/media/uploads/2022/03/Konfyttert-2-760x760.png",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Konfyttert-2-760x784.png",
+   "width": 760,
+   "height": 784
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Konfyttert-2-150x150.png",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "closed",
+ "seo": {
+  "title": "Konfyttert met beleë cheddarkaas - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Nou kyk hier het Jenny vir my ‘n ding geleer.&nbsp; Dit is nou een van my gunstelinge terte in die hele wereld.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Konfyttert met beleë cheddarkaas",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Konfyttert-2-800x530.png",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Konfyttert met beleë cheddarkaas"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "200 g meel",
+     "10 ml versiersuiker",
+     "100 g botter, yskoud en in blokkies gesny",
+     "1 groot eiergeel",
+     "10 ml yskoue water",
+     "500 ml  appelkooskonfyt"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Sif die meel en versiersuiker in ’n mengbak.",
+     "Vryf die botter met die vingers in totdat dit soos nat sand lyk.",
+     "Klits die eiergeel en yskoue water in ’n beker.",
+     "Maak ’n gaatjie in die middel van die meel en werk die eiermengsel in totdat dit ’n deeg vorm.",
+     "Vorm die deeg in ’n bal en maak toe met kleefplastiek. Los dit vir ten minste 30 minute in die yskas",
+     "Hou &#8216;n kwart van die deeg eenkant om bo-oor te rasper.Rol die res van die deeg uit op ’n oppervlak wat liggies met meel bestrooi is.",
+     "Sit dit oor die rolstok en laat dit gly in ’n gesmeerde losboomtertpan.",
+     "Druk die deeg vas met die hande en sny die kante af.",
+     "Sit dit weer vir ’n uur in die yskas.",
+     "Bak die tertkors blind teen 190 °C vir 10 minute.",
+     "Smeer die konfyt in die tertkors en rasper die orige deeg bo-oor.   Bak vir 30 minute, of totdat die konfyt in die tertkors gestol het.",
+     "Geniet dit met beleë cheddarkaas."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

@@ -1,0 +1,98 @@
+{
+ "id": 7153,
+ "slug": "ryspoeding",
+ "sourceHash": "1f3d6a80e866791901a756ba705775aecfc472d3",
+ "title": "Rice Pudding",
+ "excerpt": "For Lize Beekman I took ordinary rice pudding and gave it a different flavour. Do give it a try.",
+ "seo": {
+  "title": "Rice Pudding - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">For Lize Beekman I took ordinary rice pudding and gave it a different flavour. Do give it a try.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Rice Pudding",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/04/Ryspoeding-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Ryspoeding"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "30 ml butter",
+     "330 ml rice",
+     "2 tins coconut cream",
+     "125 ml sugar",
+     "1 vanilla pod or 5 ml vanilla extract",
+     "1 cinnamon stick",
+     "3 cardamom seeds, crushed",
+     "pinch of salt",
+     "slab of chocolate of your choice – can be milk chocolate, dark, light or mixed"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Melt the butter in a saucepan and stir-fry the rice until all the grains are glossy.",
+     "Add all the rest of the ingredients except the chocolate.",
+     "Now you have to stir continuously – it can easily catch and burn.",
+     "After 20 minutes it should have a creamy texture. Taste it. The grains shouldn't be mushy.",
+     "Take out the vanilla pod, cardamom and cinnamon sticks and throw them away.",
+     "Take it off the stove and stir in the chocolate."
+    ]
+   },
+   {
+    "title": "Syrup",
+    "steps": [
+     "Put 125 g berries (any kind), 100 ml sugar and 100 ml water in a microwave-safe dish.",
+     "Microwave for about 5 minutes – stir and mash the berries a little.",
+     "Now spoon the rice pudding into a nice dish and spoon the berries on top."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

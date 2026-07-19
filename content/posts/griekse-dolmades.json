@@ -1,0 +1,141 @@
+{
+ "id": 7532,
+ "slug": "griekse-dolmades",
+ "title": "Griekse Dolmades",
+ "date": "2024-10-10T22:23:33",
+ "modified": "2024-10-11T07:39:48",
+ "excerpt": "",
+ "categories": [
+  33,
+  16
+ ],
+ "tags": [
+  394,
+  330
+ ],
+ "featured": {
+  "alt": "Dolmades",
+  "card": {
+   "src": "/media/uploads/2024/10/Dolmades-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2024/10/Dolmades-760x900.jpg",
+   "width": 760,
+   "height": 900
+  },
+  "thumb": {
+   "src": "/media/uploads/2024/10/Dolmades-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Griekse Dolmades - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<p class=\"wp-block-paragraph\"></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"210\" height=\"258\" src=\"/media/uploads/2024/10/spekko-rice-product-saman-white.png\" alt class=\"wp-image-7534\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Griekse Dolmades",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2024/10/Dolmades-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Griekse Dolmades"
+  },
+  "courses": [
+   "Bykosse, Voorgereg"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "45",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "59",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": "Vir vulsel",
+    "items": [
+     "90 ml olyfolie",
+     "1 ui fyngekap",
+     "½ bossie grasuie fyngekap",
+     "2 knoffelhuisies, baie fyngekap",
+     "250 ml Spekko-witrys",
+     "30 ml dill fyngekap",
+     "30 ml kruisement (‘mint’) fyngekap",
+     "60 ml pietersielie fyngekap",
+     "Zest van 1 suurlemoen",
+     "15 ml suurlemoensap",
+     "Sout en peper na smaak",
+     "5 ml neutmuskaat",
+     "90 ml  kappertjiesaad –(‘capers’),  fyngekap",
+     "Wingerdblare in ‘n soutoplossing",
+     "1 suurlemoen, dun gesny"
+    ]
+   },
+   {
+    "title": "Vir kook",
+    "items": [
+     "500 ml water",
+     "60 ml olyfolie",
+     "60 ml suurlemoensap"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Braai die ui in 60 ml olie vir 5 minute.  Voeg die knoffel en sprietuie by en braai vir nog 5 minute.",
+     "Spoel die rys goed af en braai vir 2 minute saam met die uie",
+     "Voeg die kruie, suurlemoenskil, ‘capers’, sout en peper en neutmuskaat by.",
+     "Voeg 625 ml water by en kook tot al die water geabsorbeer is. Laat die rys afkoel.",
+     "Spoel die blare af onder lopende water.",
+     "In ‘n pot voer die bodem uit met blare en pak die suurlemoenskywe bo op.  Dit keer dat die dolmades sal vassit onder in die pot.",
+     "Knip die harde stingel uit.",
+     "Sit die blaar op ‘n plat oppervlakte en plaas van die rys op die breë kant.  Vou die blaar toe soos ‘n buritto.",
+     "Pak jou opgerolde blare styf langs mekaar in die pot.  Jy kan lagies pak.",
+     "In ‘n beker meng 500 ml kookwater, 60 ml olyfolie en 90 ml suurlemoensap.  Gooi dit oor die gerolde wingerdblare in die pot.  Dit moet dit net-net bedek.",
+     "Sit ‘n bord of iets swaar oor die dolmades en laat dit saggies prut vir",
+     "15-20 minute.  Laat dit afkoel"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

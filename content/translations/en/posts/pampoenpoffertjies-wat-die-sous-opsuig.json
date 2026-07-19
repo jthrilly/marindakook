@@ -1,0 +1,106 @@
+{
+ "id": 1187,
+ "slug": "pampoenpoffertjies-wat-die-sous-opsuig",
+ "sourceHash": "285119bb7724f39857310ad6d4ad2432e6934fdc",
+ "title": "Pumpkin Fritters – that soak up the syrup",
+ "excerpt": "My mother always made these pumpkin fritters for us out of Wenresepte. It felt like you were allowed to eat pudding and food at the same time. My mother has now been gone for a good while and I miss her today. So I'm making these fritters in honour of my mother, Sarietha Uys. It's soooooooo delicious.",
+ "seo": {
+  "title": "Pumpkin Fritters - that soak up the syrup - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">My mother always made these pumpkin fritters for us out of Wenresepte. &nbsp;It felt like you were allowed to eat pudding and food at the same time. &nbsp;My mother has now been gone for a good while and I miss her today. &nbsp;So I'm making these fritters in honour of my mother, Sarietha Uys. It's soooooooo delicious.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"/media/uploads/2017/10/pampoenpoffertjies-113.jpg\"><img src=\"/media/uploads/2017/10/pampoenpoffertjies-113-1024x768.jpg\" alt=\"pampoenpoffertjies 113\" class=\"wp-image-1198\" loading=\"lazy\"></a></figure></div>\n\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Pumpkin Fritters – that soak up the syrup",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2017/10/featured-pampoenpoffertjies-102-1024x768.jpg",
+   "srcset": "/media/uploads/2017/10/featured-pampoenpoffertjies-102-1024x768.jpg 1024w, /media/uploads/2017/10/featured-pampoenpoffertjies-102-600x450.jpg 600w, /media/uploads/2017/10/featured-pampoenpoffertjies-102-300x225.jpg 300w, /media/uploads/2017/10/featured-pampoenpoffertjies-102-768x576.jpg 768w, /media/uploads/2017/10/featured-pampoenpoffertjies-102.jpg 1500w",
+   "width": 800,
+   "height": 600,
+   "alt": "Pampoenpoffertjies - wat die sous opsuig"
+  },
+  "courses": [
+   "Side dishes, Vegetables"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": "Fritter batter",
+    "items": [
+     "750 ml cooked pumpkin, mashed",
+     "2 eggs",
+     "5 ml salt",
+     "500 ml self-raising flour",
+     "15 ml baking powder",
+     "500 ml oil for frying the fritters"
+    ]
+   },
+   {
+    "title": "Syrup",
+    "items": [
+     "500 ml sugar",
+     "250 ml water",
+     "125 ml milk",
+     "30 ml butter",
+     "salt",
+     "10 ml cornflour/ mazina"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Beat the cooked, mashed pumpkin, eggs and salt together.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pampoenpoffertjies-037.jpg\" class=\"direction-step-image\" alt title=\"pampoenpoffertjies-037\">",
+     "Mix in the baking powder and self-raising flour.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pampoenpoffertjies-048.jpg\" class=\"direction-step-image\" alt title=\"pampoenpoffertjies-048\">",
+     "Heat the oil in a pan and spoon spoonfuls of the batter into the hot oil.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pampoenpoffertjies-052.jpg\" class=\"direction-step-image\" alt title=\"pampoenpoffertjies-052\">",
+     "Turn over when browned and drain on kitchen paper in a bowl.",
+     "Keep it warm.<img loading=\"lazy\" width=\"1125\" height=\"1500\" src=\"/media/uploads/2017/10/pampoenpoffertjies-071.jpg\" class=\"direction-step-image\" alt title=\"pampoenpoffertjies-071\">",
+     "Now make the syrup. I made my syrup in the microwave, but you can also make it in a pot on the stove.",
+     "Microwave the sugar, milk, water and butter for 5 minutes. Stir until the sugar has dissolved.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pampoenpoffertjies-077.jpg\" class=\"direction-step-image\" alt title=\"pampoenpoffertjies-077\">",
+     "Mix the cornflour with a little bit of water until smooth.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pampoenpoffertjies-080.jpg\" class=\"direction-step-image\" alt title=\"pampoenpoffertjies-080\">",
+     "Stir it into the sugar mixture and microwave for another 2 minutes.",
+     "Pour the warm syrup over the warm fritters.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/pampoenpoffertjies-095.jpg\" class=\"direction-step-image\" alt title=\"pampoenpoffertjies-095\">"
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "This is one of the tastiest dishes ever recorded in our food history. You might just sit and eat the whole bowl by yourself&#8230;"
+  ],
+  "videoHtml": null
+ }
+}

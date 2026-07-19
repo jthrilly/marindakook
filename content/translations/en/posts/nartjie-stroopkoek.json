@@ -1,0 +1,102 @@
+{
+ "id": 6345,
+ "slug": "nartjie-stroopkoek",
+ "sourceHash": "db42b2b0826f01ff0384b0adf378db27f582d0fb",
+ "title": "Naartjie Syrup Cake",
+ "excerpt": "This cake is moist, moist, moist!!!!!!!!! You get the delicious citrus flavour of the naartjie. It isn't a tall cake. It's a flattish cake that looks lovely with coffee or tea. Warning: you won't be able to stop eating it. I decorated mine simply with dried citrus slices and I …",
+ "seo": {
+  "title": "Naartjie Syrup Cake - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">This cake is moist, moist, moist!!!!!!!!! You get the delicious citrus flavour of the naartjie.  It isn't a tall cake.  It's a flattish cake that looks lovely with coffee or tea. Warning: you won't be able to stop eating it. I decorated mine simply with dried citrus slices and I sifted a light dusting of icing sugar over it once the cake had cooled.</p>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2021/09/IMG_5267-2-768x1024.jpg\" alt class=\"wp-image-6349\" srcset=\"/media/uploads/2021/09/IMG_5267-2-768x1024.jpg 768w, /media/uploads/2021/09/IMG_5267-2-600x800.jpg 600w, /media/uploads/2021/09/IMG_5267-2-225x300.jpg 225w, /media/uploads/2021/09/IMG_5267-2-1152x1536.jpg 1152w, /media/uploads/2021/09/IMG_5267-2-750x1000.jpg 750w, /media/uploads/2021/09/IMG_5267-2-380x507.jpg 380w, /media/uploads/2021/09/IMG_5267-2-760x1013.jpg 760w, /media/uploads/2021/09/IMG_5267-2-800x1067.jpg 800w, /media/uploads/2021/09/IMG_5267-2.jpg 1536w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Naartjie Syrup Cake",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2021/09/IMG_5262-4-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Naartjie Stroopkoek"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": "Cake",
+    "items": [
+     "2 naartjies",
+     "125 g soft butter",
+     "125 ml castor sugar",
+     "2 eggs",
+     "375 ml self-raising flour",
+     "2.5 ml baking soda",
+     "125 ml buttermilk*"
+    ]
+   },
+   {
+    "title": "Naartjie syrup",
+    "items": [
+     "125 ml sugar",
+     "125 ml naartjie juice",
+     "60 g butter"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Preheat the oven to 180 C and grease a small loaf tin or a cake tin. I always put a piece of baking paper in the bottom so the cake comes out easily.",
+     "Squeeze all the juice out of the naartjies and set it aside. Put the naartjies, skin and all, from which the juice was squeezed into a food processor and blitz to a pulp.",
+     "Cream the butter and the sugar and then beat in the eggs one at a time.",
+     "Beat in half the flour, baking soda and buttermilk. Now beat in the rest of the flour and buttermilk.",
+     "Lastly, beat in the naartjie pulp.",
+     "Pour the batter into your greased loaf tin/cake tin.",
+     "Bake for roughly 40 minutes. Test whether the cake is done.",
+     "Boil all the ingredients for the syrup together and make sure the sugar has dissolved. When the cake comes out of the oven, poke holes into it and pour the hot syrup over the cake."
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "* If you don't have buttermilk, use ordinary milk and add 10 ml lemon juice or vinegar. Let it stand for 10 minutes outside the fridge"
+  ],
+  "videoHtml": null
+ }
+}

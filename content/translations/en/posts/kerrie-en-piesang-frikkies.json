@@ -1,0 +1,120 @@
+{
+ "id": 6650,
+ "slug": "kerrie-en-piesang-frikkies",
+ "sourceHash": "1a5fd1dbad3dd53cd9f5dc76d1b8a776ee40d7b0",
+ "title": "Curry-and-Banana Meatballs",
+ "excerpt": "Curry-and-Banana Meatballs",
+ "seo": {
+  "title": "Curry-and-Banana Meatballs - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Curry-and-Banana Meatballs",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2020/07/MMM4-EP7-Frikkies-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Kerrie-en-piesang-frikkies"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": "Meatballs",
+    "items": [
+     "2 slices bread soaked in 250 ml milk",
+     "1 kg minced beef",
+     "1 egg",
+     "5 ml ground nutmeg",
+     "2,5 ml ground cloves",
+     "2,5 ml ground ginger",
+     "5 ml chilli powder",
+     "salt and pepper to taste",
+     "flour"
+    ]
+   },
+   {
+    "title": "Sauce",
+    "items": [
+     "3 medium onions, finely chopped",
+     "15 ml cake flour",
+     "90ml vinegar",
+     "250 ml water",
+     "20 ml curry powder",
+     "10 ml turmeric",
+     "40 ml apricot jam",
+     "6 bananas, finely sliced",
+     "15 ml sugar",
+     "salt and pepper to taste",
+     "coconut"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": "Meatballs",
+    "steps": [
+     "Set the oven to 180ºC.",
+     "Crumble the bread and mix the ingredients well with the meat.",
+     "Grease an oven dish with butter.",
+     "Shape the meatballs and roll them in the flour.",
+     "Pack the meatballs into a dish."
+    ]
+   },
+   {
+    "title": "Sauce",
+    "steps": [
+     "Fry the onions light brown in oil.",
+     "Stir in the flour.",
+     "Slowly stir in the vinegar and water.",
+     "Add the curry powder, turmeric, jam, sugar, salt, pepper and bananas.",
+     "Let it cook for 5 minutes.",
+     "Pour the sauce over the meatballs and sprinkle coconut on top.",
+     "Bake at 180ºC for about 1 hour.",
+     "Serve with yoghurt bread and Curried Onion Sambals"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

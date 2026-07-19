@@ -1,0 +1,109 @@
+{
+ "id": 341,
+ "slug": "bobotie",
+ "sourceHash": "0d4bafdf5edae3676d038051471f5ddcfeed3688",
+ "title": "Bobotie for dinner",
+ "excerpt": "I grew up with bobotie. My mother served it to us with peas and yellow rice. Usually there was stewed fruit served as a side. The recipe I'm giving today is the basic recipe. There are various twists to make it even more interesting. I'll …",
+ "seo": {
+  "title": "Bobotie for dinner - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">I grew up with bobotie.&nbsp; My mother served it to us with peas and yellow rice.&nbsp; Usually there was&nbsp; stewed fruit served as a side.&nbsp; The recipe I'm giving today is the basic recipe.&nbsp; There are various twists to make it even more interesting .&nbsp; I'll also include those at the bottom of the recipe.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"/media/uploads/2017/10/bobotie-blog-0221.jpg\"><img src=\"/media/uploads/2017/10/bobotie-blog-0221-1024x768.jpg\" alt=\"bobotie blog 022\" class=\"wp-image-349\" loading=\"lazy\"></a></figure></div>\n\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Bobotie for dinner",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2017/10/featured-bobotie-blog-018-1024x768.jpg",
+   "srcset": "/media/uploads/2017/10/featured-bobotie-blog-018-1024x768.jpg 1024w, /media/uploads/2017/10/featured-bobotie-blog-018-600x450.jpg 600w, /media/uploads/2017/10/featured-bobotie-blog-018-300x225.jpg 300w, /media/uploads/2017/10/featured-bobotie-blog-018-768x576.jpg 768w, /media/uploads/2017/10/featured-bobotie-blog-018.jpg 1500w",
+   "width": 800,
+   "height": 600,
+   "alt": "Bobotie vir ete"
+  },
+  "courses": [
+   "Main dish, Red meat"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 onions finely sliced",
+     "15 ml oil to fry the onions in",
+     "2 slices of bread",
+     "100 ml milk",
+     "salt and pepper to taste",
+     "80 ml apricot jam",
+     "40 ml curry powder",
+     "15 ml turmeric",
+     "5 ml ground cumin (if you have it, otherwise leave it out)",
+     "30 ml vinegar",
+     "3 lemon or bay leaves",
+     "1kg beef mince"
+    ]
+   },
+   {
+    "title": "Topping",
+    "items": [
+     "1 egg",
+     "Beaten in 60 ml milk"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Put the bread in a deep bowl and pour the 100 ml milk over the bread.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/bobotie-blog-001.jpg\" class=\"direction-step-image\" alt title=\"bobotie-blog-001\">",
+     "Fry the onions until glassy in a little oil on the stove.",
+     "Put all the rest of the ingredients into a mixing bowl and mix thoroughly.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/bobotie-blog-003.jpg\" class=\"direction-step-image\" alt title=\"bobotie-blog-003\">",
+     "Squeeze the milk out of the bread and mix it together with your onions into the meat mixture.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/bobotie-blog-005.jpg\" class=\"direction-step-image\" alt title=\"bobotie-blog-005\">",
+     "Spoon it into a greased oven dish.",
+     "Mix your topping (1 beaten egg and the 60 ml milk) and pour it over your meat in the oven dish.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/bobotie-blog-013.jpg\" class=\"direction-step-image\" alt title=\"bobotie-blog-013\">",
+     "Place the lemon leaves on top of everything.",
+     "Bake for 60 minutes at 190 degrees celsius.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/bobotie-blog-018.jpg\" class=\"direction-step-image\" alt title=\"bobotie-blog-018\">"
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "What you can add: You can stir 125 ml raisins or chopped dried apricots into your meat mixture.",
+   "You can sprinkle flaked almonds over your meat mixture.",
+   "You can mash pie apples and layer them whole over the meat. Then, on top of the apples, crumble 125ml grated cheese and 200ml flour and sprinkle that over.",
+   "Enjoy your bobotie with rice and vegetables. Always a winner, and it will feed quite a few people."
+  ],
+  "videoHtml": null
+ }
+}

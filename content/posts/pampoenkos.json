@@ -1,0 +1,232 @@
+{
+ "id": 7238,
+ "slug": "pampoenkos",
+ "title": "Pampoenkos",
+ "date": "2022-07-09T15:20:20",
+ "modified": "2022-07-09T15:24:08",
+ "excerpt": "Ek het die pampoenkos gemaak op aandrang van my kleindogter Prinses Lea.",
+ "categories": [
+  312
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Pampoenkos",
+  "card": {
+   "src": "/media/uploads/2022/07/IMG_3297-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/07/IMG_3297-760x1040.jpg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/07/IMG_3297-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Pampoenkos - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Ek het die pampoenkos gemaak op aandrang van my kleindogter Prinses Lea.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2022/07/IMG_3295-768x1024.jpg\" alt class=\"wp-image-7240\" srcset=\"/media/uploads/2022/07/IMG_3295-768x1024.jpg 768w, /media/uploads/2022/07/IMG_3295-600x800.jpg 600w, /media/uploads/2022/07/IMG_3295-225x300.jpg 225w, /media/uploads/2022/07/IMG_3295-1152x1536.jpg 1152w, /media/uploads/2022/07/IMG_3295-750x1000.jpg 750w, /media/uploads/2022/07/IMG_3295-380x507.jpg 380w, /media/uploads/2022/07/IMG_3295-760x1013.jpg 760w, /media/uploads/2022/07/IMG_3295-800x1067.jpg 800w, /media/uploads/2022/07/IMG_3295.jpg 1440w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Pampoenkos",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/07/IMG_3297-800x530.jpg",
+   "srcset": "/media/uploads/2022/07/IMG_3297-800x530.jpg 800w, /media/uploads/2022/07/IMG_3297-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Pampoenkos"
+  },
+  "courses": [
+   "Maalvleis"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "25",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500g beesmaalvleis",
+     "1 x 690 g bottel gekoopte tamatie- pastasous van jou keuse",
+     "750 ml gaarrys ( 3 koppies)",
+     "750 ml gaar pampoen fyn gedruk",
+     "20 ml olie",
+     "1 ui fyngekap",
+     "20 ml botter",
+     "2,5 ml fyn kaneel",
+     "sout en peper"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Stel die oond op 180C en smeer &#8216;n vierkantige oondbak.",
+     "Braai die ui liggies in die olie.  Voeg jou maalvleis by en braai tot dit begin kleur kry.",
+     "Gooi die pastasous by die vleis en kook vir 10-15 minute tot dit alles begin dik word.  Sout en peper na smaak Hou dit eenkant tot jy dit nodig kry.",
+     "Terwyl die pampoen warm is, roer die kaneel, botter en sout en peper by.",
+     "Plaas jou rys onder in die oondbak.",
+     "Skep die pampoen op die ry.",
+     "Skep die maalvleis op die pampoen.",
+     "Bak in die oond vir 25 minute."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 11831,
+   "parent": 11765,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2025-04-29T11:32:39",
+   "html": "<p>Dit is heerlik.  Lekker eet.</p>"
+  },
+  {
+   "id": 11765,
+   "parent": 0,
+   "author": "Anzelle",
+   "avatar": "https://secure.gravatar.com/avatar/3c790f0b41636775952482b829d51a99e4eafa4ee6438de1b03db478d2c4618e?s=96&d=mm&r=g",
+   "date": "2025-04-27T13:18:02",
+   "html": "<p>Sjoe! Dit lyk nou soos die perfekte Sondagkos. Ek gaan dit sommer vandag maak. Mal oor jou resepte. Het so 2 Sondae terug jou tamatiebredie ook gemaak. Heerlik!</p>"
+  },
+  {
+   "id": 9038,
+   "parent": 8928,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-12-11T10:16:05",
+   "html": "<p>Dit kom met liefde uit my hart.</p>"
+  },
+  {
+   "id": 8928,
+   "parent": 0,
+   "author": "Leona Reiners",
+   "avatar": "https://secure.gravatar.com/avatar/5bc8369dfb89130798b1470831a4600021fd950ecd441ba95c99368267826a1e?s=96&d=mm&r=g",
+   "date": "2024-11-30T07:50:20",
+   "html": "<p>Baie dankie vir al die heerlike resepte!</p>"
+  },
+  {
+   "id": 5947,
+   "parent": 5935,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-07-17T10:16:26",
+   "html": "<p>Jy moet elke happie geniet.</p>"
+  },
+  {
+   "id": 5935,
+   "parent": 5392,
+   "author": "Duifie",
+   "avatar": "https://secure.gravatar.com/avatar/f5d9b4041e5374202ea9110eabb65b75b506a5e4887ba157b3204ff684f80f23?s=96&d=mm&r=g",
+   "date": "2023-07-08T22:24:08",
+   "html": "<p>Baie dankie Marinda, pampoe kos gaan ek verseker maak. En appelkooskonfyt.🌹</p>"
+  },
+  {
+   "id": 5836,
+   "parent": 5821,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-05-27T09:33:21",
+   "html": "<p>Geniet.  Net liefde die deel.</p>"
+  },
+  {
+   "id": 5821,
+   "parent": 0,
+   "author": "Zelna",
+   "avatar": "https://secure.gravatar.com/avatar/7b2197ca61f7ec133d652805e7bb18205bda0942817f515468ac48df422040a5?s=96&d=mm&r=g",
+   "date": "2023-05-19T20:13:24",
+   "html": "<p>Alles lyk baie lekker. Ek is nou moeg vir my resepte, en gaan beslis joune probeer!<br>\nDankie dat jy jou talent met die land se mense deel.<br>\nBaie seën vir jou Marinda!</p>"
+  },
+  {
+   "id": 5392,
+   "parent": 5375,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-01-26T14:32:29",
+   "html": "<p>Dit is verby lekker.<br>\nGeniet<br>\nMarinda</p>"
+  },
+  {
+   "id": 5375,
+   "parent": 0,
+   "author": "Monica",
+   "avatar": "https://secure.gravatar.com/avatar/e8bfaab76c0f18805bc8b0149ade92abd8000f12c122f9e6ca8669024ed9a754?s=96&d=mm&r=g",
+   "date": "2023-01-25T16:51:13",
+   "html": "<p>Dit lyk heerlik sal dit beslis prober.</p>"
+  },
+  {
+   "id": 4849,
+   "parent": 4807,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-11-04T06:33:49",
+   "html": "<p>Ek vervang ook met wat in die huis is.</p>"
+  },
+  {
+   "id": 4807,
+   "parent": 0,
+   "author": "Ludi",
+   "avatar": "https://secure.gravatar.com/avatar/6ffef4611a7c17ee517269149571bda08e6e6e9113e6cbc5dc0ac5a9ca80dfcb?s=96&d=mm&r=g",
+   "date": "2022-10-28T15:40:39",
+   "html": "<p>Pampoenkoekies<br>\nPampoenfriters<br>\nOf selfs met butternut<br>\nDankie</p>"
+  },
+  {
+   "id": 4281,
+   "parent": 4278,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-07-12T11:24:13",
+   "html": "<p>Sanette, dis heerlik en maklik.  Jy kan die maalvleis geur net soos jy wil en so ook die pampoen.<br>\nLiefde<br>\nMarinda</p>"
+  },
+  {
+   "id": 4278,
+   "parent": 0,
+   "author": "Sanette",
+   "avatar": "https://secure.gravatar.com/avatar/020917b11fe49a65fea884a7aa65432066dd1ea2583d8e7b12fd77d0447b8efd?s=96&d=mm&r=g",
+   "date": "2022-07-12T01:22:27",
+   "html": "<p>Oe!hoe!!!! Hierdie Pampoenkos lyk darem altevol lekker, ek gaan dit sommer more maak!!!! Baie dankie Marinda Kook en Prinses Lea 🧡🧡🧡❤️❤️❤️</p>"
+  }
+ ]
+}

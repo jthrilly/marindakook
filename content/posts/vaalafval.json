@@ -1,0 +1,159 @@
+{
+ "id": 7000,
+ "slug": "vaalafval",
+ "title": "Vaalafval",
+ "date": "2022-03-10T14:45:21",
+ "modified": "2022-03-18T15:13:33",
+ "excerpt": "Afvaleters is ‘n groep op hulle eie. Jy hou van afval of jy kan dit nie weerstaan nie. Peter Veldsman wou vaal afval gehad het e nek het dit vir hom gemaak. Ek kon vir hom ook iets leer van afval . hy het al die orige afval huistoe geneem.",
+ "categories": [
+  308
+ ],
+ "tags": [
+  129
+ ],
+ "featured": {
+  "alt": "Vaalafval",
+  "card": {
+   "src": "/media/uploads/2022/03/Afval-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Afval-760x1040.jpg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Afval-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Vaalafval - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Afvaleters is ‘n groep op hulle eie.&nbsp; Jy hou van afval of jy kan dit nie weerstaan nie.&nbsp; Peter Veldsman wou vaal afval gehad het e nek het dit vir hom gemaak.&nbsp; Ek kon vir hom ook iets leer van afval .&nbsp; hy het al die orige afval huistoe geneem.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Vaalafval",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Afval-800x530.jpg",
+   "srcset": "/media/uploads/2022/03/Afval-800x530.jpg 800w, /media/uploads/2022/03/Afval-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Vaalafval"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1 skoon afval met pootjies, maag ens. (Delico s’n is na my mening die skoonste en beste)",
+     "4 skoon varkpootjies",
+     "500 ml water",
+     "90 ml asyn",
+     "1 ui in ringe gesny",
+     "2,5 ml swartpeper",
+     "4 heel naeltjies",
+     "2,5 ml fyn neut",
+     "2 lourierblare",
+     "6 wonderpeperkorrels",
+     "2,5 ml fyn koljander",
+     "20 ml suiker",
+     "4 skywe skaapnek",
+     "10 klein uitjies (baba-uitjies)",
+     "10 baba aartappeltjies, geskil"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Kook die afval, insluitend die varkpootjies, water, asyn, ui, swartpeper, naeltjies, neut, lourierblare, wonderpeper, fyn koljander en suiker, vir 2 tot 3 ure. (Hou die watervlak dop. Nie te veel water nie, dis nie sop nie. Die afval sal begin sag raak.)",
+     "Gooi die skaapnek by en kook vir nog 1 uur.",
+     "Sit die uitjies en aartappels by en kook tot dit sag is en die vleis van die bene af begin val.",
+     "Proe of dit na jou smaak is en pas aan indien nodig.",
+     "Bedien dit op witrys."
+    ]
+   }
+  ],
+  "notesTitle": "Notas",
+  "notes": [
+   "Dit is altyd lekker as die afval ’n bietjie kan staan totdat dit so lekker lymerig word."
+  ],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 6050,
+   "parent": 6029,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-09-06T12:51:08",
+   "html": "<p>Loer, op die blad is &#8216;n lekker kerrie afvalresep.</p>"
+  },
+  {
+   "id": 6029,
+   "parent": 0,
+   "author": "Lientjie",
+   "avatar": "https://secure.gravatar.com/avatar/7586ef05b804a9c3379c35ef186f2e72826c87e41eebfdd27b591caa1c56f56e?s=96&d=mm&r=g",
+   "date": "2023-08-22T07:46:56",
+   "html": "<p>Jou kos lyk als so lekker. Het jy dalk ‘n lekker kerrie afval resep vir my.</p>"
+  },
+  {
+   "id": 5984,
+   "parent": 5980,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-08-04T13:49:35",
+   "html": "<p>middag Wilita<br>\nJy kan vir my &#8216;n epos stuur dan stuur ek my nommer vir jou.<br>\n<a>marindakook@gmail.com</a></p>"
+  },
+  {
+   "id": 5980,
+   "parent": 0,
+   "author": "Wilita Malherbe",
+   "avatar": "https://secure.gravatar.com/avatar/71d68ee41a234d0829f3e31c2e63781bab7a11f82955deef8c3913cb8117a251?s=96&d=mm&r=g",
+   "date": "2023-08-03T21:45:15",
+   "html": "<p>Liewe Miranda, mag ek jou whatsapp asb? My nommer is 0824858478. Ek wil met jou gesels oor afval. Baie dankie. (Jammer ek pla)</p>"
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "id": 6026,
+ "slug": "lamskerrie",
+ "sourceHash": "eaa3e07e6212b8edb2991fcb371a52a415e9320d",
+ "title": "Lamb Curry",
+ "excerpt": "I made this lamb curry for Corné Krige. And he was so impressed with it that he asked me for the recipe. So then I decided to share it with you too.",
+ "seo": {
+  "title": "Lamb Curry - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">I made this lamb curry for Corné Krige. And he was so impressed with it that he asked me for the recipe. So then I decided to share it with you too.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img loading=\"lazy\" width=\"2048\" height=\"1695\" src=\"/media/uploads/2020/08/Lamskerrie.jpg\" alt class=\"wp-image-6027\" srcset=\"/media/uploads/2020/08/Lamskerrie.jpg 2048w, /media/uploads/2020/08/Lamskerrie-600x497.jpg 600w, /media/uploads/2020/08/Lamskerrie-300x248.jpg 300w, /media/uploads/2020/08/Lamskerrie-1024x848.jpg 1024w, /media/uploads/2020/08/Lamskerrie-768x636.jpg 768w, /media/uploads/2020/08/Lamskerrie-1536x1271.jpg 1536w, /media/uploads/2020/08/Lamskerrie-750x621.jpg 750w, /media/uploads/2020/08/Lamskerrie-380x315.jpg 380w, /media/uploads/2020/08/Lamskerrie-760x629.jpg 760w, /media/uploads/2020/08/Lamskerrie-800x662.jpg 800w\" sizes=\"auto, (max-width: 2048px) 100vw, 2048px\"></figure></div>\n\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Lamb Curry",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2020/08/Lamskerrie-800x530.jpg",
+   "srcset": "/media/uploads/2020/08/Lamskerrie-800x530.jpg 800w, /media/uploads/2020/08/Lamskerrie-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Lamskerrie"
+  },
+  "courses": [
+   "Red meat"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 onions sliced into rings<br>1.5kg lamb",
+     "30 ml oil",
+     "5 cloves garlic crushed",
+     "Thumb-sized piece of ginger, grated",
+     "10 ml coriander",
+     "10 ml cumin",
+     "10 ml chilli flakes",
+     "15 ml vinegar",
+     "15 ml sugar",
+     "15 ml apricot jam",
+     "15 ml turmeric",
+     "30 ml strong curry powder",
+     "1 star anise",
+     "3 cardamom pods, crushed",
+     "1 tin tomato puree",
+     "250 ml stock (1 stock cube dissolved in 250 ml boiling water)",
+     "Salt and pepper",
+     "3 potatoes cut into cubes"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Fry the onion lightly in oil",
+     "Now fry the garlic and ginger together with the onions",
+     "Fry the curry powder, turmeric, cumin and coriander together with the onion.",
+     "Add the meat and fry quickly to coat in the spices",
+     "Mix the rest of the ingredients and add to the meat mixture",
+     "Put the lid on and let it simmer for 45 minutes. Now taste to see if you want to add more chilli, sugar or vinegar.",
+     "Now add the potatoes.",
+     "Cook until the meat and potatoes are tender."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

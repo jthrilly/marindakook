@@ -1,0 +1,105 @@
+{
+ "id": 7611,
+ "slug": "eenskottel-hoender",
+ "sourceHash": "5f3dd6ade61f60308a23c6c1469a286bdf148b5e",
+ "excerpt": "One-pot chicken.",
+ "seo": {
+  "title": "One-pot chicken - Marinda Kook",
+  "description": null
+ },
+ "title": "One-pot chicken",
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2025/10/Eenskottel-hoender-1-768x1024.jpeg\" alt=\"One-pot chicken.\" class=\"wp-image-7616\" srcset=\"/media/uploads/2025/10/Eenskottel-hoender-1-768x1024.jpeg 768w, /media/uploads/2025/10/Eenskottel-hoender-1-225x300.jpeg 225w, /media/uploads/2025/10/Eenskottel-hoender-1-750x1000.jpeg 750w, /media/uploads/2025/10/Eenskottel-hoender-1-380x507.jpeg 380w, /media/uploads/2025/10/Eenskottel-hoender-1-760x1013.jpeg 760w, /media/uploads/2025/10/Eenskottel-hoender-1-800x1067.jpeg 800w, /media/uploads/2025/10/Eenskottel-hoender-1.jpeg 960w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2025/10/Eenskottel-hoender-2-768x1024.jpeg\" alt=\"One-pot chicken.\" class=\"wp-image-7615\" srcset=\"/media/uploads/2025/10/Eenskottel-hoender-2-768x1024.jpeg 768w, /media/uploads/2025/10/Eenskottel-hoender-2-225x300.jpeg 225w, /media/uploads/2025/10/Eenskottel-hoender-2-750x1000.jpeg 750w, /media/uploads/2025/10/Eenskottel-hoender-2-380x507.jpeg 380w, /media/uploads/2025/10/Eenskottel-hoender-2-760x1013.jpeg 760w, /media/uploads/2025/10/Eenskottel-hoender-2-800x1067.jpeg 800w, /media/uploads/2025/10/Eenskottel-hoender-2.jpeg 960w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2025/10/Eenskottel-hoender-3-768x1024.jpeg\" alt class=\"wp-image-7614\" srcset=\"/media/uploads/2025/10/Eenskottel-hoender-3-768x1024.jpeg 768w, /media/uploads/2025/10/Eenskottel-hoender-3-225x300.jpeg 225w, /media/uploads/2025/10/Eenskottel-hoender-3-750x1000.jpeg 750w, /media/uploads/2025/10/Eenskottel-hoender-3-380x507.jpeg 380w, /media/uploads/2025/10/Eenskottel-hoender-3-760x1013.jpeg 760w, /media/uploads/2025/10/Eenskottel-hoender-3-800x1067.jpeg 800w, /media/uploads/2025/10/Eenskottel-hoender-3.jpeg 960w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2025/10/Eenskottel-hoender-4-1024x768.jpeg\" alt=\"One-pot chicken.\" class=\"wp-image-7613\" srcset=\"/media/uploads/2025/10/Eenskottel-hoender-4-1024x768.jpeg 1024w, /media/uploads/2025/10/Eenskottel-hoender-4-300x225.jpeg 300w, /media/uploads/2025/10/Eenskottel-hoender-4-768x576.jpeg 768w, /media/uploads/2025/10/Eenskottel-hoender-4-750x563.jpeg 750w, /media/uploads/2025/10/Eenskottel-hoender-4-500x375.jpeg 500w, /media/uploads/2025/10/Eenskottel-hoender-4-380x285.jpeg 380w, /media/uploads/2025/10/Eenskottel-hoender-4-760x570.jpeg 760w, /media/uploads/2025/10/Eenskottel-hoender-4-800x600.jpeg 800w, /media/uploads/2025/10/Eenskottel-hoender-4.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "One-pot chicken",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2025/10/Eenskottel-hoender-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Eenskottel-hoender"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "1",
+      "unit": "hour"
+     },
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "8 chicken thighs",
+     "1 red onion, sliced into rings",
+     "1 tomato, sliced into rings",
+     "Olive oil",
+     "Salt",
+     "Pepper",
+     "500 ml Spekko Basmati rice (rinse and drain it)",
+     "2 garlic cloves, finely grated",
+     "4 x 250 ml boiling water",
+     "5 ml paprika",
+     "15 ml Baharat (buy it at Woolies)",
+     "30 ml date syrup or honey (buy date syrup at Woolies too)",
+     "50 ml tomato paste",
+     "Chopped parsley to finish"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Set the oven to 180°C",
+     "Sprinkle 10 ml coarse salt on the bottom of your pan.",
+     "Drizzle the pan with a thin layer of olive oil.",
+     "Pack the sliced red onion and tomato on the olive oil.",
+     "Spoon the drained rice onto the layer of tomato slices and onion.",
+     "Pack the chicken on top of the rice. Salt and pepper to taste.",
+     "Now for your sauce: mix the paprika, Baharat, date syrup, tomato paste, fine garlic and 125 ml olive oil together – it smells amazing.",
+     "Now stir in your boiling water and mix well. Spoon it evenly over the chicken.",
+     "Now: wet some baking paper and cover the chicken with the damp baking paper. Then cover with tinfoil so it can steam nicely.",
+     "After 90 minutes, uncover and let the chicken brown in the oven.",
+     "Finish off with chopped parsley.",
+     "Utterly delicious!!!!!!!!!!"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

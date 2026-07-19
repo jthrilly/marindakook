@@ -1,0 +1,64 @@
+{
+ "id": 6254,
+ "slug": "oats-en-piesang-muffins",
+ "sourceHash": "1d992a4119ab8cbaaa038c9dd2479c68b6a62128",
+ "title": "Oats and banana muffins",
+ "excerpt": "These oats and banana muffins are an absolute winner. Make them ahead of time. They keep for up to a week in a tupperware container in the fridge. Just take one out in the morning, pop it in the microwave and warm it up. Oat porridge and bananas have never been this good.",
+ "seo": {
+  "title": "Oats and banana muffins - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">These oats and banana muffins are an absolute winner. Make them ahead of time. They keep for up to a week in a <em>tupperware</em> container in the fridge. Just take one out in the morning, pop it in the microwave and warm it up. Oat porridge and bananas have never been this good. </p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-large\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2021/07/IMG_2717-2-768x1024.jpg\" alt class=\"wp-image-6258\" srcset=\"/media/uploads/2021/07/IMG_2717-2-768x1024.jpg 768w, /media/uploads/2021/07/IMG_2717-2-600x800.jpg 600w, /media/uploads/2021/07/IMG_2717-2-225x300.jpg 225w, /media/uploads/2021/07/IMG_2717-2-1152x1536.jpg 1152w, /media/uploads/2021/07/IMG_2717-2-750x1000.jpg 750w, /media/uploads/2021/07/IMG_2717-2-380x507.jpg 380w, /media/uploads/2021/07/IMG_2717-2-760x1013.jpg 760w, /media/uploads/2021/07/IMG_2717-2-800x1067.jpg 800w, /media/uploads/2021/07/IMG_2717-2.jpg 1536w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Oats and Banana muffins",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2021/07/IMG_2749-3.jpg",
+   "srcset": "/media/uploads/2021/07/IMG_2749-3.jpg 2048w, /media/uploads/2021/07/IMG_2749-3-600x570.jpg 600w",
+   "width": 558,
+   "height": 530,
+   "alt": "Oats en Piesang muffins"
+  },
+  "courses": [
+   "Baking"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "750 ml oats",
+     "375 ml milk",
+     "2 ripe bananas mashed",
+     "90 ml brown sugar",
+     "2 eggs lightly beaten",
+     "5 ml baking powder",
+     "5 ml ground cinnamon",
+     "5 ml vanilla essence",
+     "Pinch of salt",
+     "125 ml pecan nuts toasted and roughly chopped"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Heat the oven to 180C and spray or grease a muffin pan.",
+     "Mix everything except the pecan nuts well. Then fold in the pecan nuts.",
+     "Divide the mixture into your muffin pan and bake for 25 minutes.",
+     "Let it cool for 10 minutes in the pan. Eat it warm or cold."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

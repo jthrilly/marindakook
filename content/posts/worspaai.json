@@ -1,0 +1,119 @@
+{
+ "id": 5994,
+ "slug": "worspaai",
+ "title": "Worspaai",
+ "date": "2020-07-29T16:06:37",
+ "modified": "2022-02-13T14:58:04",
+ "excerpt": "",
+ "categories": [
+  11
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Worspaai",
+  "card": {
+   "src": "/media/uploads/2020/07/Worspaai7-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2020/07/Worspaai7-760x1040.jpg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2020/07/Worspaai7-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Worspaai - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\"></p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Worspaai",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2020/07/Worspaai7-800x530.jpg",
+   "srcset": "/media/uploads/2020/07/Worspaai7-800x530.jpg 800w, /media/uploads/2020/07/Worspaai7-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Worspaai"
+  },
+  "courses": [
+   "Rooivleis"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "600 g gevriesde kapokatappels (by Woolies) of maak jou eie",
+     "botter (opsioneel)",
+     "1 rol skilferkorsdeeg (puff pastry)",
+     "4 gaar varkworsies",
+     "20 ml melk (as dit nodig is)",
+     "sout en peper vir geur",
+     "250 ml gerasperde cheddarkaas"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Berei die gevriesde kapokaartappel soos aangedui op die pakkie en geur na smaak met sout en peper. As jy daarna voel, sit soveel botter by as wat jy lus is. Laat effens afkoel.",
+     "Op ‘n gesmeerde bakplaat vou jou deeg oop.",
+     "Smeer ‘n laag kapokaartappels",
+     "Pak die varkworsies in ‘n lang ry op die aartappels",
+     "Smeer nog kapokaartappels",
+     "Strooi die kaas oor",
+     "Vou nou die deeg toe soos ‘n wors",
+     "Sny kepe in die deeg",
+     "Verf met melk of eier",
+     "Bak vir 40 minute by 180C"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

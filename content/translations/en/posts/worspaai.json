@@ -1,0 +1,94 @@
+{
+ "id": 5994,
+ "slug": "worspaai",
+ "sourceHash": "c3458b92ebb04b3d12fa6e2bce148836384069b6",
+ "title": "Sausage Roll Pie",
+ "excerpt": "Sausage Roll Pie",
+ "seo": {
+  "title": "Sausage Roll Pie - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\"></p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Sausage Roll Pie",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2020/07/Worspaai7-800x530.jpg",
+   "srcset": "/media/uploads/2020/07/Worspaai7-800x530.jpg 800w, /media/uploads/2020/07/Worspaai7-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Worspaai"
+  },
+  "courses": [
+   "Red meat"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "600 g frozen mashed potato (from Woolies) or make your own",
+     "butter (optional)",
+     "1 roll puff pastry",
+     "4 cooked pork sausages",
+     "20 ml milk (if needed)",
+     "salt and pepper to taste",
+     "250 ml grated cheddar cheese"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Prepare the frozen mashed potato as directed on the packet and season to taste with salt and pepper. If you feel like it, add as much butter as you like. Let it cool slightly.",
+     "Unroll your pastry onto a greased baking tray.",
+     "Spread a layer of mashed potato",
+     "Arrange the sausages in a long row on the potato",
+     "Spread more mashed potato",
+     "Sprinkle the cheese over",
+     "Now fold the pastry closed like a sausage",
+     "Cut slits in the pastry",
+     "Brush with milk or egg",
+     "Bake for 40 minutes at 180C"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

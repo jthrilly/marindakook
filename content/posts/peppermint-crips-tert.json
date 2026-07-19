@@ -1,0 +1,119 @@
+{
+ "id": 7042,
+ "slug": "peppermint-crips-tert",
+ "title": "Peppermint Crips-tert",
+ "date": "2022-02-16T15:19:00",
+ "modified": "2022-03-18T15:20:50",
+ "excerpt": "In elkeen van ons se grootwordhuise is daar ‘n Peppermint Crisp-tert. Albert Maritz het ‘n soettand en het gevra dat ek dié tert vir hom maak.",
+ "categories": [
+  8
+ ],
+ "tags": [
+  94
+ ],
+ "featured": {
+  "alt": "Peppermint Crips-tert",
+  "card": {
+   "src": "/media/uploads/2022/03/Peppermint-Crisp-tert-e1647609505573-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Peppermint-Crisp-tert-e1647609505573-760x844.jpg",
+   "width": 760,
+   "height": 844
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Peppermint-Crisp-tert-e1647609505573-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Peppermint Crips-tert - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">In elkeen van ons se grootwordhuise is daar ‘n Peppermint Crisp-tert.&nbsp; Albert Maritz het ‘n soettand en het gevra dat ek dié tert vir hom maak.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Peppermint Crips-tert",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Peppermint-Crisp-tert-e1647609505573-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Peppermint Crips-tert"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 ml room (“whipping cream”)",
+     "3 blikkies caramel",
+     "2 Nestlé Peppermint Crisp-sjokolades (150 g elk), fyngebreek",
+     "2 pakkies Tennisbeskuitjies",
+     "2 Nestlé Aero Peppermint-sjokolades (85 g elk)",
+     "vars mentblare"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Klits die room tot sagtepuntstadium.",
+     "Maak die karamel sag in ’n bak deur dit met ’n lepel te roer.",
+     "Roer die karamel by die room.",
+     "Vou die Peppermint Crisp-sjokolade in.",
+     "Sit een pakkie Tennisbeskuitjies onderin ’n gesmeerde bak en smeer die helfte van die mengsel oor.",
+     "Plaas nog ’n lagie Tennisbeskuitjies bo-op en smeer die orige mengsel oor.",
+     "Breek die Aero in growwe stukke en strooi bo-oor.",
+     "Maak dit toe met kleefplastiek en los oornag in die yskas.",
+     "Rond af met die mentblaartjies."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

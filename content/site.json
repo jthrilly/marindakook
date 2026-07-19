@@ -1,0 +1,148 @@
+{
+ "wpUrl": "https://marindakook.co.za",
+ "name": "Marinda Kook",
+ "tagline": "Maklike Suid-Afrikaanse Resepte",
+ "logo": {
+  "src": "/media/uploads/2022/02/Artboard-1@2x-750x246.png",
+  "srcset": "/media/uploads/2022/02/Artboard-1@2x-750x246.png 750w, /media/uploads/2022/02/Artboard-1@2x-600x196.png 600w, /media/uploads/2022/02/Artboard-1@2x-300x98.png 300w, /media/uploads/2022/02/Artboard-1@2x-1024x335.png 1024w, /media/uploads/2022/02/Artboard-1@2x-768x251.png 768w, /media/uploads/2022/02/Artboard-1@2x-380x124.png 380w, /media/uploads/2022/02/Artboard-1@2x-760x249.png 760w, /media/uploads/2022/02/Artboard-1@2x-800x262.png 800w, /media/uploads/2022/02/Artboard-1@2x.png 1295w",
+  "width": 646,
+  "height": 212
+ },
+ "nav": {
+  "top": [
+   {
+    "label": "Oor My",
+    "path": "/oor-my/"
+   },
+   {
+    "label": "Besprekings en Kookboeke",
+    "path": "/optredes/"
+   }
+  ],
+  "main": [
+   {
+    "label": "Tuis",
+    "path": "/"
+   },
+   {
+    "label": "Voorgereg",
+    "path": "/category/voorgereg/"
+   },
+   {
+    "label": "Hoofgereg",
+    "path": "/category/hoofgereg/"
+   },
+   {
+    "label": "Nagereg",
+    "path": "/category/nagereg/"
+   },
+   {
+    "label": "Bykosse",
+    "path": "/category/bykosse/"
+   },
+   {
+    "label": "Gebak",
+    "path": "/category/gebak/"
+   }
+  ]
+ },
+ "social": [
+  {
+   "network": "facebook",
+   "url": "https://www.facebook.com/marindakook",
+   "color": "#1877F2"
+  },
+  {
+   "network": "instagram",
+   "url": "https://www.instagram.com/marindakook/",
+   "color": "#e4405f"
+  },
+  {
+   "network": "youtube",
+   "url": "https://www.youtube.com/channel/UCsH25DP7xkAJsN89Zs7TDCw",
+   "color": "#e02a20"
+  }
+ ],
+ "bio": {
+  "name": "Marinda Engelbrecht",
+  "about": "Hierdie is geen fênsie kookblog nie.  Dis sommer net ‘n eenvoudige webwerf sodat my kinders en hulle vriende en hulle vriende se vriende kan leer kook. Sodat hulle my nie so baie hoef te bel om te hoor: hoe maak mens… nie.",
+  "photo": "/media/bio-photo.jpg",
+  "button": {
+   "label": "Lees Meer",
+   "path": "/oor-my/"
+  }
+ },
+ "sidebar": {
+  "tabs": {
+   "views": "Gewildste",
+   "comments": "Kommentaar"
+  },
+  "popularViews": [
+   {
+    "title": "Kerrie noodleslaai – hou vir lank in die yskas",
+    "slug": "kerrie-noodle-slaai-hou-vir-lank-in-die-yskas"
+   },
+   {
+    "title": "Malvapoeding",
+    "slug": "malvapoeding"
+   },
+   {
+    "title": "Pampoenpoffertjies – wat die sous opsuig",
+    "slug": "pampoenpoffertjies-wat-die-sous-opsuig"
+   },
+   {
+    "title": "Sjokoladekoek – ryk, nat en verskriklik lekker",
+    "slug": "sjokoladekoek-ryk-nat-en-verskriklik-lekker"
+   },
+   {
+    "title": "Bobotie vir ete",
+    "slug": "bobotie"
+   }
+  ],
+  "popularComments": [
+   {
+    "title": "Pampoenpoffertjies – wat die sous opsuig",
+    "slug": "pampoenpoffertjies-wat-die-sous-opsuig"
+   },
+   {
+    "title": "Bobotie vir ete",
+    "slug": "bobotie"
+   },
+   {
+    "title": "Gammon vir Krismis – en vir die res van die jaar",
+    "slug": "gammon-vir-krismis-en-vir-die-res-van-die-jaar"
+   },
+   {
+    "title": "Kerrie noodleslaai – hou vir lank in die yskas",
+    "slug": "kerrie-noodle-slaai-hou-vir-lank-in-die-yskas"
+   },
+   {
+    "title": "Herderspastei – In sy eenvoud lekker huiskos",
+    "slug": "herderspastei-in-sy-eenvoud-lekker-huiskos"
+   }
+  ],
+  "featurePosts": {
+   "title": "Nuwe Resepte",
+   "count": 3
+  },
+  "socialWidget": {
+   "title": "Gesels saam",
+   "description": "Volg al Marinda se mannewales op sosiale media. Kom gesels saam!"
+  },
+  "categoriesWidget": {
+   "title": "Kategoriëe"
+  }
+ },
+ "home": {
+  "sectionTitle": "Latest Recipes",
+  "featuredCategory": "featured",
+  "readMore": "Read More"
+ },
+ "newsletter": {
+  "heading": "Nuusbrief",
+  "placeholder": "E-posadres",
+  "button": "Teken In",
+  "action": "https://marindakook.co.za/"
+ },
+ "postsPerPage": 10
+}

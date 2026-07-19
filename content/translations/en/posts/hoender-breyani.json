@@ -1,0 +1,136 @@
+{
+ "id": 7057,
+ "slug": "hoender-breyani",
+ "sourceHash": "f482f0e2f59fc8ceb4ece591522a6e80dab12ba9",
+ "title": "Chicken breyani",
+ "excerpt": "I didn't know Pieter at all but I had a need to cook alongside the man. He then asked for Breyani. My nerves were a bit on edge, but it was all for nothing. He was hooked on the food.",
+ "seo": {
+  "title": "Chicken breyani - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">I didn't know Pieter at all but I had a need to cook alongside the man.  He then asked for Breyani.  My nerves were a bit on edge, but it was all for nothing.  He was hooked on the food. </p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Chicken breyani",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Hoender-breyani-e1648039937635-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Hoender-breyani"
+  },
+  "courses": [
+   "Chicken, Main course"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": "Rice",
+    "items": [
+     "500 ml basmati rice",
+     "3 cinnamon sticks",
+     "3 cloves",
+     "2 cardamom pods, bruised",
+     "5 ml turmeric"
+    ]
+   },
+   {
+    "title": "Chicken",
+    "items": [
+     "1 kg chicken fillets, cut into portions",
+     "125 ml plain yogurt",
+     "½ tin tomatoes",
+     "1 tin tomato paste",
+     "15 ml finely chopped fresh garlic",
+     "15 ml finely chopped fresh ginger",
+     "30 ml breyani masala",
+     "10 ml chilli powder",
+     "30 ml ground cumin",
+     "30 ml ground coriander",
+     "5 ml turmeric",
+     "5 ml garam masala"
+    ]
+   },
+   {
+    "title": "Additional",
+    "items": [
+     "1 onion, cut into rings to fry with the chicken",
+     "oil",
+     "2 star anise",
+     "2 chillies, cut lengthways",
+     "2 bay leaves",
+     "1 tin lentils, drained",
+     "2 peeled potatoes cut into quarters and parboiled",
+     "500 ml chicken stock",
+     "2 onions, cut into rings and fried until golden brown and crisp",
+     "3 eggs, hard-boiled",
+     "fresh coriander"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": "Rice",
+    "steps": [
+     "Cook everything together until the rice is just soft.",
+     "Drain and set aside."
+    ]
+   },
+   {
+    "title": "Chicken",
+    "steps": [
+     "Mix all the ingredients and marinate the chicken overnight, or for at least 1 hour."
+    ]
+   },
+   {
+    "title": "Bringing it all together",
+    "steps": [
+     "Preheat the oven to 180 °C.",
+     "Fry one onion in the oil.",
+     "Add the star anise, halved chillies and bay leaves and fry briefly.",
+     "Add the chicken with the marinade and fry lightly for 5 minutes.",
+     "Add the tin of lentils and the potatoes to the chicken.",
+     "Pour the rice over the chicken.",
+     "Add the chicken stock and place in the oven for 40 minutes.",
+     "Finish off with the crispy onions, boiled eggs and fresh coriander."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

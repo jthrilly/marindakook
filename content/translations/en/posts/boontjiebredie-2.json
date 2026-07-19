@@ -1,0 +1,103 @@
+{
+ "id": 7160,
+ "slug": "boontjiebredie-2",
+ "sourceHash": "a850433074c3c31d3a971b5cd0a86985c2d49912",
+ "title": "Green Bean Bredie",
+ "excerpt": "Toks van der Lidne and I go a long way back. He is an incredibly positive person. Taking him back to his mother's green bean bredie on Stoofstories with Marinda was a great honour.",
+ "seo": {
+  "title": "Green Bean Bredie - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Toks van der Lidne and I go a long way back.&nbsp;He is an incredibly positive person.&nbsp;Taking him back to his mother's green bean bredie on Stoofstories with Marinda was a great honour.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Green Bean Bredie",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/05/Boontjiebredie-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Boontjiebredie"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1,5 kg lamb neck",
+     "2 onions, sliced into rings",
+     "10 ml cumin",
+     "1 tin tomatoes",
+     "5 cloves",
+     "250 ml white wine",
+     "300 ml warm water",
+     "100 ml Worcestershire sauce",
+     "60 ml vinegar",
+     "3 potatoes, cut into cubes",
+     "1 kg green beans, sliced",
+     "salt and pepper to taste",
+     "a pinch of nutmeg",
+     "zest of one lemon"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "You can take a shortcut here and steam the meat for about 25 to 30 minutes in the steamer.",
+     "Brown the neck in oil and take it out of the pot.",
+     "Fry the onions in oil until glassy.",
+     "Fry the cumin together with the onions.",
+     "Put the meat back into the pot with the onions.",
+     "Add the rest of the ingredients, except the potatoes, beans, salt and pepper, nutmeg and lemon zest.",
+     "Let it cook for about 60 minutes or until the meat is almost tender.",
+     "Now add the potatoes and cook for another 20 minutes.",
+     "Lastly, add the sliced beans, salt, pepper and nutmeg.",
+     "Cook now until everything is tender, but not mushy.",
+     "Grate the zest of one lemon over.",
+     "Serve on white rice."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

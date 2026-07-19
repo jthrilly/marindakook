@@ -1,0 +1,153 @@
+{
+ "id": 7147,
+ "slug": "nachos",
+ "title": "Nacho’s",
+ "date": "2022-04-27T20:18:08",
+ "modified": "2022-04-27T20:18:56",
+ "excerpt": "Vir Lize Beekman het ek een van ons gesin se gunstelinge gemaak. Dit klink na baie werk maar dit is nie.",
+ "categories": [
+  308
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Nacho’s",
+  "card": {
+   "src": "/media/uploads/2022/04/Nachos-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/04/Nachos-760x845.jpg",
+   "width": 760,
+   "height": 845
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/04/Nachos-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Nacho's - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Vir Lize&nbsp; Beekman het ek een van ons gesin se gunstelinge gemaak.&nbsp; Dit klink na baie werk maar dit is nie.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Nacho’s",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/04/Nachos-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Nacho's"
+  },
+  "courses": [
+   "Hoofgereg"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 g maalvleis",
+     "olyfolie om vleis in te braai",
+     "5 ml komyn",
+     "5 ml gerookte paprika",
+     "1 blikkie Mexikaanse tamaties",
+     "1 blik rooibone, gedreineer",
+     "sout en peper",
+     "2 pakke Doritos-skyfies",
+     "500 ml goudakaas",
+     "500 ml blokkies fetakaas",
+     "250 ml suurroom",
+     "1 ryp avokadopeer",
+     "1 bossie vars koljander",
+     "sap van ’n suurlemoen",
+     "fyngerasperde skil van 1 suurlemoen",
+     "1 ui, fyngekap",
+     "1 tamatie, fyngekap",
+     "1 rissie, fyngekap"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Verhit die oond tot 180 °C.",
+     "Braai die maalvleis tot bruin in die olyfolie.",
+     "Voeg die komyn en paprika by en braai nog ’n bietjie.",
+     "Voeg die Mexikaanse tamaties by.",
+     "Voeg die rooibone by.",
+     "Geur met sout en peper en braai tot gaar.",
+     "Hou dit eenkant.",
+     "Sit die helfte van die Doritos-skyfies onder in ’n mooi plat bak wat in die oond kan gaan.",
+     "Skep die maalvleis bo-oor die skyfies.",
+     "Strooi die goudakaas en fetakaas oor die maalvleis en bak in die oond tot die kaas gesmelt is.",
+     "Skep die suurroom op die kaas.",
+     "Maak ’n guacamole deur die avokado, ’n handvol fyngekapte vars koljander, suurlemoensap en -skil te meng.",
+     "Geur met sout en peper na smaak en skep dit bo-op die suurroom.",
+     "Maak ’n salsa met die fyngekapte ui, tamatie en rissie deur dit te meng.",
+     "Geur met sout en peper na smaak en skep dit bo-op die guacamole.",
+     "Pak die res van die skyfies om die gereg en geniet."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 3966,
+   "parent": 3949,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-05-03T13:19:33",
+   "html": "<p>Unfortunately it is only in Afrkaans.</p>"
+  },
+  {
+   "id": 3949,
+   "parent": 0,
+   "author": "Sylvia",
+   "avatar": "https://secure.gravatar.com/avatar/764a78661e3840b7f394125eca9797d387d412f2be2f3577fd8d1847560176af?s=96&d=mm&r=g",
+   "date": "2022-04-27T22:22:20",
+   "html": "<p>How can i get the recipes in English.</p>"
+  }
+ ]
+}

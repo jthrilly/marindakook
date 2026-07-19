@@ -1,0 +1,58 @@
+{
+ "id": 5109,
+ "slug": "geroosterde-groente",
+ "title": "Geroosterde Groente",
+ "date": "2018-10-18T17:30:30",
+ "modified": "2022-02-13T15:36:09",
+ "excerpt": "Bestandele 300 g Gemengde-kleure babaworteltjies 300 g Geel murgpampoentjies 300 g Groenbone of baba sneeu-ertjies 300 g Tamaties – verkieslik nog aan die stingel 90 ml Suurlemoengegeurde olyf- of avokado-olie 30 ml Fyngerasperde knoffel 15 ml Fyngerasperde suurlemoenskil 15 ml Suurlemoensap Growwe sout en swartpeper na smaak Metode Maak die …",
+ "categories": [
+  33,
+  6
+ ],
+ "tags": [
+  35
+ ],
+ "featured": {
+  "alt": "geroosterde groente",
+  "card": {
+   "src": "/media/uploads/2018/10/Margit-Meyer-Rodenbeck-Geroosterde-Groente-1024x683.jpg",
+   "width": 1024,
+   "height": 683
+  },
+  "portrait": {
+   "src": "/media/uploads/2018/10/Margit-Meyer-Rodenbeck-Geroosterde-Groente-1024x683.jpg",
+   "width": 1024,
+   "height": 683
+  },
+  "thumb": {
+   "src": "/media/uploads/2018/10/Margit-Meyer-Rodenbeck-Geroosterde-Groente-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Geroosterde Groente - Marinda Kook",
+  "description": null
+ },
+ "html": "<h3><img loading=\"lazy\" class=\"alignnone size-large wp-image-5111\" src=\"/media/uploads/2018/10/Margit-Meyer-Rodenbeck-Geroosterde-Groente-1024x683.jpg\" alt=\"geroosterde groente \" width=\"530\" height=\"354\" srcset=\"/media/uploads/2018/10/Margit-Meyer-Rodenbeck-Geroosterde-Groente-1024x683.jpg 1024w, /media/uploads/2018/10/Margit-Meyer-Rodenbeck-Geroosterde-Groente-600x400.jpg 600w, /media/uploads/2018/10/Margit-Meyer-Rodenbeck-Geroosterde-Groente-300x200.jpg 300w, /media/uploads/2018/10/Margit-Meyer-Rodenbeck-Geroosterde-Groente-768x512.jpg 768w\" sizes=\"auto, (max-width: 530px) 100vw, 530px\"></h3>\n<h3>Bestandele</h3>\n<ul>\n<li>300 g Gemengde-kleure babaworteltjies</li>\n<li>300 g Geel murgpampoentjies</li>\n<li>300 g Groenbone of baba sneeu-ertjies</li>\n<li>300 g Tamaties – verkieslik nog aan die stingel</li>\n<li>90 ml Suurlemoengegeurde olyf- of avokado-olie</li>\n<li>30 ml Fyngerasperde knoffel</li>\n<li>15 ml Fyngerasperde suurlemoenskil</li>\n<li>15 ml Suurlemoensap</li>\n<li>Growwe sout en swartpeper na smaak</li>\n</ul>\n<h3>Metode</h3>\n<p>Maak die worteltjies, murgpampoentjies en sneeu-ertjies vooraf bietjie gaar; net-net gaar maar nog ferm. Dreineer en braai hulle – een soort op ‘n slag, tamaties inkluis – in ‘n riffelpan totdat hulle rokerig is en daar donker strepies op die groente is. Sit die gebraaide groente in ‘n groot glas mengbak.</p>\n<p>Meng tesame die olie, knoffel, skil en suurlemoensap en giet dit oor die warm groente. Geur met sout en swartpeper en bedien.</p>\n<p>Lewer 6 – 8 porsies saam met enige hoofgereg.</p>\n<p>Maklik!</p>\n<p><img loading=\"lazy\" class=\"alignnone size-large wp-image-5110\" src=\"/media/uploads/2018/10/Pangeroosterde-Groente-1-1024x576.png\" alt=\"geroosterde groente\" width=\"530\" height=\"298\" srcset=\"/media/uploads/2018/10/Pangeroosterde-Groente-1-1024x576.png 1024w, /media/uploads/2018/10/Pangeroosterde-Groente-1-600x338.png 600w, /media/uploads/2018/10/Pangeroosterde-Groente-1-300x169.png 300w, /media/uploads/2018/10/Pangeroosterde-Groente-1-768x432.png 768w, /media/uploads/2018/10/Pangeroosterde-Groente-1.png 1920w\" sizes=\"auto, (max-width: 530px) 100vw, 530px\"></p>",
+ "recipe": null,
+ "comments": [
+  {
+   "id": 3879,
+   "parent": 3875,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-04-10T11:09:31",
+   "html": "<p>Probeer dit gerus.  Dit is heerlik.  Bly jy hou van my eenvoudige manier van kook.x</p>"
+  },
+  {
+   "id": 3875,
+   "parent": 0,
+   "author": "Marie drotsky",
+   "avatar": "https://secure.gravatar.com/avatar/174a875c0557b812ac41eb9651f2a5629d2f798d811910ad494aca2c9626debf?s=96&d=mm&r=g",
+   "date": "2022-04-09T14:05:39",
+   "html": "<p>Dit lyk heerlik. Altyd lekker te sien hoe jy mook.</p>"
+  }
+ ]
+}

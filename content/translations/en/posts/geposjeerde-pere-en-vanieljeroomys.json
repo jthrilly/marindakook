@@ -1,0 +1,107 @@
+{
+ "id": 7127,
+ "slug": "geposjeerde-pere-en-vanieljeroomys",
+ "sourceHash": "933fad8ccaf268a5c084a0696b42d95277cc1b36",
+ "title": "Poached pears and vanilla ice cream",
+ "excerpt": "I call these my “tipsy pears”. They always look lovely, especially if you slice them lengthways and leave the little stem on. People think you're terribly fancy. I don't take any nonsense from an ice cream. You'll regularly find this in my freezer, for quickly pulling out for unexpected guests …",
+ "seo": {
+  "title": "Poached pears and vanilla ice cream - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">I call these my “tipsy pears”. They always look lovely, especially if you slice them lengthways and leave the little stem on.  People think you're terribly fancy.</p>\n\n\n\n<p class=\"wp-block-paragraph\">I don't take any nonsense from an ice cream.  You'll regularly find this in my freezer, for quickly pulling out for unexpected guests.  You can stir in anything you like before you freeze it: chocolate shavings, cookie crumbs, marshmallows, dried fruit etc.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Poached pears and vanilla ice cream",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/04/Pere-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Geposjeerde pere en vanieljeroomys"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": "Pears",
+    "items": [
+     "500 ml red wine",
+     "2 strips orange peel",
+     "125 ml sugar",
+     "1 star anise",
+     "1 clove",
+     "1 cinnamon stick",
+     "2 pears",
+     "5 ml cornflour (Maizena)",
+     "10 ml water"
+    ]
+   },
+   {
+    "title": "Ice cream",
+    "items": [
+     "500 ml double cream",
+     "10 ml vanilla paste",
+     "1 tin condensed milk"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": "Pears",
+    "steps": [
+     "Put the red wine, orange peel, sugar, star anise, clove and cinnamon stick in a pot and heat until the sugar has dissolved.",
+     "Peel the pears, but keep the little stem on.",
+     "Put them into the red wine and let them simmer until the pears just turn soft.",
+     "Remove the pears.",
+     "Mix the cornflour with the water until a paste forms.",
+     "Stir it into the red wine and let the sauce thicken.",
+     "You can enjoy the pears warm or cold with the ice cream and the red wine sauce."
+    ]
+   },
+   {
+    "title": "Ice cream",
+    "steps": [
+     "Whip the cream and vanilla to soft peaks.",
+     "Whisk in the condensed milk.",
+     "Pour the mixture into a container and freeze overnight."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

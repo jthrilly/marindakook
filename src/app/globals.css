@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #f34d47;
+  --color-navy: #304661;
+  --color-peach: #feeae0;
+  --color-peach-soft: #f9ece6;
+  --color-peach-mid: #fdddcd;
+  --color-ink: #222222;
+  --color-body: #69574f;
+  --color-meta: #6d767f;
+  --color-tagline: #78767d;
+  --font-sans: var(--font-rubik), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-esteban), ui-serif, Georgia, serif;
+  --font-script: var(--font-badscript), cursive;
+}
+
+body {
+  @apply bg-white font-sans text-[17px] leading-relaxed text-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-ink;
+}
+
+/* Rendered WordPress post content */
+.entry-content {
+  @apply text-[17px] leading-[1.8];
+}
+
+.entry-content > * + * {
+  margin-top: 1.25em;
+}
+
+.entry-content a {
+  @apply text-accent hover:text-ink;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4 {
+  @apply mt-8 mb-4 font-medium;
+}
+
+.entry-content h2 {
+  @apply text-[28px];
+}
+
+.entry-content h3 {
+  @apply text-[24px];
+}
+
+.entry-content img {
+  @apply h-auto max-w-full;
+}
+
+.entry-content figure {
+  @apply mx-auto my-6 max-w-full;
+}
+
+.entry-content figcaption {
+  @apply mt-2 text-center text-sm text-meta;
+}
+
+.entry-content .aligncenter {
+  @apply mx-auto block text-center;
+}
+
+.entry-content .alignleft {
+  @apply float-left mr-6 mb-4;
+}
+
+.entry-content .alignright {
+  @apply float-right mb-4 ml-6;
+}
+
+.entry-content ul {
+  @apply list-disc pl-6;
+}
+
+.entry-content ol {
+  @apply list-decimal pl-6;
+}
+
+.entry-content li {
+  @apply mb-1;
+}
+
+.entry-content blockquote {
+  @apply border-l-4 border-peach-mid pl-5 italic;
+}
+
+.entry-content iframe {
+  @apply max-w-full;
+}
+
+.entry-content .wp-block-embed iframe,
+.entry-content iframe[src*="youtube"] {
+  @apply aspect-video h-auto w-full;
+}
+
+.entry-content .gallery {
+  @apply grid grid-cols-2 gap-4 sm:grid-cols-3;
+}
+
+.entry-content .gallery .gallery-item {
+  @apply m-0;
+}
+
+.entry-content strong {
+  @apply text-ink;
+}
+
+/* Comment text reuses content styling at a smaller size */
+.comment-body-html {
+  @apply text-[15px] leading-relaxed;
+}
+
+.comment-body-html a {
+  @apply text-accent underline;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .recipe-card-print,
+  .recipe-card-print * {
+    visibility: visible;
+  }
+  .recipe-card-print {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    border: none !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

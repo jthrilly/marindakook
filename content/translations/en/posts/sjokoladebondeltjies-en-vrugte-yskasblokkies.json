@@ -1,0 +1,108 @@
+{
+ "id": 7114,
+ "slug": "sjokoladebondeltjies-en-vrugte-yskasblokkies",
+ "sourceHash": "6118851dfe6427de40ead67f95025d2bc5f09acb",
+ "title": "Chocolate Bundles and Fruit Fridge Squares",
+ "excerpt": "I grew up as a child with these chocolate bundles and had almost forgotten about them. Here Carmen Niehaus brings them to the table and brings lovely memories along. The recipe makes about 40 small bundles. The fruit fridge squares also belong to Carmen Niehaus. Such a lekker thing for the lunchbox. The recipe makes …",
+ "seo": {
+  "title": "Chocolate Bundles and Fruit Fridge Squares - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">I grew up as a child with these chocolate bundles and had almost forgotten about them. Here Carmen Niehaus brings them to the table and brings lovely memories along. The recipe makes about 40 small bundles.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The fruit fridge squares also belong to Carmen Niehaus.  Such a lekker thing for the lunchbox. The recipe makes 21 squares.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Chocolate Bundles and Fruit Fridge Squares",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/04/Vrugteyskasblokkies-en-sjokoladebondeltjies-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Sjokoladebondeltjies en Vrugte-yskasblokkies"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": "Chocolate Bundles",
+    "items": [
+     "250-375 ml (1-1½ c) brown sugar",
+     "100 g butter",
+     "125 ml (½ c) milk (let a bit of Carmien red mocha tea steep in this (about 2 bags))",
+     "125 ml (½ c) cocoa",
+     "750 ml (3 c) oats",
+     "250 ml (1 c) coconut",
+     "5 ml (1 t) vanilla essence"
+    ]
+   },
+   {
+    "title": "Fruit Fridge Squares",
+    "items": [
+     "115 g butter",
+     "1 tin condensed milk",
+     "5 ml (1 t) vanilla essence",
+     "375 ml (1½ c) mixed dried fruit (125 ml of it nowadays blueberries)",
+     "125 ml (½ c) glacé cherries or even dates (chopped)",
+     "125 ml (½ c) coarsely chopped mixed nuts",
+     "2 packets of Tennis biscuits (nowadays I use fibre biscuits), coarsely broken"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": "Chocolate Bundles",
+    "steps": [
+     "Spray a few sheets of baking paper with cooking spray or grease with butter and place on a baking tray.",
+     "Place the sugar, butter, milk and cocoa in a large saucepan. Bring to the boil, stirring constantly, then cook for 5 minutes.",
+     "Meanwhile mix the oats and coconut together and stir into the cocoa mixture (remove it from the stove).",
+     "Spoon teaspoonfuls of the mixture onto the baking paper – work quickly, it hardens fast. Let it cool. Store in an airtight container."
+    ]
+   },
+   {
+    "title": "Fruit Fridge Squares",
+    "steps": [
+     "Spray a pan of 18 x 28 x 3 cm with cooking spray.",
+     "Melt the butter and stir in the condensed milk. Remove from the heat and stir in the essence.",
+     "Add the rest of the ingredients and mix well.",
+     "Spoon into the baking pan and press down firmly with an egg lifter. Let it stand 24 hours in the fridge to become nice and firm. Cut into square blocks.",
+     "You can even sprinkle a bit of coconut on top for the pretty finish."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "id": 5138,
+ "slug": "krummelappeltert",
+ "title": "Krummelappeltert",
+ "date": "2018-10-25T17:30:38",
+ "modified": "2022-02-13T15:35:51",
+ "excerpt": "Bestandele 375 ml koekmeel 190 ml wit- of bruinsuiker 10 ml pypkaneel 250 ml hawermout (oats) 225 g botter, gesmelt 3 x 385 g blikkies tertappels, in kleiner blokkies gesny 125 ml strooisuiker 30 ml suurlemoensap 5 ml pypkaneel Metode Meng die koekmeel, suiker, 10 ml pypkaneel, hawermout en botter …",
+ "categories": [
+  5
+ ],
+ "tags": [
+  50,
+  49,
+  48,
+  43
+ ],
+ "featured": {
+  "alt": "Krummelappeltert",
+  "card": {
+   "src": "/media/uploads/2018/10/Zakkie-Bester-Appelkrummel-1024x683.jpg",
+   "width": 1024,
+   "height": 683
+  },
+  "portrait": {
+   "src": "/media/uploads/2018/10/Zakkie-Bester-Appelkrummel-1024x683.jpg",
+   "width": 1024,
+   "height": 683
+  },
+  "thumb": {
+   "src": "/media/uploads/2018/10/Zakkie-Bester-Appelkrummel-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Krummelappeltert - Marinda Kook",
+  "description": null
+ },
+ "html": "<h3><img loading=\"lazy\" class=\"alignnone size-large wp-image-5140\" src=\"/media/uploads/2018/10/Zakkie-Bester-Appelkrummel-1024x683.jpg\" alt=\"Krummelappeltert\" width=\"530\" height=\"354\" srcset=\"/media/uploads/2018/10/Zakkie-Bester-Appelkrummel-1024x683.jpg 1024w, /media/uploads/2018/10/Zakkie-Bester-Appelkrummel-600x400.jpg 600w, /media/uploads/2018/10/Zakkie-Bester-Appelkrummel-300x200.jpg 300w, /media/uploads/2018/10/Zakkie-Bester-Appelkrummel-768x512.jpg 768w\" sizes=\"auto, (max-width: 530px) 100vw, 530px\"></h3>\n<h3>Bestandele</h3>\n<ul>\n<li>375 ml koekmeel</li>\n<li>190 ml wit- of bruinsuiker</li>\n<li>10 ml pypkaneel</li>\n<li>250 ml hawermout (oats)</li>\n<li>225 g botter, gesmelt</li>\n<li>3 x 385 g blikkies tertappels, in kleiner blokkies gesny</li>\n<li>125 ml strooisuiker</li>\n<li>30 ml suurlemoensap</li>\n<li>5 ml pypkaneel</li>\n</ul>\n<h3>Metode</h3>\n<p>Meng die koekmeel, suiker, 10 ml pypkaneel, hawermout en botter liggies.</p>\n<p>In ‘n ander bak, meng die appels, strooisuiker, suurlemoensap en die 5 ml pypkaneel en skep in ‘n gesmeerde glas-tertbak.</p>\n<p>Skep die krummelmengsel eweredig bo-oor die appels en bak teen 180°C vir 40 minute of totdat die krummelmengsel bros en goudbruin is.</p>\n<p>Bedien 6 porsies met vanieljeroomys.</p>\n<p>Maklik!</p>\n<p>&nbsp;</p>\n<p><strong> </strong></p>\n<p>&nbsp;</p>\n<p><strong><u> </u></strong></p>",
+ "recipe": null,
+ "comments": [
+  {
+   "id": 8790,
+   "parent": 8207,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-10-28T08:33:48",
+   "html": "<p>Laat weet hoe dit gesmaak het.</p>"
+  },
+  {
+   "id": 8207,
+   "parent": 0,
+   "author": "Marlize v Zyl",
+   "avatar": "https://secure.gravatar.com/avatar/7568de4ee0a1bd087c607b709b60147639d045a8f1f53cefff2591be9d41aedc?s=96&d=mm&r=g",
+   "date": "2024-09-26T14:35:34",
+   "html": "<p>Marinda ek gaan d oats met pekanneute vervang.</p>"
+  },
+  {
+   "id": 4481,
+   "parent": 4353,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-09-01T07:52:22",
+   "html": "<p>Lenette nee.  Dit is heerlik net so.</p>"
+  },
+  {
+   "id": 4353,
+   "parent": 0,
+   "author": "Lenette",
+   "avatar": "https://secure.gravatar.com/avatar/c2e3e872f0de9d94929a51e201d57855df9918a8b780cd2b6b3fab5526121636?s=96&d=mm&r=g",
+   "date": "2022-08-06T18:42:47",
+   "html": "<p>Geen niks om die appels te bind nie.</p>"
+  }
+ ]
+}

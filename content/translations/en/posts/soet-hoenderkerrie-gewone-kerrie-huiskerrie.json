@@ -1,0 +1,100 @@
+{
+ "id": 775,
+ "slug": "soet-hoenderkerrie-gewone-kerrie-huiskerrie",
+ "sourceHash": "c9141c5642a79e52edb48ff551125e7de2e8bad7",
+ "title": "Sweet Chicken Curry – ordinary curry, home curry",
+ "excerpt": "Look, I like Indian, Malay and Thai curry. But I grew up with plain box-mix-sweet-apricot-jam curry. It takes me back to my childhood.",
+ "seo": {
+  "title": "Sweet Chicken Curry - ordinary curry, home curry - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Look, I like Indian, Malay and Thai curry.&nbsp; But I grew up with plain box-mix-sweet-apricot-jam curry.&nbsp; It takes me back to my childhood.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Sweet Chicken Curry – ordinary curry, home curry",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2017/10/featured-soet-hoenderkerrie-blog-028.jpg",
+   "srcset": "/media/uploads/2017/10/featured-soet-hoenderkerrie-blog-028.jpg 1500w, /media/uploads/2017/10/featured-soet-hoenderkerrie-blog-028-600x450.jpg 600w",
+   "width": 800,
+   "height": 600,
+   "alt": "Soet hoenderkerrie - gewone kerrie, huiskerrie"
+  },
+  "courses": [
+   "Chicken, Main Course"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1 whole chicken",
+     "1 onion",
+     "30 ml oil",
+     "2 garlic cloves",
+     "4 potatoes",
+     "1 chicken stock cube or 10 ml powdered chicken stock",
+     "750 ml  warm water",
+     "2 bay leaves",
+     "60 ml curry powder",
+     "60 ml apricot jam",
+     "60ml vinegar",
+     "60 ml sugar",
+     "30 ml turmeric",
+     "salt and pepper to taste<br><img src=\"/media/uploads/2017/10/soet-hoenderkerrie-blog-011-300x225.jpg\" title=\"soet-hoenderkerrie-blog-011\" alt class=\"direction-step-image\" loading=\"lazy\">"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "I took a whole chicken and cut it into portions. It doesn't have to be done exactly right.  Otherwise you can buy ready-cut chicken portions at your shop.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/soet-hoenderkerrie-blog-004.jpg\" class=\"direction-step-image\" alt title=\"soet-hoenderkerrie-blog-004\">",
+     "Cut your onion into rings and fry in oil until glassy. Now fry your finely chopped garlic together with the onion. Add your chicken and fry the chicken until slightly browned.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/soet-hoenderkerrie-blog-007.jpg\" class=\"direction-step-image\" alt title=\"soet-hoenderkerrie-blog-007\">",
+     "Peel the potatoes and cut them into quarters.  Add them to your chicken in the pot.",
+     "In a mixing bowl, dissolve your chicken stock in the warm water.",
+     "Now add all the rest of the ingredients to the mixing bowl with the chicken stock.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/soet-hoenderkerrie-blog-021.jpg\" class=\"direction-step-image\" alt title=\"soet-hoenderkerrie-blog-021\">",
+     "Pour it over the meat in the pot and let it simmer for about 60 minutes &#8211; it should now be falling off the bone and nicely cooked.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/soet-hoenderkerrie-blog-024.jpg\" class=\"direction-step-image\" alt title=\"soet-hoenderkerrie-blog-024\">",
+     "To thicken the curry sauce in your pot.  Stir 10 ml cornflour into 80 ml cold water until it forms a paste.  Stir it through your curry chicken and let it simmer for 10 minutes.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/featured-soet-hoenderkerrie-blog-028.jpg\" class=\"direction-step-image\" alt title=\"featured-soet-hoenderkerrie-blog-028.jpg\">"
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "Serve your chicken with rice and peas.  The colour combination is lovely.  I also enjoy a small dollop of chutney with my chicken."
+  ],
+  "videoHtml": null
+ }
+}

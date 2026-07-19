@@ -1,0 +1,96 @@
+{
+ "id": 6048,
+ "slug": "sjokolademousse-kaaskoek",
+ "sourceHash": "69f5e869c05fefbbdeb395a9d38adb20ccf805eb",
+ "title": "Chocolate Mousse Cheesecake",
+ "excerpt": "People think making a cheesecake is hard. Not this one. This one asks to be made.",
+ "seo": {
+  "title": "Chocolate Mousse Cheesecake - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">People think making a cheesecake is hard. Not this one. This one asks to be made. </p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Chocolate Mousse Cheesecake",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2020/08/Sjokolademousse-kaaskoek-800x530.jpg",
+   "srcset": "/media/uploads/2020/08/Sjokolademousse-kaaskoek-800x530.jpg 800w, /media/uploads/2020/08/Sjokolademousse-kaaskoek-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Sjokolademousse-kaaskoek"
+  },
+  "courses": [
+   "Baking, Dessert"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "250 g cream cheese",
+     "250 g mascarpone",
+     "160 ml castor sugar",
+     "60 ml cocoa",
+     "250 ml cream",
+     "5 ml vanilla",
+     "1 Lindt chocolate",
+     "30 ml milk",
+     "1 packet Oreo biscuits",
+     "60 ml butter, melted"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Crush the Oreo biscuits finely in a food processor.",
+     "Melt the butter in the microwave and mix with the biscuits.",
+     "Grease a springform pan and press the biscuit mixture firmly into the pan.  Put in the fridge to set.",
+     "In a bowl, whip the cream with 100 ml castor sugar and the vanilla to soft peaks.",
+     "In another bowl, beat the cream cheese, mascarpone, sifted cocoa and remaining 60 ml castor sugar until soft and well combined.",
+     "Melt the Lindt chocolate with 30 ml milk in the microwave. Stir it into the cheese mixture.",
+     "Now fold the cream into the cheese mixture.",
+     "Spoon out onto the Oreo base and leave in your fridge for at least 4 hours.",
+     "Remove it from your springform pan and decorate with a Flake, berries or whatever you have at home."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "id": 7349,
+ "slug": "grondboontjiebotterblokkies",
+ "sourceHash": "e23b2125b6e2e7c323470e3e366d1d6108a63c14",
+ "title": "Peanut Butter Squares",
+ "excerpt": "I got the recipe from my sister Jeanine du Preez. I almost ate myself sick on this treat.",
+ "seo": {
+  "title": "Peanut Butter Squares - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">I got the recipe from my sister Jeanine du Preez.&nbsp; I almost ate myself sick on this treat.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"640\" height=\"480\" src=\"/media/uploads/2023/01/IMG_6841.jpg\" alt class=\"wp-image-7354\" srcset=\"/media/uploads/2023/01/IMG_6841.jpg 640w, /media/uploads/2023/01/IMG_6841-600x450.jpg 600w, /media/uploads/2023/01/IMG_6841-300x225.jpg 300w, /media/uploads/2023/01/IMG_6841-500x375.jpg 500w, /media/uploads/2023/01/IMG_6841-380x285.jpg 380w\" sizes=\"auto, (max-width: 640px) 100vw, 640px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"640\" height=\"480\" src=\"/media/uploads/2023/01/IMG_6838.jpg\" alt class=\"wp-image-7353\" srcset=\"/media/uploads/2023/01/IMG_6838.jpg 640w, /media/uploads/2023/01/IMG_6838-600x450.jpg 600w, /media/uploads/2023/01/IMG_6838-300x225.jpg 300w, /media/uploads/2023/01/IMG_6838-500x375.jpg 500w, /media/uploads/2023/01/IMG_6838-380x285.jpg 380w\" sizes=\"auto, (max-width: 640px) 100vw, 640px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Peanut Butter Squares",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2023/01/IMG_6836.jpg",
+   "srcset": "/media/uploads/2023/01/IMG_6836.jpg 640w, /media/uploads/2023/01/IMG_6836-600x450.jpg 600w, /media/uploads/2023/01/IMG_6836-300x225.jpg 300w, /media/uploads/2023/01/IMG_6836-500x375.jpg 500w, /media/uploads/2023/01/IMG_6836-380x285.jpg 380w",
+   "width": 640,
+   "height": 480,
+   "alt": "Grondboontjiebotterblokkies"
+  },
+  "courses": [
+   "Dessert"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "400 g peanut butter (can be crunchy or smooth)",
+     "2 x 150g Milkybar chocolate, broken into rough pieces",
+     "120 g / 125 ml butter",
+     "4 x 250 ml small pink and white marshmallows",
+     "Extra marshmallows for sprinkling on top",
+     "I also added Chuckles on top"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Line a dish with baking paper and spray with Spray and Cook",
+     "Melt the peanut butter, chocolate and butter in a pot on the stove or in the microwave. Let it cool slightly. Stir regularly with a wooden spoon.",
+     "Stir the marshmallows into the peanut butter mixture.",
+     "Scrape the mixture out onto the baking paper and smooth it down.  Sprinkle the remaining marshmallows and Chuckles over.  Press down lightly.",
+     "Put it in the fridge overnight or for at least 2 hours.",
+     "Cut into squares."
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "You can add cherries, nuts, dried fruit, etc.",
+   "If you want to cut it easily, dip the tip of the knife in boiling water."
+  ],
+  "videoHtml": null
+ }
+}

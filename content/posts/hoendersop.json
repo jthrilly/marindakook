@@ -1,0 +1,170 @@
+{
+ "id": 7493,
+ "slug": "hoendersop",
+ "title": "Hoendersop",
+ "date": "2024-07-04T23:31:07",
+ "modified": "2024-07-04T23:31:10",
+ "excerpt": "Heerlikste hoendersop vir die kouete. Ek en my vriendin Annelie van Schalkwyk het die heerlike sop in Boussac gemaak. Ek maak myne so klein bietjie anders met lemongrass. Goed vir enige persoon wat siekerig voel. Ons praat van kragsop.",
+ "categories": [
+  308
+ ],
+ "tags": [
+  27,
+  23
+ ],
+ "featured": {
+  "alt": "Hoendersop",
+  "card": {
+   "src": "/media/uploads/2024/07/Hoendersop-760x760.jpeg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2024/07/Hoendersop-760x1040.jpeg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2024/07/Hoendersop-150x150.jpeg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Hoendersop - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Heerlikste hoendersop vir die kouete. Ek en my vriendin Annelie van Schalkwyk het die heerlike sop in Boussac gemaak. Ek maak myne so klein bietjie anders met lemongrass.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">Goed vir enige persoon wat siekerig voel. Ons praat van kragsop. </p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Hoendersop",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2024/07/Hoendersop-800x530.jpeg",
+   "srcset": "/media/uploads/2024/07/Hoendersop-800x530.jpeg 800w, /media/uploads/2024/07/Hoendersop-1600x1060.jpeg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Hoendersop"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1.5 kg heel hoender (een lekker groot hoender)",
+     "3 liter hoenderaftreksel (los 6 blokkies op in kookwater)",
+     "30 ml fyngerasperde vars gemmer",
+     "8 huisies knoffel gerasper",
+     "90 ml soyasous",
+     "60 ml lemmetjiesap",
+     "45 ml bruinsuiker",
+     "5 steranyse",
+     "2 tot 3 lemongrass gekneus",
+     "1 ui fyngekap",
+     "1 bossie sprietuie fyn gekap",
+     "4 rooi chillies fyngekap ( opsioneel)"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Gooi alles in n pot en kook tot die hoender sag is.",
+     "Haal die hoender uit en haal die vel af  en verwyder die bene. Vlok die hoender en gooi die vleis terug by die sop. Haal nou die steranys en lemongrass uit.",
+     "Geniet die heerlike sop met n varsgebakte brood."
+    ]
+   }
+  ],
+  "notesTitle": "Notas",
+  "notes": [
+   "Jy moet jou sop gereeld proe. Pas dit aan met lemmetjiesap, soyasous of chillies na jou smaak. Gooi bietjie sout by sou jy dit verkies.",
+   "As jy wil kan jy teen die einde 200g Risoni (rys noodles) bygooi en net ekstra kook tot dit sag is."
+  ],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 7477,
+   "parent": 7307,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-07-29T15:20:53",
+   "html": "<p>Baie baie dankie.  geniet!</p>"
+  },
+  {
+   "id": 7476,
+   "parent": 7320,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-07-29T15:20:35",
+   "html": "<p>You make me happy.  Enjoy!</p>"
+  },
+  {
+   "id": 7475,
+   "parent": 7346,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-07-29T15:20:16",
+   "html": "<p>Lekker ne!</p>"
+  },
+  {
+   "id": 7346,
+   "parent": 0,
+   "author": "Tienie Smit",
+   "avatar": "https://secure.gravatar.com/avatar/42e4b7fee32a805a44a34d4ca9ae4bc06707e407cc124d2feb5bf77ef973d10c?s=96&d=mm&r=g",
+   "date": "2024-07-08T12:12:00",
+   "html": "<p>Ek Hou van sulke alledaagse allegaartjies.</p>"
+  },
+  {
+   "id": 7320,
+   "parent": 0,
+   "author": "Cynthia Coller",
+   "avatar": "https://secure.gravatar.com/avatar/548de64a497ce3d38b4b78fa0b461c3be6194201a39e38db9e831d5270d43dab?s=96&d=mm&r=g",
+   "date": "2024-07-06T19:56:45",
+   "html": "<p>Your cooking looks delicious</p>"
+  },
+  {
+   "id": 7307,
+   "parent": 0,
+   "author": "Christine",
+   "avatar": "https://secure.gravatar.com/avatar/becd4779935aeabef5c259916b34629fff174313892f76a77d0b04293fba0a72?s=96&d=mm&r=g",
+   "date": "2024-07-05T17:40:31",
+   "html": "<p>Lief jou tesepye</p>"
+  }
+ ]
+}

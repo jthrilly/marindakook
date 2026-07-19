@@ -1,0 +1,258 @@
+{
+ "id": 7160,
+ "slug": "boontjiebredie-2",
+ "title": "Boontjiebredie",
+ "date": "2022-05-04T23:27:48",
+ "modified": "2022-05-04T23:28:40",
+ "excerpt": "Ek en Toks van der Lidne kom ’n langpad saam. Hy is ’n ongelooflike positiewe mens. Om vir hom terug te neem na sy ma se boontjiebredie op Stoofstories met Marinda was ’n groot eer.",
+ "categories": [
+  308,
+  270
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Boontjiebredie",
+  "card": {
+   "src": "/media/uploads/2022/05/Boontjiebredie-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/05/Boontjiebredie-760x852.jpg",
+   "width": 760,
+   "height": 852
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/05/Boontjiebredie-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Boontjiebredie - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Ek en Toks van der Lidne kom ’n langpad saam.&nbsp;Hy is ’n ongelooflike positiewe mens.&nbsp;Om vir hom terug te neem na sy ma se boontjiebredie op Stoofstories met Marinda was ’n groot eer.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Boontjiebredie",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/05/Boontjiebredie-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Boontjiebredie"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1,5 kg skaapnek",
+     "2 uie, in ringe gesny",
+     "10 ml komyn",
+     "1 blikkie tamaties",
+     "5 naeltjies",
+     "250 ml witwyn",
+     "300 ml warm water",
+     "100 ml worcestersous",
+     "60 ml asyn",
+     "3 aartappels, in blokkies gesny",
+     "1 kg groenbone, gesnipper",
+     "sout en peper na smaak",
+     "bietjie neutmuskaat",
+     "skil van een suurlemoen"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Jy kan hier kortpad neem en die vleis vir so 25 tot 30 minute stoom in die stoompot.",
+     "Braai die nek bruin in olie en haal uit die pot.",
+     "Braai uie in olie tot glaserig.",
+     "Braai die komyn saam met die uie.",
+     "Sit die vleis terug in die pot by die uie.",
+     "Gooi die res van die bestanddele, behalwe die aartappels, bone, sout en peper, neutmuskaat en suurlemoenskil, by.",
+     "Laat dit kook vir om en by 60 minute of tot die vleis amper sag is.",
+     "Gooi nou die aartappels by en kook vir nog 20 minute.",
+     "Laastens kom die gesnipperde boontjies, sout, peper en neutmuskaat by.",
+     "Kook nou totdat alles sag is, maar nie pap nie.",
+     "Rasper die skil van een suurlemoen oor.",
+     "Bedien op witrys."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 5661,
+   "parent": 5650,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-03-13T16:03:37",
+   "html": "<p>Loer op die blad.  Daar is heelwat.</p>"
+  },
+  {
+   "id": 5650,
+   "parent": 4011,
+   "author": "Lenie Grobler",
+   "avatar": "https://secure.gravatar.com/avatar/8f6fb0621b17b8bfac13aafafac16758b7534f4d7b4f3e02dc72ff83d16eb173?s=96&d=mm&r=g",
+   "date": "2023-03-05T21:51:49",
+   "html": "<p>Boere resepte asb</p>"
+  },
+  {
+   "id": 4275,
+   "parent": 4237,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-07-11T10:05:41",
+   "html": "<p>Geniet elke happie.  My filosofie is dat ons bredies maak en nie sop nie.  Bly warm in die koue.</p>"
+  },
+  {
+   "id": 4237,
+   "parent": 0,
+   "author": "Amanda",
+   "avatar": "https://secure.gravatar.com/avatar/8bdfc3978595d3f30e17fd66b789bbe5bbd47f3eed66d86ccee5ccc0a6bf6b8c?s=96&d=mm&r=g",
+   "date": "2022-06-30T18:20:59",
+   "html": "<p>Hello miranda ek wil net se dankie vir die bone bredie resep. Jy het my noz geleer om hom nie te souserig te kook nie</p>"
+  },
+  {
+   "id": 4043,
+   "parent": 4040,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-05-20T15:24:20",
+   "html": "<p>Lag ek nou kliphard.  Geniet!!!!</p>"
+  },
+  {
+   "id": 4040,
+   "parent": 0,
+   "author": "Annemaree",
+   "avatar": "https://secure.gravatar.com/avatar/d4e0d07f0b20fc81d4bb91b0682b102aec18f3043ae5de4c0ce72a7ddb100f72?s=96&d=mm&r=g",
+   "date": "2022-05-19T19:20:21",
+   "html": "<p>Marinda jy kook !!!<br>\nEn jou disse kook my kombuis bankrot 😄</p>"
+  },
+  {
+   "id": 4011,
+   "parent": 3974,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-05-12T12:10:26",
+   "html": "<p>Geniet!</p>"
+  },
+  {
+   "id": 4009,
+   "parent": 3976,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-05-12T12:09:59",
+   "html": "<p>Geniet Annetjie!</p>"
+  },
+  {
+   "id": 4008,
+   "parent": 3977,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-05-12T12:09:36",
+   "html": "<p>Net liefde uit my hart.</p>"
+  },
+  {
+   "id": 4005,
+   "parent": 3983,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-05-12T12:08:28",
+   "html": "<p>Op die blog is al die resepte.</p>"
+  },
+  {
+   "id": 4004,
+   "parent": 3993,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-05-12T12:08:00",
+   "html": "<p>Groot dankie.  Geniet die lekker kos.</p>"
+  },
+  {
+   "id": 3993,
+   "parent": 0,
+   "author": "Porsche",
+   "avatar": "https://secure.gravatar.com/avatar/7d24bb9fbdac889ea47488810daea6b76ffc88e43c6f103ea9572484132ade01?s=96&d=mm&r=g",
+   "date": "2022-05-07T00:14:22",
+   "html": "<p>Dankie Marinda, jou  kos lyk altyd so maklik en heerlik.  Ek geniet jou program. Seen groete. Porsche.</p>"
+  },
+  {
+   "id": 3983,
+   "parent": 0,
+   "author": "Susie Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/0abdad6bd326e354f3064b9f6119aabb5df0c4d26e0c50e0308fa0aebfd55f31?s=96&d=mm&r=g",
+   "date": "2022-05-06T12:33:27",
+   "html": "<p>Stuur asb resepte</p>"
+  },
+  {
+   "id": 3977,
+   "parent": 0,
+   "author": "Maria Louw",
+   "avatar": "https://secure.gravatar.com/avatar/f6df2dd0e5e58406e7fc03a362215331c6fda6d2d4a47f2fdec1412a5f774cd1?s=96&d=mm&r=g",
+   "date": "2022-05-05T16:38:12",
+   "html": "<p>Baie dankie dat jy so vriendelik is om jou resepte met almal te deel!!😀<br>\nDit lyk heerlik en gaan dit beslis gebruik!! Sien uit na dit wat nog gaan volg!!</p>"
+  },
+  {
+   "id": 3976,
+   "parent": 0,
+   "author": "Annetjie de Beer",
+   "avatar": "https://secure.gravatar.com/avatar/eea5856f8f15748dfc60d61ed03ba5edec668476b3d9dccd2446adde96708b92?s=96&d=mm&r=g",
+   "date": "2022-05-05T15:59:30",
+   "html": "<p>Jou resepte is ongelooflik, maklik en lekker.<br>\nDankie Marinda.</p>"
+  },
+  {
+   "id": 3974,
+   "parent": 0,
+   "author": "Soekie B",
+   "avatar": "https://secure.gravatar.com/avatar/75dcf0108f57e21915b5f9ab8ac1753c7cf092ce65e71310683c17aac2d08a31?s=96&d=mm&r=g",
+   "date": "2022-05-05T10:47:12",
+   "html": "<p>Yummie lekkerte!</p>"
+  }
+ ]
+}

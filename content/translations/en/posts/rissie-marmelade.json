@@ -1,0 +1,91 @@
+{
+ "id": 7466,
+ "slug": "rissie-marmelade",
+ "sourceHash": "1735731271efadf40609bce68ec9276511b52798",
+ "title": "Chilli Marmalade",
+ "excerpt": "Chilli Marmalade",
+ "seo": {
+  "title": "Chilli Marmalade - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"858\" height=\"1024\" src=\"/media/uploads/2024/02/Rissie-marmelade-858x1024.jpeg\" alt class=\"wp-image-7467\" srcset=\"/media/uploads/2024/02/Rissie-marmelade-858x1024.jpeg 858w, /media/uploads/2024/02/Rissie-marmelade-251x300.jpeg 251w, /media/uploads/2024/02/Rissie-marmelade-768x917.jpeg 768w, /media/uploads/2024/02/Rissie-marmelade-750x896.jpeg 750w, /media/uploads/2024/02/Rissie-marmelade-380x454.jpeg 380w, /media/uploads/2024/02/Rissie-marmelade-760x907.jpeg 760w, /media/uploads/2024/02/Rissie-marmelade-800x955.jpeg 800w, /media/uploads/2024/02/Rissie-marmelade.jpeg 1072w\" sizes=\"auto, (max-width: 858px) 100vw, 858px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"956\" height=\"1024\" src=\"/media/uploads/2024/02/Rissie-marmelade-3-956x1024.jpeg\" alt class=\"wp-image-7468\" srcset=\"/media/uploads/2024/02/Rissie-marmelade-3-956x1024.jpeg 956w, /media/uploads/2024/02/Rissie-marmelade-3-280x300.jpeg 280w, /media/uploads/2024/02/Rissie-marmelade-3-768x823.jpeg 768w, /media/uploads/2024/02/Rissie-marmelade-3-750x803.jpeg 750w, /media/uploads/2024/02/Rissie-marmelade-3-380x407.jpeg 380w, /media/uploads/2024/02/Rissie-marmelade-3-760x814.jpeg 760w, /media/uploads/2024/02/Rissie-marmelade-3-800x857.jpeg 800w, /media/uploads/2024/02/Rissie-marmelade-3.jpeg 1195w\" sizes=\"auto, (max-width: 956px) 100vw, 956px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"769\" src=\"/media/uploads/2024/02/Rissie-marmelade-2-1024x769.jpeg\" alt class=\"wp-image-7469\" srcset=\"/media/uploads/2024/02/Rissie-marmelade-2-1024x769.jpeg 1024w, /media/uploads/2024/02/Rissie-marmelade-2-300x225.jpeg 300w, /media/uploads/2024/02/Rissie-marmelade-2-768x577.jpeg 768w, /media/uploads/2024/02/Rissie-marmelade-2-750x563.jpeg 750w, /media/uploads/2024/02/Rissie-marmelade-2-500x375.jpeg 500w, /media/uploads/2024/02/Rissie-marmelade-2-380x285.jpeg 380w, /media/uploads/2024/02/Rissie-marmelade-2-760x571.jpeg 760w, /media/uploads/2024/02/Rissie-marmelade-2-800x601.jpeg 800w, /media/uploads/2024/02/Rissie-marmelade-2.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Chilli Marmalade",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2024/02/Rissie-marmelade-1-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Rissie-marmelade"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "200 gram sweet peppers (bell peppers, yellow, green, red. Any colour)",
+     "150 gram chillies",
+     "2 onions",
+     "5 cloves garlic",
+     "875 ml/3.5 cups sugar",
+     "250 ml/1 cup vinegar",
+     "10 ml mixed spice",
+     "10 ml salt",
+     "(400g) 1 tin tomato puree"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Coarsely chop the sweet peppers, chillies, onions and garlic in your food processor.",
+     "Now put all the ingredients into a pot and cook for 1 hour on medium heat. Stir regularly and watch that it doesn't catch on the bottom. Taste and adjust to your liking. The sauce turns dark and thick.",
+     "Sterilise your jars. Pour the sauce into your jars."
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "Delicious with a cheese board, alongside meat, or on a boerewors roll.",
+   "Tip: Taste the chillies raw. If they're very hot, scrape out the seeds or use fewer chillies.",
+   "I chopped my vegetables finely, but not into a pulp."
+  ],
+  "videoHtml": null
+ }
+}

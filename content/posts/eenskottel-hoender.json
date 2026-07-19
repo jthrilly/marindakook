@@ -1,0 +1,135 @@
+{
+ "id": 7611,
+ "slug": "eenskottel-hoender",
+ "title": "Eenskottel-hoender",
+ "date": "2025-10-27T21:02:05",
+ "modified": "2025-10-27T21:02:07",
+ "excerpt": "",
+ "categories": [
+  7,
+  308
+ ],
+ "tags": [
+  27,
+  347,
+  330
+ ],
+ "featured": {
+  "alt": "Eenskottel-hoender.",
+  "card": {
+   "src": "/media/uploads/2025/10/Eenskottel-hoender-760x760.jpeg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2025/10/Eenskottel-hoender-760x960.jpeg",
+   "width": 760,
+   "height": 960
+  },
+  "thumb": {
+   "src": "/media/uploads/2025/10/Eenskottel-hoender-150x150.jpeg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "closed",
+ "seo": {
+  "title": "Eenskottel-hoender - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2025/10/Eenskottel-hoender-1-768x1024.jpeg\" alt=\"Eenskottel-hoender.\" class=\"wp-image-7616\" srcset=\"/media/uploads/2025/10/Eenskottel-hoender-1-768x1024.jpeg 768w, /media/uploads/2025/10/Eenskottel-hoender-1-225x300.jpeg 225w, /media/uploads/2025/10/Eenskottel-hoender-1-750x1000.jpeg 750w, /media/uploads/2025/10/Eenskottel-hoender-1-380x507.jpeg 380w, /media/uploads/2025/10/Eenskottel-hoender-1-760x1013.jpeg 760w, /media/uploads/2025/10/Eenskottel-hoender-1-800x1067.jpeg 800w, /media/uploads/2025/10/Eenskottel-hoender-1.jpeg 960w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2025/10/Eenskottel-hoender-2-768x1024.jpeg\" alt=\"Eenskottel-hoender.\" class=\"wp-image-7615\" srcset=\"/media/uploads/2025/10/Eenskottel-hoender-2-768x1024.jpeg 768w, /media/uploads/2025/10/Eenskottel-hoender-2-225x300.jpeg 225w, /media/uploads/2025/10/Eenskottel-hoender-2-750x1000.jpeg 750w, /media/uploads/2025/10/Eenskottel-hoender-2-380x507.jpeg 380w, /media/uploads/2025/10/Eenskottel-hoender-2-760x1013.jpeg 760w, /media/uploads/2025/10/Eenskottel-hoender-2-800x1067.jpeg 800w, /media/uploads/2025/10/Eenskottel-hoender-2.jpeg 960w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2025/10/Eenskottel-hoender-3-768x1024.jpeg\" alt class=\"wp-image-7614\" srcset=\"/media/uploads/2025/10/Eenskottel-hoender-3-768x1024.jpeg 768w, /media/uploads/2025/10/Eenskottel-hoender-3-225x300.jpeg 225w, /media/uploads/2025/10/Eenskottel-hoender-3-750x1000.jpeg 750w, /media/uploads/2025/10/Eenskottel-hoender-3-380x507.jpeg 380w, /media/uploads/2025/10/Eenskottel-hoender-3-760x1013.jpeg 760w, /media/uploads/2025/10/Eenskottel-hoender-3-800x1067.jpeg 800w, /media/uploads/2025/10/Eenskottel-hoender-3.jpeg 960w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2025/10/Eenskottel-hoender-4-1024x768.jpeg\" alt=\"Eenskottel-hoender.\" class=\"wp-image-7613\" srcset=\"/media/uploads/2025/10/Eenskottel-hoender-4-1024x768.jpeg 1024w, /media/uploads/2025/10/Eenskottel-hoender-4-300x225.jpeg 300w, /media/uploads/2025/10/Eenskottel-hoender-4-768x576.jpeg 768w, /media/uploads/2025/10/Eenskottel-hoender-4-750x563.jpeg 750w, /media/uploads/2025/10/Eenskottel-hoender-4-500x375.jpeg 500w, /media/uploads/2025/10/Eenskottel-hoender-4-380x285.jpeg 380w, /media/uploads/2025/10/Eenskottel-hoender-4-760x570.jpeg 760w, /media/uploads/2025/10/Eenskottel-hoender-4-800x600.jpeg 800w, /media/uploads/2025/10/Eenskottel-hoender-4.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Eenskottel-hoender",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2025/10/Eenskottel-hoender-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Eenskottel-hoender"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "1",
+      "unit": "hour"
+     },
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "8 hoenderdye",
+     "1 rooi ui in ringe gesny",
+     "1 tamatie in ringe gesny",
+     "Olyfolie",
+     "Sout",
+     "Peper",
+     "500 ml Spekko Basmati-rys (was en dreineer dit)",
+     "2 knoffelhuisies fyn gerasper",
+     "4 x 250 ml kookwater",
+     "5 ml paprika",
+     "15 ml Baharat (koop by Woolies)",
+     "30 ml dadelstroop of heuning (koop dadelstroop ook by Woolies)",
+     "50 ml tamatiepaste",
+     "Gekapte pietersielie vir afronding"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Stel die oond op 180C",
+     "Gooi 10 ml growwe sout op die bodem van jou pan.",
+     "Bedruip die pan met ‘n dun lagie olyfolie.",
+     "Pak die gesnyde rooiui en tamatie op die olyfolie.",
+     "Skep die gedreineerde rys op die laag tamatieskywe en uie.",
+     "Pak die hoender op die rys. Sout en peper na smaak.",
+     "Nou jou sous: meng die paprika, Baharat,dadelstroop, tamatiepaste, fyn knoffel en 125 ml olyfolie saam – dit ruik heerlik.",
+     "Roer nou jou kookwater by en meng goed. Skep lepels voel oor die hoender.",
+     "Nou: maak bakpapier nat en maak die hoender toe met die nat bakpapier. Maak dan toe met tinfoelie sodat dit lekker kan stoom.",
+     "Na 90 min maak jy oop en laat die hoender verbruin in die oond.",
+     "Rond af met gekapte pietersielie.",
+     "Dieplekker!!!!!!!!!!"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

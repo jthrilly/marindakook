@@ -1,0 +1,128 @@
+{
+ "id": 6029,
+ "slug": "grootword-appeltert",
+ "title": "Grootword-appeltert",
+ "date": "2020-08-12T10:52:49",
+ "modified": "2022-02-13T19:20:05",
+ "excerpt": "Behalwe dat dié appeltert mooi is, is dit seker een van die heel lekkerste appeltertjie wat daar bestaan. Spyt sal jy nooit wees as jy dit maak nie.",
+ "categories": [
+  366,
+  5,
+  8
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Grootword-appeltert",
+  "card": {
+   "src": "/media/uploads/2020/08/Grootword-appeltert-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2020/08/Grootword-appeltert-760x1040.jpg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2020/08/Grootword-appeltert-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "closed",
+ "seo": {
+  "title": "Grootword-appeltert - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Behalwe dat dié appeltert mooi is, is dit seker een van die heel lekkerste appeltertjie wat daar bestaan. Spyt sal jy nooit wees as jy dit maak nie. </p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Grootword-appeltert",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2020/08/Grootword-appeltert-800x530.jpg",
+   "srcset": "/media/uploads/2020/08/Grootword-appeltert-800x530.jpg 800w, /media/uploads/2020/08/Grootword-appeltert-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Grootword-appeltert"
+  },
+  "courses": [
+   "Gebak, Nagereg"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "411 g (1blik) tertappels &#8211; gedreineer",
+     "2 eiers",
+     "190 ml strooisuiker",
+     "5 ml vanieljegeursel",
+     "85 ml melk",
+     "60 ml botter gesmelt",
+     "250 ml koekmeel",
+     "5 ml bakpoeier",
+     "2 ml sout"
+    ]
+   },
+   {
+    "title": "Sous",
+    "items": [
+     "1 blikkie Idealmelk",
+     "125 ml room",
+     "250 ml suiker",
+     "5 ml vanieljegeursel"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Klits die eiers , strooisuiker en vanielje saam",
+     "Klits die melk by en dan die gesmelte botter.",
+     "Sif die droe bestanddele saam en klits dit alles by die eiermengsel.",
+     "Gooi die beslag in ‘n gesmeerde tertbak en druk die appels in die deeg.",
+     "Bak vir 30 – 40 minute by 180C",
+     "Kook Idealmelk, room, suiker en vanieljegeursel saam totdat die suiker opgelos is. Gooi dit oor die tert die oomblik as dit uit die oond kom."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

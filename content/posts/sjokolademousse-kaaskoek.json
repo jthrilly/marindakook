@@ -1,0 +1,123 @@
+{
+ "id": 6048,
+ "slug": "sjokolademousse-kaaskoek",
+ "title": "Sjokolademousse-kaaskoek",
+ "date": "2020-08-23T11:56:46",
+ "modified": "2022-02-13T19:19:05",
+ "excerpt": "Mense dink om ‘n kaaskoek te maak is moeilik. Nie die ene nie. Dié ene vra om gemaak te word.",
+ "categories": [
+  366,
+  5,
+  8
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Sjokolademousse-kaaskoek",
+  "card": {
+   "src": "/media/uploads/2020/08/Sjokolademousse-kaaskoek-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2020/08/Sjokolademousse-kaaskoek-760x1040.jpg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2020/08/Sjokolademousse-kaaskoek-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "closed",
+ "seo": {
+  "title": "Sjokolademousse-kaaskoek - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Mense dink om &#8216;n kaaskoek te maak is moeilik. Nie die ene nie. Dié ene vra om gemaak te word. </p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Sjokolademousse-kaaskoek",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2020/08/Sjokolademousse-kaaskoek-800x530.jpg",
+   "srcset": "/media/uploads/2020/08/Sjokolademousse-kaaskoek-800x530.jpg 800w, /media/uploads/2020/08/Sjokolademousse-kaaskoek-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Sjokolademousse-kaaskoek"
+  },
+  "courses": [
+   "Gebak, Nagereg"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "250 g roomkaas",
+     "250 g mascarpone",
+     "160 ml strooisuiker",
+     "60 ml kakao",
+     "250 ml room",
+     "5 ml vanielje",
+     "1 Lindt sjokolade",
+     "30 ml melk",
+     "1 pakkie oreokoekies",
+     "60 ml botter gesmelt"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Kap die oreokoekies fyn in ‘n voedselverwerker.",
+     "Smelt die botter in die mikrogolf en meng met die koekies.",
+     "Smeer ‘n losboompan en druk die koekiemengsel vas in die pan.  Sit in die yskas dat dit kan set.",
+     "In ‘n bak klits die room met 100 ml strooisuiker en die vanielje tot sagte punte.",
+     "In ‘n ander bak klits die roomkaas, mascarpone, gesifte kakao en orige 60 ml strooisuiker dat dit sag en goed gemeng is.",
+     "Smelt die Lindt sjokolade met 30 ml melk in die mikrogolf. Roer dit by die kaasmengsel.",
+     "Vou nou die room by die kaasmengsel in.",
+     "Krap uit op die oreokoekies en laat vir ten minste 4 uur in jou yskas.",
+     "Haal dit uit jou losboompan en versier met ‘n Flake, bessies of wat ook al in jou huis is."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

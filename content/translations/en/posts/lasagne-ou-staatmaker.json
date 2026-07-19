@@ -1,0 +1,125 @@
+{
+ "id": 1085,
+ "slug": "lasagne-ou-staatmaker",
+ "sourceHash": "e93693811db0ace0c7e2729cd4b34934e0954e83",
+ "title": "Lasagne – old faithful",
+ "excerpt": "Around Christmas time you can always expect an unexpected guest, so you welcome them with open arms and a glass of wine. That's why I decided to make a lasagne and freeze it. Then it's just a matter of taking it out and warming it up, with a salad and a fresh roll on the side. …",
+ "seo": {
+  "title": "Lasagne - old faithful - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Around Christmas time you can always expect an unexpected guest, so you welcome them with open arms and a glass of wine.&nbsp; That's why I decided to make a lasagne and freeze it.&nbsp; Then it's just a matter of taking it out and warming it up, with a salad and a fresh roll on the side.&nbsp; This recipe is enough for 14 people.&nbsp; If there are fewer of you, just halve it.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<p class=\"wp-block-paragraph\">Lasagne is comfort food that leaves many people eating with pure contentment.<a href=\"/media/uploads/2017/10/images4.jpg\"></a></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Lasagne – old faithful",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2017/10/featured-lasange-blog-065-1024x768.jpg",
+   "srcset": "/media/uploads/2017/10/featured-lasange-blog-065-1024x768.jpg 1024w, /media/uploads/2017/10/featured-lasange-blog-065-600x450.jpg 600w, /media/uploads/2017/10/featured-lasange-blog-065-300x225.jpg 300w, /media/uploads/2017/10/featured-lasange-blog-065-768x576.jpg 768w, /media/uploads/2017/10/featured-lasange-blog-065.jpg 1500w",
+   "width": 800,
+   "height": 600,
+   "alt": "Lasagne - ou staatmaker"
+  },
+  "courses": [
+   "Main course, Red meat"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1 onion",
+     "4 cloves garlic<br><img src=\"/media/uploads/2017/10/lasange-blog-002-300x225.jpg\" title=\"lasange-blog-002\" alt class=\"direction-step-image\" loading=\"lazy\">",
+     "30 ml oil",
+     "1.5 kg good mince",
+     "1 tin tomato puree",
+     "1 tin chopped tomato and onion mix<br><img src=\"/media/uploads/2017/10/lasange-blog-024-300x225.jpg\" title=\"lasange-blog-024\" alt class=\"direction-step-image\" loading=\"lazy\">",
+     "1 tub tomato paste<br><img src=\"/media/uploads/2017/10/lasange-blog-026-300x225.jpg\" title=\"lasange-blog-026\" alt class=\"direction-step-image\" loading=\"lazy\">",
+     "1 cup red wine",
+     "2 cups beef stock",
+     "20 ml mixed herbs",
+     "salt and pepper",
+     "3 sprigs thyme<br><img src=\"/media/uploads/2017/10/lasange-blog-015-300x225.jpg\" title=\"lasange-blog-015\" alt class=\"direction-step-image\" loading=\"lazy\">",
+     "1 packet lasagne sheets<br><img src=\"/media/uploads/2017/10/lasange-blog-058-300x225.jpg\" title=\"lasange-blog-058\" alt class=\"direction-step-image\" loading=\"lazy\">"
+    ]
+   },
+   {
+    "title": "The cheese sauce",
+    "items": [
+     "100 ml butter<br>",
+     "100 ml flour<br>",
+     "salt and pepper<br>",
+     "500 &#8211; 700 ml milk<br>",
+     "1 tub cream cheese<br>",
+     "1 1/2 cups grated cheese"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Chop your onion and fry in the oil until glassy.",
+     "Add the garlic and fry a little longer.<br><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/lasange-blog-006.jpg\" class=\"direction-step-image\" alt title=\"lasange-blog-006\">",
+     "Stir in your mince and break it up so it doesn't clump – use a fork.<br><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/lasange-blog-010.jpg\" class=\"direction-step-image\" alt title=\"lasange-blog-010\">",
+     "Add all the rest of the ingredients (except the lasagne sheets) and now let it cook for at least 90 to 120 minutes.<br>",
+     "You'll see the colour turn a deep red/brown.<br><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/lasange-blog-065.jpg\" class=\"direction-step-image\" alt title=\"lasange-blog-065\">"
+    ]
+   },
+   {
+    "title": "For the cheese sauce",
+    "steps": [
+     "Melt the butter in a pot.<br><a rel aria-label href=\"/media/uploads/2017/10/lasange-blog-041.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/lasange-blog-041.jpg\" class=\"direction-step-image\" alt=\"lasange blog 041\" title=\"Lasagne - ou staatmaker\"></a>",
+     "Stir in the flour, salt and pepper with a whisk.",
+     "Now slowly add the milk, stirring constantly until it's as thick as custard.<br><a rel aria-label href=\"/media/uploads/2017/10/lasange-blog-048.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/lasange-blog-048.jpg\" class=\"direction-step-image\" alt=\"lasange blog 048\" title=\"Lasagne - ou staatmaker\"></a>",
+     "Stir in the tub of cream cheese.<br><a rel aria-label href=\"/media/uploads/2017/10/lasange-blog-054.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/lasange-blog-054.jpg\" class=\"direction-step-image\" alt=\"lasange blog 054\" title=\"Lasagne - ou staatmaker\"></a>",
+     "Stir in 1/2 cup of the grated cheese and simmer for 5 minutes.<br><a rel aria-label href=\"/media/uploads/2017/10/lasange-blog-056.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/lasange-blog-056.jpg\" class=\"direction-step-image\" alt=\"lasange blog 056\" title=\"Lasagne - ou staatmaker\"></a>"
+    ]
+   },
+   {
+    "title": "Assembling the lasagne",
+    "steps": [
+     "Spoon a little of the cheese sauce into the bottom of an oven dish.<br><a rel aria-label href=\"/media/uploads/2017/10/lasange-blog-069.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/lasange-blog-069.jpg\" class=\"direction-step-image\" alt=\"lasange blog 069\" title=\"Lasagne - ou staatmaker\"></a>",
+     "Layer lasagne sheets on top of the cheese sauce.<br><a rel aria-label href=\"/media/uploads/2017/10/lasange-blog-073.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/lasange-blog-073.jpg\" class=\"direction-step-image\" alt=\"lasange blog 073\" title=\"Lasagne - ou staatmaker\"></a>",
+     "Now spoon some of the meat mixture on top of the lasagne sheets.<br><a rel aria-label href=\"/media/uploads/2017/10/lasange-blog-075.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1125\" height=\"1500\" src=\"/media/uploads/2017/10/lasange-blog-075.jpg\" class=\"direction-step-image\" alt=\"lasange blog 075\" title=\"Lasagne - ou staatmaker\"></a>",
+     "Repeat the layers and finish with a layer of cheese sauce. Sprinkle the remaining grated cheese on top.<br><a rel aria-label href=\"/media/uploads/2017/10/lasange-blog-080.jpg\" target=\"_blank\"><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/lasange-blog-080.jpg\" class=\"direction-step-image\" alt=\"lasange blog 080\" title=\"Lasagne - ou staatmaker\"></a>"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

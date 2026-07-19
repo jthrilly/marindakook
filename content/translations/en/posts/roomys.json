@@ -1,0 +1,91 @@
+{
+ "id": 7020,
+ "slug": "roomys",
+ "sourceHash": "d6706621daef2b037b3d6ff5a6a5f6d02dd51f1d",
+ "title": "Ice cream",
+ "excerpt": "I made this ice cream for Amanda Strydom and I think if she could have packed some up and taken it on the plane, she would have!",
+ "seo": {
+  "title": "Ice cream - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">I made this ice cream for Amanda Strydom and I think if she could have packed some up and taken it on the plane, she would have!</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Ice cream",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Roomys-e1647541248199-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Roomys"
+  },
+  "courses": [
+   "Dessert"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 litres good vanilla ice cream",
+     "2 packets Oreo biscuits, crushed",
+     "3 Flake chocolates",
+     "1 packet Whispers or any small chocolate balls",
+     "250 ml cream",
+     "1 small slab of chocolate",
+     "edible flowers"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Line a loaf tin with cling wrap.",
+     "Soften the ice cream a little and mix half the biscuits, half the Flake chocolates and half the chocolate balls into the ice cream.",
+     "Pour it into the loaf tin.",
+     "Sprinkle the remaining biscuits over.",
+     "Cover with cling wrap and freeze.",
+     "Turn it out of the loaf tin and decorate with the remaining Flake chocolates, chocolate balls and pretty flowers.",
+     "Make the chocolate sauce by melting the slab of chocolate together with the cream in the microwave."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

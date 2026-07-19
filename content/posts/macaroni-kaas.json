@@ -1,0 +1,198 @@
+{
+ "id": 5075,
+ "slug": "macaroni-kaas",
+ "title": "Macaroni en Kaas",
+ "date": "2018-10-11T16:08:02",
+ "modified": "2022-02-13T18:19:50",
+ "excerpt": "",
+ "categories": [
+  322
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Macaroni en Kaas",
+  "card": {
+   "src": "/media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-1024x683.jpg",
+   "width": 1024,
+   "height": 683
+  },
+  "portrait": {
+   "src": "/media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-1024x683.jpg",
+   "width": 1024,
+   "height": 683
+  },
+  "thumb": {
+   "src": "/media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Macaroni en Kaas - Marinda Kook",
+  "description": null
+ },
+ "html": "<h3 class=\"wp-block-heading\"></h3>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Macaroni en Kaas",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-1024x683.jpg",
+   "srcset": "/media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-1024x683.jpg 1024w, /media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-600x400.jpg 600w, /media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-300x200.jpg 300w, /media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-768x512.jpg 768w",
+   "width": 800,
+   "height": 534,
+   "alt": "Macaroni en Kaas"
+  },
+  "courses": [
+   "Pasta"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "½ pak macaroni",
+     "3 goeie Duitse worsies (bv Käsegriller), in klein blokkies gesny",
+     "750 ml melk",
+     "2 eiers, geklits",
+     "60 ml botter",
+     "60 ml meel",
+     "Sout en peper na smaak",
+     "250 ml gerasperde kaas",
+     "2 groot tamaties, in skywe gesny",
+     "rooipeper na smaak"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Kook die macaroni tot net gaar. Dreineer gooi dit in &#8216;n oondvaste bak. Voeg die worsies by, roer deur en plaas opsy. Meng 250 ml van die melk met die eiers en roer dit by die macaroni-en-worsiemengsel in.",
+     "Maak nou &#8216;n witsous. Smelt die botter in &#8216;n pot en roer die meel in tot glad. Verwyder van die hitte en gooi die oorblywende melk geleidelik by terwyl jy aanhoudend klits. Sit die pot terug op die hitte en roer tot dit verdik het. Verwyder van die hitte en geur met sout en peper. Gooi die witsous oor die macaroni en sprinkel die kaas eweredig bo-oor.",
+     "Rangskik die tamatie skywe bo-oor, geur tamaties met sout, peper en rooipeper, en bak in &#8216;n voorverhitte oond vir 30 minute teen 180º C of tot gaar en gestol. Maklik!"
+    ]
+   }
+  ],
+  "notesTitle": "Notas",
+  "notes": [
+   "Bedien 4 – 6 porsies met ‘n lekker slaai."
+  ],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 10760,
+   "parent": 10707,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2025-03-12T10:24:24",
+   "html": "<p>Middag Sonica,  jy moet loer op die blad al die resepte is hier.</p>"
+  },
+  {
+   "id": 10707,
+   "parent": 0,
+   "author": "Sonica",
+   "avatar": "https://secure.gravatar.com/avatar/9e165bbe5e9cbb25667e9d17ac787c1e1541c1cc3d25f3cec98bbff236d09c3b?s=96&d=mm&r=g",
+   "date": "2025-03-10T15:47:31",
+   "html": "<p>Mag ek asb van jou resepte kry Marinda.</p>"
+  },
+  {
+   "id": 7791,
+   "parent": 7687,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-09-10T17:26:43",
+   "html": "<p>Ja, ek plaas gereeld nuwe resepte.</p>"
+  },
+  {
+   "id": 7687,
+   "parent": 0,
+   "author": "Van Fourie",
+   "avatar": "https://secure.gravatar.com/avatar/ed18d1030f643820f6e18343cd989cbeef69e4fe187224c71cc0d25bc9ba16f0?s=96&d=mm&r=g",
+   "date": "2024-09-03T16:10:41",
+   "html": "<p>Kom daar nog resepte asb</p>"
+  },
+  {
+   "id": 6302,
+   "parent": 6301,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-12-05T13:58:35",
+   "html": "<p>Gebruik sommer die hele pak.</p>"
+  },
+  {
+   "id": 6301,
+   "parent": 0,
+   "author": "Rudolph Venter",
+   "avatar": "https://secure.gravatar.com/avatar/0fdead777c0b3aaa8a6fb84aa229391cba7523f0cc52c1642fa63d39f692bf9a?s=96&d=mm&r=g",
+   "date": "2023-12-05T11:24:11",
+   "html": "<p>Hallo Marinda</p>\n<p>Ek gebruik baie van jou resepte, want dis maklik en lekker en ek hou baie van kosmaak.<br>\nVraag by jou macaroni en kaas resep. Is halwe pak 500g?</p>"
+  },
+  {
+   "id": 5948,
+   "parent": 5928,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-07-17T10:16:44",
+   "html": "<p>Geniet elke happie.</p>"
+  },
+  {
+   "id": 5928,
+   "parent": 0,
+   "author": "Elize Myburgh",
+   "avatar": "https://secure.gravatar.com/avatar/dd79fc1d4b6d9b16154884cd4700bac02c88ef868600d89e86bb7582ccf94eae?s=96&d=mm&r=g",
+   "date": "2023-07-04T13:53:39",
+   "html": "<p>Baie interesante en vinnige resepte</p>"
+  },
+  {
+   "id": 5624,
+   "parent": 5421,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-02-20T09:20:22",
+   "html": "<p>Lekker eet!</p>"
+  },
+  {
+   "id": 5421,
+   "parent": 0,
+   "author": "Veronica Kleynhans",
+   "avatar": "https://secure.gravatar.com/avatar/4a9766e3b678f7d8088cac1ce632080f5e287f3d8141ca828d7497e7d34f811b?s=96&d=mm&r=g",
+   "date": "2023-01-28T14:14:18",
+   "html": "<p>Ek is mal oor jou Resepte.<br>\nDankie</p>"
+  }
+ ]
+}

@@ -1,0 +1,201 @@
+{
+ "id": 7166,
+ "slug": "souskluitjies",
+ "title": "Souskluitjies",
+ "date": "2022-05-04T23:30:16",
+ "modified": "2022-05-04T23:30:18",
+ "excerpt": "Souskluitjies, o, souskluitjies. Hulle praat vir hulself.",
+ "categories": [
+  8
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Souskluitjies",
+  "card": {
+   "src": "/media/uploads/2022/05/Souskluitjies-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/05/Souskluitjies-760x857.jpg",
+   "width": 760,
+   "height": 857
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/05/Souskluitjies-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Souskluitjies - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Souskluitjies, o, souskluitjies.  Hulle praat vir hulself.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Souskluitjies",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/05/Souskluitjies-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Souskluitjies"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "Bestanddele",
+     "1 k meelblom",
+     "1 t bakpoeier",
+     "¼ t sout",
+     "4 e botter",
+     "2 eiers",
+     "1 e suiker",
+     "½ t sout",
+     "¼ t kaneel",
+     "kaneelsuiker",
+     "¼–½ k gesmelte botter"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Sif die droë bestanddele saam en vryf die botter daarby in.",
+     "Klits die eiers en suiker saam tot lig.",
+     "Voeg by die meelmengsel en meng liggies.",
+     "Gooi water sowat 5 cm diep in &#8216;n kastrol.",
+     "Voeg ½ teelepel sout en ¼ teelepel kaneel by die water en bring tot kookpunt.",
+     "Doop &#8216;n teelepel in kokende water en skep bolletjies deeg in die kokende water – so 5 op ’n slag (as jy meer as 5 kluitjies op &#8216;n slag in die kokende water skep, slaan party daarvan toe).",
+     "Laat dit 10 minute kook, met of sonder deksel.",
+     "Lig die kluitjies uit die water, skep dit in ’n warm bakskottel en strooi kaneelsuiker en gesmelte botter oor.",
+     "Herhaal tot al die deeg op is."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 6879,
+   "parent": 6849,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-05-13T14:18:29",
+   "html": "<p>Met groot gemak kan jy dit doen.</p>"
+  },
+  {
+   "id": 6849,
+   "parent": 0,
+   "author": "Adele Bruwer",
+   "avatar": "https://secure.gravatar.com/avatar/274b8ad885dc694918ce32f9403a3bd09af93a245bae6afef7bf801fa10988c5?s=96&d=mm&r=g",
+   "date": "2024-05-04T13:17:15",
+   "html": "<p>Hello.  Gaan ek hierdie nagereg kan voorberei bv. die Donderdag en dan opwarm en bedien die Vrydagaand?  Baie dankie</p>"
+  },
+  {
+   "id": 4192,
+   "parent": 4191,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-06-22T09:36:22",
+   "html": "<p>Sal se so 4 &#8211; 6 mense gaan lekker eet.</p>"
+  },
+  {
+   "id": 4191,
+   "parent": 0,
+   "author": "Marita",
+   "avatar": "https://secure.gravatar.com/avatar/915c84001bf401cdab8d6e94df6f6ef283e3b9add3969cdd9357225dcda1cb0f?s=96&d=mm&r=g",
+   "date": "2022-06-22T09:07:25",
+   "html": "<p>Ek gaan hierdie beslis probeer.  Hoeveel porsies kry jy uit so baksel?</p>"
+  },
+  {
+   "id": 4022,
+   "parent": 4019,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-05-16T09:13:42",
+   "html": "<p>Jy maak my hart sing!</p>"
+  },
+  {
+   "id": 4019,
+   "parent": 0,
+   "author": "André Kruger",
+   "avatar": "https://secure.gravatar.com/avatar/a9611a6ca50bfbeebb0f21d0e9600a1382137e9c10251b81141a7d2a2df01a98?s=96&d=mm&r=g",
+   "date": "2022-05-15T14:50:54",
+   "html": "<p>Baie dankie Marinda. Jou resep het my Sondag gemaak soos in my jeug, met souskluitjies, melkkos en boontjies na kookkos wat my laat middag slaap vat het.</p>"
+  },
+  {
+   "id": 4010,
+   "parent": 3975,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-05-12T12:10:13",
+   "html": "<p>Geniet!</p>"
+  },
+  {
+   "id": 4006,
+   "parent": 3982,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-05-12T12:08:50",
+   "html": "<p>My ma het dit ook altyd gemaak.</p>"
+  },
+  {
+   "id": 3982,
+   "parent": 0,
+   "author": "Rika",
+   "avatar": "https://secure.gravatar.com/avatar/e66031071b239ba25de456c0b4d47c4f776eda4f7ddb187ea63702d85d9a4a56?s=96&d=mm&r=g",
+   "date": "2022-05-06T07:28:58",
+   "html": "<p>Dit is identies my ma se kluitjies. Verlang sommer nou weer daarna. ❤</p>"
+  },
+  {
+   "id": 3975,
+   "parent": 0,
+   "author": "Christi",
+   "avatar": "https://secure.gravatar.com/avatar/941b0215be0eb303a699cd2fc7fa0d27e06c7d449a3241104dfb149ef55b414b?s=96&d=mm&r=g",
+   "date": "2022-05-05T12:21:20",
+   "html": "<p>Wondelik! Dankie!</p>"
+  }
+ ]
+}

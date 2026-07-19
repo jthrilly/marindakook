@@ -1,0 +1,93 @@
+{
+ "id": 7031,
+ "slug": "bokmelkkaasrolletjie",
+ "sourceHash": "54979cf898b8b28c92e44ad6116b814d7948849a",
+ "title": "Goat's Milk Cheese Roll",
+ "excerpt": "Albert Maritz is, in my eyes, the best male actor in South Africa. The two of us have known each other for a long time, but when it comes to our work we don't always see eye to eye. Having him in my kitchen made my heart glad.",
+ "seo": {
+  "title": "Goat's Milk Cheese Roll - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Albert Maritz is, in my eyes, the best male actor in South Africa.&nbsp;The two of us have known each other for a long time, but when it comes to our work we don't always see eye to eye. Having him in my kitchen made my heart glad.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Goat's Milk Cheese Roll",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Bokmelkkaasrolletjie-e1647608902755-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Bokmelkkaasrolletjie"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "60 ml chives, finely chopped",
+     "60 ml parsley, finely chopped",
+     "15 ml basil leaves, chopped",
+     "1 clove garlic, finely chopped",
+     "pinch of salt",
+     "pinch of coarse black pepper",
+     "15 ml lemon zest, finely grated",
+     "1 roll unflavoured goat's milk cheese",
+     "125 ml pecan nuts, finely chopped",
+     "olive oil"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Put the chives, all the herbs, the garlic and the salt and pepper in a bowl and mix. Set aside 60 ml to later roll the cheese in.",
+     "Add the lemon zest to the herb mixture.",
+     "Mix the soft goat's milk cheese into the herb mixture in the bowl.",
+     "Shape the cheese mixture into a sausage on a baking tray lined with cling film, and wrap it tightly in the cling film. Put it in the fridge for 30 minutes.",
+     "Pour the rest of the herb mixture and the pecan nuts onto a sheet of baking paper and roll the cheese sausage in the nuts until it's coated all the way round.",
+     "Sprinkle with olive oil before eating."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

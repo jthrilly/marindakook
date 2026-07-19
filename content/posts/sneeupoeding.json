@@ -1,0 +1,129 @@
+{
+ "id": 6992,
+ "slug": "sneeupoeding",
+ "title": "Sneeupoeding",
+ "date": "2022-03-10T14:41:38",
+ "modified": "2022-03-18T15:13:43",
+ "excerpt": "Ek gaan dit skaamteloos se: Om vir Peter Veldsman te mag kosmaak was seker die grootste eer wat my kon te beurt val. Ek het nie geweet hoe om die sneeupoedng te maak nie en hy het dit vir my gewys. Van nou af is dit deel van my nageregte.",
+ "categories": [
+  8
+ ],
+ "tags": [
+  370
+ ],
+ "featured": {
+  "alt": "Sneeupoeding",
+  "card": {
+   "src": "/media/uploads/2022/03/Sneeupoeding-2.jpg",
+   "width": null,
+   "height": null
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Sneeupoeding-2.jpg",
+   "width": null,
+   "height": null
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Sneeupoeding-2.jpg",
+   "width": null,
+   "height": null
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Sneeupoeding - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Ek gaan dit skaamteloos se: Om vir Peter Veldsman te mag kosmaak was seker die grootste eer wat my kon te beurt val.&nbsp; Ek het nie geweet hoe om die sneeupoedng te maak nie en hy het dit vir my gewys.&nbsp; Van nou af is dit deel van my nageregte.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Sneeupoeding",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Sneeupoeding-1-800x530.jpg",
+   "srcset": "/media/uploads/2022/03/Sneeupoeding-1-800x530.jpg 800w, /media/uploads/2022/03/Sneeupoeding-1-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Sneeupoeding"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "20 ml gelatien",
+     "70 ml koue water",
+     "250 ml kookwater",
+     "250 ml strooisuiker",
+     "60 ml suurlemoensap",
+     "skil van 1 suurlemoen, fyngerasper",
+     "2 eierwitte (hou die geel vir die tuisgemaakte vla)"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Los die gelatien op in die koue water.",
+     "Gooi die kookwater, strooisuiker, suurlemoensap en suurlemoenskil in ’n pot en roer totdat die suiker opgelos is.",
+     "Roer die gelatien by en roer deeglik.",
+     "Gooi alles deur ’n sif en sit dit eenkant om af te koel.",
+     "As jy merk dit begin stol, klits dit vinnig totdat dit begin skuimerig raak.",
+     "Klits die eierwitte styf in ’n skoon glasbak.",
+     "Vou dit in by die mengsel.",
+     "Spoel ’n mooi opdienbak uit met koue water en gooi die poeding in die bak.",
+     "Sit in die yskas."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 3786,
+   "parent": 0,
+   "author": "Sarie Marais",
+   "avatar": "https://secure.gravatar.com/avatar/1c8eaf1609d0f86d140b45dc9a747ec6340f58643aa595a4199095939d497487?s=96&d=mm&r=g",
+   "date": "2022-03-11T05:31:34",
+   "html": "<p>Danki vir d resep jou program is baie leersaam</p>"
+  }
+ ]
+}

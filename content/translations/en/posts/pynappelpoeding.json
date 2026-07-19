@@ -1,0 +1,85 @@
+{
+ "id": 7046,
+ "slug": "pynappelpoeding",
+ "sourceHash": "13194f8923dd9494b23f2b38f37924a614fd026b",
+ "title": "Pineapple pudding",
+ "excerpt": "My dear Vinette Ebrahim took me straight back to those old church bazaars we used to have. This pudding in our house was called \"bazaar pudding\".",
+ "seo": {
+  "title": "Pineapple pudding - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">My dear Vinette Ebrahim took me straight back to those old church bazaars we used to have.&nbsp;This pudding in our house was called “bazaar pudding”.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Pineapple pudding",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Pynappelpoeding-2-800x530.png",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Pynappelpoeding"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 packets pineapple jelly",
+     "1 tin ice-cold Ideal Milk",
+     "1 tin crushed pineapple"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Make up the jelly according to the instructions on the packets. Use some of the pineapple syrup as part of the 2 cups of cold water.",
+     "Put it in the fridge until the jelly is just starting to set.",
+     "Whisk in the Ideal Milk and pineapple.",
+     "Leave to set overnight in one large bowl or in pretty little containers.",
+     "Serve with custard."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "id": 1668,
+ "slug": "tjops-innie-oond-net-so-lekker-soos-op-die-vuur",
+ "sourceHash": "680972db5a6ffabcbcc3bc7b2f6ecd1685424efa",
+ "title": "Chops in the oven – just as good as on the fire",
+ "excerpt": "Winter in the Cape is no time for outdoor braaiing. Since we don't have an indoor braai, I decided to just braai the chops in the oven. It was absolutely delicious.",
+ "seo": {
+  "title": "Chops in the oven - just as good as on the fire - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Winter in the Cape is no time for outdoor braaiing. &nbsp;Since we don't have an indoor braai, I decided to just braai the chops in the oven. &nbsp;It was absolutely delicious.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<p class=\"wp-block-paragraph\"><a style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;\" href=\"/media/uploads/2017/10/MARINDA-BLOG-3-0711.jpg\"><img loading=\"lazy\" width=\"1024\" height=\"768\" class=\"aligncenter size-large wp-image-1679\" src=\"/media/uploads/2017/10/MARINDA-BLOG-3-0711-1024x768.jpg\" alt=\"MARINDA BLOG 3 071\"></a></p>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"/media/uploads/2017/10/MARINDA-BLOG-3-064.jpg\"><img src=\"/media/uploads/2017/10/MARINDA-BLOG-3-064-1024x768.jpg\" alt=\"MARINDA BLOG 3 064\" class=\"wp-image-1678\" loading=\"lazy\"></a></figure></div>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"/media/uploads/2017/10/MARINDA-BLOG-3-085.jpg\"><img src=\"/media/uploads/2017/10/MARINDA-BLOG-3-085-1024x768.jpg\" alt=\"MARINDA BLOG 3 085\" class=\"wp-image-1675\" loading=\"lazy\"></a></figure></div>\n\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Chops in the oven – just as good as on the fire",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2017/10/featured-MARINDA-BLOG-3-0711-1024x768.jpg",
+   "srcset": "/media/uploads/2017/10/featured-MARINDA-BLOG-3-0711-1024x768.jpg 1024w, /media/uploads/2017/10/featured-MARINDA-BLOG-3-0711-600x450.jpg 600w, /media/uploads/2017/10/featured-MARINDA-BLOG-3-0711-300x225.jpg 300w, /media/uploads/2017/10/featured-MARINDA-BLOG-3-0711-768x576.jpg 768w, /media/uploads/2017/10/featured-MARINDA-BLOG-3-0711.jpg 1500w",
+   "width": 800,
+   "height": 600,
+   "alt": "Tjops in die oond - net so lekker soos op die vuur"
+  },
+  "courses": [
+   "Main Course, Red Meat"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "6 to 8 chops",
+     "100 ml vinegar",
+     "80 ml Worcestershire sauce",
+     "60ml olive oil",
+     "Ina Paarman's rosemary and olive sprinkle"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Mix the vinegar and Worcestershire sauce and marinate the chops in it for about 1 hour.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/MARINDA-BLOG-3-044.jpg\" class=\"direction-step-image\" alt title=\"MARINDA-BLOG-3-044\">",
+     "Set the oven to 180 degrees Celsius.",
+     "Pour the olive oil into the bottom of an oven dish and pack the sliced onions on the olive oil, then put the rosemary sprigs on the onions.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/MARINDA-BLOG-3-042.jpg\" class=\"direction-step-image\" alt title=\"MARINDA-BLOG-3-042\">",
+     "Pack the chops on the oil and pour the marinade over the meat.",
+     "Sprinkle with the Ina Paarman seasoning &#8211; generously.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/MARINDA-BLOG-3-047.jpg\" class=\"direction-step-image\" alt title=\"MARINDA-BLOG-3-047\">",
+     "It takes about 30 minutes to cook through nicely. After 15 minutes, turn the meat over.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/MARINDA-BLOG-3-056.jpg\" class=\"direction-step-image\" alt title=\"MARINDA-BLOG-3-056\">",
+     "If it's not brown enough, switch on the grill element and grill quickly &#8211; it burns easily so you must keep an eye on the meat."
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "Serve these gorgeous browned beauties with any side of your choice. We had ours with potatoes in their jackets and pumpkin. The onions roast up beautifully alongside them. Finger-licking good."
+  ],
+  "videoHtml": null
+ }
+}

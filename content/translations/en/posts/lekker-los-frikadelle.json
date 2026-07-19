@@ -1,0 +1,93 @@
+{
+ "id": 7478,
+ "slug": "lekker-los-frikadelle",
+ "sourceHash": "b85bf04039c74960ecab7acaac4be413a479a482",
+ "title": "Lovely loose frikkadels",
+ "excerpt": "Lovely loose frikkadels",
+ "seo": {
+  "title": "Lovely loose frikkadels - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2024/03/Frikadelle-1-768x1024.jpeg\" alt class=\"wp-image-7481\" srcset=\"/media/uploads/2024/03/Frikadelle-1-768x1024.jpeg 768w, /media/uploads/2024/03/Frikadelle-1-225x300.jpeg 225w, /media/uploads/2024/03/Frikadelle-1-750x1000.jpeg 750w, /media/uploads/2024/03/Frikadelle-1-380x507.jpeg 380w, /media/uploads/2024/03/Frikadelle-1-760x1013.jpeg 760w, /media/uploads/2024/03/Frikadelle-1-800x1067.jpeg 800w, /media/uploads/2024/03/Frikadelle-1.jpeg 960w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"736\" src=\"/media/uploads/2024/03/Frikadelle-2-1024x736.jpeg\" alt class=\"wp-image-7480\" srcset=\"/media/uploads/2024/03/Frikadelle-2-1024x736.jpeg 1024w, /media/uploads/2024/03/Frikadelle-2-300x216.jpeg 300w, /media/uploads/2024/03/Frikadelle-2-768x552.jpeg 768w, /media/uploads/2024/03/Frikadelle-2-750x539.jpeg 750w, /media/uploads/2024/03/Frikadelle-2-380x273.jpeg 380w, /media/uploads/2024/03/Frikadelle-2-760x546.jpeg 760w, /media/uploads/2024/03/Frikadelle-2-800x575.jpeg 800w, /media/uploads/2024/03/Frikadelle-2.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Lovely loose frikkadels",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2024/03/Frikadelle-3-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Lekker los frikadelle"
+  },
+  "courses": [
+   "Beef, Main course"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "10",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "10",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1 kg lean mince",
+     "1 onion, finely chopped",
+     "1  carrot, finely chopped",
+     "10 ml ground cumin",
+     "5 ml salt",
+     "250 ml oats",
+     "2 eggs, lightly beaten",
+     "30 ml Worcester sauce",
+     "125 ml chutney",
+     "20 ml soy sauce",
+     "Enough oil to shallow-fry the meatballs."
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Chop the onion and carrot finely in the food processor.",
+     "Mix all the ingredients together. I find my hands work best.",
+     "Shape balls as big as you like. I used my 30 ml measuring cup to get them more or less the same size. I wanted smaller balls.",
+     "Fry in shallow oil until nicely browned. Turn them in the pan.",
+     "Drain on kitchen paper and enjoy."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

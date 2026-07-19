@@ -1,0 +1,128 @@
+{
+ "id": 6962,
+ "slug": "elsabe-daneel-se-tamatiebredie",
+ "title": "Elsabé Daneel se Tamatiebredie",
+ "date": "2022-02-03T20:40:47",
+ "modified": "2022-03-18T15:30:22",
+ "excerpt": "My tamatiebredie wat ek vir Elsabé Daneel gemaak het in die eerste episode van Stoofstories met Marinda, op VIA DStv-kanaal 147, Woensdae om 17:00.",
+ "categories": [
+  308,
+  270
+ ],
+ "tags": [
+  368,
+  367
+ ],
+ "featured": {
+  "alt": "Elsabé Daneel se Tamatiebredie",
+  "card": {
+   "src": "/media/uploads/2022/03/Elsabe-Daneel-se-tamatiebredie-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Elsabe-Daneel-se-tamatiebredie-760x863.jpg",
+   "width": 760,
+   "height": 863
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Elsabe-Daneel-se-tamatiebredie-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Elsabé Daneel se Tamatiebredie - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">My tamatiebredie wat ek vir Elsabé Daneel gemaak het in die eerste episode van Stoofstories met Marinda, op VIA DStv-kanaal 147, Woensdae om 17:00. </p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Elsabé Daneel se Tamatiebredie",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Elsabe-Daneel-se-tamatiebredie-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Elsabé Daneel se Tamatiebredie"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 uie, fyngekap",
+     "15 ml olie om die uie in te braai",
+     "2 kg skaapnek en skaaprib gemeng",
+     "1 blikkie tamatiesmoor",
+     "1 blikkie tamatiepuree",
+     "1 koevertjie of blikkie tamatiepasta",
+     "60 ml asyn",
+     "80 ml suiker",
+     "60 ml worcestersous",
+     "6 naeltjies",
+     "5 ml fyn gemmer (as jy nie daarvan het nie is dit nie noodsaaklik nie)",
+     "sout en peper na smaak",
+     "250 ml water",
+     "6 aartappels"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Braai die uie tot glaserig in ’n pot bo-op die stoof.",
+     "Braai die vleis saam met die uie tot effens bruin.",
+     "Meng die res van die bestanddele behalwe die aartappels in ’n bakkie.",
+     "Gooi dit oor die vleis in die pot en laat dit liggies prut vir 45 minute.",
+     "Skil die aartappels en sny dit in kwarte.",
+     "Nadat die bredie vir 45 minute in die pot geprut het, kan die aartappels bygevoeg word.",
+     "Kook nou totdat die aartappels en vleis lekker sag is – ongeveer 30 minute (jy moet maar proe).",
+     "Kook gewone witrys om dit op voor te sit."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

@@ -1,0 +1,97 @@
+{
+ "id": 6423,
+ "slug": "krummel-piesangmuffins",
+ "sourceHash": "4c862df611776316ca78e86a8d95a413c262990d",
+ "title": "Crumble Banana Muffins",
+ "excerpt": "Sometimes a muffin wants to be pretty and grand too. So you top her with a little crumble, and then she tastes even better too.",
+ "seo": {
+  "title": "Crumble Banana Muffins - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Sometimes a muffin wants to be pretty and <em>grand</em> too. So you top her with a little crumble, and then she tastes even better too. </p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2022/01/IMG_9760-1024x768.jpg\" alt class=\"wp-image-6427\" srcset=\"/media/uploads/2022/01/IMG_9760-1024x768.jpg 1024w, /media/uploads/2022/01/IMG_9760-600x450.jpg 600w, /media/uploads/2022/01/IMG_9760-300x225.jpg 300w, /media/uploads/2022/01/IMG_9760-768x576.jpg 768w, /media/uploads/2022/01/IMG_9760-1536x1152.jpg 1536w, /media/uploads/2022/01/IMG_9760-750x563.jpg 750w, /media/uploads/2022/01/IMG_9760-500x375.jpg 500w, /media/uploads/2022/01/IMG_9760-380x285.jpg 380w, /media/uploads/2022/01/IMG_9760-760x570.jpg 760w, /media/uploads/2022/01/IMG_9760-800x600.jpg 800w, /media/uploads/2022/01/IMG_9760.jpg 2048w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n\n\n\n<p class=\"has-text-align-center wp-block-paragraph\"></p>\n\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Crumble Banana Muffins",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/01/IMG_9746-1024x702.jpg",
+   "srcset": "/media/uploads/2022/01/IMG_9746-1024x702.jpg 1024w, /media/uploads/2022/01/IMG_9746-600x411.jpg 600w, /media/uploads/2022/01/IMG_9746-300x206.jpg 300w, /media/uploads/2022/01/IMG_9746-768x526.jpg 768w, /media/uploads/2022/01/IMG_9746-1536x1052.jpg 1536w, /media/uploads/2022/01/IMG_9746-750x514.jpg 750w, /media/uploads/2022/01/IMG_9746-380x260.jpg 380w, /media/uploads/2022/01/IMG_9746-760x521.jpg 760w, /media/uploads/2022/01/IMG_9746-800x548.jpg 800w, /media/uploads/2022/01/IMG_9746.jpg 2048w",
+   "width": 800,
+   "height": 548,
+   "alt": "Krummel-piesangmuffins"
+  },
+  "courses": [
+   "Baking"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Voorbereiding",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Kooktyd",
+    "pairs": [
+     {
+      "value": "25",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "375 ml cake flour",
+     "5 ml baking powder",
+     "5 ml bicarbonate of soda",
+     "2,5 ml salt",
+     "2,5 ml ground cinnamon",
+     "150 g white sugar",
+     "3 bananas mashed",
+     "1 egg lightly beaten",
+     "5 ml vanilla essence",
+     "76g butter melted",
+     "80 g brown sugar",
+     "30 ml cake flour",
+     "pinch ground cinnamon",
+     "15 ml cold butter"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Set your oven to 180C. I mixed everything with just a fork throughout.",
+     "Mix the white sugar, cake flour, baking powder, bicarbonate of soda, salt and 2,5 ml cinnamon in a bowl.",
+     "In another bowl mix the egg, vanilla essence, melted butter and mashed banana. Add it to your dry ingredients and mix well.",
+     "Spoon into a greased muffin tin. (I used paper cups)",
+     "Mix the brown sugar, cake flour, pinch of ground cinnamon and butter with your hands until it looks like wet sand. Divide the crumble between your muffins.",
+     "Bake for 20 to 25 min. Let it cool in the tin."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

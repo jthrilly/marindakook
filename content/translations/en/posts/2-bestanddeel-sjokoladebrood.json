@@ -1,0 +1,85 @@
+{
+ "id": 6417,
+ "slug": "2-bestanddeel-sjokoladebrood",
+ "sourceHash": "1eb3a90a61e5b1ad8bf3556e3fabea3ae84ef07b",
+ "title": "Two-Ingredient Chocolate Bread",
+ "excerpt": "This little loaf is for the day when you just feel like spoiling your family. Suddenly a quick craving for something sweet catches you. Little effort. You can work with just the 2 ingredients, or you can add choc chips and decorate it with Caramel Treat and Cream Caramel sweets.",
+ "seo": {
+  "title": "Two-Ingredient Chocolate Bread - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">This little loaf is for the day when you just feel like spoiling your family.  Suddenly a quick craving for something sweet catches you. Little effort.  You can work with just the 2 ingredients, or you can add choc chips and decorate it with Caramel Treat and Cream Caramel sweets.<br></p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2022/01/IMG_9570-768x1024.jpg\" alt class=\"wp-image-6419\" srcset=\"/media/uploads/2022/01/IMG_9570-768x1024.jpg 768w, /media/uploads/2022/01/IMG_9570-600x800.jpg 600w, /media/uploads/2022/01/IMG_9570-225x300.jpg 225w, /media/uploads/2022/01/IMG_9570-1152x1536.jpg 1152w, /media/uploads/2022/01/IMG_9570-750x1000.jpg 750w, /media/uploads/2022/01/IMG_9570-380x507.jpg 380w, /media/uploads/2022/01/IMG_9570-760x1013.jpg 760w, /media/uploads/2022/01/IMG_9570-800x1067.jpg 800w, /media/uploads/2022/01/IMG_9570.jpg 1536w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Two-Ingredient Chocolate Bread",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/01/IMG_9562-2-1024x495.jpg",
+   "srcset": "/media/uploads/2022/01/IMG_9562-2-1024x495.jpg 1024w, /media/uploads/2022/01/IMG_9562-2-600x290.jpg 600w, /media/uploads/2022/01/IMG_9562-2-300x145.jpg 300w, /media/uploads/2022/01/IMG_9562-2-768x371.jpg 768w, /media/uploads/2022/01/IMG_9562-2-1536x743.jpg 1536w, /media/uploads/2022/01/IMG_9562-2-750x363.jpg 750w, /media/uploads/2022/01/IMG_9562-2-380x184.jpg 380w, /media/uploads/2022/01/IMG_9562-2-760x367.jpg 760w, /media/uploads/2022/01/IMG_9562-2-800x387.jpg 800w, /media/uploads/2022/01/IMG_9562-2.jpg 2048w",
+   "width": 800,
+   "height": 387,
+   "alt": "Twee-bestanddeel Sjokoladebrood"
+  },
+  "courses": [
+   "Baking, Dessert, Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "45",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500g self-raising flour",
+     "500 ml chocolate Steri Stumpie milk",
+     "optional 125 ml choc chips"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Mix the self-raising flour and the choc chips if you'd like to use the choc chips.",
+     "Whisk in the Steri Stumpie",
+     "Spray a bread pan and bake for 40 to 45 minutes at 180C."
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "If you'd like to decorate it: scrape a tin of Caramel Treat into a bowl and mix with 125 ml cream. Microwave for 2 minutes and mix well. Pour over your loaf and decorate with Cream Caramel toffees, cut into smaller pieces."
+  ],
+  "videoHtml": null
+ }
+}

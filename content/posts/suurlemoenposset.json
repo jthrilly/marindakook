@@ -1,0 +1,131 @@
+{
+ "id": 7064,
+ "slug": "suurlemoenposset",
+ "title": "Suurlemoenposset",
+ "date": "2022-03-23T14:59:28",
+ "modified": "2022-03-23T15:00:05",
+ "excerpt": "Wie is nie lief vir ‘n suurlemoenpoeding nie? Wys my daai een. Altyd ‘n wenner.",
+ "categories": [
+  8
+ ],
+ "tags": [
+  24
+ ],
+ "featured": {
+  "alt": "Suurlemoenposset",
+  "card": {
+   "src": "/media/uploads/2022/03/Lemon-posset-e1648040301312-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Lemon-posset-e1648040301312-760x835.jpg",
+   "width": 760,
+   "height": 835
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Lemon-posset-e1648040301312-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Suurlemoenposset - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Wie is nie lief vir ‘n suurlemoenpoeding nie?&nbsp; Wys my daai een.&nbsp; Altyd ‘n wenner.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Suurlemoenposset",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Lemon-posset-e1648040301312-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Suurlemoenposset"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 ml room",
+     "125 ml strooisuiker",
+     "skil van een suurlemoen, baie fyn gerasper",
+     "sap van een suurlemoen"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Maak room en strooisuiker warm in ’n pot. Kook vir 3 minute totdat die strooisuiker opgelos is.",
+     "Laat effens afkoel en roer gerasperde suurlemoenskil in.",
+     "Roer suurlemoensap in.",
+     "Gooi uit in klein glasies.",
+     "Laat stol in yskas vir om en by 3 ure.",
+     "Sit voor met bessies en mentblaartjies."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 3831,
+   "parent": 3811,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-03-28T09:26:27",
+   "html": "<p>Opreg dankie.  Sonder julle was ek niks. x</p>"
+  },
+  {
+   "id": 3811,
+   "parent": 0,
+   "author": "Ronel Barnard",
+   "avatar": "https://secure.gravatar.com/avatar/b1fca64e340530e424a8c972d7c9ee57e47d3a7a7ae61ca6ccb2340bced2076d?s=96&d=mm&r=g",
+   "date": "2022-03-23T22:04:54",
+   "html": "<p>Marinda het die warmste persoonlikheid en ek geniet jou programme terdeë.  So bly ek kan deel wees daarvan. Dankie</p>"
+  }
+ ]
+}

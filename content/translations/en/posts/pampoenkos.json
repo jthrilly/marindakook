@@ -1,0 +1,94 @@
+{
+ "id": 7238,
+ "slug": "pampoenkos",
+ "sourceHash": "e2e09c0698e0f98338ce9f2b7047280690ad3d5c",
+ "title": "Pumpkin Mince Bake",
+ "excerpt": "I made this pumpkin mince bake at the insistence of my granddaughter Princess Lea.",
+ "seo": {
+  "title": "Pumpkin Mince Bake - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">I made this pumpkin mince bake at the insistence of my granddaughter Princess Lea.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2022/07/IMG_3295-768x1024.jpg\" alt class=\"wp-image-7240\" srcset=\"/media/uploads/2022/07/IMG_3295-768x1024.jpg 768w, /media/uploads/2022/07/IMG_3295-600x800.jpg 600w, /media/uploads/2022/07/IMG_3295-225x300.jpg 225w, /media/uploads/2022/07/IMG_3295-1152x1536.jpg 1152w, /media/uploads/2022/07/IMG_3295-750x1000.jpg 750w, /media/uploads/2022/07/IMG_3295-380x507.jpg 380w, /media/uploads/2022/07/IMG_3295-760x1013.jpg 760w, /media/uploads/2022/07/IMG_3295-800x1067.jpg 800w, /media/uploads/2022/07/IMG_3295.jpg 1440w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Pumpkin Mince Bake",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/07/IMG_3297-800x530.jpg",
+   "srcset": "/media/uploads/2022/07/IMG_3297-800x530.jpg 800w, /media/uploads/2022/07/IMG_3297-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Pampoenkos"
+  },
+  "courses": [
+   "Mince"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "25",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500g beef mince",
+     "1 x 690 g bottle of store-bought tomato pasta sauce of your choice",
+     "750 ml cooked rice (3 cups)",
+     "750 ml cooked pumpkin, mashed",
+     "20 ml oil",
+     "1 onion, finely chopped",
+     "20 ml butter",
+     "2,5 ml ground cinnamon",
+     "salt and pepper"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Set the oven to 180C and grease a square oven dish.",
+     "Fry the onion lightly in the oil. Add your mince and fry until it starts to brown.",
+     "Pour the pasta sauce over the mince and cook for 10-15 minutes until everything starts to thicken. Salt and pepper to taste. Set it aside until you need it.",
+     "While the pumpkin is warm, stir in the cinnamon, butter and salt and pepper.",
+     "Place your rice at the bottom of the oven dish.",
+     "Spoon the pumpkin over the rice.",
+     "Spoon the mince over the pumpkin.",
+     "Bake in the oven for 25 minutes."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

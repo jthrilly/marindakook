@@ -1,0 +1,129 @@
+{
+ "id": 7120,
+ "slug": "diepgebraaide-vis-en-tjips",
+ "sourceHash": "fb3df63d67d188939c1aba47f8cc6ef0a7c66faf",
+ "title": "Deep-fried fish and chips",
+ "excerpt": "Look at Sandra, she's got style. When she asked me to make a plain deep-fried fish, I knew I'd have to go all out and show off. It's hard to get really crispy fish. I discovered the secret! Read carefully!",
+ "seo": {
+  "title": "Deep-fried fish and chips - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Look at Sandra, she's got style.&nbsp; When she asked me to make a plain deep-fried fish, I knew I'd have to go all out and show off.&nbsp;It's hard to get really crispy fish.&nbsp;I discovered the secret! Read carefully!</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Deep-fried fish and chips",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/04/vis-en-tjips-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Diepgebraaide vis en tjips"
+  },
+  "courses": [
+   "Main course, Seafood"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": "Beer batter – Fish",
+    "items": [
+     "1 packet I&amp;J fish fillets",
+     "500 ml cake flour",
+     "salt",
+     "white pepper",
+     "5 ml baking powder",
+     "70 ml corn flour (Maizena)",
+     "250 ml beer",
+     "oil for deep-frying"
+    ]
+   },
+   {
+    "title": "Thin crispy chips",
+    "items": [
+     "4 large potatoes (choose potatoes suitable for chips)",
+     "coarse salt",
+     "oil for deep-frying"
+    ]
+   },
+   {
+    "title": "Tartare sauce",
+    "items": [
+     "250 ml good mayonnaise",
+     "2 gherkins, very finely chopped",
+     "30 ml dill, very finely chopped",
+     "5 ml lemon juice",
+     "20 ml carrot, very finely grated"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": "Beer batter – Fish",
+    "steps": [
+     "Take the fish (still frozen) out of the plastic and dip the pieces one by one quickly into a bowl of boiling water.",
+     "Mix 250 ml flour with salt and pepper in a bowl and press the pieces one by one into the mixture.",
+     "Put baking paper on a baking tray and let the fish rest on it for about 15 minutes.",
+     "In another bowl mix 250 ml flour, baking powder, corn flour, salt and white pepper.",
+     "Stir in the beer.",
+     "Pour the oil into a pot and heat it up well.",
+     "Dip the pieces in the beer batter and lower them into the hot oil.",
+     "Once nicely browned, drain on kitchen paper."
+    ]
+   },
+   {
+    "title": "Thin crispy chips",
+    "steps": [
+     "Peel the potatoes and cut them into thin slices.",
+     "Put the raw slices into ice water.",
+     "Heat the oil to 150 °C.",
+     "Dry the slices and fry them for about 4 minutes at 150 °C.",
+     "Remove and drain on kitchen paper.",
+     "Heat the oil to 200 °C and fry the chips until golden brown.",
+     "Drain on kitchen paper and sprinkle with coarse salt."
+    ]
+   },
+   {
+    "title": "Tartare sauce",
+    "steps": [
+     "Mix everything and put it in the fridge for at least 30 minutes."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

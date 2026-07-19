@@ -1,0 +1,84 @@
+{
+ "id": 7038,
+ "slug": "roomkaas-met-pekaneute-en-heuning",
+ "sourceHash": "2f51bf848c68ffb5f26e9c9de4be4e390eea82a9",
+ "title": "Cream cheese with pecan nuts and honey",
+ "excerpt": "This is a quick trick to pull out of a hat for unexpected guests.",
+ "seo": {
+  "title": "Cream cheese with pecan nuts and honey - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">This is a quick trick to pull out of a hat for unexpected guests.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Cream cheese with pecan nuts and honey",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Roomkaas-met-pekaneute-en-heuning-e1647609299910-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Roomkaas met pekaneute en heuning"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1 tub Philadelphia cream cheese",
+     "125 ml pecan nuts, toasted",
+     "100 ml honey",
+     "coarse salt"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Toast the pecan nuts in a pan and let them cool.",
+     "Put the cheese on a nice plate and pour the honey and pecan nuts over it.",
+     "Sprinkle a little coarse salt over."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

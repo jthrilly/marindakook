@@ -1,0 +1,88 @@
+{
+ "id": 297,
+ "slug": "maklikebrood",
+ "sourceHash": "a94c9c99c2a762d936c7fe817547ead020cafaf2",
+ "title": "Easy bread – just 3 ingredients",
+ "excerpt": "Now a warm loaf at the right time is like asking for more with jam. The bread is so easy. What you flavour it with or add to it is up to you. Warm bread is love from the heart. Set your oven to 180 degrees Celsius and you're going to bake the bread for …",
+ "seo": {
+  "title": "Easy bread - just 3 ingredients - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Now a warm loaf at the right time is like asking for more with jam.&nbsp; The bread is so easy.&nbsp; What you flavour it with or add to it is up to you.&nbsp; Warm bread is love from the heart. Set your oven to 180 degrees Celsius and you're going to bake the bread for 1 hour.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"/media/uploads/2017/10/brood-blog-023.jpg\"><img src=\"/media/uploads/2017/10/brood-blog-023-1024x768.jpg\" alt=\"brood blog 023\" class=\"wp-image-298\" loading=\"lazy\"></a></figure></div>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"/media/uploads/2017/10/brood-blog-027.jpg\"><img src=\"/media/uploads/2017/10/brood-blog-027-768x1024.jpg\" alt=\"brood blog 027\" class=\"wp-image-301\" loading=\"lazy\"></a></figure></div>\n\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Easy bread – just 3 ingredients",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2017/10/featured-brood-blog-023-1024x768.jpg",
+   "srcset": "/media/uploads/2017/10/featured-brood-blog-023-1024x768.jpg 1024w, /media/uploads/2017/10/featured-brood-blog-023-600x450.jpg 600w, /media/uploads/2017/10/featured-brood-blog-023-300x225.jpg 300w, /media/uploads/2017/10/featured-brood-blog-023-768x576.jpg 768w, /media/uploads/2017/10/featured-brood-blog-023.jpg 1500w",
+   "width": 800,
+   "height": 600,
+   "alt": "Maklike brood - net 3 bestandele"
+  },
+  "courses": [
+   "Bread, Baking"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500g self-raising flour",
+     "500 ml buttermilk or 1 beer",
+     "pinch of salt",
+     "250 ml (one cup) cheese"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Put the flour, salt and cheese in a mixing bowl and stir with a spoon until well combined.",
+     "Now stir in your buttermilk (or beer) until everything is combined. If you see that it still looks dry, stir in a little milk.",
+     "Put it in a greased bread pan and sprinkle 125ml cheese on top. If you're feeling brave you can sprinkle some cayenne pepper or paprika over it too.<img loading=\"lazy\" width=\"1125\" height=\"1500\" src=\"/media/uploads/2017/10/brood-blog-017.jpg\" class=\"direction-step-image\" alt title=\"brood-blog-017\">",
+     "Now bake the bread for around 60 minutes.  After 45 minutes you can insert a knife and if it comes out dry your bread is done.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/brood-blog-021.jpg\" class=\"direction-step-image\" alt title=\"brood-blog-021\">"
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "Wherever I add the cheese, you can add anything you like: finely chopped rosemary, parsley, sweetcorn, sun-dried tomatoes, olives, or fine bokkoms. Whatever your tongue desires.",
+   "Enjoy your bread with jam or whatever your heart desires."
+  ],
+  "videoHtml": null
+ }
+}

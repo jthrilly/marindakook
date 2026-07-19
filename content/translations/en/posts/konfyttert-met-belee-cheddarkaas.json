@@ -1,0 +1,95 @@
+{
+ "id": 6977,
+ "slug": "konfyttert-met-belee-cheddarkaas",
+ "sourceHash": "f1eab2ff4309868e986f7c68f918296850b6c692",
+ "title": "Jam tart with matured cheddar cheese",
+ "excerpt": "Now look here, Jenny taught me a thing. This is now one of my favourite tarts in the whole world.",
+ "seo": {
+  "title": "Jam tart with matured cheddar cheese - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Now look here, Jenny taught me a thing.&nbsp; This is now one of my favourite tarts in the whole world.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Jam tart with matured cheddar cheese",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Konfyttert-2-800x530.png",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Konfyttert met beleë cheddarkaas"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "200 g flour",
+     "10 ml icing sugar",
+     "100 g butter, ice cold and cut into cubes",
+     "1 large egg yolk",
+     "10 ml ice cold water",
+     "500 ml  apricot jam"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Sift the flour and icing sugar into a mixing bowl.",
+     "Rub the butter in with your fingers until it looks like wet sand.",
+     "Whisk the egg yolk and ice cold water in a cup.",
+     "Make a well in the middle of the flour and work in the egg mixture until it forms a dough.",
+     "Shape the dough into a ball and cover with cling wrap. Leave it in the fridge for at least 30 minutes",
+     "Set aside a quarter of the dough to grate on top later. Roll out the rest of the dough on a surface lightly dusted with flour.",
+     "Lift it over the rolling pin and let it slide into a greased loose-bottomed tart pan.",
+     "Press the dough down with your hands and trim off the edges.",
+     "Put it back in the fridge for an hour.",
+     "Blind bake the tart shell at 190 °C for 10 minutes.",
+     "Spread the jam in the tart shell and grate the remaining dough on top.   Bake for 30 minutes, or until the jam in the tart shell has set.",
+     "Enjoy it with matured cheddar cheese."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "id": 7008,
+ "slug": "lamsribbetjie-in-die-oond",
+ "sourceHash": "dc9cb790033a70217366036b1fd2f7d958d6aea6",
+ "title": "Lamb ribs in the oven",
+ "excerpt": "Amanda loved the lamb ribs so much that she flew home with a takeaway pack. I think the person sitting next to her on the plane must have wondered about the delicious smell coming from her handbag.",
+ "seo": {
+  "title": "Lamb ribs in the oven - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Amanda loved the lamb ribs so much that she flew home with a takeaway pack<strong> </strong>.&nbsp; I think the person sitting next to her on the plane must have wondered about the delicious smell coming from her handbag.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Lamb ribs in the oven",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Lamsribbetjie-e1647540905385-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Lamsribbetjie in die oond"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": "Ingredients for the initial simmer until just soft",
+    "items": [
+     "2 kg lamb ribs",
+     "a few pieces of fresh ginger, peeled and sliced",
+     "1 bottle Savanna apple cider",
+     "90 g brown sugar",
+     "2 star anise",
+     "2 cinnamon sticks",
+     "salt",
+     "2 litres meat stock"
+    ]
+   },
+   {
+    "title": "Ingredients for cooking the marinade",
+    "items": [
+     "1 bottle Savanna apple cider",
+     "zest of 1 lemon",
+     "250 ml brown sugar",
+     "60 ml fresh ginger, grated",
+     "30 ml Chinese five spice",
+     "125 ml honey",
+     "60 ml soy sauce",
+     "10 ml ground cumin",
+     "a pinch of salt"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Mix all the ingredients together and cook for one hour until the meat just starts to become soft.",
+     "Drain and set the ribs aside.",
+     "Mix all the marinade ingredients together.",
+     "Put the ribs into the marinade and leave to marinate overnight, or for at least 2 hours.",
+     "Preheat the oven to 190 °C.",
+     "Put the ribs with the marinade into an oven pan.",
+     "Bake the ribs until soft and until the sauce turns sticky."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

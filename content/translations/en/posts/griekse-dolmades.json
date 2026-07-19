@@ -1,0 +1,112 @@
+{
+ "id": 7532,
+ "slug": "griekse-dolmades",
+ "sourceHash": "17e01c09318a731d8b788eb4fe9e1817ec18e40f",
+ "title": "Greek Dolmades",
+ "excerpt": "Greek Dolmades",
+ "seo": {
+  "title": "Greek Dolmades - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<p class=\"wp-block-paragraph\"></p>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"210\" height=\"258\" src=\"/media/uploads/2024/10/spekko-rice-product-saman-white.png\" alt class=\"wp-image-7534\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Greek Dolmades",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2024/10/Dolmades-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Griekse Dolmades"
+  },
+  "courses": [
+   "Sides, Starter"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "45",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "59",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": "For the filling",
+    "items": [
+     "90 ml olive oil",
+     "1 onion, finely chopped",
+     "½ bunch spring onions, finely chopped",
+     "2 garlic cloves, very finely chopped",
+     "250 ml Spekko white rice",
+     "30 ml dill, finely chopped",
+     "30 ml mint, finely chopped",
+     "60 ml parsley, finely chopped",
+     "Zest of 1 lemon",
+     "15 ml lemon juice",
+     "Salt and pepper to taste",
+     "5 ml nutmeg",
+     "90 ml capers, finely chopped",
+     "Vine leaves in a brine solution",
+     "1 lemon, thinly sliced"
+    ]
+   },
+   {
+    "title": "For cooking",
+    "items": [
+     "500 ml water",
+     "60 ml olive oil",
+     "60 ml lemon juice"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Fry the onion in 60 ml oil for 5 minutes. Add the garlic and spring onions and fry for another 5 minutes.",
+     "Rinse the rice well and fry for 2 minutes together with the onions",
+     "Add the herbs, lemon zest, capers, salt and pepper and nutmeg.",
+     "Add 625 ml water and cook until all the water has been absorbed. Let the rice cool.",
+     "Rinse the leaves under running water.",
+     "In a pot, line the bottom with leaves and lay the lemon slices on top. This stops the dolmades from sticking at the bottom of the pot.",
+     "Cut out the tough stem.",
+     "Place the leaf on a flat surface and put some of the rice on the wide side. Fold the leaf closed like a burrito.",
+     "Pack your rolled leaves tightly next to each other in the pot. You can pack them in layers.",
+     "In a jug mix 500 ml boiling water, 60 ml olive oil and 90 ml lemon juice. Pour it over the rolled vine leaves in the pot. It should just barely cover them.",
+     "Put a plate or something heavy on top of the dolmades and let them simmer gently for",
+     "15-20 minutes. Let them cool"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

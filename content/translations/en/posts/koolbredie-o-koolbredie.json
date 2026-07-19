@@ -1,0 +1,97 @@
+{
+ "id": 1853,
+ "slug": "koolbredie-o-koolbredie",
+ "sourceHash": "4eaae554a2360f3753792a20b5fe9bf96077f54d",
+ "title": "Koolbredie – oh, koolbredie",
+ "excerpt": "Certain foods are comfort food. Food that wraps around you and makes you feel better. Koolbredie is that kind of food. We eat koolbredie all year round and usually I just cook rice with it.",
+ "seo": {
+  "title": "Koolbredie - oh, koolbredie - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Certain foods are comfort food. Food that wraps around you and makes you feel better. Koolbredie is that kind of food. We eat koolbredie all year round and usually I just cook rice with it.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Koolbredie – oh, koolbredie",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2017/10/featured-KOOL-075-1024x768.jpg",
+   "srcset": "/media/uploads/2017/10/featured-KOOL-075-1024x768.jpg 1024w, /media/uploads/2017/10/featured-KOOL-075-600x450.jpg 600w, /media/uploads/2017/10/featured-KOOL-075-300x225.jpg 300w, /media/uploads/2017/10/featured-KOOL-075-768x576.jpg 768w, /media/uploads/2017/10/featured-KOOL-075.jpg 1500w",
+   "width": 800,
+   "height": 600,
+   "alt": "Koolbredie - o, koolbredie"
+  },
+  "courses": [
+   "Red meat"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1kg beef stewing meat<br><img src=\"/media/uploads/2017/10/KOOL-036-300x225.jpg\" title=\"KOOL-036\" alt class=\"direction-step-image\" loading=\"lazy\">",
+     "1 onion",
+     "30 ml oil",
+     "4 potatoes",
+     "Half a head of cabbage cut into coarse strips",
+     "1 tin tomatoes",
+     "60 ml Worcestershire sauce<a rel aria-label href=\"/media/uploads/2017/10/KOOL-067.jpg\" target=\"_blank\"></a><br><img src=\"/media/uploads/2017/10/KOOL-067-300x225.jpg\" title=\"KOOL-067\" alt class=\"direction-step-image\" loading=\"lazy\">",
+     "20 ml vinegar",
+     "10 ml sugar",
+     "100 ml water",
+     "4 whole cloves",
+     "salt and pepper",
+     "1 chilli (optional)"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Slice the onion into rings and fry in a pot until glassy.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/KOOL-035.jpg\" class=\"direction-step-image\" alt title=\"KOOL-035\">",
+     "Cut the meat into cubes and fry until brown together with the onion.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/KOOL-042.jpg\" class=\"direction-step-image\" alt title=\"KOOL-042\">",
+     "Cut your potatoes into cubes and add to the meat.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/KOOL-045.jpg\" class=\"direction-step-image\" alt title=\"KOOL-045\">",
+     "Finely slice your cabbage and add to the meat.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/KOOL-063.jpg\" class=\"direction-step-image\" alt title=\"KOOL-063\">",
+     "Mix together all the rest of the ingredients and add to your meat.",
+     "Now put the lid on and let it cook gently  – at least slowly for 90 minutes.<br><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/KOOL-069.jpg\" class=\"direction-step-image\" alt title=\"KOOL-069\">",
+     "If you feel the sauce is too runny you can thicken it with Bisto. This stays soul food that tastes just as good the next day."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

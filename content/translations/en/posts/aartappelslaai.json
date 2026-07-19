@@ -1,0 +1,96 @@
+{
+ "id": 7016,
+ "slug": "aartappelslaai",
+ "sourceHash": "f6d6bdb0832e052b96f79b2b89a4c5245c4af826",
+ "title": "Potato Salad",
+ "excerpt": "Who doesn't love a potato salad? Show me that person! Always a winner on the table.",
+ "seo": {
+  "title": "Potato Salad - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Who doesn't love a potato salad?&nbsp; Show me that person!&nbsp; Always a winner on the table.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Potato Salad",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Aartappelslaai-e1647541024719-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Aartappelslaai"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "6 potatoes",
+     "1 onion, finely chopped",
+     "½ c parsley, finely chopped",
+     "250 ml (1 c) mayonnaise",
+     "125 ml (½ c) Greek yoghurt",
+     "60 ml milk",
+     "15 ml sugar",
+     "salt and pepper",
+     "60 ml mustard (wholegrain mustard)",
+     "2 hard-boiled eggs",
+     "1 wheel of feta cheese"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Boil the potatoes until soft and cut into cubes.",
+     "Add the chopped onion on top.",
+     "Sprinkle the chopped parsley over.",
+     "Mix the mayonnaise, yoghurt, milk, sugar, salt, pepper and mustard together and pour it over the potatoes.",
+     "Stir through gently without breaking up the potatoes.",
+     "Grate the eggs over.",
+     "Crumble the feta over.",
+     "Sprinkle a bit more parsley over for some green."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

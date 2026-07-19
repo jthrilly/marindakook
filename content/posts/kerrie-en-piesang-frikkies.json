@@ -1,0 +1,164 @@
+{
+ "id": 6650,
+ "slug": "kerrie-en-piesang-frikkies",
+ "title": "Kerrie-en-piesang-frikkies",
+ "date": "2020-07-15T14:18:00",
+ "modified": "2022-07-10T10:51:25",
+ "excerpt": "",
+ "categories": [
+  308,
+  1
+ ],
+ "tags": [
+  194
+ ],
+ "featured": null,
+ "commentStatus": "open",
+ "seo": {
+  "title": "Kerrie-en-piesang-frikkies - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Kerrie-en-piesang-frikkies",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2020/07/MMM4-EP7-Frikkies-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Kerrie-en-piesang-frikkies"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": "Frikkies",
+    "items": [
+     "2 snye brood geweek in 250 ml melk",
+     "1 kg gemaalde beesvleis",
+     "1 eier",
+     "5 ml fyn neutmuskaat",
+     "2,5 ml fyn naeltjies",
+     "2,5 ml fyn gemmer",
+     "5 ml rissiepoeier",
+     "sout en peper na smaak",
+     "meel"
+    ]
+   },
+   {
+    "title": "Sous",
+    "items": [
+     "3 middelmatige uie, fyngekap",
+     "15 ml meelblom",
+     "90ml asyn",
+     "250 ml water",
+     "20 ml kerriepoeier",
+     "10 ml borrie",
+     "40 ml appelkooskonfyt",
+     "6 piesangs, fyngesny",
+     "15 ml suiker",
+     "sout en peper na smaak",
+     "klapper"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": "Frikkies",
+    "steps": [
+     "Stel die oond op 180º C.",
+     "Krummel die brood en meng die bestanddele goed met die vleis.",
+     "Smeer ’n oondskottel met botter.",
+     "Vorm die frikadelle en rol dit in die meelblom.",
+     "Pak die frikadelle in ’n bak."
+    ]
+   },
+   {
+    "title": "Sous",
+    "steps": [
+     "Braai die uie ligbruin in olie.",
+     "Roer meelblom in.",
+     "Roer die asyn en die water stadig by.",
+     "Voeg die kerriepoeier, borrie, konfyt, suiker, sout, peper en piesangs by.",
+     "Laat dit vir 5 minute kook.",
+     "Gooi die sous bo-oor die frikadelle en strooi klapper bo-oor.",
+     "Bak teen 180º C vir ongeveer 1 uur.",
+     "Bedien met jopgurtbrood en Gekroekte Samballe"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 3863,
+   "parent": 3846,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-04-06T09:55:22",
+   "html": "<p>Uit my hart jammer.  Die drukkersduiwel het baljaar op die blad.  Dankie dat jy dit opgetel het.</p>"
+  },
+  {
+   "id": 3862,
+   "parent": 3847,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-04-06T09:54:20",
+   "html": "<p>Liewe Elsabe, ja, die drukkersduiwel het ingespring.  Dit moes eintlik 75ml gelees het.  Ek is ongelooflik jammer oor dit.  Dit maak mens moedeloos, want hoe kom jy nou by elke persoon uit om dit te veduidelik.<br>\nWeereens vra ek verskoning vir dit.  Net so buite my beheer.<br>\nGroete<br>\nMarinda</p>"
+  },
+  {
+   "id": 3847,
+   "parent": 0,
+   "author": "Elsabe",
+   "avatar": "https://secure.gravatar.com/avatar/268ecbb3489fe5e538f1a69e6c4119f6b41d93e0da5c0c105416dbbad33dbc02?s=96&d=mm&r=g",
+   "date": "2022-03-31T18:19:16",
+   "html": "<p>Die gedrukte kookboek Marinda se Koskas het ongelukkig &#8216;n tikfout in &#8211; 375 ml asyn in plaas van 90ml!</p>"
+  },
+  {
+   "id": 3846,
+   "parent": 0,
+   "author": "Elsabe Horn",
+   "avatar": "https://secure.gravatar.com/avatar/e3ded5f228d6220be76a0cbbde96e54a3f0a1f16f7ae46b95c1100d1b53dc433?s=96&d=mm&r=g",
+   "date": "2022-03-31T18:12:07",
+   "html": "<p>Sjoe, ek het sopas hierdie frikadelle uit Marinda se kookboek (Marinda se Koskas) gemaak en agtergekom daar is &#8216;n reuse tikfout in die boek &#8211; dit lees 375ml asyn in plaas van 90ml soos hierbo!  Ek moes nou omtrent bontstaan om ons gereg te red!</p>"
+  }
+ ]
+}

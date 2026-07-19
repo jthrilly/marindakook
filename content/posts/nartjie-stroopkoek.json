@@ -1,0 +1,147 @@
+{
+ "id": 6345,
+ "slug": "nartjie-stroopkoek",
+ "title": "Naartjie Stroopkoek",
+ "date": "2021-09-20T16:18:34",
+ "modified": "2022-02-06T21:40:45",
+ "excerpt": "Die koek is klam, klam, klam!!!!!!!!! Jy kry die heerlike sitrussmaak van die naartjie. Dit is nie ‘n hoë koek nie. Dis ‘n platterige koek wat mooi lyk saam met koffie of tee. Waarskuwing: jy kan nie ophou eet nie. Ek het myne net versier met gedroogte sitrusskywe en ek …",
+ "categories": [
+  5,
+  316
+ ],
+ "tags": [
+  328
+ ],
+ "featured": {
+  "alt": "Naartjie Stroopkoek",
+  "card": {
+   "src": "/media/uploads/2021/09/IMG_5262-4-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2021/09/IMG_5262-4-760x1040.jpg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2021/09/IMG_5262-4-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Naartjie Stroopkoek - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Die koek is klam, klam, klam!!!!!!!!! Jy kry die heerlike sitrussmaak van die naartjie.  Dit is nie &#8216;n hoë koek nie.  Dis &#8216;n platterige koek wat mooi lyk saam met koffie of tee. Waarskuwing: jy kan nie ophou eet nie. Ek het myne net versier met gedroogte sitrusskywe en ek het met &#8216;n siffie versiersuiker oor gesif nadat die koek afgekoel het.</p>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2021/09/IMG_5267-2-768x1024.jpg\" alt class=\"wp-image-6349\" srcset=\"/media/uploads/2021/09/IMG_5267-2-768x1024.jpg 768w, /media/uploads/2021/09/IMG_5267-2-600x800.jpg 600w, /media/uploads/2021/09/IMG_5267-2-225x300.jpg 225w, /media/uploads/2021/09/IMG_5267-2-1152x1536.jpg 1152w, /media/uploads/2021/09/IMG_5267-2-750x1000.jpg 750w, /media/uploads/2021/09/IMG_5267-2-380x507.jpg 380w, /media/uploads/2021/09/IMG_5267-2-760x1013.jpg 760w, /media/uploads/2021/09/IMG_5267-2-800x1067.jpg 800w, /media/uploads/2021/09/IMG_5267-2.jpg 1536w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Naartjie Stroopkoek",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2021/09/IMG_5262-4-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Naartjie Stroopkoek"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": "Koek",
+    "items": [
+     "2 naartjies",
+     "125 g sagte botter",
+     "125 ml strooisuiker",
+     "2 eiers",
+     "375 ml bruismeel",
+     "2.5 ml koeksoda",
+     "125 ml karringmelk*"
+    ]
+   },
+   {
+    "title": "Naartjiestroop",
+    "items": [
+     "125 ml suiker",
+     "125 ml naartjiesap",
+     "60 g botter"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Verhit die oond tot 180 C en smeer ‘n klein broodpannetjie of ‘n koekpan. Ek sit altyd ‘n stukkie bakpapier onder-in om die koek maklik uit te haal.",
+     "Druk al die sap uit die naartjies en hou dit eenkant. Sit die naartjies waarvan die sap uitgedruk is met skil en al in ‘n voedselverwerker en verpulp.",
+     "Room die botter en die suiker en klits dan die eiers een vir een by.",
+     "Klits die helfte van die meel, koeksoda en karringmelk by. Klits  nou die res van die meel en karringmelk by.",
+     "Laaste, klits die naartjiepulp by.",
+     "Gooi die beslag in jou gesmeerde broodpannetjie/koekpannetjie.",
+     "Bak vir min of meer 40 minute. Toets of die koek gaar is.",
+     "Kook al die bestanddele vir die stroop saam en sorg dat die suiker opgelos is. As die koek uit die oond kom, druk jy gaatjies in die koek en gooi jy die warm stroop oor die koek."
+    ]
+   }
+  ],
+  "notesTitle": "Notas",
+  "notes": [
+   "* As jy nie karringmelk het nie, neem gewone melk en sit 10 ml suurlemoensap of asyn by. Laat dit staan vir 10 min buite die yskas"
+  ],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 4476,
+   "parent": 4432,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-09-01T07:50:04",
+   "html": "<p>So &#8216;n lekker varssmaak.</p>"
+  },
+  {
+   "id": 4432,
+   "parent": 0,
+   "author": "Stef vdMerwe",
+   "avatar": "https://secure.gravatar.com/avatar/ce92b6a90fb387b5596407a8b356c3b506341a408ad6ca188f82f7cfb22e5303?s=96&d=mm&r=g",
+   "date": "2022-08-24T14:23:15",
+   "html": "<p>Heerlikste kos!!</p>"
+  }
+ ]
+}

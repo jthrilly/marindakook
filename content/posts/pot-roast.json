@@ -1,0 +1,125 @@
+{
+ "id": 7052,
+ "slug": "pot-roast",
+ "title": "Pot roast",
+ "date": "2022-03-02T15:30:00",
+ "modified": "2022-03-18T15:35:45",
+ "excerpt": "Jenny is my engelse suster. Ons lag oor dieselfde goed, ons hou van dieselfde goed en ons vrek oor kosmaak. Dit was so ‘n fees om my kombuis saam met haar te deel.",
+ "categories": [
+  308,
+  11
+ ],
+ "tags": [
+  373
+ ],
+ "featured": {
+  "alt": "Pot roast",
+  "card": {
+   "src": "/media/uploads/2022/03/Pot-Roast-760x760.png",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Pot-Roast-760x782.png",
+   "width": 760,
+   "height": 782
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Pot-Roast-150x150.png",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Pot roast - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Jenny is my engelse suster.&nbsp; Ons lag oor dieselfde goed, ons hou van dieselfde goed en ons vrek oor kosmaak.&nbsp; Dit was so ‘n fees om my kombuis saam met haar te deel.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Pot roast",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Pot-Roast-800x530.png",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Pot roast"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "30 ml olyfolie",
+     "1,5 kg ontbeende “chuck roast”",
+     "sout en peper",
+     "1 ui, in ringe gesny",
+     "4 knoffelhuisies, fyngekap",
+     "500 ml beesvleisaftreksel",
+     "250 ml rooiwyn",
+     "2 vars tiemietakkies",
+     "2 roosmaryntakkies",
+     "2 lourierblare",
+     "5 aartappels, geskil en gehalveer",
+     "6 groot wortels, geskil en in kwarte gesny"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Verhit die oond tot 180 °C.",
+     "Verhit die olie in ’n swaarboompot wat in die oond kan gaan.",
+     "Geur die vleis met sout en peper en braai bruin in die pot.",
+     "Haal die vleis uit en verbruin die uie en dan ook die knoffel in dieselfde pot.",
+     "Gooi die res van die bestanddele, behalwe die aartapppels en wortels, in die pot.",
+     "Sit die deksel op en los dit in die oond vir 2 ure.",
+     "Voeg die aartappels en wortels by en geur met sout en peper na smaak.",
+     "Maak weer die pot toe en sit dit in die oond vir nog ’n uur, of totdat die vleis sag is."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

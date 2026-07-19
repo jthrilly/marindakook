@@ -1,0 +1,87 @@
+{
+ "id": 7064,
+ "slug": "suurlemoenposset",
+ "sourceHash": "a66dce473a2ded1c2779d6f5ad63fd81465ce1c0",
+ "title": "Lemon Posset",
+ "excerpt": "Who isn't fond of a lemon pudding? Show me that person. Always a winner.",
+ "seo": {
+  "title": "Lemon Posset - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Who isn't fond of a lemon pudding?&nbsp; Show me that person.&nbsp; Always a winner.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Lemon Posset",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Lemon-posset-e1648040301312-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Suurlemoenposset"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 ml cream",
+     "125 ml castor sugar",
+     "zest of one lemon, very finely grated",
+     "juice of one lemon"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Heat the cream and castor sugar in a pot. Boil for 3 minutes until the castor sugar has dissolved.",
+     "Let it cool slightly and stir in the grated lemon zest.",
+     "Stir in the lemon juice.",
+     "Pour out into small glasses.",
+     "Let set in the fridge for about 3 hours.",
+     "Serve with berries and mint leaves."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

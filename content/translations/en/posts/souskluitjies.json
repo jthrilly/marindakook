@@ -1,0 +1,95 @@
+{
+ "id": 7166,
+ "slug": "souskluitjies",
+ "sourceHash": "5a3cde2afa931c42430b974ffdb20c0e9d01685c",
+ "title": "Souskluitjies",
+ "excerpt": "Souskluitjies, oh, souskluitjies. They speak for themselves.",
+ "seo": {
+  "title": "Souskluitjies - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Souskluitjies, oh, souskluitjies.  They speak for themselves.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Souskluitjies",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/05/Souskluitjies-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Souskluitjies"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "Ingredients",
+     "1 cup cake flour",
+     "1 t baking powder",
+     "¼ t salt",
+     "4 T butter",
+     "2 eggs",
+     "1 T sugar",
+     "½ t salt",
+     "¼ t cinnamon",
+     "cinnamon sugar",
+     "¼–½ cup melted butter"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Sift the dry ingredients together and rub in the butter.",
+     "Whisk the eggs and sugar together until light.",
+     "Add to the flour mixture and mix lightly.",
+     "Pour water about 5 cm deep into a pot.",
+     "Add ½ teaspoon salt and ¼ teaspoon cinnamon to the water and bring to the boil.",
+     "Dip a teaspoon into the boiling water and spoon balls of dough into the boiling water – about 5 at a time (if you put more than 5 dumplings into the boiling water at once, some of them can stick together).",
+     "Let it boil for 10 minutes, with or without a lid.",
+     "Lift the dumplings out of the water, spoon them into a warm dish and sprinkle cinnamon sugar and melted butter over.",
+     "Repeat until all the dough is used up."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

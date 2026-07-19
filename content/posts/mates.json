@@ -1,0 +1,118 @@
+{
+ "id": 104,
+ "slug": "mates",
+ "title": "Mates",
+ "date": "2013-04-01T12:06:07",
+ "modified": "2017-12-26T21:55:46",
+ "excerpt": "KOOKTERME MEETKOPPIES 1/4 = 60ml 1/3 = 80 ml 1/2 = 125 ml 3/4 = 180 ml 1 = 250 ml 2 = 500 ml 3 = 750 ml DESERTLEPEL(S) 1 = 12,5 ml 2 = 25 ml EETLEPELS 1 = 15 ml 2 = 30 ml 3 = 45 …",
+ "categories": [
+  2
+ ],
+ "tags": [],
+ "featured": null,
+ "commentStatus": "open",
+ "seo": {
+  "title": "Mates - Marinda Kook",
+  "description": null
+ },
+ "html": "<h1 style=\"text-align: left\"><strong>KOOKTERME</strong></h1>\n<p style=\"text-align: left\"><strong><em>MEETKOPPIES</em></strong></p>\n<ul>\n<li><em>1/4 = 60ml</em></li>\n<li>1/3 = 80 ml</li>\n<li>1/2 = 125 ml</li>\n<li>3/4 = 180 ml</li>\n<li>1 = 250 ml</li>\n<li>2 = 500 ml</li>\n<li>3 = 750 ml</li>\n</ul>\n<p style=\"text-align: left\"><strong><em>DESERTLEPEL(S)</em></strong></p>\n<ul>\n<li>1 = 12,5 ml</li>\n<li>2 = 25 ml</li>\n</ul>\n<p style=\"text-align: left\"><em><strong>EETLEPELS</strong></em></p>\n<ul>\n<li>1 = 15 ml</li>\n<li>2 = 30 ml</li>\n<li>3 = 45 ml</li>\n<li>4 = 60 ml</li>\n</ul>\n<p style=\"text-align: left\"><strong><em>TEELEPEL(S)</em></strong></p>\n<ul>\n<li>1/4 = 1ml</li>\n<li>1/2 = 2ml</li>\n<li>1 = 5ml</li>\n<li>2 = 10 ml</li>\n<li>3 = 15 ml</li>\n<li>4 = 20 ml</li>\n</ul>\n<p style=\"text-align: left\"><em><strong>AFKORTINGS</strong></em></p>\n<ul>\n<li>kg  =  kilogram</li>\n<li>g   =  gram</li>\n<li>l   = liter</li>\n<li>ml  = milliliter</li>\n<li>°C  = grade Celsius</li>\n<li>min = minute</li>\n<li>h  = uur</li>\n<li>mm = milimeter</li>\n<li>m   = meter</li>\n<li>kPa = kilopascal (druk)</li>\n</ul>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+ "recipe": null,
+ "comments": [
+  {
+   "id": 2490,
+   "parent": 2479,
+   "author": "marinda",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2020-08-29T07:16:43",
+   "html": "<p>Lekker kook en bak.</p>"
+  },
+  {
+   "id": 2479,
+   "parent": 0,
+   "author": "Rietta",
+   "avatar": "https://secure.gravatar.com/avatar/d282560d718de9b06625362faecd136db91d3b34c08d944a92e82ed352230e55?s=96&d=mm&r=g",
+   "date": "2020-08-28T11:24:08",
+   "html": "<p>Marinda help asb hoeveel suiker is 110g suiker in ml vir mostertsous asb. Baie Dankie Rietta</p>"
+  },
+  {
+   "id": 63,
+   "parent": 62,
+   "author": "marindakook",
+   "avatar": "https://secure.gravatar.com/avatar/ab5ec7ec84da837e94ee35ae002ddbc81d01b5dd02ce428686f2e5ca238faf18?s=96&d=mm&r=g",
+   "date": "2014-06-11T09:21:08",
+   "html": "<p>Antjie , me to.  Enjoy!<br>\nMarinda</p>"
+  },
+  {
+   "id": 62,
+   "parent": 0,
+   "author": "Antje",
+   "avatar": "https://secure.gravatar.com/avatar/52d3a2120b13c5bd3f5e5b1a5520f389666ff6add6eaff204289d707e380e2d6?s=96&d=mm&r=g",
+   "date": "2014-06-10T20:50:49",
+   "html": "<p>I really like it when folks come together and share ideas.<br>\nGreat blog, stick with it!</p>"
+  },
+  {
+   "id": 57,
+   "parent": 55,
+   "author": "marindakook",
+   "avatar": "https://secure.gravatar.com/avatar/ab5ec7ec84da837e94ee35ae002ddbc81d01b5dd02ce428686f2e5ca238faf18?s=96&d=mm&r=g",
+   "date": "2013-12-14T18:47:13",
+   "html": "<p>Thanx Bessie.  Enjoy the festive season. Marinda</p>"
+  },
+  {
+   "id": 36,
+   "parent": 0,
+   "author": "marindakook",
+   "avatar": "https://secure.gravatar.com/avatar/ab5ec7ec84da837e94ee35ae002ddbc81d01b5dd02ce428686f2e5ca238faf18?s=96&d=mm&r=g",
+   "date": "2013-11-25T12:03:09",
+   "html": "<p>Enjoy!</p>"
+  },
+  {
+   "id": 35,
+   "parent": 34,
+   "author": "helen",
+   "avatar": "https://secure.gravatar.com/avatar/de3cc962e22ea8d3ac67aceac3921619c2d3ca710686408cee498be9cdff56ad?s=96&d=mm&r=g",
+   "date": "2013-07-27T10:27:40",
+   "html": "<p>Baie dankie. Ek sal dit beslis probeer!</p>"
+  },
+  {
+   "id": 34,
+   "parent": 33,
+   "author": "marindakook",
+   "avatar": "https://secure.gravatar.com/avatar/ab5ec7ec84da837e94ee35ae002ddbc81d01b5dd02ce428686f2e5ca238faf18?s=96&d=mm&r=g",
+   "date": "2013-07-26T13:29:29",
+   "html": "<p>Helen, ek sal se jy moet 6 koppies vis op 3 koppies aartappels gebruik.  Maak jou aartappels lekker fyn .  Hoop jy kom reg en dat dit lekker smaak.  Praat as ek kan help.  Groetnis Marinda</p>"
+  },
+  {
+   "id": 33,
+   "parent": 32,
+   "author": "helen",
+   "avatar": "https://secure.gravatar.com/avatar/de3cc962e22ea8d3ac67aceac3921619c2d3ca710686408cee498be9cdff56ad?s=96&d=mm&r=g",
+   "date": "2013-07-25T15:20:52",
+   "html": "<p>Ek sal dit waardeer as jy dit kan omskakel in ml. (het nie n skaal nie)</p>"
+  },
+  {
+   "id": 32,
+   "parent": 31,
+   "author": "marindakook",
+   "avatar": "https://secure.gravatar.com/avatar/ab5ec7ec84da837e94ee35ae002ddbc81d01b5dd02ce428686f2e5ca238faf18?s=96&d=mm&r=g",
+   "date": "2013-07-21T16:18:20",
+   "html": "<p>Middag Helen,  Ek weeg die gaar vis op my kombuisskaal sodat ek 500 gram vis het en dan doen ek dieselfde met die aartappels.  Sal dit verkies dat ek dit vir jou in ml gee? Groete Marinda</p>"
+  },
+  {
+   "id": 31,
+   "parent": 0,
+   "author": "helen",
+   "avatar": "https://secure.gravatar.com/avatar/de3cc962e22ea8d3ac67aceac3921619c2d3ca710686408cee498be9cdff56ad?s=96&d=mm&r=g",
+   "date": "2013-07-20T11:51:38",
+   "html": "<p>Ek verstaan nie die gramme nie. Hoe word dit bepaal? Het na jou viskoekieresep gekyk en gesien daar word van 500g vis en 300g aartappels gepraat. Hoeveel is dit? Hoe verskil die gramme in dro&#8221;e bestanddele?</p>"
+  },
+  {
+   "id": 30,
+   "parent": 0,
+   "author": "marindakook",
+   "avatar": "https://secure.gravatar.com/avatar/ab5ec7ec84da837e94ee35ae002ddbc81d01b5dd02ce428686f2e5ca238faf18?s=96&d=mm&r=g",
+   "date": "2013-06-30T09:29:23",
+   "html": "<p>Dankie Rickie.</p>"
+  }
+ ]
+}

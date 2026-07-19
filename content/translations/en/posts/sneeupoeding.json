@@ -1,0 +1,93 @@
+{
+ "id": 6992,
+ "slug": "sneeupoeding",
+ "sourceHash": "ed2fc52220c2d28ae483b776db4af9f3643661e7",
+ "title": "Sneeupoeding",
+ "excerpt": "I'm going to say it shamelessly: getting to cook for Peter Veldsman was probably the greatest honour that ever came my way. I didn't know how to make sneeupoeding and he showed me. From now on it's part of my desserts.",
+ "seo": {
+  "title": "Sneeupoeding - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">I'm going to say it shamelessly: getting to cook for Peter Veldsman was probably the greatest honour that ever came my way.&nbsp; I didn't know how to make sneeupoeding and he showed me.&nbsp; From now on it's part of my desserts.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Sneeupoeding",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Sneeupoeding-1-800x530.jpg",
+   "srcset": "/media/uploads/2022/03/Sneeupoeding-1-800x530.jpg 800w, /media/uploads/2022/03/Sneeupoeding-1-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Sneeupoeding"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "20 ml gelatine",
+     "70 ml cold water",
+     "250 ml boiling water",
+     "250 ml castor sugar",
+     "60 ml lemon juice",
+     "zest of 1 lemon, finely grated",
+     "2 egg whites (keep the yolks for the homemade custard)"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Dissolve the gelatine in the cold water.",
+     "Pour the boiling water, castor sugar, lemon juice and lemon zest into a pot and stir until the sugar has dissolved.",
+     "Stir in the gelatine and mix well.",
+     "Pour everything through a sieve and set aside to cool.",
+     "When you notice it starting to set, whisk it quickly until it starts to go frothy.",
+     "Whisk the egg whites stiff in a clean glass bowl.",
+     "Fold it into the mixture.",
+     "Rinse out a nice serving bowl with cold water and pour the pudding into the bowl.",
+     "Put it in the fridge."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "id": 7202,
+ "slug": "tuisgemaakte-sausage-roll",
+ "sourceHash": "28cb5734923c99b01c42f0ee3f3c1f6a58af7a32",
+ "title": "Homemade sausage roll",
+ "excerpt": "I've always wanted to make my own sausage roll, but never quite got around to it. Now, after this, I'll never buy one again.",
+ "seo": {
+  "title": "Homemade sausage roll - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">I've always wanted to make my own sausage roll, but never quite got around to it.  Now, after this, I'll never buy one again.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2022/06/Sausage-roll-2.jpeg\" alt class=\"wp-image-7204\" srcset=\"/media/uploads/2022/06/Sausage-roll-2.jpeg 1024w, /media/uploads/2022/06/Sausage-roll-2-600x450.jpeg 600w, /media/uploads/2022/06/Sausage-roll-2-300x225.jpeg 300w, /media/uploads/2022/06/Sausage-roll-2-768x576.jpeg 768w, /media/uploads/2022/06/Sausage-roll-2-750x563.jpeg 750w, /media/uploads/2022/06/Sausage-roll-2-500x375.jpeg 500w, /media/uploads/2022/06/Sausage-roll-2-380x285.jpeg 380w, /media/uploads/2022/06/Sausage-roll-2-760x570.jpeg 760w, /media/uploads/2022/06/Sausage-roll-2-800x600.jpeg 800w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Homemade sausage roll",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/06/Sausage-roll-1-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Tuisgemaakte sausage roll"
+  },
+  "courses": [
+   "Beef, Main Course"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 g pork sausage (not bangers, real boerewors-style sausage)",
+     "500 g beef sausage",
+     "1 onion, very finely chopped",
+     "60 ml breadcrumbs",
+     "90 ml Worcestershire sauce",
+     "¼ teaspoon ground nutmeg",
+     "¼ teaspoon ground cumin",
+     "¼ teaspoon dried oregano",
+     "2 rolls puff pastry",
+     "1 egg",
+     "15 ml milk"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Set the oven to 180 C and put baking paper on a baking tray",
+     "Let the pastry thaw – I take it out the night before.",
+     "Remove the sausages from their casings and put in a bowl.",
+     "Mix the onion, Worcestershire sauce, nutmeg, breadcrumbs, cumin and oregano through the meat well with your hands.",
+     "Sprinkle a little flour on your work surface and roll out one of the puff pastry rolls.",
+     "Make a \"sausage\" with half of the meat and place it about 7 cm from the long side on the pastry.",
+     "Roll the pastry up tightly into one long sausage.  Cut it into 4 and place on your baking tray with the seam facing down.",
+     "Repeat with the other pastry roll and the remaining meat.",
+     "Let it rest in the fridge for at least 1 hour.",
+     "Take a pair of scissors and snip 3 small notches on each raw sausage roll",
+     "Whisk the egg and milk together and brush over the sausage rolls.",
+     "Bake in the oven for 40 minutes or until the meat is cooked and the pastry is crisp and golden brown."
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "You can also make the rolls smaller for bite-sized snacks to serve with a glass of wine.",
+   "I cooked 2 of mine in my air fryer and they turned out just as nicely. 180C for 10 minutes a side. Just keep an eye on them.",
+   "We love eating these with tomato sauce."
+  ],
+  "videoHtml": null
+ }
+}

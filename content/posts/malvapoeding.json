@@ -1,0 +1,125 @@
+{
+ "id": 5580,
+ "slug": "malvapoeding",
+ "title": "Malvapoeding",
+ "date": "2019-06-19T17:15:16",
+ "modified": "2022-02-08T16:52:35",
+ "excerpt": "",
+ "categories": [
+  5,
+  8
+ ],
+ "tags": [
+  245,
+  167
+ ],
+ "featured": {
+  "alt": "Malvapoeding",
+  "card": {
+   "src": "/media/uploads/2019/06/3-1-380x380.png",
+   "width": 380,
+   "height": 380
+  },
+  "portrait": {
+   "src": "/media/uploads/2019/06/3-1.png",
+   "width": null,
+   "height": null
+  },
+  "thumb": {
+   "src": "/media/uploads/2019/06/3-1-150x150.png",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "closed",
+ "seo": {
+  "title": "Malvapoeding - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Malvapoeding",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2019/06/3-1-640x530.png",
+   "srcset": null,
+   "width": 640,
+   "height": 530,
+   "alt": "Malvapoeding"
+  },
+  "courses": [
+   "Gebak, Nagereg"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": []
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": "Poeding",
+    "items": [
+     "15 ml botter",
+     "125 ml suiker",
+     "1 eier",
+     "250 ml koekmeel",
+     "125 ml melk",
+     "30 ml appelkooskonfyt",
+     "5 ml koeksoda opgelos in",
+     "15 ml asyn"
+    ]
+   },
+   {
+    "title": "Sous",
+    "items": [
+     "250 ml room",
+     "125 ml suiker",
+     "125 ml water",
+     "5 ml vanieljegeursel"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Room die botter en suiker goed.",
+     "Klits die eier en voeg by.",
+     "Voeg droë bestanddele by om die beurt met die melk.",
+     "Voeg konfyt by.",
+     "Voeg koeksoda wat opgelos het in asyn by.",
+     "Bak by 180 grade vir 30 minute. Prik met ‘n vurk.",
+     "Maak die sous: kook saam tot suiker opgelos is en gooi oor die poeding. Maklik!"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

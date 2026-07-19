@@ -1,0 +1,175 @@
+{
+ "id": 7020,
+ "slug": "roomys",
+ "title": "Roomys",
+ "date": "2022-03-17T20:21:25",
+ "modified": "2022-03-18T15:12:49",
+ "excerpt": "Ek het die roomys vir Amanda Strydom gemaak en ek dink as sy van dit kon inpak en saamneem op die vliegtuig dan het sy!",
+ "categories": [
+  8
+ ],
+ "tags": [
+  345
+ ],
+ "featured": {
+  "alt": "Roomys",
+  "card": {
+   "src": "/media/uploads/2022/03/Roomys-e1647541248199-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Roomys-e1647541248199-760x849.jpg",
+   "width": 760,
+   "height": 849
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Roomys-e1647541248199-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Roomys - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Ek het die roomys vir Amanda Strydom gemaak en ek dink as sy van dit kon inpak en saamneem op die vliegtuig dan het sy!</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Roomys",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Roomys-e1647541248199-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Roomys"
+  },
+  "courses": [
+   "Nagereg"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 liter goeie vanieljeroomys",
+     "2 pakkies Oreo-koekies, fyngemaak",
+     "3 Flake-sjokolades",
+     "1 pakkie Whispers of enige klein sjokoladeballetjies",
+     "250 ml room",
+     "1 klein plak sjokolade",
+     "eetbare blommetjies"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Voer ’n broodpannetjie uit met kleefplasiek.",
+     "Maak die roomys ’n bietjie sag en meng die helfte van die koekies, die helfte van die Flake-sjokolades en die helfte van die sjokoladeballetjies met die roomys.",
+     "Gooi dit in die broodpannetjie.",
+     "Strooi die orige koekies oor.",
+     "Maak dit toe met kleefplastiek en vries.",
+     "Dop dit uit die broodpannnetjie en versier dit met die orige Flake-sjokolades, sjokoladeballetjies en mooi blommetjies.",
+     "Maak die sjokoladesous deur die die plak sjokolade saam met die room in die mikrogolf te smelt."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 5755,
+   "parent": 0,
+   "author": "Kitty kriel",
+   "avatar": "https://secure.gravatar.com/avatar/ccb59f1a10de3d36ef0382ed380474460ec57438ffd8b436374638d7a634ed79?s=96&d=mm&r=g",
+   "date": "2023-04-26T14:32:35",
+   "html": "<p>Baie dankie vir al die heerlike resepte.</p>"
+  },
+  {
+   "id": 3833,
+   "parent": 3808,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-03-28T09:27:17",
+   "html": "<p>Vriendin ons maak as jy weer in die Kaap is</p>"
+  },
+  {
+   "id": 3808,
+   "parent": 0,
+   "author": "Amanda Strydom",
+   "avatar": "https://secure.gravatar.com/avatar/c0911eca2c1b83bb3aa2a6e66ab78c5437ac12c0c62e64291ce2fc30dec6edd7?s=96&d=mm&r=g",
+   "date": "2022-03-18T14:47:57",
+   "html": "<p>Dit was die HEERLIKSTE roomys wat ek nog OOIT geproe het ! Ja , ek wens ek kon dit op die vliegtuig huistoe vat ! ( Ek sou dit seker als opgevreet het nog voor ons opgestyg het)</p>"
+  },
+  {
+   "id": 3801,
+   "parent": 3798,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-03-18T11:27:14",
+   "html": "<p>Baie dankie.  Geniet die lekker kos.</p>"
+  },
+  {
+   "id": 3800,
+   "parent": 3799,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-03-18T11:26:43",
+   "html": "<p>Groot dankie. Geniet elke happie.</p>"
+  },
+  {
+   "id": 3799,
+   "parent": 0,
+   "author": "Rina van Niekerk",
+   "avatar": "https://secure.gravatar.com/avatar/be5c704c32def49fcd50eea5f0deb2ece0ac17b6f158ea495105cee74618c59a?s=96&d=mm&r=g",
+   "date": "2022-03-18T07:11:43",
+   "html": "<p>Ek hou baie van die resepte. Dit is maklik om te maak en Marinda bied dit met smaak aan.</p>"
+  },
+  {
+   "id": 3798,
+   "parent": 0,
+   "author": "Jennifer",
+   "avatar": "https://secure.gravatar.com/avatar/f7719e512a2f4653d3f72b8b199098545d8ad5a2a9f9b6cc4d0de34d193c5302?s=96&d=mm&r=g",
+   "date": "2022-03-17T22:01:16",
+   "html": "<p>Dus vir my die lekkerste program.<br>\nDankie Marinda dat jy altyd jou resepte deel en ek geniet jou🤗</p>"
+  }
+ ]
+}

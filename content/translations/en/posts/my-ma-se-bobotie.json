@@ -1,0 +1,98 @@
+{
+ "id": 5957,
+ "slug": "my-ma-se-bobotie",
+ "sourceHash": "6df634ee92677dc4f17ecdd3cdc261b3e3183b53",
+ "title": "My Mom's Bobotie",
+ "excerpt": "My Mom's Bobotie",
+ "seo": {
+  "title": "My Mom's Bobotie - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "My Mom's Bobotie",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2020/07/Ma-se-Bobotie-800x530.jpg",
+   "srcset": "/media/uploads/2020/07/Ma-se-Bobotie-800x530.jpg 800w, /media/uploads/2020/07/Ma-se-Bobotie-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "My Ma se Bobotie"
+  },
+  "courses": [
+   "Red Meat"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "25 ml oil",
+     "1 onion, finely chopped",
+     "750g – 1kg good quality mince",
+     "3 slices of bread",
+     "125 ml milk",
+     "1 egg, beaten",
+     "80 ml apricot jam",
+     "60 ml vinegar",
+     "60 ml medium curry powder",
+     "30 ml turmeric",
+     "1 apple, grated (optional)",
+     "2 bay or lemon leaves",
+     "Flaked almonds, optional"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Fry your chopped onion in the oil until glossy.",
+     "Let the bread soak in the milk and crumble it into your meat in your mixing bowl – keep the milk for your top layer.",
+     "Mix in all the rest of the ingredients with the meat except the bay/lemon leaves, almonds, egg and milk.",
+     "Now mix the cooked onions into your meat.",
+     "Put the mixture into a greased oven dish. Don't pack it in tightly.",
+     "Now lightly whisk your egg and milk together with a fork and pour over the meat.",
+     "Press the lemon/bay leaves into the meat and sprinkle the almonds on top.",
+     "Bake for 60 minutes at 180C."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

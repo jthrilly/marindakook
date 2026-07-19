@@ -1,0 +1,93 @@
+{
+ "id": 7184,
+ "slug": "romerige-hoenderlewertjies",
+ "sourceHash": "1500164c74173d594b6879506d1c7f29b5dd4534",
+ "title": "Creamy chicken livers",
+ "excerpt": "These chicken livers never disappoint  An old favourite.",
+ "seo": {
+  "title": "Creamy chicken livers - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">These chicken livers never disappoint  An old favourite.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Creamy chicken livers",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/05/Romerige-hoenderlewertjies-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Romerige hoenderlewertjies"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 g chicken livers, thawed and cleaned<br>",
+     "1 onion, finely chopped",
+     "15 ml oil",
+     "10 ml smoked paprika",
+     "5 ml ground cumin",
+     "10 ml chilli flakes or 2 chillies, finely chopped",
+     "125 ml chicken stock (dissolve 1 stock cube in 125 ml boiling water)",
+     "10 ml tomato paste",
+     "5ml lemon juice",
+     "125 ml cream",
+     "salt and pepper (go easy on the salt, as the stock cube is very salty)"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Fry the onion until glassy. Add the cumin, paprika and chilli flakes and fry a little longer.",
+     "Stir in the tomato paste, chicken stock and lemon juice and cook for 10 minutes.",
+     "Add the chicken livers and cook for just a short while. The chicken livers should still be pink inside.",
+     "Stir in the cream and season with salt and pepper to taste.",
+     "Eat it over rice or on a roll."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

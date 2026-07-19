@@ -1,0 +1,151 @@
+{
+ "id": 6266,
+ "slug": "wonderlikste-wortelkoek",
+ "title": "Wonderlikste Wortelkoek",
+ "date": "2021-07-23T11:52:22",
+ "modified": "2023-08-04T13:59:57",
+ "excerpt": "Wortelkoek nog nooit so maklik. Dit mag na baie bestanddele klink, maar dis net vir bymekaar gooi. Ek het alles met my hand gemeng om dit nie te oorwerk nie. Dit was ek en die houtlepel.",
+ "categories": [
+  5,
+  316
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Wonderlikste Wortelkoek",
+  "card": {
+   "src": "/media/uploads/2021/07/IMG_2855-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2021/07/IMG_2855-760x1040.jpg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2021/07/IMG_2855-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "closed",
+ "seo": {
+  "title": "Wonderlikste Wortelkoek - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Wortelkoek nog nooit so maklik.&nbsp; Dit mag na baie bestanddele klink, maar dis net vir bymekaar gooi.&nbsp; Ek het alles met my hand gemeng om dit nie te oorwerk nie.&nbsp; Dit was ek en die houtlepel.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Wonderlikste Wortelkoek",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2021/07/IMG_2855-800x530.jpg",
+   "srcset": "/media/uploads/2021/07/IMG_2855-800x530.jpg 800w, /media/uploads/2021/07/IMG_2855-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Wonderlikste Wortelkoek"
+  },
+  "courses": [
+   "Gebak, Koeke"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": "Droeë bestanddele",
+    "items": [
+     "500 ml koekmeel",
+     "375 ml suiker",
+     "125 ml bruinsuiker",
+     "250 ml gekapte pekaneute en ‘n bietjie vir bo-oor strooi",
+     "10 ml koeksoda",
+     "7,5 ml bakpoeier",
+     "Knippie sout",
+     "5 ml fyn kaneel",
+     "5 ml fyn gemmer",
+     "2,5 ml fyn naeltjies"
+    ]
+   },
+   {
+    "title": "Nat bestanddele",
+    "items": [
+     "750 ml fyn gerasperde wortels",
+     "4 eiers geklits",
+     "125 ml ongegeurde jogurt",
+     "180 ml gewone olie",
+     "1 (328g)blikkie crushed pynappels goed gedreineer",
+     "5 ml vanillageursel"
+    ]
+   },
+   {
+    "title": "Versiersuiker",
+    "items": [
+     "250 g roomkaas",
+     "125 ml sagte botter",
+     "2,5 ml vanillageursel",
+     "Knippie sout",
+     "750 ml versiersuiker",
+     "10 ml fyn gerasperde suurlemoenskil (opsioneel)"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Stel jou oond op 180C en smeer twee koekpanne.Ek het onder in my koekpanne bakpapier gesit.",
+     "In ‘n bak meng al jou droe bestanddele.",
+     "In ‘n ander bak meng al jou nat bestanddele.",
+     "Roer nou die nat bestanddele by die droe bestanddele.Moenie oorwerk nie.  ‘n Houtlepel is goed genoeg.",
+     "Verdeel die beslag tussen jou 2 koekpanne.Stamp dit liggies op jou kombuistoonbank om al die lugblasies uit te kry.  Bak dit vir 45 minute en toets met ‘n toetspennetjie of dit gaar is.",
+     "Laat dit rus in die panne vir 10 minute.Keer dit uit op ‘n draadrakkie en laat dit afkoel voor jy dit versier."
+    ]
+   },
+   {
+    "title": "Vir die versiersuiker",
+    "steps": [
+     "Klits die botte ren roomkaas tot dit romerig en goed gemeng is.",
+     "Klits die vanillageursel by",
+     "Klits die versiersuiker by",
+     "Klits die suurlemoenskil by sou jy dit verkies",
+     "Smeer die versiersuiker tussen die twee lae en bo-op die koek. Strooi pekaneute en fyn gerasperde suurlemoenskil oor."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

@@ -1,0 +1,107 @@
+{
+ "id": 7451,
+ "slug": "salted-karamel-kaaskoek",
+ "sourceHash": "e767432787131984e5ea044222d5388f236bf286",
+ "title": "Salted Caramel Cheesecake",
+ "excerpt": "This is not a cheap cheesecake, but you really do cut small slices because it's so rich. Make it at least 24 hours ahead of time. I made mine 48 hours ahead. Take the cream cheese out of the fridge beforehand so that it's nice and soft. I tip my …",
+ "seo": {
+  "title": "Salted Caramel Cheesecake - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">This is not a cheap cheesecake, but you really do cut small slices because it's so rich. Make it at least 24 hours ahead of time.  I made mine 48 hours ahead. Take the cream cheese out of the fridge beforehand so that it's nice and soft. I tip my caramel out of the tin and stir it first with a spoon so that it's soft.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"581\" height=\"480\" src=\"/media/uploads/2023/12/IMG_8817-e1702405833674.jpg\" alt class=\"wp-image-7453\" srcset=\"/media/uploads/2023/12/IMG_8817-e1702405833674.jpg 581w, /media/uploads/2023/12/IMG_8817-e1702405833674-300x248.jpg 300w, /media/uploads/2023/12/IMG_8817-e1702405833674-380x314.jpg 380w\" sizes=\"auto, (max-width: 581px) 100vw, 581px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"590\" height=\"480\" src=\"/media/uploads/2023/12/IMG_8814-e1702405865330.jpg\" alt class=\"wp-image-7454\" srcset=\"/media/uploads/2023/12/IMG_8814-e1702405865330.jpg 590w, /media/uploads/2023/12/IMG_8814-e1702405865330-300x244.jpg 300w, /media/uploads/2023/12/IMG_8814-e1702405865330-380x309.jpg 380w\" sizes=\"auto, (max-width: 590px) 100vw, 590px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Salted Caramel Cheesecake",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2023/12/IMG_8811.jpg",
+   "srcset": "/media/uploads/2023/12/IMG_8811.jpg 640w, /media/uploads/2023/12/IMG_8811-300x241.jpg 300w, /media/uploads/2023/12/IMG_8811-380x305.jpg 380w",
+   "width": 640,
+   "height": 514,
+   "alt": "Salted karamel-kaaskoek"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": "Crust",
+    "items": [
+     "1 packet Nuttikrust biscuits finely crushed in the food processor (you can use any biscuit of your choice)",
+     "75g salted pretzels also finely crushed in the food processor",
+     "140g butter, melted"
+    ]
+   },
+   {
+    "title": "Cheesecake filling",
+    "items": [
+     "3 x 250g Philadelphia cream cheese",
+     "5 ml vanilla extract",
+     "125 g icing sugar",
+     "1 tin caramel treat",
+     "10 g gelatine (one sachet) dissolved in 90 ml water (I stir mine with warm water and then quickly put it in the microwave until it's dissolved. Literally a few seconds)",
+     "5 ml salt",
+     "300 ml thick cream"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": "Crust",
+    "steps": [
+     "Grease a springform pan. I lined the bottom of my springform pan with baking paper that hangs well over the edges. This just makes it easier to get the cheesecake out.",
+     "Mix all the ingredients for the crust together and press it firmly into the springform pan. Put it in the fridge while you make the cheesecake."
+    ]
+   },
+   {
+    "title": "Cheesecake filling",
+    "steps": [
+     "Using an electric beater, beat the cream cheese, vanilla and icing sugar together until smooth.",
+     "Beat in the caramel treat.",
+     "Beat in the cream, gelatine and salt. Beat for a little while until it thickens.",
+     "Pour into your springform pan and let it set in the fridge for at least 24 hours.<br>"
+    ]
+   },
+   {
+    "title": "Decorate",
+    "steps": [
+     "Here you can do anything you like. I piped extra caramel treat on top and then added caramel popcorn and more pretzels."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "id": 7046,
+ "slug": "pynappelpoeding",
+ "title": "Pynappelpoeding",
+ "date": "2022-02-23T15:21:00",
+ "modified": "2022-03-18T15:29:05",
+ "excerpt": "My liefste Vinette Ebrahim het my terug geneem na ons destydse basaars wat die kerk gehou het. Dié poeding in ons huis was genoem “basaarpoeding”.",
+ "categories": [
+  1
+ ],
+ "tags": [
+  372
+ ],
+ "featured": {
+  "alt": "Pynappelpoeding",
+  "card": {
+   "src": "/media/uploads/2022/03/Pynappelpoeding-760x760.png",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/03/Pynappelpoeding-760x776.png",
+   "width": 760,
+   "height": 776
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/03/Pynappelpoeding-150x150.png",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Pynappelpoeding - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">My liefste Vinette Ebrahim het my terug geneem na ons destydse basaars wat die kerk gehou het.&nbsp;Dié poeding in ons huis was genoem “basaarpoeding”.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Pynappelpoeding",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Pynappelpoeding-2-800x530.png",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Pynappelpoeding"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 pakkies pynappeljellie",
+     "1 blikkie yskoue Idealmelk",
+     "1 blikkie fyn pynappel"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Maak die jellie aan volgens die aanwysings op die pakkies. Gebruik van die pynappelstroop as deel van die 2 koppies koue water.",
+     "Sit in die yskas tot die jellie net-net begin stol.",
+     "Klits die Idealmelk en pynappel by.",
+     "Laat stol oornag in een groot bak of in mooi kleiner houertjies.",
+     "Sit voor met vla."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

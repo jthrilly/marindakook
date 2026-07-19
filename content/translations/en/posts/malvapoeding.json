@@ -1,0 +1,96 @@
+{
+ "id": 5580,
+ "slug": "malvapoeding",
+ "sourceHash": "4775ed74ee5ed3642b3e514d66f9d405c5ec5197",
+ "title": "Malva Pudding",
+ "excerpt": "A soft, syrup-soaked pudding with a rich cream sauce.",
+ "seo": {
+  "title": "Malva Pudding - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Malva Pudding",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2019/06/3-1-640x530.png",
+   "srcset": null,
+   "width": 640,
+   "height": 530,
+   "alt": "Malvapoeding"
+  },
+  "courses": [
+   "Baking, Dessert"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": []
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": "Pudding",
+    "items": [
+     "15 ml butter",
+     "125 ml sugar",
+     "1 egg",
+     "250 ml cake flour",
+     "125 ml milk",
+     "30 ml apricot jam",
+     "5 ml bicarbonate of soda dissolved in",
+     "15 ml vinegar"
+    ]
+   },
+   {
+    "title": "Sauce",
+    "items": [
+     "250 ml cream",
+     "125 ml sugar",
+     "125 ml water",
+     "5 ml vanilla essence"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Cream the butter and sugar well.",
+     "Whisk the egg and add it in.",
+     "Add the dry ingredients alternately with the milk.",
+     "Add the jam.",
+     "Add the bicarbonate of soda that has dissolved in the vinegar.",
+     "Bake at 180 degrees for 30 minutes. Prick with a fork.",
+     "Make the sauce: boil together until the sugar has dissolved and pour over the pudding. Easy!"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

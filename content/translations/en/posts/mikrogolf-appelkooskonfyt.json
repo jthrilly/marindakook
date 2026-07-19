@@ -1,0 +1,89 @@
+{
+ "id": 7289,
+ "slug": "mikrogolf-appelkooskonfyt",
+ "sourceHash": "a2036baf240cf8082da211f20c25dd427e8b7c0b",
+ "title": "Microwave Apricot Jam",
+ "excerpt": "It's apricot season now, and putting your own jam on the table is such a treat. With the microwave you can cook jam in a jiffy. This is the first time I've tried it, and it's the prettiest jam I've ever made. Make sure your apricots aren't …",
+ "seo": {
+  "title": "Microwave Apricot Jam - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">It's apricot season now, and putting your own jam on the table is such a treat. &nbsp;With the microwave you can cook jam in a jiffy. &nbsp;This is the first time I've tried it, and it's the prettiest jam I've ever made. Make sure your apricots aren't too ripe. Make sure you use a nice deep bowl to work in, because the jam boils up. If not, do it in two batches or halve the recipe.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2022/11/WhatsApp-Image-2022-11-10-at-8.29.29-AM.jpeg\" alt class=\"wp-image-7292\" srcset=\"/media/uploads/2022/11/WhatsApp-Image-2022-11-10-at-8.29.29-AM.jpeg 768w, /media/uploads/2022/11/WhatsApp-Image-2022-11-10-at-8.29.29-AM-600x800.jpeg 600w, /media/uploads/2022/11/WhatsApp-Image-2022-11-10-at-8.29.29-AM-225x300.jpeg 225w, /media/uploads/2022/11/WhatsApp-Image-2022-11-10-at-8.29.29-AM-750x1000.jpeg 750w, /media/uploads/2022/11/WhatsApp-Image-2022-11-10-at-8.29.29-AM-380x507.jpeg 380w, /media/uploads/2022/11/WhatsApp-Image-2022-11-10-at-8.29.29-AM-760x1013.jpeg 760w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Microwave Apricot Jam",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/11/Jam-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Mikrogolf-appelkooskonfyt"
+  },
+  "courses": [
+   "Sauces and Salsas"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 kg apricots",
+     "2 kg sugar",
+     "juice of one lemon",
+     "125 ml water"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Wash the apricots. Halve the apricots and remove the pips. Keep about 5 pips aside.",
+     "Layer the apricots, water, lemon juice and sugar in a microwave-safe bowl. Press the pips in between.",
+     "Microwave on 100% for 10 minutes. Take out of the microwave and stir the sugar through.",
+     "Now set your microwave to 35 minutes and put the bowl back in. You're still working on 100% power.",
+     "Now microwave the apricots and stir every 5 minutes. Be careful, it's extremely hot. Use an oven mitt.",
+     "To test whether your jam is ready you can measure it with a thermometer, and if the temperature is 220F or 105C, you know it's ready. If you don't have a thermometer you can put a saucer in the freezer. Spoon a bit of jam onto the cold saucer and draw your finger through the jam. If the line doesn't close up immediately, your jam is ready.",
+     "Remove all the pips from the jam.",
+     "Spoon the jam into sterilised jars."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "id": 6029,
+ "slug": "grootword-appeltert",
+ "sourceHash": "366abf18bf6b6fd128c93b4396381058548c1e87",
+ "title": "Grown-up Apple Tart",
+ "excerpt": "Besides this apple tart being beautiful, it's probably one of the very nicest apple tarts there is. You'll never be sorry you made it.",
+ "seo": {
+  "title": "Grown-up Apple Tart - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Besides this apple tart being beautiful, it's probably one of the very nicest apple tarts there is. You'll never be sorry you made it. </p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Grown-up Apple Tart",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2020/08/Grootword-appeltert-800x530.jpg",
+   "srcset": "/media/uploads/2020/08/Grootword-appeltert-800x530.jpg 800w, /media/uploads/2020/08/Grootword-appeltert-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Grootword-appeltert"
+  },
+  "courses": [
+   "Baking, Dessert"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "411 g (1 tin) pie apples &#8211; drained",
+     "2 eggs",
+     "190 ml castor sugar",
+     "5 ml vanilla essence",
+     "85 ml milk",
+     "60 ml butter, melted",
+     "250 ml cake flour",
+     "5 ml baking powder",
+     "2 ml salt"
+    ]
+   },
+   {
+    "title": "Sauce",
+    "items": [
+     "1 small tin Ideal milk",
+     "125 ml cream",
+     "250 ml sugar",
+     "5 ml vanilla essence"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Whisk the eggs, castor sugar and vanilla together",
+     "Whisk in the milk and then the melted butter.",
+     "Sift the dry ingredients together and whisk it all into the egg mixture.",
+     "Pour the batter into a greased tart pan and press the apples into the batter.",
+     "Bake for 30 – 40 minutes at 180C",
+     "Cook the Ideal milk, cream, sugar and vanilla essence together until the sugar has dissolved. Pour it over the tart the moment it comes out of the oven."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

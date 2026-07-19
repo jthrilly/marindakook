@@ -1,0 +1,102 @@
+{
+ "id": 6281,
+ "slug": "sjokoladekoek-ryk-nat-en-verskriklik-lekker",
+ "sourceHash": "3f58cb8990951c11471f01360f41dbd061962d70",
+ "title": "Chocolate cake – rich, moist and terribly delicious",
+ "excerpt": "I spent 3 days trying to develop the best chocolate cake there is. It had to be something between a cake, a mousse and a brownie. Here it is.",
+ "seo": {
+  "title": "Chocolate cake - rich, moist and terribly delicious - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">I spent 3 days trying to develop the best chocolate cake there is.  It had to be something between a cake, a mousse and a brownie.  Here it is.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-large\"><img loading=\"lazy\" width=\"760\" height=\"1024\" src=\"/media/uploads/2021/08/IMG_3628-2-760x1024.jpg\" alt class=\"wp-image-6288\" srcset=\"/media/uploads/2021/08/IMG_3628-2-760x1025.jpg 760w, /media/uploads/2021/08/IMG_3628-2-600x809.jpg 600w, /media/uploads/2021/08/IMG_3628-2-223x300.jpg 223w, /media/uploads/2021/08/IMG_3628-2-768x1035.jpg 768w, /media/uploads/2021/08/IMG_3628-2-1139x1536.jpg 1139w, /media/uploads/2021/08/IMG_3628-2-750x1011.jpg 750w, /media/uploads/2021/08/IMG_3628-2-380x512.jpg 380w, /media/uploads/2021/08/IMG_3628-2-800x1079.jpg 800w, /media/uploads/2021/08/IMG_3628-2.jpg 1519w\" sizes=\"auto, (max-width: 760px) 100vw, 760px\"></figure></div>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2021/08/IMG_3621-3-768x1024.jpg\" alt class=\"wp-image-6286\" srcset=\"/media/uploads/2021/08/IMG_3621-3-768x1024.jpg 768w, /media/uploads/2021/08/IMG_3621-3-600x800.jpg 600w, /media/uploads/2021/08/IMG_3621-3-225x300.jpg 225w, /media/uploads/2021/08/IMG_3621-3-1152x1536.jpg 1152w, /media/uploads/2021/08/IMG_3621-3-750x1000.jpg 750w, /media/uploads/2021/08/IMG_3621-3-380x507.jpg 380w, /media/uploads/2021/08/IMG_3621-3-760x1013.jpg 760w, /media/uploads/2021/08/IMG_3621-3-800x1067.jpg 800w, /media/uploads/2021/08/IMG_3621-3.jpg 1536w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Chocolate cake – rich, moist and terribly delicious",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2021/08/IMG_3621-2-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Sjokoladekoek - ryk, nat en verskriklik lekker"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Voorbereiding",
+    "pairs": []
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Kooktyd",
+    "pairs": []
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "227 g cake flour",
+     "75 g cocoa powder",
+     "7,5 ml baking powder",
+     "7,5 ml baking soda",
+     "5 ml salt",
+     "500 ml sugar",
+     "2 eggs",
+     "250 ml milk",
+     "125 ml plain oil",
+     "10 ml vanilla",
+     "250 ml boiling water with 10 ml coffee powder dissolved in it"
+    ]
+   },
+   {
+    "title": "Icing",
+    "items": [
+     "65 g cocoa powder sifted",
+     "750 ml icing sugar sifted",
+     "80-85 ml milk",
+     "5 ml vanilla",
+     "120 g butter melted"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Switch the oven on to 180C.",
+     "Use two regular cake pans and line the bottoms with baking paper and spray the pans with Spray and Cook.",
+     "Sift the flour, cocoa, baking powder, baking soda and salt together in a mixing bowl.",
+     "Whisk in the sugar, then the eggs, then the milk, then the oil and lastly the hot water with the coffee. The batter looks thin, but that's right.",
+     "Divide the batter between your cake pans and bake for 30 – 35 minutes. Test with a skewer to see if it's done.  Don't overbake.",
+     "Let it cool in the pans for 10 minutes and then turn it out onto a wire rack."
+    ]
+   },
+   {
+    "title": "Icing",
+    "steps": [
+     "Whisk the cocoa powder into the melted butter.",
+     "Alternately whisk in the icing sugar and milk. Check if the consistency looks right, otherwise add more milk.",
+     "Whisk in the vanilla."
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "<strong>I put caramel and icing sugar in the middle. Just icing sugar works just as well.</strong>"
+  ],
+  "videoHtml": null
+ }
+}

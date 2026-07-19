@@ -1,0 +1,96 @@
+{
+ "id": 7096,
+ "slug": "suurlemoenmeringuetert",
+ "sourceHash": "084dce93d0a9c3cb4df3151aee20747036d1261e",
+ "title": "Lemon Meringue Tart",
+ "excerpt": "You can win most people over in a flash with this tart. I won Koos Kombuis over with it. Use a loose-bottomed tart pan – the recipe belongs to Mari-Louis Guy and is a winner.",
+ "seo": {
+  "title": "Lemon Meringue Tart - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">You can win most people over in a flash with this tart.&nbsp; I won Koos Kombuis over with it.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Use a loose-bottomed tart pan – the recipe belongs to Mari-Louis Guy and is a winner.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Lemon Meringue Tart",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Suurlemoentert-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Suurlemoenmeringuetert"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 packets tennis biscuits, finely crumbed",
+     "80 g soft butter",
+     "2 tins condensed milk",
+     "juice of 4 lemons",
+     "zest of 4 lemons, finely grated",
+     "4 egg yolks",
+     "5 ml cornflour (Maizena)",
+     "125 ml extra lemon juice",
+     "8 egg whites",
+     "500 g castor sugar"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Mix the biscuit crumbs and butter thoroughly and press firmly into a greased tart pan.",
+     "Bake for 15 minutes at 170 °C. Set aside to cool.",
+     "Mix the condensed milk, juice and zest of 4 lemons in a mixing bowl.",
+     "Whisk the egg yolks and cornflour together to a smooth paste and add to the condensed milk mixture until well combined.",
+     "Add the 125 ml lemon juice and mix well.",
+     "Spoon the lemon mixture into the crust.",
+     "Whisk the egg whites to soft peaks and slowly add the castor sugar until stiff peaks form.",
+     "Spoon it on top of the lemon mixture.",
+     "Bake for 20 minutes at 170 °C until golden brown on top and let it cool completely."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

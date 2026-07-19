@@ -1,0 +1,96 @@
+{
+ "id": 2098,
+ "slug": "aartappelslaai-o-aartappelslaai",
+ "sourceHash": "fd9a191d5cb9c9943d7b9297f8dc9ded166831a9",
+ "title": "Potato Salad – oh, potato salad",
+ "excerpt": "Look, potato salad is as much a part of our lives as rugby and biltong. I made this delicious potato salad and on day three it still tasted as good as on day one. Make it and enjoy every bite.",
+ "seo": {
+  "title": "Potato Salad - oh, potato salad - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Look, potato salad is as much a part of our lives as rugby and biltong.  I made this delicious potato salad and on day three it still tasted as good as on day one.  Make it and enjoy every bite.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<p class=\"wp-block-paragraph\"></p>",
+ "recipe": {
+  "style": "default",
+  "title": "Potato Salad – oh, potato salad",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2017/10/featured-aartappelslaai-034-1024x768.jpg",
+   "srcset": "/media/uploads/2017/10/featured-aartappelslaai-034-1024x768.jpg 1024w, /media/uploads/2017/10/featured-aartappelslaai-034-600x450.jpg 600w, /media/uploads/2017/10/featured-aartappelslaai-034-300x225.jpg 300w, /media/uploads/2017/10/featured-aartappelslaai-034-768x576.jpg 768w, /media/uploads/2017/10/featured-aartappelslaai-034.jpg 1500w",
+   "width": 800,
+   "height": 600,
+   "alt": "Aartappelslaai - o, aartappelslaai"
+  },
+  "courses": [
+   "Salad, Uncategorized"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "6 potatoes<br><img src=\"/media/uploads/2017/10/aartappelslaai-001-300x225.jpg\" title=\"aartappelslaai-001\" alt class=\"direction-step-image\" loading=\"lazy\">",
+     "1 onion, finely chopped",
+     "1/2 cup parsley, finely chopped",
+     "250 ml mayonnaise ( 1 cup)",
+     "125 ml Greek yoghurt ( half cup)<br><img src=\"/media/uploads/2017/10/aartappelslaai-015-225x300.jpg\" title=\"aartappelslaai-015\" alt class=\"direction-step-image\" loading=\"lazy\">",
+     "15 ml sugar",
+     "60 ml milk",
+     "60 ml mustard ( wholegrain mustard)",
+     "2 hard-boiled eggs<br><img src=\"/media/uploads/2017/10/aartappelslaai-003-300x225.jpg\" title=\"aartappelslaai-003\" alt class=\"direction-step-image\" loading=\"lazy\">",
+     "1 wheel of feta cheese<br><img src=\"/media/uploads/2017/10/aartappelslaai-024-300x225.jpg\" title=\"aartappelslaai-024\" alt class=\"direction-step-image\" loading=\"lazy\">",
+     "salt and pepper"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Boil the potatoes until soft and cut into cubes.",
+     "Add the chopped onion.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/aartappelslaai-008.jpg\" class=\"direction-step-image\" alt title=\"aartappelslaai-008\">",
+     "Add the chopped parsley.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/aartappelslaai-013.jpg\" class=\"direction-step-image\" alt title=\"aartappelslaai-013\">",
+     "Mix the mayonnaise, yoghurt, milk, sugar, salt, pepper and mustard together and pour over the potatoes.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/aartappelslaai-018.jpg\" class=\"direction-step-image\" alt title=\"aartappelslaai-018\">",
+     "Stir through gently without breaking up the potatoes.<img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/aartappelslaai-021.jpg\" class=\"direction-step-image\" alt title=\"aartappelslaai-021\">",
+     "Grate the eggs over.<br><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/aartappelslaai-022.jpg\" class=\"direction-step-image\" alt title=\"aartappelslaai-022\">",
+     "Crumble the feta over.",
+     "Sprinkle a bit more parsley over for some green. <img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/aartappelslaai-026.jpg\" class=\"direction-step-image\" alt title=\"aartappelslaai-026\">You can catch me out with potato salad any day.<br><img loading=\"lazy\" width=\"1500\" height=\"1125\" src=\"/media/uploads/2017/10/aartappelslaai-031.jpg\" class=\"direction-step-image\" alt title=\"aartappelslaai-031\">"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "id": 6330,
+ "slug": "lamsrak-met-n-senqu-river-pistachio-krummelkors",
+ "title": "Lamsrak met ‘n Senqu River Pistachio-krummelkors",
+ "date": "2021-09-10T11:32:31",
+ "modified": "2022-02-06T21:55:02",
+ "excerpt": "Ek weet dat lamsvleis duurder is as ander vleis, maar ‘n bederf so dan en wan kan niemand skade aan doen nie. Ek laat nie die beentjies skoonmaak nie, want ons hou van die vet van die tjoppies.",
+ "categories": [
+  308,
+  270
+ ],
+ "tags": [
+  120
+ ],
+ "featured": {
+  "alt": "Lamsrak met ‘n Senqu River Pistachio-krummelkors",
+  "card": {
+   "src": "/media/uploads/2021/09/IMG_4456-2-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2021/09/IMG_4456-2-760x1040.jpg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2021/09/IMG_4456-2-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Lamsrak met 'n Senqu River Pistachio-krummelkors - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Ek weet dat lamsvleis duurder is as ander vleis, maar &#8216;n bederf so dan en wan kan niemand skade aan doen nie. &nbsp;Ek laat nie die beentjies skoonmaak nie, want ons hou van die vet van die tjoppies.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter size-large\"><img src=\"/media/uploads/2021/09/IMG_4477-2-1-768x1024.jpg\" alt class=\"wp-image-6337\" loading=\"lazy\"></figure></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Lamsrak met ‘n Senqu River Pistachio-krummelkors",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2021/09/IMG_4470-3-800x530.jpg",
+   "srcset": "/media/uploads/2021/09/IMG_4470-3-800x530.jpg 800w, /media/uploads/2021/09/IMG_4470-3-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Lamsrak met 'n Senqu River Pistachio-krummelkors"
+  },
+  "courses": [
+   "Skaapvleis"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "600 g heel lamsrak",
+     "250 ml fyngekapte pistachioneute (ek het die fantastiese Senqu River-neute gebruik)",
+     "250 ml broodkrummels",
+     "15 ml fyngekapte roosmaryn",
+     "20 ml olyfolie",
+     "30 ml mostert"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Braai die vetkant van die lamrak in &#8216;n warm pan bo op die stoof totdat die vet mooi bruin is. Laat die vleis afkoel.",
+     "Smeer die vetkant van die tjops met mostert.",
+     "Meng die res van die bestanddele en smeer dit oor die mostertgedeelte.<img loading=\"lazy\" width=\"1536\" height=\"2048\" src=\"/media/uploads/2021/09/IMG_4440.jpg\" class=\"direction-step-image\" alt title=\"IMG_4440\"><img loading=\"lazy\" width=\"1536\" height=\"2048\" src=\"/media/uploads/2021/09/IMG_4456-2-1.jpg\" class=\"direction-step-image\" alt title=\"IMG_4456 2\">",
+     "Sit &#8216;n rakkie binne in &#8216;n oondbak en plaas die lamsrak op die rakkie.",
+     "Bak dit oop by 180C vir 15-20 min.  Dan sal die lam nog mooi pienk wees . Indien jy dit gaarder soek los dit langer in die oond."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

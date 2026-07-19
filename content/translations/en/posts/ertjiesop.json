@@ -1,0 +1,95 @@
+{
+ "id": 429,
+ "slug": "ertjiesop",
+ "sourceHash": "9d54f761fb5c2c9f33a2f3f44333be95147e802f",
+ "title": "Pea soup – all year round",
+ "excerpt": "Look, we don't wait for cold weather to eat soup. We eat it all year round. To us soup isn't a starter – it's a meal. I make it thick and hearty with meat in it. Then we feast on the soup with a lovely glass of communion wine …",
+ "seo": {
+  "title": "Pea soup - all year round - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Look, we don't wait for cold weather to eat soup.&nbsp; We eat it all year round.&nbsp; To us soup isn't a starter &#8211; it's a meal to us.&nbsp; I make it thick and hearty with meat in it. Then we feast on the soup with a lovely glass of communion wine.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"/media/uploads/2017/10/blog-ertjiesop-009.jpg\"><img src=\"/media/uploads/2017/10/blog-ertjiesop-009-1024x768.jpg\" alt=\"blog ertjiesop 009\" class=\"wp-image-430\" loading=\"lazy\"></a></figure></div>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"aligncenter\"><a href=\"/media/uploads/2017/10/blog-ertjiesop-019.jpg\"><img src=\"/media/uploads/2017/10/blog-ertjiesop-019-768x1024.jpg\" alt=\"blog ertjiesop 019\" class=\"wp-image-432\" loading=\"lazy\"></a></figure></div>\n\n\n\n<p class=\"wp-block-paragraph\">If you don't have meat to put in, you can use&nbsp; 2 litres of meat stock (the kind you buy)&nbsp;instead. You also don't have to put in the ham hock and the bacon, it just gives it a lovely smoky flavour.&nbsp; If you really want to be fancy you can, when serving, add a swirl of cream on each portion or crumble feta cheese over it. You can bake <a href=\"/?p=297\">this easy bread roll</a> and serve it with your soup.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Enjoy the delicious pea soup and never ever again may you say you can't make pea soup.</p>",
+ "recipe": {
+  "style": "default",
+  "title": "Pea soup – all year round",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2017/10/blog-ertjiesop-016-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Ertjiesop - heel jaar deur"
+  },
+  "courses": [
+   "Soup, Starter"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1 packet (500g) dried peas /split peas",
+     "2 litres water",
+     "2 carrots",
+     "4 potatoes",
+     "2 onions",
+     "30 ml brown vinegar",
+     "100 ml Worcestershire sauce",
+     "salt and pepper",
+     "400g soup meat (shin with marrow bones)",
+     "1 small smoked ham hock or 1 packet diced bacon (this is optional)",
+     "a little oil to fry the onions in<a rel aria-label href=\"/media/uploads/2017/10/blog-ertjiesop-009.jpg\" target=\"_blank\"></a><a rel aria-label href=\"/media/uploads/2017/10/blog-ertjiesop-009.jpg\" target=\"_blank\"></a><a rel aria-label href=\"/media/uploads/2017/10/blog-ertjiesop-009.jpg\" target=\"_blank\"></a><a rel aria-label href=\"/media/uploads/2017/10/blog-ertjiesop-009.jpg\" target=\"_blank\"></a><a rel aria-label href=\"/media/uploads/2017/10/blog-ertjiesop-009.jpg\" target=\"_blank\"></a><a rel aria-label href=\"/media/uploads/2017/10/blog-ertjiesop-009.jpg\" target=\"_blank\"></a>"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Peel your vegetables and cut into small cubes.",
+     "Cut your onions into rings and fry them together with your meat until brown in a little oil in a nice big pot on the stove.",
+     "Now add the rest of the ingredients to the pot and cook until soft. Stir regularly.",
+     "If you use a pressure cooker it will take 60 minutes.  In a regular pot it will take longer.  You'll just have to feel until it's soft.",
+     "Now you must taste, taste, taste.  Add more salt, pepper or Worcestershire sauce to your liking.",
+     "Take the meat out and mash the vegetables or use a blender and blend the vegetables smooth.",
+     "Put the meat back into your pot and enjoy the pea soup."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

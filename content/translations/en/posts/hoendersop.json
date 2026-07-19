@@ -1,0 +1,93 @@
+{
+ "id": 7493,
+ "slug": "hoendersop",
+ "sourceHash": "f6846c59345b0b7e607952a360c0fb598c9f3e1c",
+ "title": "Chicken soup",
+ "excerpt": "The most delicious chicken soup for the cold weather. My friend Annelie van Schalkwyk and I made this lovely soup in Boussac. I make mine just a little different, with lemongrass. Good for anyone feeling a bit under the weather. We're talking power soup.",
+ "seo": {
+  "title": "Chicken soup - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">The most delicious chicken soup for the cold weather. My friend Annelie van Schalkwyk and I made this lovely soup in Boussac. I make mine just a little different, with lemongrass.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">Good for anyone feeling a bit under the weather. We're talking power soup. </p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Chicken soup",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2024/07/Hoendersop-800x530.jpeg",
+   "srcset": "/media/uploads/2024/07/Hoendersop-800x530.jpeg 800w, /media/uploads/2024/07/Hoendersop-1600x1060.jpeg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Hoendersop"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1.5 kg whole chicken (one nice big chicken)",
+     "3 litres chicken stock (dissolve 6 stock cubes in boiling water)",
+     "30 ml finely grated fresh ginger",
+     "8 cloves garlic, grated",
+     "90 ml soy sauce",
+     "60 ml lime juice",
+     "45 ml brown sugar",
+     "5 star anise",
+     "2 to 3 lemongrass stalks, bruised",
+     "1 onion, finely chopped",
+     "1 bunch spring onions, finely chopped",
+     "4 red chillies, finely chopped (optional)"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Put everything in a pot and cook until the chicken is tender.",
+     "Take the chicken out, remove the skin and bones. Shred the chicken and return the meat to the soup. Now remove the star anise and lemongrass.",
+     "Enjoy the delicious soup with freshly baked bread."
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "Taste your soup regularly as it cooks. Adjust it with lime juice, soy sauce or chillies to your taste, and add a little salt if you prefer.",
+   "If you like, you can add 200g risoni (rice noodles) towards the end and cook just a little longer until tender."
+  ],
+  "videoHtml": null
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "id": 7573,
+ "slug": "paaseier-lekkerte",
+ "sourceHash": "2dfcd550c44741d3124fee50c979e20039cadcf2",
+ "title": "Easter Egg Treats",
+ "excerpt": "Easter Egg Treats",
+ "seo": {
+  "title": "Easter Egg Treats - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2025/04/Beacon-Mallows-1024x768.jpeg\" alt class=\"wp-image-7579\" srcset=\"/media/uploads/2025/04/Beacon-Mallows-1024x768.jpeg 1024w, /media/uploads/2025/04/Beacon-Mallows-300x225.jpeg 300w, /media/uploads/2025/04/Beacon-Mallows-768x576.jpeg 768w, /media/uploads/2025/04/Beacon-Mallows-750x563.jpeg 750w, /media/uploads/2025/04/Beacon-Mallows-500x375.jpeg 500w, /media/uploads/2025/04/Beacon-Mallows-380x285.jpeg 380w, /media/uploads/2025/04/Beacon-Mallows-760x570.jpeg 760w, /media/uploads/2025/04/Beacon-Mallows-800x600.jpeg 800w, /media/uploads/2025/04/Beacon-Mallows.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2025/04/Mallows-geknip-1024x768.jpeg\" alt class=\"wp-image-7578\" srcset=\"/media/uploads/2025/04/Mallows-geknip-1024x768.jpeg 1024w, /media/uploads/2025/04/Mallows-geknip-300x225.jpeg 300w, /media/uploads/2025/04/Mallows-geknip-768x576.jpeg 768w, /media/uploads/2025/04/Mallows-geknip-750x563.jpeg 750w, /media/uploads/2025/04/Mallows-geknip-500x375.jpeg 500w, /media/uploads/2025/04/Mallows-geknip-380x285.jpeg 380w, /media/uploads/2025/04/Mallows-geknip-760x570.jpeg 760w, /media/uploads/2025/04/Mallows-geknip-800x600.jpeg 800w, /media/uploads/2025/04/Mallows-geknip.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2025/04/Paaseier-lekkerte-2-1024x768.jpeg\" alt class=\"wp-image-7574\" srcset=\"/media/uploads/2025/04/Paaseier-lekkerte-2-1024x768.jpeg 1024w, /media/uploads/2025/04/Paaseier-lekkerte-2-300x225.jpeg 300w, /media/uploads/2025/04/Paaseier-lekkerte-2-768x576.jpeg 768w, /media/uploads/2025/04/Paaseier-lekkerte-2-750x563.jpeg 750w, /media/uploads/2025/04/Paaseier-lekkerte-2-500x375.jpeg 500w, /media/uploads/2025/04/Paaseier-lekkerte-2-380x285.jpeg 380w, /media/uploads/2025/04/Paaseier-lekkerte-2-760x570.jpeg 760w, /media/uploads/2025/04/Paaseier-lekkerte-2-800x600.jpeg 800w, /media/uploads/2025/04/Paaseier-lekkerte-2-rotated.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2025/04/Paashappie-blok-1024x768.jpeg\" alt class=\"wp-image-7577\" srcset=\"/media/uploads/2025/04/Paashappie-blok-1024x768.jpeg 1024w, /media/uploads/2025/04/Paashappie-blok-300x225.jpeg 300w, /media/uploads/2025/04/Paashappie-blok-768x576.jpeg 768w, /media/uploads/2025/04/Paashappie-blok-750x563.jpeg 750w, /media/uploads/2025/04/Paashappie-blok-500x375.jpeg 500w, /media/uploads/2025/04/Paashappie-blok-380x285.jpeg 380w, /media/uploads/2025/04/Paashappie-blok-760x570.jpeg 760w, /media/uploads/2025/04/Paashappie-blok-800x600.jpeg 800w, /media/uploads/2025/04/Paashappie-blok.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Easter Egg Treats",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2025/04/Paaseier-lekkerte-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Paaseier-lekkerte"
+  },
+  "courses": [
+   "Baking, Treats"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "10",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "2",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "8 marshmallow Easter eggs, cut into smaller pieces",
+     "30 ml butter",
+     "30 ml cocoa powder",
+     "625 ml (2 1/2 cups) Rice Krispies"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Spray a dish with Spray and Cook",
+     "Melt the Easter eggs, butter and cocoa in a bowl in the microwave for 90 seconds. Stir well. Everything must be melted.",
+     "Stir the Rice Krispies through the chocolate mixture.",
+     "Press it firmly into your dish and let it cool.",
+     "Cut through into blocks with a sharp knife."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

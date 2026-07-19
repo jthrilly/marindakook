@@ -1,0 +1,119 @@
+{
+ "id": 7591,
+ "slug": "beste-gisbroodjie-ooit",
+ "title": "Beste gisbroodjie ooit",
+ "date": "2025-06-03T19:10:29",
+ "modified": "2025-06-03T19:18:50",
+ "excerpt": "Jy hoef hom nie eers te knie nie.",
+ "categories": [
+  314,
+  5
+ ],
+ "tags": [
+  56,
+  399,
+  400
+ ],
+ "featured": {
+  "alt": "Gisbrood",
+  "card": {
+   "src": "/media/uploads/2025/06/Gisbrood-760x760.jpeg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2025/06/Gisbrood-760x960.jpeg",
+   "width": 760,
+   "height": 960
+  },
+  "thumb": {
+   "src": "/media/uploads/2025/06/Gisbrood-150x150.jpeg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "closed",
+ "seo": {
+  "title": "Beste gisbroodjie ooit - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Jy hoef hom nie eers te knie nie.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2025/06/Gisbrood-botter-en-kaas-1024x768.jpeg\" alt class=\"wp-image-7593\" srcset=\"/media/uploads/2025/06/Gisbrood-botter-en-kaas-1024x768.jpeg 1024w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-300x225.jpeg 300w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-768x576.jpeg 768w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-750x563.jpeg 750w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-500x375.jpeg 500w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-380x285.jpeg 380w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-760x570.jpeg 760w, /media/uploads/2025/06/Gisbrood-botter-en-kaas-800x600.jpeg 800w, /media/uploads/2025/06/Gisbrood-botter-en-kaas.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Beste gisbroodjie ooit",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2025/06/Gisbrood-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Beste gisbroodjie ooit"
+  },
+  "courses": [
+   "Brood, Gebak"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "15",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "750 ml koekmeel",
+     "5 ml sout",
+     "5 ml suiker",
+     "1 pakkie kitsgis",
+     "375 ml louwater"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Stel jou oond op 180 C",
+     "Meng al die droe bestanddele saam",
+     "Roer die louwater by die meelmengsel met n houtlepel Moenie te veel meng nie. Dis n slapperige deeg",
+     "Spuit n broodpannetjie of smeer dit met botter. Krap die deeg uit in jou pannetjie. Druk jou hande in meel en maak jou deeg gelyk met jou hande <img loading=\"lazy\" width=\"1280\" height=\"960\" src=\"/media/uploads/2025/06/Gisbrood-voor-bak.jpeg\" class=\"direction-step-image\" alt=\"Gisbrood voor oond\" title=\"Gisbrood voor bak\">",
+     "Sit die pannetjie in n plastieksak en laat dit rys tot dubbel in groote<img loading=\"lazy\" width=\"1280\" height=\"960\" src=\"/media/uploads/2025/06/Gisbrood-in-sak.jpeg\" class=\"direction-step-image\" alt title=\"Gisbrood in sak\">",
+     "Bak vir 30 min by 180 C <img loading=\"lazy\" width=\"1280\" height=\"960\" src=\"/media/uploads/2025/06/Gisbrood-heel.jpeg\" class=\"direction-step-image\" alt title=\"Gisbrood heel\">",
+     "Smeer botter oor die korsie<img loading=\"lazy\" width=\"1280\" height=\"960\" src=\"/media/uploads/2025/06/Gisbrood-botter.jpeg\" class=\"direction-step-image\" alt title=\"Gisbrood botter\">"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

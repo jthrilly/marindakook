@@ -1,0 +1,118 @@
+{
+ "id": 7184,
+ "slug": "romerige-hoenderlewertjies",
+ "title": "Romerige hoenderlewertjies",
+ "date": "2022-05-31T08:42:34",
+ "modified": "2022-05-31T08:42:36",
+ "excerpt": "Hierdie hoenderlewertjies stel nooit teleur nie ‘n Ou gunsteling.",
+ "categories": [
+  7
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Romerige hoenderlewertjies",
+  "card": {
+   "src": "/media/uploads/2022/05/Romerige-hoenderlewertjies-760x760.jpeg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/05/Romerige-hoenderlewertjies-760x768.jpeg",
+   "width": 760,
+   "height": 768
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/05/Romerige-hoenderlewertjies-150x150.jpeg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "closed",
+ "seo": {
+  "title": "Romerige hoenderlewertjies - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Hierdie hoenderlewertjies stel nooit teleur nie  ‘n Ou gunsteling.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Romerige hoenderlewertjies",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/05/Romerige-hoenderlewertjies-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Romerige hoenderlewertjies"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 g hoenderlewertjies ontdooi en skoongemaak<br>",
+     "1 ui fyngekap",
+     "15 ml olie",
+     "10 ml gerookte paprika",
+     "5 ml fyn komyn",
+     "10 ml rissievlokkies of 2 rissies fyngekap",
+     "125 ml hoenderaftreksel (los 1 blokkie op im 125 ml kookwater)",
+     "10 ml tamatiepaste",
+     "5ml suurlemoensap",
+     "125 ml room",
+     "sout en peper (versigtig met die sout, want die aftrekselblokkie is baie sout)"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Braai die ui tot glaserig. Voeg die komyn, paprika en rissievlokkies by en braai nog &#8216;n bietjie.",
+     "Roer die tamatiepaste, hoenderaftreksel en suulemoensap by en kook vir 10 minute.",
+     "Gooi die hoenderlewers by en kook net vir &#8216;n kort tydjie.  Die hoenderlewers moet nog pienk is binne-in wees.",
+     "Roer die room by en sout en peper na smaak.",
+     "Eet dit op rys of op &#8216;n broodjie."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

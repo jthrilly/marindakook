@@ -1,0 +1,113 @@
+{
+ "id": 7502,
+ "slug": "kaas-en-ryswafels-met-avokado-sprietuie-en-creme-fraiche",
+ "sourceHash": "0d6485bca472b91b34444d94ca6e171cc15750d8",
+ "title": "Cheese and rice waffles with avocado, spring onion and crème fraîche",
+ "excerpt": "Cheese and rice waffles with avocado, spring onion and crème fraîche.",
+ "seo": {
+  "title": "Cheese and rice waffles with avocado, spring onion and crème fraîche - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2024/08/Spekko-1024x768.jpeg\" alt class=\"wp-image-7505\" srcset=\"/media/uploads/2024/08/Spekko-1024x768.jpeg 1024w, /media/uploads/2024/08/Spekko-300x225.jpeg 300w, /media/uploads/2024/08/Spekko-768x576.jpeg 768w, /media/uploads/2024/08/Spekko-750x563.jpeg 750w, /media/uploads/2024/08/Spekko-500x375.jpeg 500w, /media/uploads/2024/08/Spekko-380x285.jpeg 380w, /media/uploads/2024/08/Spekko-760x570.jpeg 760w, /media/uploads/2024/08/Spekko-800x600.jpeg 800w, /media/uploads/2024/08/Spekko-rotated.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2024/08/Kaas-en-ryswafel-2-1024x768.jpeg\" alt class=\"wp-image-7503\" srcset=\"/media/uploads/2024/08/Kaas-en-ryswafel-2-1024x768.jpeg 1024w, /media/uploads/2024/08/Kaas-en-ryswafel-2-300x225.jpeg 300w, /media/uploads/2024/08/Kaas-en-ryswafel-2-768x576.jpeg 768w, /media/uploads/2024/08/Kaas-en-ryswafel-2-750x563.jpeg 750w, /media/uploads/2024/08/Kaas-en-ryswafel-2-500x375.jpeg 500w, /media/uploads/2024/08/Kaas-en-ryswafel-2-380x285.jpeg 380w, /media/uploads/2024/08/Kaas-en-ryswafel-2-760x570.jpeg 760w, /media/uploads/2024/08/Kaas-en-ryswafel-2-800x600.jpeg 800w, /media/uploads/2024/08/Kaas-en-ryswafel-2-rotated.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2024/08/Kaas-en-ryswafel-binne-2-1024x768.jpeg\" alt class=\"wp-image-7507\" srcset=\"/media/uploads/2024/08/Kaas-en-ryswafel-binne-2-1024x768.jpeg 1024w, /media/uploads/2024/08/Kaas-en-ryswafel-binne-2-300x225.jpeg 300w, /media/uploads/2024/08/Kaas-en-ryswafel-binne-2-768x576.jpeg 768w, /media/uploads/2024/08/Kaas-en-ryswafel-binne-2-750x563.jpeg 750w, /media/uploads/2024/08/Kaas-en-ryswafel-binne-2-500x375.jpeg 500w, /media/uploads/2024/08/Kaas-en-ryswafel-binne-2-380x285.jpeg 380w, /media/uploads/2024/08/Kaas-en-ryswafel-binne-2-760x570.jpeg 760w, /media/uploads/2024/08/Kaas-en-ryswafel-binne-2-800x600.jpeg 800w, /media/uploads/2024/08/Kaas-en-ryswafel-binne-2.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2024/08/Krups-1024x768.jpeg\" alt class=\"wp-image-7508\" srcset=\"/media/uploads/2024/08/Krups-1024x768.jpeg 1024w, /media/uploads/2024/08/Krups-300x225.jpeg 300w, /media/uploads/2024/08/Krups-768x576.jpeg 768w, /media/uploads/2024/08/Krups-750x563.jpeg 750w, /media/uploads/2024/08/Krups-500x375.jpeg 500w, /media/uploads/2024/08/Krups-380x285.jpeg 380w, /media/uploads/2024/08/Krups-760x570.jpeg 760w, /media/uploads/2024/08/Krups-800x600.jpeg 800w, /media/uploads/2024/08/Krups.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Cheese and rice waffles with avocado, spring onion and crème fraîche",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2024/08/Kaas-en-ryswafel-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Kaas- en ryswafels met avokado, sprietuie en crème fraîche"
+  },
+  "courses": [
+   "Main course, Light bites, Rice, Starter"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "20",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "¾ cup Spekko long-grain parboiled rice",
+     "3 cups water",
+     "2ml salt",
+     "1 x tin whole-kernel corn",
+     "½ cup grated cheddar cheese",
+     "2 eggs"
+    ]
+   },
+   {
+    "title": "For the topping",
+    "items": [
+     "½ cup crème fraîche",
+     "1 lemon",
+     "salt",
+     "ground black pepper",
+     "2 spring onions",
+     "1 avocado",
+     "5ml chilli flakes",
+     "fresh coriander"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Bring the water, salt and Spekko rice to the boil in a pot",
+     "Lower the heat to medium and cook for 20-25 minutes",
+     "Pour the rice into a sieve to drain off the excess water",
+     "Set it aside to cool",
+     "Drain the whole-kernel corn and pat dry with kitchen paper or a clean cloth",
+     "Mix the rice and grated cheese with ¾ of the whole-kernel corn in a mixing bowl (keep the rest for serving)",
+     "Whisk the eggs and then mix them well into the rice mixture",
+     "Heat a waffle pan and spray it with a cooking spray (\"Spray &amp; Cook\")",
+     "Pour a spoonful of the mixture into the preheated waffle pan, close the lid, and cook until golden brown",
+     "Make waffles with all of the batter",
+     "While the waffles are cooking, you can start preparing the topping",
+     "Mix the crème fraîche with finely grated lemon zest and a pinch of salt and pepper",
+     "Slice the spring onions thinly",
+     "Slice the avocado thinly and squeeze lemon juice over",
+     "Place the waffles on a serving platter and top each waffle with a few slices of avocado and a spoonful of crème fraîche",
+     "Then sprinkle the spring onions and the remaining whole-kernel corn over",
+     "Garnish with chilli flakes and fresh coriander"
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

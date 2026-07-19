@@ -1,0 +1,121 @@
+{
+ "id": 7088,
+ "slug": "kool-lensiefrikkadelle",
+ "sourceHash": "1a2dad521da7b08da78f37383d969d75d4a47d6f",
+ "title": "Cabbage-lentil frikkadels",
+ "excerpt": "Koos and I cooked together in our Crocs. There was nobody there to mock us over our Crocs. What a lovely, easy cook! Even if you're not vegetarian, I promise you'll definitely like these little frikkies. Sarietha, this one is for you and Josh.",
+ "seo": {
+  "title": "Cabbage-lentil frikkadels - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">Koos and I cooked together in our Crocs.&nbsp;There was nobody there to mock us over our Crocs.&nbsp;What a lovely, easy cook! Even if you're not vegetarian, I promise you'll definitely like these little frikkies.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Sarietha, this one is for you and Josh.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Cabbage-lentil frikkadels",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Kool-en-lensiefrikadelle-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Kool-lensiefrikkadelle"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 ml lentils, drained",
+     "2 garlic cloves, finely chopped",
+     "1 egg",
+     "35 g parmesan cheese",
+     "30 ml breadcrumbs",
+     "10 ml ground cumin",
+     "5 ml chopped fresh coriander",
+     "2 ml ground cinnamon",
+     "30 ml finely chopped onion",
+     "5 ml smoked paprika",
+     "1 finely chopped chilli (optional)",
+     "salt",
+     "pepper",
+     "1 large cabbage"
+    ]
+   },
+   {
+    "title": "Sauce for cabbage frikkies",
+    "items": [
+     "1 onion, chopped",
+     "4 garlic cloves, finely chopped",
+     "2 chillies, chopped",
+     "1 tin Mexican tomatoes",
+     "10 ml tomato paste",
+     "125 ml red wine",
+     "30 ml fresh rosemary, chopped",
+     "5 ml sugar",
+     "10 ml smoked paprika",
+     "10 ml Worcestershire sauce"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Put everything except the cabbage into a food processor and process until smooth.",
+     "Use an ice cream scoop and shape into balls.",
+     "Put the balls on a baking tray lined with baking paper, and place in the fridge.",
+     "Take the outer leaves of the cabbage. (Cut out the hard core in the middle.) Push them into boiling water to soften.",
+     "Now wrap each frikkadel in a cabbage leaf (you can secure it with a toothpick) and place it on top of the sauce (recipe below) that has been poured into an ovenproof dish.",
+     "Bake uncovered for 20 to 30 minutes."
+    ]
+   },
+   {
+    "title": "Sauce for cabbage frikkies",
+    "steps": [
+     "Fry the onion until glassy.",
+     "Fry the garlic and chillies together with the onion.",
+     "Add the rest of the ingredients and cook for 20 minutes.",
+     "Pour it into the bottom of an ovenproof dish and place the frikkadels on the sauce to cook through."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

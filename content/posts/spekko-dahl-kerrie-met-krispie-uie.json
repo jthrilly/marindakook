@@ -1,0 +1,144 @@
+{
+ "id": 7621,
+ "slug": "spekko-dahl-kerrie-met-krispie-uie",
+ "title": "Spekko dahl-kerrie met krispie uie",
+ "date": "2025-11-15T11:51:23",
+ "modified": "2025-11-15T11:51:25",
+ "excerpt": "",
+ "categories": [
+  308
+ ],
+ "tags": [
+  401,
+  330
+ ],
+ "featured": {
+  "alt": "Spekko dahl",
+  "card": {
+   "src": "/media/uploads/2025/11/Spekko-1-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2025/11/Spekko-1-760x1040.jpg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2025/11/Spekko-1-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "closed",
+ "seo": {
+  "title": "Spekko dahl-kerrie met krispie uie - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Spekko dahl-kerrie met krispie uie",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2025/11/Spekko-1-800x530.jpg",
+   "srcset": "/media/uploads/2025/11/Spekko-1-800x530.jpg 800w, /media/uploads/2025/11/Spekko-1-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Spekko dahl-kerrie met krispie uie"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "15",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "35",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 ml Spekko Basmatie Langkorrelrys",
+     "250 ml IMBO red lensies",
+     "60 ml ghee of olie",
+     "5 Kardomynpeule",
+     "30 ml fyn komyn",
+     "1 kaneelstokkie",
+     "5 naeltljies",
+     "2 lourierblare",
+     "2 heel gedroogte chillies",
+     "1 uie fyn gesny",
+     "10 ml vars gerasperde gemmer",
+     "3 knoffelhuisies fyn gerasper",
+     "2,5 ml borrie",
+     "2 tamaties fyngekap",
+     "750 ml &#8211; 1 liter water",
+     "Sout",
+     "125 ml vars koljander"
+    ]
+   },
+   {
+    "title": "Vir die bolaag",
+    "items": [
+     "60 ml ghee",
+     "1 ui in dun ringetjies gesny",
+     "8 kerrieblare",
+     "Geroogte chillies na smaak"
+    ]
+   },
+   {
+    "title": "Opsioneel",
+    "items": [
+     "Tofu as ‘n protein vir ‘n vegetariese opsie.",
+     "Fyn gekapte pistachioneute"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Spoel die rys en lensies in ‘n sif apart onder lopende water. Sit in twee aparte bakke en vul die bak met 750 ml warmwater.",
+     "Sit ghee in ‘n pan en braai die uie, knoffel en gemmer vir 2 min. sit al die res van die bestanddele by behalwe die koljander, tamaties, rys, lensies en water. Braai vir 5 min.",
+     "Roer nou die lensies, ry en tamaties by. Gooi eers net 750 ml water in en laat alles kook tot dit sag is. Hou die water dop en vul aan indien nodig.",
+     "As alles sag is, roer die vars koljander deur.",
+     "Braai die bestanddele vir bo-op in vlak olie tot lekker crispy. Dreineer op kombuispapier.",
+     "Indien jy tofu gebruik, sorg dat jou blok tofu lekker droog is deur dit te klad in ‘n vadoek. Sny dit in blokkies.",
+     "Meng in ‘n bakkie 125 ml Mazina en 30 ml kerriepoeier. Skud die blokkies in die mengsel en vlakbraai dit in olie. Dreineer op kombuispapier. Roer die tofu deur.",
+     "Skep jou dis in ‘n mooi bak en rond af met die krispy uie en pistachioneute."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": []
+}

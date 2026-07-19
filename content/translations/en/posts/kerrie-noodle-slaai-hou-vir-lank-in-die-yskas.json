@@ -1,0 +1,94 @@
+{
+ "id": 2275,
+ "slug": "kerrie-noodle-slaai-hou-vir-lank-in-die-yskas",
+ "sourceHash": "5e2bf77e09a122875992391db2f1945960ad9727",
+ "title": "Curry Noodle Salad – keeps for a long time in the fridge",
+ "excerpt": "This is one of those salads that will always be with us. Whether you make it small-scale for a few guests or large-scale for a function – it stays a winner. Make it on a Friday and it lasts the whole weekend if someone doesn't eat it in the …",
+ "seo": {
+  "title": "Curry Noodle Salad - keeps for a long time in the fridge - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">This is one of those salads that will always be with us. &nbsp;Whether you make it small-scale for a few guests or large-scale for a function &nbsp;&#8211; it stays a winner. &nbsp;Make it on a Friday and it lasts the whole weekend if someone doesn't eat it in the night.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Curry Noodle Salad – keeps for a long time in the fridge",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2017/10/featured-IMG_0127-1024x1024.jpg",
+   "srcset": "/media/uploads/2017/10/featured-IMG_0127-1024x1024.jpg 1024w, /media/uploads/2017/10/featured-IMG_0127-300x300.jpg 300w, /media/uploads/2017/10/featured-IMG_0127-100x100.jpg 100w, /media/uploads/2017/10/featured-IMG_0127-600x600.jpg 600w, /media/uploads/2017/10/featured-IMG_0127-150x150.jpg 150w, /media/uploads/2017/10/featured-IMG_0127-768x768.jpg 768w, /media/uploads/2017/10/featured-IMG_0127.jpg 1500w",
+   "width": 800,
+   "height": 800,
+   "alt": "Kerrie noodleslaai  - hou vir lank in die yskas"
+  },
+  "courses": [
+   "Salad"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 g cooked noodles",
+     "1 green/red/yellow pepper finely sliced (choose your colour)",
+     "1 onion finely sliced",
+     "250 ml tomato sauce",
+     "125 ml white vinegar",
+     "125 ml cooking oil",
+     "200 ml sugar",
+     "30 ml curry powder (or more)",
+     "Tabasco to taste",
+     "salt and pepper"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Cook the noodles until soft but not mushy, drain well.<img loading=\"lazy\" width=\"1500\" height=\"1500\" src=\"/media/uploads/2017/10/IMG_01111.jpg\" class=\"direction-step-image\" alt title=\"IMG_01111\">",
+     "Cut your onion and pepper into nice small blocks and mix it through the noodles.<img loading=\"lazy\" width=\"1500\" height=\"1500\" src=\"/media/uploads/2017/10/IMG_0124.jpg\" class=\"direction-step-image\" alt title=\"IMG_0124\">",
+     "Mix the rest of the ingredients in a bowl.<img loading=\"lazy\" width=\"1500\" height=\"1500\" src=\"/media/uploads/2017/10/IMG_0116.jpg\" class=\"direction-step-image\" alt title=\"IMG_0116\">",
+     "Stir it through your noodles.<img loading=\"lazy\" width=\"1500\" height=\"1500\" src=\"/media/uploads/2017/10/IMG_0126.jpg\" class=\"direction-step-image\" alt title=\"IMG_0126\">",
+     "Leave it in the fridge overnight.  The longer it sits, the tastier it gets.<img loading=\"lazy\" width=\"1500\" height=\"1500\" src=\"/media/uploads/2017/10/IMG_0127.jpg\" class=\"direction-step-image\" alt title=\"IMG_0127\">"
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "This is a delicious side dish for a braai or just to enjoy on its own."
+  ],
+  "videoHtml": null
+ }
+}

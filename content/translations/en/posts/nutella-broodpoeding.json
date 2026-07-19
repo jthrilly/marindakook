@@ -1,0 +1,91 @@
+{
+ "id": 7084,
+ "slug": "nutella-broodpoeding",
+ "sourceHash": "22928868077c5a25af95967ee595f327758b3e3b",
+ "title": "Nutella bread pudding",
+ "excerpt": "This pudding is one of my children's favourites. If you don't have croissants you can use day-old bread.",
+ "seo": {
+  "title": "Nutella bread pudding - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">This pudding is one of my children's favourites.&nbsp;If you don't have croissants you can use day-old bread.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Nutella bread pudding",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Nutella-broodbpoeding-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Nutella broodpoeding"
+  },
+  "courses": [
+   "Dessert"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "8 croissants",
+     "1 jar Nutella chocolate spread",
+     "500 ml cream",
+     "250 ml milk",
+     "4 eggs",
+     "5 ml vanilla essence",
+     "125 ml castor sugar"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Cut the croissants in half and spread them thickly with the Nutella.",
+     "Layer the spread croissants like roof tiles, overlapping, in an ovenproof dish.",
+     "Mix the cream, milk, eggs, vanilla essence and castor sugar well.",
+     "Pour it over the croissants.",
+     "Let it stand for 60 minutes.",
+     "Then bake it for 40 minutes at 180 °C.",
+     "Take it out of the oven and serve with custard or ice cream."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

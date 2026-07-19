@@ -1,0 +1,196 @@
+{
+ "id": 7224,
+ "slug": "snoekfrikadelle",
+ "title": "Snoekfrikadelle",
+ "date": "2022-06-26T20:16:05",
+ "modified": "2022-07-09T14:59:48",
+ "excerpt": "As die snoek loop in die Weskus moet jy snoek gaarmaak. Ons het gisteraand ‘n snoek oor die kole gebraai met suurlemoen en knoffelbotter. Met die snoek wat oor was, het ek viskoekies of visfrikkadelle gemaak.",
+ "categories": [
+  311,
+  30
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "Snoekfrikadelle",
+  "card": {
+   "src": "/media/uploads/2022/06/Viskoekies1-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2022/06/Viskoekies1-760x773.jpg",
+   "width": 760,
+   "height": 773
+  },
+  "thumb": {
+   "src": "/media/uploads/2022/06/Viskoekies1-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Snoekfrikadelle - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">As die snoek loop in die Weskus moet jy snoek gaarmaak.  Ons het gisteraand &#8216;n snoek oor die kole gebraai met suurlemoen en knoffelbotter. Met die snoek wat oor was, het ek viskoekies of visfrikkadelle gemaak.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2022/06/Viskoekies2.jpg\" alt class=\"wp-image-7228\" srcset=\"/media/uploads/2022/06/Viskoekies2.jpg 1024w, /media/uploads/2022/06/Viskoekies2-600x450.jpg 600w, /media/uploads/2022/06/Viskoekies2-300x225.jpg 300w, /media/uploads/2022/06/Viskoekies2-768x576.jpg 768w, /media/uploads/2022/06/Viskoekies2-750x563.jpg 750w, /media/uploads/2022/06/Viskoekies2-500x375.jpg 500w, /media/uploads/2022/06/Viskoekies2-380x285.jpg 380w, /media/uploads/2022/06/Viskoekies2-760x570.jpg 760w, /media/uploads/2022/06/Viskoekies2-800x600.jpg 800w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2022/06/Viskoekies3.jpg\" alt class=\"wp-image-7227\" srcset=\"/media/uploads/2022/06/Viskoekies3.jpg 1024w, /media/uploads/2022/06/Viskoekies3-600x450.jpg 600w, /media/uploads/2022/06/Viskoekies3-300x225.jpg 300w, /media/uploads/2022/06/Viskoekies3-768x576.jpg 768w, /media/uploads/2022/06/Viskoekies3-750x563.jpg 750w, /media/uploads/2022/06/Viskoekies3-500x375.jpg 500w, /media/uploads/2022/06/Viskoekies3-380x285.jpg 380w, /media/uploads/2022/06/Viskoekies3-760x570.jpg 760w, /media/uploads/2022/06/Viskoekies3-800x600.jpg 800w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Snoekfrikadelle",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/06/Viskoekies1-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Snoekfrikadelle"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "800g gaar snoek gevlok",
+     "250 ml mash (so een groot aartappel)",
+     "1 suurlemoen se sap en skil fyngerasper",
+     "250 ml fyngekapte pietersielie (jy kan meer ook insit)",
+     "1 pakkie bruinuiesoppoeier",
+     "1 ui fyn gerasper",
+     "sout en witpeper na smaak",
+     "broodkrummels om in te rol"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Meng die vis, ui, pietersielie, suurlemoensap, suurlemoenskil, mash, soppoeier en sout en peper saam in &#8216;n bak.",
+     "Vorm balletjies en druk dit bietjie plat met jou hand. (Ek het &#8216;n groot roomysskepper gebruik).",
+     "Rol die koekies in die broodkrummels en sit dit op &#8216;n bakplaat met bakpapier in die yskas vir 1 uur.",
+     "Bak dit tot goudbruin in olie, in die oond of in die Airfryer. Ek hou daarvan om myne in &#8216;n pan met vlakolie op die stoof te braai. Dreineer dit op kombuispapier."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 6470,
+   "parent": 6469,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-01-30T08:51:42",
+   "html": "<p>Jy maak my hart sing.  Geniet.</p>"
+  },
+  {
+   "id": 6469,
+   "parent": 0,
+   "author": "Johan Bekker",
+   "avatar": "https://secure.gravatar.com/avatar/e0edf24d6755c88d448e35e638634febbff176b936d397d98166aaad55078b30?s=96&d=mm&r=g",
+   "date": "2024-01-30T08:23:58",
+   "html": "<p>Marinda baie dankie vir jou resepte. Ek is n wewenaar maar danksy jou resepte eet ek elke dag baie lekker.</p>"
+  },
+  {
+   "id": 6344,
+   "parent": 6309,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-12-14T10:31:11",
+   "html": "<p>Net liefde</p>"
+  },
+  {
+   "id": 6309,
+   "parent": 0,
+   "author": "Dawn",
+   "avatar": "https://secure.gravatar.com/avatar/1ee6df845b1e65a836e6887fd5589c9b74e6e6e08f4f5291cb40b8a41186c92b?s=96&d=mm&r=g",
+   "date": "2023-12-07T08:20:02",
+   "html": "<p>Hi Marinda, ek is nie n wafferse kok nie, maar my spreekwoord deesdae is &#8221; ek sal gou by Marinda hoor, hoe maak mens&#8230;.het ek die snoekfrakadeltjies geniet! die soppoeir was eintlik n verasing maar hy werk soos n bom, dankie hoor&#8230;.</p>"
+  },
+  {
+   "id": 4272,
+   "parent": 4271,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-07-11T10:03:52",
+   "html": "<p>Geniet elke happie.</p>"
+  },
+  {
+   "id": 4271,
+   "parent": 0,
+   "author": "Daleen",
+   "avatar": "https://secure.gravatar.com/avatar/07fb54dcc546d3bff1f29d69f991729d6a71f89c4e88a20e47b21c2f42e69993?s=96&d=mm&r=g",
+   "date": "2022-07-11T09:41:01",
+   "html": "<p>Sjoe Marinda, gaan definitief die snoek frikkadel vannaand doen. Baie dankie dat jy jou resepte met ons deel</p>"
+  },
+  {
+   "id": 4217,
+   "parent": 4213,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-06-27T09:15:39",
+   "html": "<p>Snoek is &#8216;n wenner by ons.  Geniet elke happie.</p>"
+  },
+  {
+   "id": 4216,
+   "parent": 4215,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-06-27T09:15:09",
+   "html": "<p>Ingrid, jy kan minder soppoeier ook ingooi.  Rasper sommer &#8216;n ui ook in.  Geniet.</p>"
+  },
+  {
+   "id": 4215,
+   "parent": 0,
+   "author": "Ingrid",
+   "avatar": "https://secure.gravatar.com/avatar/30e46e121e662e91094717b7bc8af6e4f0c5ea8ccffa2be1390e3bb9ac0833b1?s=96&d=mm&r=g",
+   "date": "2022-06-27T08:19:33",
+   "html": "<p>Dankie vriendin disnop my menu vandag.</p>"
+  },
+  {
+   "id": 4213,
+   "parent": 0,
+   "author": "Marliza",
+   "avatar": "https://secure.gravatar.com/avatar/5ec304b1a6a9564100baca1f8699d69b8ff537247232f791cefe4ee61df3b636?s=96&d=mm&r=g",
+   "date": "2022-06-27T05:44:50",
+   "html": "<p>Lus ek nou daai viskoekies! Gaan hulle beslis nog maak. Vrek oor &#8216;n snoek!</p>"
+  }
+ ]
+}

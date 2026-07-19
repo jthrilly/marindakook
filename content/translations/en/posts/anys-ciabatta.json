@@ -1,0 +1,93 @@
+{
+ "id": 7560,
+ "slug": "anys-ciabatta",
+ "sourceHash": "04cb66a5de6aa92a56e2744ddc20167032fedc33",
+ "title": "Aniseed Ciabatta",
+ "excerpt": "Aniseed Ciabatta",
+ "seo": {
+  "title": "Aniseed Ciabatta - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2025/03/Anys-ciabatta-4-1024x768.jpeg\" alt class=\"wp-image-7564\" srcset=\"/media/uploads/2025/03/Anys-ciabatta-4-1024x768.jpeg 1024w, /media/uploads/2025/03/Anys-ciabatta-4-300x225.jpeg 300w, /media/uploads/2025/03/Anys-ciabatta-4-768x576.jpeg 768w, /media/uploads/2025/03/Anys-ciabatta-4-750x563.jpeg 750w, /media/uploads/2025/03/Anys-ciabatta-4-500x375.jpeg 500w, /media/uploads/2025/03/Anys-ciabatta-4-380x285.jpeg 380w, /media/uploads/2025/03/Anys-ciabatta-4-760x570.jpeg 760w, /media/uploads/2025/03/Anys-ciabatta-4-800x600.jpeg 800w, /media/uploads/2025/03/Anys-ciabatta-4.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2025/03/Anys-ciabatta-2-1024x768.jpeg\" alt class=\"wp-image-7562\" srcset=\"/media/uploads/2025/03/Anys-ciabatta-2-1024x768.jpeg 1024w, /media/uploads/2025/03/Anys-ciabatta-2-300x225.jpeg 300w, /media/uploads/2025/03/Anys-ciabatta-2-768x576.jpeg 768w, /media/uploads/2025/03/Anys-ciabatta-2-750x563.jpeg 750w, /media/uploads/2025/03/Anys-ciabatta-2-500x375.jpeg 500w, /media/uploads/2025/03/Anys-ciabatta-2-380x285.jpeg 380w, /media/uploads/2025/03/Anys-ciabatta-2-760x570.jpeg 760w, /media/uploads/2025/03/Anys-ciabatta-2-800x600.jpeg 800w, /media/uploads/2025/03/Anys-ciabatta-2-rotated.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Aniseed Ciabatta",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2025/03/Anys-ciabatta-1-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Anys-ciabatta"
+  },
+  "courses": [
+   "Bread, Baking"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "20",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1 kg cake flour",
+     "20 ml soft butter",
+     "2 eggs",
+     "1 packet yeast",
+     "20 ml aniseed",
+     "15 ml sugar",
+     "10 ml honey",
+     "750 ml lukewarm milk",
+     "Salt",
+     "Apricot jam to brush over crust"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "In your mixer add the cake flour, aniseed, salt, sugar and soft butter. Mix lightly.",
+     "In a jug mix the lukewarm milk, yeast, honey and eggs. Add this to the flour mixture and beat with your dough hook for 12 – 15 minutes.",
+     "Scrape the slack dough out into a bowl greased with oil and let it rise until double in size. Set the oven to 180ºC.",
+     "Line a baking tray with baking paper.",
+     "Scrape the dough out onto a surface with a little oil on it. Divide it in two and shape your loaves on the baking tray. Let it stand for 20 minutes.",
+     "Bake for 30 minutes. When it comes out, brush with apricot jam."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

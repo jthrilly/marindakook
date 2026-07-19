@@ -1,0 +1,99 @@
+{
+ "id": 6962,
+ "slug": "elsabe-daneel-se-tamatiebredie",
+ "sourceHash": "dfda09b917ec18efa3575f05e47548bd344a696d",
+ "title": "Elsabé Daneel's Tomato Bredie",
+ "excerpt": "My tomato bredie that I made for Elsabé Daneel in the first episode of Stoofstories with Marinda, on VIA DStv channel 147, Wednesdays at 17:00.",
+ "seo": {
+  "title": "Elsabé Daneel's Tomato Bredie - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">My tomato bredie that I made for Elsabé Daneel in the first episode of Stoofstories with Marinda, on VIA DStv channel 147, Wednesdays at 17:00. </p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Elsabé Daneel's Tomato Bredie",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/03/Elsabe-Daneel-se-tamatiebredie-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Elsabé Daneel se Tamatiebredie"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 onions, finely chopped",
+     "15 ml oil to fry the onions in",
+     "2 kg mixed lamb neck and lamb ribs",
+     "1 tin stewed tomatoes",
+     "1 tin tomato puree",
+     "1 sachet or tin tomato paste",
+     "60 ml vinegar",
+     "80 ml sugar",
+     "60 ml Worcester sauce",
+     "6 cloves",
+     "5 ml ground ginger (if you don't have any, it's not essential)",
+     "salt and pepper to taste",
+     "250 ml water",
+     "6 potatoes"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Fry the onions until glassy in a pot on the stove.",
+     "Fry the meat together with the onions until lightly browned.",
+     "Mix the rest of the ingredients, except the potatoes, in a bowl.",
+     "Pour it over the meat in the pot and let it simmer gently for 45 minutes.",
+     "Peel the potatoes and cut them into quarters.",
+     "After the bredie has simmered in the pot for 45 minutes, the potatoes can be added.",
+     "Cook now until the potatoes and meat are nice and soft – about 30 minutes (you'll need to taste as you go).",
+     "Cook plain white rice to serve it with."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

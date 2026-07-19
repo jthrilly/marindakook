@@ -1,0 +1,355 @@
+{
+ "id": 7478,
+ "slug": "lekker-los-frikadelle",
+ "title": "Lekker los frikadelle",
+ "date": "2024-03-26T19:43:50",
+ "modified": "2024-03-26T19:44:48",
+ "excerpt": "",
+ "categories": [
+  313,
+  308
+ ],
+ "tags": [
+  392,
+  226
+ ],
+ "featured": {
+  "alt": "Lekker los frikadelle",
+  "card": {
+   "src": "/media/uploads/2024/03/Frikadelle-1-760x760.jpeg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2024/03/Frikadelle-1-760x1040.jpeg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2024/03/Frikadelle-1-150x150.jpeg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "Lekker los frikadelle - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"768\" height=\"1024\" src=\"/media/uploads/2024/03/Frikadelle-1-768x1024.jpeg\" alt class=\"wp-image-7481\" srcset=\"/media/uploads/2024/03/Frikadelle-1-768x1024.jpeg 768w, /media/uploads/2024/03/Frikadelle-1-225x300.jpeg 225w, /media/uploads/2024/03/Frikadelle-1-750x1000.jpeg 750w, /media/uploads/2024/03/Frikadelle-1-380x507.jpeg 380w, /media/uploads/2024/03/Frikadelle-1-760x1013.jpeg 760w, /media/uploads/2024/03/Frikadelle-1-800x1067.jpeg 800w, /media/uploads/2024/03/Frikadelle-1.jpeg 960w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" width=\"1024\" height=\"736\" src=\"/media/uploads/2024/03/Frikadelle-2-1024x736.jpeg\" alt class=\"wp-image-7480\" srcset=\"/media/uploads/2024/03/Frikadelle-2-1024x736.jpeg 1024w, /media/uploads/2024/03/Frikadelle-2-300x216.jpeg 300w, /media/uploads/2024/03/Frikadelle-2-768x552.jpeg 768w, /media/uploads/2024/03/Frikadelle-2-750x539.jpeg 750w, /media/uploads/2024/03/Frikadelle-2-380x273.jpeg 380w, /media/uploads/2024/03/Frikadelle-2-760x546.jpeg 760w, /media/uploads/2024/03/Frikadelle-2-800x575.jpeg 800w, /media/uploads/2024/03/Frikadelle-2.jpeg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Lekker los frikadelle",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2024/03/Frikadelle-3-800x530.jpeg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Lekker los frikadelle"
+  },
+  "courses": [
+   "Beesvleis, Hoofgereg"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "10",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "10",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1 kg maer maalvleis",
+     "1 ui fyngekap",
+     "1  wortel fyngekap",
+     "10 ml fyn komyn",
+     "5 ml sout",
+     "250 ml hawermout",
+     "2 eiers liggies geklits",
+     "30 ml Worcestersous",
+     "125 ml Chutney",
+     "20 ml Soyasous",
+     "Genoeg olie om die vleisballetjies te vlakbraai."
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Kap die ui en wortel fyn in die voedselverwerker.",
+     "Meng al die bestanddele. Ek voel my hande werk die beste.",
+     "Maak balletjies so groot soos jy wil. Ek het my 30 ml maatkoppie gebruik om dit min of meer ewe groot te kry. Ek wou kleiner balletjies he.",
+     "Braai in vlak olie tot dit mooi bruin is. Draai dit om in die pan.",
+     "Dreineer op kombuispapier en geniet."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 24630,
+   "parent": 23543,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2026-02-26T12:09:32",
+   "html": "<p>Dankie Aletta.  Lyk my daar kom nou weer iets.</p>"
+  },
+  {
+   "id": 23543,
+   "parent": 0,
+   "author": "Aletta",
+   "avatar": "https://secure.gravatar.com/avatar/bfcc74b014c87bd6d9d4c84a72765c738d2308a241d23b93c194c67ed53a8051?s=96&d=mm&r=g",
+   "date": "2026-01-04T10:53:08",
+   "html": "<p>Mis jou Kook progamme en Ek gebruik altyd jou resepte as Ek iets lekker wil maak maklik en vinnig. Dankie Aletta<br>\nGeseënde 2026</p>"
+  },
+  {
+   "id": 21048,
+   "parent": 19725,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2025-10-16T09:01:04",
+   "html": "<p>Chris ek sal een moet neerskryf, want ek maak dit sommer uit my kop.  Ek belowe dis een van my volgende resepte.</p>"
+  },
+  {
+   "id": 19725,
+   "parent": 0,
+   "author": "Chris Nel",
+   "avatar": "https://secure.gravatar.com/avatar/22e331e6fdc2e870f96c973095d9a12abd120f4459d2275d87f643682f954959?s=96&d=mm&r=g",
+   "date": "2025-09-10T14:57:54",
+   "html": "<p>Goeie dag Marinda. Baie dankie vir jou blog. Het jy nie asb vir my n lekker hamburger pattie (tuisgemaak) resep nie. Dank byvoorbaat.</p>"
+  },
+  {
+   "id": 18800,
+   "parent": 17613,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2025-08-21T14:56:25",
+   "html": "<p>Ek sal dit beslis in die airfryer maak.  Jy moes kom groet het!</p>"
+  },
+  {
+   "id": 17613,
+   "parent": 0,
+   "author": "Annelize Rademeyer",
+   "avatar": "https://secure.gravatar.com/avatar/01bb817761bc92f9d518cf2146203135d702f2848d1f609445d5bfe77f01bd6f?s=96&d=mm&r=g",
+   "date": "2025-07-31T21:16:27",
+   "html": "<p>Sou ek hierdie in n airfryer oond kan bak ook? Bietjie meer vloeistof bysit? Ek was by Innibos 2025 en het julle sessies terdeë geniet.</p>"
+  },
+  {
+   "id": 10087,
+   "parent": 10067,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2025-02-10T11:50:48",
+   "html": "<p>Dit is so so lekker!</p>"
+  },
+  {
+   "id": 10067,
+   "parent": 0,
+   "author": "Madelein van der Merwe",
+   "avatar": "https://secure.gravatar.com/avatar/aa03f205af6add6ec92b197384d6bee449bef03bb7fb513fb41882bf92a527a5?s=96&d=mm&r=g",
+   "date": "2025-02-09T11:34:18",
+   "html": "<p>Hierdie resep lyk ongelooflik lekker. Ek gaan dit beslis maak.</p>"
+  },
+  {
+   "id": 7786,
+   "parent": 7785,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-09-10T17:23:31",
+   "html": "<p>Geniet elke happie.</p>"
+  },
+  {
+   "id": 7785,
+   "parent": 0,
+   "author": "Marinda du plessis",
+   "avatar": "https://secure.gravatar.com/avatar/3607746c3bf4324fd66cda2d4b7ab453fd3dae55978649a737bc2b381fdfea99?s=96&d=mm&r=g",
+   "date": "2024-09-10T15:41:21",
+   "html": "<p>Baie baie dankie vir al jou lekker resepte en idees. Dis wonderlik.<br>\nGroete</p>"
+  },
+  {
+   "id": 7586,
+   "parent": 7515,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-08-19T15:10:28",
+   "html": "<p>Dit is my gesin se gunsteling.  Lekker eet!</p>"
+  },
+  {
+   "id": 7515,
+   "parent": 0,
+   "author": "Orighlia Cloete.",
+   "avatar": "https://secure.gravatar.com/avatar/48403aac8fc0b9e8d4456660ce48837aa53f359093dabf3e44feee2a60595584?s=96&d=mm&r=g",
+   "date": "2024-08-06T16:39:04",
+   "html": "<p>Baie dankie vir die heerlike frikkadelle. Dit is nou een dis wat altyd op my spyskaart gaan wees. My mense is mal daaroor.</p>"
+  },
+  {
+   "id": 7271,
+   "parent": 7216,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-07-02T17:24:51",
+   "html": "<p>Geniet elke happie.</p>"
+  },
+  {
+   "id": 7216,
+   "parent": 6881,
+   "author": "Dalene Botes",
+   "avatar": "https://secure.gravatar.com/avatar/216a70f2688782e67e44e1ce20a90aeda6e88aa25e9a32bd7d5c98a3415b5f80?s=96&d=mm&r=g",
+   "date": "2024-06-23T14:51:05",
+   "html": "<p>Jou resepies lyk heerlik. En so maklik.Baie danki . so Bly Ek het dit Nou net ontdek.</p>"
+  },
+  {
+   "id": 6887,
+   "parent": 6742,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-05-13T14:22:43",
+   "html": "<p>Geniet elke happie.</p>"
+  },
+  {
+   "id": 6886,
+   "parent": 6757,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-05-13T14:22:30",
+   "html": "<p>Kerrie is my gunstelingkos.  Maak die sterk net bietjie minder.  Ek gaan nou. een van die dae begin winterskos opsit.</p>"
+  },
+  {
+   "id": 6881,
+   "parent": 6816,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-05-13T14:19:14",
+   "html": "<p>Net liefde Geniet!</p>"
+  },
+  {
+   "id": 6816,
+   "parent": 0,
+   "author": "Sarita Oberholzer",
+   "avatar": "https://secure.gravatar.com/avatar/40c1bedea955372c587e9cf070eaa0725ac33a212f3361640be56f043ac780f1?s=96&d=mm&r=g",
+   "date": "2024-04-25T14:16:16",
+   "html": "<p>Geniet jou blog oneindig baie. My era se resepte en jy maak dit so ongekompliseerd. Baie, baie dankie</p>"
+  },
+  {
+   "id": 6757,
+   "parent": 0,
+   "author": "Doris de Beer",
+   "avatar": "https://secure.gravatar.com/avatar/b633e45f87c735fef77bc926c4f06983be6685090ab935402d667087987599c4?s=96&d=mm&r=g",
+   "date": "2024-04-13T22:36:03",
+   "html": "<p>Hi Marinda, Dankie vir al jou heerlik Resepte eks ñ groot ondersteuner van jou. Ek lees jou Resepte soos ñ tydskrif mis nie een resep nie. Stuur tog enige Lekr boerekos kerrie resep winter is op hande. Mal oor Corné Krige se Kerrie resep. Ek mag net nie te sterk kerrie eet weens K operasie. Eks mal oor al jou kossies hoor. Mooi loop liefies jou xx</p>"
+  },
+  {
+   "id": 6742,
+   "parent": 0,
+   "author": "Hettie Muller",
+   "avatar": "https://secure.gravatar.com/avatar/3d20b187076c97173d8e709c77c344014d6eda02c85260f1f60017bdd294b9d2?s=96&d=mm&r=g",
+   "date": "2024-04-09T15:14:49",
+   "html": "<p>Heerlike resepte, ek soek al lank na n lekker frikkadelle resep</p>"
+  },
+  {
+   "id": 6719,
+   "parent": 6687,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-04-02T08:24:41",
+   "html": "<p>Lekker sonde!</p>"
+  },
+  {
+   "id": 6718,
+   "parent": 6691,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-04-02T08:24:05",
+   "html": "<p>Net liefde.</p>"
+  },
+  {
+   "id": 6717,
+   "parent": 6693,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-04-02T08:22:05",
+   "html": "<p>Jy maak my hart sing.</p>"
+  },
+  {
+   "id": 6716,
+   "parent": 6695,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-04-02T08:21:44",
+   "html": "<p>&#8216;n Wenner in ons gesin.</p>"
+  },
+  {
+   "id": 6715,
+   "parent": 6697,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2024-04-02T08:21:26",
+   "html": "<p>Opreg dankie.. Geniet</p>"
+  },
+  {
+   "id": 6697,
+   "parent": 0,
+   "author": "Ollie Joubert",
+   "avatar": "https://secure.gravatar.com/avatar/0e16e146dd1e0a580e4e8fb1321d23d8be0b2b9f429b34e73bc22ff8943429a9?s=96&d=mm&r=g",
+   "date": "2024-03-29T21:55:55",
+   "html": "<p>Hou van julle resepte</p>"
+  },
+  {
+   "id": 6695,
+   "parent": 0,
+   "author": "Marlene",
+   "avatar": "https://secure.gravatar.com/avatar/3559e5c7469fcd4c78528771e97fab3cbf38d2686aa3295b3c17dc708cfd11b4?s=96&d=mm&r=g",
+   "date": "2024-03-29T12:24:03",
+   "html": "<p>Heerlik</p>"
+  },
+  {
+   "id": 6693,
+   "parent": 0,
+   "author": "RETHA CHARMAINE PEREIRA",
+   "avatar": "https://secure.gravatar.com/avatar/a6724f2b1e2e01dc0d6e7decfde01a9a3b8c95c54dfbb5f910ce538e819a017e?s=96&d=mm&r=g",
+   "date": "2024-03-29T10:37:51",
+   "html": "<p>Baie dankie vir die deel van die lekker frikkies reseP &#8211; ek is mal oor die kosblad want mens gebruik bestandele wat in jou koskas is en elke keer is dit n wenner en nie n flop nie.</p>"
+  },
+  {
+   "id": 6687,
+   "parent": 0,
+   "author": "Cornelis Potgieter",
+   "avatar": "https://secure.gravatar.com/avatar/febdafe66f9d2a8d860bdfe05a44e3963a29d8be75ff1c60ea2115f7ade2bf9f?s=96&d=mm&r=g",
+   "date": "2024-03-28T20:47:37",
+   "html": "<p>Dit lyk uitodigend lekker en na Sonde doen 🤪🤣🤣🤣</p>"
+  }
+ ]
+}

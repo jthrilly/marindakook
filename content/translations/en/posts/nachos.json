@@ -1,0 +1,111 @@
+{
+ "id": 7147,
+ "slug": "nachos",
+ "sourceHash": "c8f6e828a06e93fdafe8c162c3c99cfc8d3a016d",
+ "title": "Nachos",
+ "excerpt": "For Lize Beekman I made one of our family's favourites. It sounds like a lot of work but it isn't.",
+ "seo": {
+  "title": "Nachos - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">For Lize&nbsp; Beekman I made one of our family's favourites.&nbsp; It sounds like a lot of work but it isn't.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Nachos",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/04/Nachos-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Nacho's"
+  },
+  "courses": [
+   "Main Course"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 g mince",
+     "olive oil for frying the mince",
+     "5 ml cumin",
+     "5 ml smoked paprika",
+     "1 tin Mexican tomatoes",
+     "1 tin kidney beans, drained",
+     "salt and pepper",
+     "2 packets Doritos chips",
+     "500 ml grated cheddar cheese",
+     "500 ml feta cheese cubes",
+     "250 ml sour cream",
+     "1 ripe avocado",
+     "1 bunch fresh coriander",
+     "juice of a lemon",
+     "finely grated zest of 1 lemon",
+     "1 onion, finely chopped",
+     "1 tomato, finely chopped",
+     "1 chilli, finely chopped"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Preheat the oven to 180 °C.",
+     "Fry the mince until brown in the olive oil.",
+     "Add the cumin and paprika and fry for a bit longer.",
+     "Add the Mexican tomatoes.",
+     "Add the kidney beans.",
+     "Season with salt and pepper and fry until done.",
+     "Set it aside.",
+     "Put half the Doritos chips into a nice flat dish that can go into the oven.",
+     "Spoon the mince over the chips.",
+     "Sprinkle the cheddar and feta cheese over the mince and bake in the oven until the cheese has melted.",
+     "Spoon the sour cream onto the cheese.",
+     "Make a guacamole by mixing the avocado, a handful of finely chopped fresh coriander, lemon juice and zest.",
+     "Season with salt and pepper to taste and spoon it on top of the sour cream.",
+     "Make a salsa with the finely chopped onion, tomato and chilli by mixing it together.",
+     "Season with salt and pepper to taste and spoon it on top of the guacamole.",
+     "Arrange the rest of the chips around the dish and enjoy."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

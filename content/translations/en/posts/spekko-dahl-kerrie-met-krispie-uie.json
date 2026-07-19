@@ -1,0 +1,116 @@
+{
+ "id": 7621,
+ "slug": "spekko-dahl-kerrie-met-krispie-uie",
+ "sourceHash": "7281737617eaec21cccb13a0f6ba970ab2bc2509",
+ "title": "Spekko dahl curry with crispy onions",
+ "excerpt": "Spekko dahl curry with crispy onions",
+ "seo": {
+  "title": "Spekko dahl curry with crispy onions - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Spekko dahl curry with crispy onions",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2025/11/Spekko-1-800x530.jpg",
+   "srcset": "/media/uploads/2025/11/Spekko-1-800x530.jpg 800w, /media/uploads/2025/11/Spekko-1-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "Spekko dahl-kerrie met krispie uie"
+  },
+  "courses": [],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "15",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "35",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "500 ml Spekko Basmati Long Grain Rice",
+     "250 ml IMBO red lentils",
+     "60 ml ghee or oil",
+     "5 cardamom pods",
+     "30 ml ground cumin",
+     "1 cinnamon stick",
+     "5 cloves",
+     "2 bay leaves",
+     "2 whole dried chillies",
+     "1 onion, finely chopped",
+     "10 ml fresh grated ginger",
+     "3 garlic cloves, finely grated",
+     "2,5 ml turmeric",
+     "2 tomatoes, finely chopped",
+     "750 ml &#8211; 1 litre water",
+     "Salt",
+     "125 ml fresh coriander"
+    ]
+   },
+   {
+    "title": "For the topping",
+    "items": [
+     "60 ml ghee",
+     "1 onion, cut into thin rings",
+     "8 curry leaves",
+     "Roasted chillies to taste"
+    ]
+   },
+   {
+    "title": "Optional",
+    "items": [
+     "Tofu as a protein for a vegetarian option.",
+     "Finely chopped pistachio nuts"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Rinse the rice and lentils separately in a sieve under running water. Put them in two separate bowls and cover each with 750 ml warm water.",
+     "Put the ghee in a pan and fry the onion, garlic and ginger for 2 min. Add all the rest of the ingredients except the coriander, tomatoes, rice, lentils and water. Fry for 5 min.",
+     "Now stir in the lentils, rice and tomatoes. Pour in just 750 ml of water first and let everything cook until soft. Keep an eye on the water and top up if needed.",
+     "Once everything is soft, stir through the fresh coriander.",
+     "Fry the topping ingredients in shallow oil until nice and crispy. Drain on kitchen paper.",
+     "If you're using tofu, make sure your block of tofu is nicely dry by patting it with a dish towel. Cut it into cubes.",
+     "In a small bowl, mix 125 ml Mazina and 30 ml curry powder. Toss the cubes in the mixture and shallow-fry them in oil. Drain on kitchen paper. Stir the tofu through.",
+     "Spoon your dish into a pretty bowl and finish it off with the crispy onions and pistachio nuts."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

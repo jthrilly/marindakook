@@ -1,0 +1,89 @@
+{
+ "id": 7224,
+ "slug": "snoekfrikadelle",
+ "sourceHash": "59021c3541d8603cfdf6a455b46c0ba1dc8c09d9",
+ "title": "Snoek Fish Cakes",
+ "excerpt": "When the snoek is running on the West Coast, you have to cook snoek. Last night we braaied a snoek over the coals with lemon and garlic butter. With the leftover snoek, I made fish cakes.",
+ "seo": {
+  "title": "Snoek Fish Cakes - Marinda Kook",
+  "description": null
+ },
+ "html": "<p class=\"wp-block-paragraph\">When the snoek is running on the West Coast, you have to cook snoek.  Last night we braaied a snoek over the coals with lemon and garlic butter. With the leftover snoek, I made fish cakes.</p>\n\n\n<div data-recipe-slot=\"1\"></div>\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2022/06/Viskoekies2.jpg\" alt class=\"wp-image-7228\" srcset=\"/media/uploads/2022/06/Viskoekies2.jpg 1024w, /media/uploads/2022/06/Viskoekies2-600x450.jpg 600w, /media/uploads/2022/06/Viskoekies2-300x225.jpg 300w, /media/uploads/2022/06/Viskoekies2-768x576.jpg 768w, /media/uploads/2022/06/Viskoekies2-750x563.jpg 750w, /media/uploads/2022/06/Viskoekies2-500x375.jpg 500w, /media/uploads/2022/06/Viskoekies2-380x285.jpg 380w, /media/uploads/2022/06/Viskoekies2-760x570.jpg 760w, /media/uploads/2022/06/Viskoekies2-800x600.jpg 800w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>\n\n\n\n<figure class=\"wp-block-image size-full\"><img loading=\"lazy\" width=\"1024\" height=\"768\" src=\"/media/uploads/2022/06/Viskoekies3.jpg\" alt class=\"wp-image-7227\" srcset=\"/media/uploads/2022/06/Viskoekies3.jpg 1024w, /media/uploads/2022/06/Viskoekies3-600x450.jpg 600w, /media/uploads/2022/06/Viskoekies3-300x225.jpg 300w, /media/uploads/2022/06/Viskoekies3-768x576.jpg 768w, /media/uploads/2022/06/Viskoekies3-750x563.jpg 750w, /media/uploads/2022/06/Viskoekies3-500x375.jpg 500w, /media/uploads/2022/06/Viskoekies3-380x285.jpg 380w, /media/uploads/2022/06/Viskoekies3-760x570.jpg 760w, /media/uploads/2022/06/Viskoekies3-800x600.jpg 800w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\"></figure>",
+ "recipe": {
+  "style": "default",
+  "title": "Snoek Fish Cakes",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2022/06/Viskoekies1-800x530.jpg",
+   "srcset": null,
+   "width": 800,
+   "height": 530,
+   "alt": "Snoekfrikadelle"
+  },
+  "courses": [
+   "Uncategorised"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "800g cooked snoek, flaked",
+     "250 ml mash (about one large potato)",
+     "1 lemon, juiced and finely grated zest",
+     "250 ml finely chopped parsley (you can add more)",
+     "1 packet brown onion soup powder",
+     "1 onion, finely grated",
+     "salt and white pepper to taste",
+     "breadcrumbs to roll in"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Mix the fish, onion, parsley, lemon juice, lemon zest, mash, soup powder and salt and pepper together in a bowl.",
+     "Form balls and flatten them slightly with your hand. (I used a large ice cream scoop).",
+     "Roll the cakes in the breadcrumbs and place them on a baking tray lined with baking paper in the fridge for 1 hour.",
+     "Bake until golden brown in oil, in the oven or in the Airfryer. I like to fry mine in a pan with a shallow layer of oil on the stove. Drain on paper towel."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ }
+}

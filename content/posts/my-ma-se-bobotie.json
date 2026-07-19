@@ -1,0 +1,204 @@
+{
+ "id": 5957,
+ "slug": "my-ma-se-bobotie",
+ "title": "My Ma se Bobotie",
+ "date": "2020-07-06T12:00:21",
+ "modified": "2022-02-13T17:28:26",
+ "excerpt": "",
+ "categories": [
+  11
+ ],
+ "tags": [],
+ "featured": {
+  "alt": "My Ma se Bobotie",
+  "card": {
+   "src": "/media/uploads/2020/07/Ma-se-Bobotie-760x760.jpg",
+   "width": 760,
+   "height": 760
+  },
+  "portrait": {
+   "src": "/media/uploads/2020/07/Ma-se-Bobotie-760x1040.jpg",
+   "width": 760,
+   "height": 1040
+  },
+  "thumb": {
+   "src": "/media/uploads/2020/07/Ma-se-Bobotie-150x150.jpg",
+   "width": 150,
+   "height": 150
+  }
+ },
+ "commentStatus": "open",
+ "seo": {
+  "title": "My Ma se Bobotie - Marinda Kook",
+  "description": null
+ },
+ "html": "<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "My Ma se Bobotie",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2020/07/Ma-se-Bobotie-800x530.jpg",
+   "srcset": "/media/uploads/2020/07/Ma-se-Bobotie-800x530.jpg 800w, /media/uploads/2020/07/Ma-se-Bobotie-1600x1060.jpg 1600w",
+   "width": 800,
+   "height": 530,
+   "alt": "My Ma se Bobotie"
+  },
+  "courses": [
+   "Rooivleis"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "25 ml olie",
+     "1 ui, in klein stukkies gekap",
+     "750g – 1kg goeie maalvleis",
+     "3 snye brood",
+     "125 ml melk",
+     "1 eier geklits",
+     "80 ml appelkooskonfyt",
+     "60 ml asyn",
+     "60 ml matige kerrie",
+     "30 ml borrie",
+     "1 appel gerasper (opsioneel)",
+     "2 lourier of suurlemoenblare",
+     "Amandelsplinters opsioneel"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Braai jou gesnyde ui in die olie tot glaserig.",
+     "Laat die brood week in die melk en krummel dit in by jou vleis in jou mengbak – hou die melk vir jou bo-laag.",
+     "Meng al die res van die bestandele in by die vleis behalwe die lourier/suurlemoenblare, amandels , eier en melk.",
+     "Meng nou die gaar uie by jou vleis.",
+     "Sit die mengsel in ‘n gesmeerde oondbak. Moet dit nie styf indruk nie.",
+     "Meng nou jou eier en melk liggies met ‘n vurk en gooi oor die vleis.",
+     "Druk jou suurlemoen/lourierblare in die vleis en sprinkel die amandels bo-oor.",
+     "Bak vir 60 minut by 180C."
+    ]
+   }
+  ],
+  "notesTitle": null,
+  "notes": [],
+  "videoHtml": null
+ },
+ "comments": [
+  {
+   "id": 21045,
+   "parent": 20984,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2025-10-16T08:58:59",
+   "html": "<p>Jy kan dit rou of gaar vries.</p>"
+  },
+  {
+   "id": 20984,
+   "parent": 0,
+   "author": "Astrid Bester",
+   "avatar": "https://secure.gravatar.com/avatar/b894844dd3e67d43cd746eb19a5f26e3c6a983da8d6bb669134f875e9dd3e32e?s=96&d=mm&r=g",
+   "date": "2025-10-14T11:18:47",
+   "html": "<p>More Marinda, Ek wil net seker maak, Bak ek die Bobotie klaar &amp; Dan vries ek dit?<br>\nGroete Astrid</p>"
+  },
+  {
+   "id": 16453,
+   "parent": 13430,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2025-07-21T12:08:23",
+   "html": "<p>Na smaak</p>"
+  },
+  {
+   "id": 13430,
+   "parent": 0,
+   "author": "Hendriehet",
+   "avatar": "https://secure.gravatar.com/avatar/8f57b3b66c9673679dbbe673537cfb2c1be365b2c6cc2166fdd133b3c1b46396?s=96&d=mm&r=g",
+   "date": "2025-06-19T13:18:33",
+   "html": "<p>Is daar geen sout in hierdie bobotie resep nie?</p>"
+  },
+  {
+   "id": 6341,
+   "parent": 6323,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2023-12-14T10:30:03",
+   "html": "<p>Jy kan met groot sukses vries. Haal uit en laat ontdooi en bak in die oond.</p>"
+  },
+  {
+   "id": 6323,
+   "parent": 0,
+   "author": "Maritha Holland-Muter",
+   "avatar": "https://secure.gravatar.com/avatar/910b8d48e405df0ddd9a4f8842e7861f28ac0aff0a46cdb2a6c8f56027009bad?s=96&d=mm&r=g",
+   "date": "2023-12-11T21:56:45",
+   "html": "<p>Naand Marinda<br>\nKan jy my asb help. Kan ek hierdie bobotie resep van jou nou maak en vries vir ongeveer 2 weke. Hoe hanteer ek dan inden ek kan vries, as ek wil voorsit.<br>\nDankie dat jy met ons deel</p>"
+  },
+  {
+   "id": 4565,
+   "parent": 4564,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-09-28T11:26:32",
+   "html": "<p>Middag Susan<br>\nEk druk die melk uit die brood en dan werk dit vir ons.  Jy kan enige tyd nog melk en eier meng.<br>\nLekker eet.</p>"
+  },
+  {
+   "id": 4564,
+   "parent": 0,
+   "author": "Susan Morton",
+   "avatar": "https://secure.gravatar.com/avatar/68db636dc5347840e84e003cee0a52ef7767df4592b1649bcfa5d2196840f3bc?s=96&d=mm&r=g",
+   "date": "2022-09-28T11:10:34",
+   "html": "<p>Hallo Marinda</p>\n<p>Wil net hoor by jou, is die 1 eier en bietjie melk wat oorbly van die brood se geweek, nie te min vir n bolaag nie.  Dit gaan die bobotie skaars bedek!<br>\nGroete<br>\nSusan</p>"
+  },
+  {
+   "id": 3802,
+   "parent": 3797,
+   "author": "Marinda Engelbrecht",
+   "avatar": "https://secure.gravatar.com/avatar/f19140ecf5b531edcab42d7f2d07c2fc5516ea5d729fc89d2f660757c2880626?s=96&d=mm&r=g",
+   "date": "2022-03-18T11:27:46",
+   "html": "<p>Ek sal se tenminste 8.  Dit hang af hoe groot eters die gaste is.</p>"
+  },
+  {
+   "id": 3797,
+   "parent": 0,
+   "author": "Lizette erasmus",
+   "avatar": "https://secure.gravatar.com/avatar/4ce85882f8a4614bfcb976ebc8bb6663e5ed326799bf52bff8f674c43d04855e?s=96&d=mm&r=g",
+   "date": "2022-03-16T17:00:28",
+   "html": "<p>Hoeveel porsies uit jou bobotieresep asb Marinda.  Dankie.</p>"
+  }
+ ]
+}

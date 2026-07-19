@@ -1,0 +1,92 @@
+{
+ "id": 5075,
+ "slug": "macaroni-kaas",
+ "sourceHash": "2275d680669a88dd6dc91b3d811713e5316123ea",
+ "title": "Macaroni and Cheese",
+ "excerpt": "Macaroni and Cheese",
+ "seo": {
+  "title": "Macaroni and Cheese - Marinda Kook",
+  "description": null
+ },
+ "html": "<h3 class=\"wp-block-heading\"></h3>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Macaroni and Cheese",
+  "author": "Marinda Engelbrecht",
+  "image": {
+   "src": "/media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-1024x683.jpg",
+   "srcset": "/media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-1024x683.jpg 1024w, /media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-600x400.jpg 600w, /media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-300x200.jpg 300w, /media/uploads/2018/10/Louise-Engelbrecht-Macaroni-en-Kaas-768x512.jpg 768w",
+   "width": 800,
+   "height": 534,
+   "alt": "Macaroni en Kaas"
+  },
+  "courses": [
+   "Pasta"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Prep time",
+    "pairs": [
+     {
+      "value": "30",
+      "unit": "minutes"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Cooking time",
+    "pairs": [
+     {
+      "value": "40",
+      "unit": "minutes"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "½ packet macaroni",
+     "3 good German sausages (e.g. Käsegriller), cut into small cubes",
+     "750 ml milk",
+     "2 eggs, beaten",
+     "60 ml butter",
+     "60 ml flour",
+     "Salt and pepper to taste",
+     "250 ml grated cheese",
+     "2 large tomatoes, sliced",
+     "red pepper to taste"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Cook the macaroni until just done. Drain and tip it into an ovenproof dish. Add the sausages, stir through and set aside. Mix 250 ml of the milk with the eggs and stir it into the macaroni-and-sausage mixture.",
+     "Now make a white sauce. Melt the butter in a pot and stir in the flour until smooth. Remove from the heat and gradually add the remaining milk while whisking continuously. Put the pot back on the heat and stir until it has thickened. Remove from the heat and season with salt and pepper. Pour the white sauce over the macaroni and sprinkle the cheese evenly on top.",
+     "Arrange the tomato slices on top, season the tomatoes with salt, pepper and red pepper, and bake in a preheated oven for 30 minutes at 180ºC or until done and set. Easy!"
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "Serves 4 – 6 with a nice salad."
+  ],
+  "videoHtml": null
+ }
+}
