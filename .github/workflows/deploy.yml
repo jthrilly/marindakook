@@ -27,14 +27,17 @@ jobs:
 
       - run: npm ci
 
+      # Run-unique key so the post-job save always happens (an exact-key cache
+      # hit would skip saving, freezing the mirror at its first partial state).
       - name: Restore media mirror
         uses: actions/cache@v4
         with:
           path: |
             public/media
             content/media-optimized.json
-          key: media-${{ hashFiles('content/media-manifest.json') }}
+          key: media-${{ hashFiles('content/media-manifest.json') }}-${{ github.run_id }}
           restore-keys: |
+            media-${{ hashFiles('content/media-manifest.json') }}-
             media-
 
       - name: Download missing media from WordPress
