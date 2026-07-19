@@ -38,14 +38,14 @@ jobs:
             media-
 
       - name: Download missing media from WordPress
-        run: node scripts/download-media.mjs || true
+        run: node scripts/download-media.mjs
 
       - name: Optimize media
         run: node scripts/optimize-media.mjs
 
       - name: Build static site
         env:
-          SITE_URL: ${{ vars.SITE_URL || 'https://jthrilly.github.io/marindakook' }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://jthrilly.github.io' }}
           NEXT_PUBLIC_BASE_PATH: ${{ vars.BASE_PATH || '/marindakook' }}
         run: npm run build
 

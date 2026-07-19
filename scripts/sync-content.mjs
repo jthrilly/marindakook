@@ -280,13 +280,14 @@ const site = {
   postsPerPage: 10,
 };
 console.log("Writing media manifest…");
-const manifest = [...mediaUrls]
-  .filter((u) => u.includes("/wp-content/uploads/"))
-  .sort()
-  .map((u) => ({
-    url: u.startsWith("http") ? u : `${WP_URL}${u}`,
-    path: `public${uploadUrlToLocal(u)}`,
-  }));
+const manifestByPath = new Map();
+for (const u of [...mediaUrls].filter((x) => x.includes("/wp-content/uploads/")).sort()) {
+  const path = `public${uploadUrlToLocal(u)}`;
+  if (!manifestByPath.has(path)) {
+    manifestByPath.set(path, { url: u.startsWith("http") ? u : `${WP_URL}${u}`, path });
+  }
+}
+const manifest = [...manifestByPath.values()];
 if (site.bio.photo?.startsWith("http")) {
   manifest.push({ url: site.bio.photo, path: "public/media/bio-photo.jpg" });
   site.bio.photo = "/media/bio-photo.jpg";

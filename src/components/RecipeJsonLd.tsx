@@ -58,6 +58,9 @@ export function RecipeJsonLd({ post, locale }: { post: Post; locale: Locale }) {
   if (recipe.cuisines.length) data.recipeCuisine = recipe.cuisines.join(", ");
 
   return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replaceAll("<", "\\u003c") }}
+    />
   );
 }

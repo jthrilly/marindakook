@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getPostIndex, getPostSummary, getTerms } from "@/lib/content";
 import type { Dictionary } from "@/lib/i18n";
-import { formatDate, localizeSiteStrings, localizeWidgetTitle } from "@/lib/i18n";
+import { formatDate, localizeSiteStrings, localizeTermName, localizeWidgetTitle } from "@/lib/i18n";
 import { asset, categoryPath, localePath, postPath } from "@/lib/paths";
 import type { Locale, PostSummary, Site } from "@/lib/types";
 import { SocialIcons } from "@/components/chrome/SocialIcons";
@@ -141,7 +141,7 @@ export async function Sidebar({
           label={localizeWidgetTitle(site.sidebar.categoriesWidget.title, locale)}
           options={categories.map((c) => ({
             value: asset(categoryPath(locale, c.slug)),
-            label: `${c.name} (${c.count})`,
+            label: `${localizeTermName(c, locale)} (${c.count})`,
           }))}
         />
       </div>

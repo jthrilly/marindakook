@@ -1,6 +1,8 @@
 import type { Locale } from "./types";
 
-export const SITE_URL = (process.env.SITE_URL ?? "https://jthrilly.github.io/marindakook").replace(/\/$/, "");
+// Origin only — basePath is applied separately via asset(), so a path-bearing
+// SITE_URL would double the base path in every absolute URL.
+export const SITE_URL = (process.env.SITE_URL ?? "https://jthrilly.github.io").replace(/\/$/, "");
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export function localePath(locale: Locale, path: string): string {
@@ -39,7 +41,6 @@ export function withBasePath(html: string): string {
   if (!BASE_PATH) return html;
   return html
     .replaceAll('src="/media/', `src="${BASE_PATH}/media/`)
-    .replaceAll('href="/media/', `href="${BASE_PATH}/media/`)
     .replaceAll(/srcset="([^"]*)"/g, (_, set: string) =>
       `srcset="${set.replaceAll("/media/", `${BASE_PATH}/media/`)}"`,
     )

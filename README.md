@@ -56,10 +56,10 @@ Two GitHub Actions workflows:
 - **`deploy.yml`** — on every push to `main` (and manually): restores the media mirror
   from the Actions cache, downloads anything new, optimizes, builds and publishes to
   GitHub Pages. Configuration via repository variables (Settings → Secrets and
-  variables → Actions → Variables): `SITE_URL` (default
-  `https://jthrilly.github.io/marindakook`) and `BASE_PATH` (default `/marindakook`).
-  For a custom domain later: set `SITE_URL=https://marindakook.co.za`, `BASE_PATH=`
-  (empty), and add the domain in Pages settings.
+  variables → Actions → Variables): `SITE_URL` (origin only, no path — currently
+  `https://morsontologica.com`) and `BASE_PATH` (default `/marindakook`).
+  For a dedicated custom domain later: set `SITE_URL=https://marindakook.co.za`,
+  `BASE_PATH=` (empty), and add the domain in Pages settings.
 - **`sync.yml`** — weekly (Mon 04:00 UTC) and manually: re-syncs content from
   WordPress, commits changes, and triggers a deploy. New WordPress posts appear in
   Afrikaans automatically; run the translation flow for new English content and commit

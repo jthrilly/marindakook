@@ -1,11 +1,11 @@
-import { localePath } from "@/lib/paths";
+import { asset, localePath } from "@/lib/paths";
 import type { Locale } from "@/lib/types";
 import type { Dictionary } from "@/lib/i18n";
 
 export function SearchForm({ locale, dict, className = "" }: { locale: Locale; dict: Dictionary; className?: string }) {
   return (
     <form
-      action={localePath(locale, "/search/")}
+      action={asset(localePath(locale, "/search/"))}
       method="get"
       role="search"
       className={`flex items-center rounded-[4px] bg-peach transition-colors focus-within:ring-1 focus-within:ring-accent ${className}`}

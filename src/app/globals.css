@@ -128,15 +128,17 @@ h6 {
   @apply text-accent underline;
 }
 
+/* Print only the recipe card on pages that have one; pages without a card
+   print normally (minus navigation chrome). */
 @media print {
-  body * {
+  body:has(.recipe-card-print) * {
     visibility: hidden;
   }
-  .recipe-card-print,
-  .recipe-card-print * {
+  body:has(.recipe-card-print) .recipe-card-print,
+  body:has(.recipe-card-print) .recipe-card-print * {
     visibility: visible;
   }
-  .recipe-card-print {
+  body:has(.recipe-card-print) .recipe-card-print {
     position: absolute;
     inset: 0 auto auto 0;
     width: 100%;

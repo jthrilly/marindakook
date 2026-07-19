@@ -1,4 +1,4 @@
-import { mkdir, writeFile, readFile, stat } from "node:fs/promises";
+import { mkdir, writeFile, readFile, rename, stat } from "node:fs/promises";
 import { dirname } from "node:path";
 
 const manifest = JSON.parse(
@@ -6,8 +6,10 @@ const manifest = JSON.parse(
 );
 
 const CONCURRENCY = 8;
+const FORCE = process.env.FORCE_MEDIA_REFRESH === "1";
 let done = 0;
 let downloaded = 0;
+let missing = 0;
 let failed = 0;
 let bytes = 0;
 
@@ -21,19 +23,21 @@ async function exists(path) {
 }
 
 async function download({ url, path }) {
-  if (await exists(path)) return;
+  if (!FORCE && (await exists(path))) return;
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const res = await fetch(url, { headers: { "User-Agent": "marindakook-static-sync/1.0" } });
-      if (res.status === 404) {
-        failed++;
-        console.log(`  404: ${url}`);
+      if (res.status === 404 || res.status === 410) {
+        missing++;
+        console.log(`  gone at origin (${res.status}): ${url}`);
         return;
       }
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const buf = Buffer.from(await res.arrayBuffer());
       await mkdir(dirname(path), { recursive: true });
-      await writeFile(path, buf);
+      const tmp = `${path}.tmp`;
+      await writeFile(tmp, buf);
+      await rename(tmp, path);
       bytes += buf.length;
       downloaded++;
       return;
@@ -62,6 +66,8 @@ async function worker() {
 
 await Promise.all(Array.from({ length: CONCURRENCY }, worker));
 console.log(
-  `Media sync done: ${manifest.length} total, ${downloaded} downloaded (${(bytes / 1e6).toFixed(1)} MB), ${failed} failed.`,
+  `Media sync done: ${manifest.length} total, ${downloaded} downloaded (${(bytes / 1e6).toFixed(1)} MB), ${missing} gone at origin, ${failed} failed.`,
 );
+// Origin 404s are recorded but tolerated (those images are broken on the live
+// site too); anything else failing means the mirror is incomplete.
 if (failed > 0) process.exitCode = 1;

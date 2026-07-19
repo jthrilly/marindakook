@@ -1,4 +1,5 @@
-import type { Locale, NavItem } from "./types";
+import type { Locale, NavItem, Term } from "./types";
+import enCategoryNames from "./en-category-names.json";
 
 export const locales: Locale[] = ["af", "en"];
 export const defaultLocale: Locale = "af";
@@ -138,6 +139,13 @@ export function localizeWidgetTitle(title: string, locale: Locale): string {
 
 export function localizeSiteStrings(locale: Locale) {
   return locale === "en" ? enSiteStrings : null;
+}
+
+// Category display names for the en locale; tags keep their Afrikaans names
+// (they are dish keywords with no English source).
+export function localizeTermName(term: Term, locale: Locale): string {
+  if (locale === "af") return term.name;
+  return (enCategoryNames as Record<string, string>)[term.slug] ?? term.name;
 }
 
 const MONTHS = [

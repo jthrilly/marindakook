@@ -9,7 +9,17 @@ const MIN_BYTES = 120_000;
 let state = {};
 try {
   state = JSON.parse(await readFile(STATE_URL, "utf8"));
-} catch {}
+} catch (err) {
+  if (err.code !== "ENOENT") {
+    console.log(`state file unreadable (${err.message}); re-optimizing from scratch`);
+  }
+}
+
+async function saveState() {
+  const tmp = new URL(`${STATE_URL.pathname}.tmp`, STATE_URL);
+  await writeFile(tmp, JSON.stringify(state));
+  await rename(tmp, STATE_URL);
+}
 
 let processed = 0;
 let saved = 0;
@@ -49,12 +59,12 @@ for await (const path of glob("public/media/**/*.{jpg,jpeg,JPG,JPEG,png,PNG}")) 
     processed++;
     if (processed % 250 === 0) {
       console.log(`${processed} processed, ${(saved / 1e6).toFixed(0)} MB saved`);
-      await writeFile(STATE_URL, JSON.stringify(state));
+      await saveState();
     }
   } catch (err) {
     console.log(`  skip ${path}: ${err.message}`);
   }
 }
 
-await writeFile(STATE_URL, JSON.stringify(state));
+await saveState();
 console.log(`Optimized ${processed} images (${skipped} already done), saved ${(saved / 1e6).toFixed(1)} MB total.`);

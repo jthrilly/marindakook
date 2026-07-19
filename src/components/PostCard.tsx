@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
-import { formatDate } from "@/lib/i18n";
+import { formatDate, localizeTermName } from "@/lib/i18n";
 import { asset, categoryPath, postPath } from "@/lib/paths";
 import type { Locale, PostSummary, Term } from "@/lib/types";
 
@@ -23,7 +23,7 @@ export function CatLinks({
         <span key={cat.id}>
           {i > 0 && ", "}
           <Link href={categoryPath(locale, cat.slug)} className="text-accent hover:border-b hover:border-ink hover:text-ink">
-            {cat.name}
+            {localizeTermName(cat, locale)}
           </Link>
         </span>
       ))}

@@ -5,7 +5,13 @@ const PUBLIC = new URL("../public/", import.meta.url);
 
 const index = JSON.parse(await readFile(new URL("posts-index.json", CONTENT), "utf8"));
 const terms = JSON.parse(await readFile(new URL("terms.json", CONTENT), "utf8"));
-const catById = new Map(terms.categories.map((c) => [c.id, c.name]));
+const enCategoryNames = JSON.parse(
+  await readFile(new URL("../src/lib/en-category-names.json", import.meta.url), "utf8"),
+);
+const catNames = {
+  af: new Map(terms.categories.map((c) => [c.id, c.name])),
+  en: new Map(terms.categories.map((c) => [c.id, enCategoryNames[c.slug] ?? c.name])),
+};
 const tagById = new Map(terms.tags.map((t) => [t.id, t.name]));
 
 async function translation(slug) {
@@ -31,7 +37,7 @@ async function entry(post, locale) {
     slug: post.slug,
     title,
     excerpt,
-    cats: post.categories.map((id) => catById.get(id)).filter(Boolean),
+    cats: post.categories.map((id) => catNames[locale].get(id)).filter(Boolean),
     tags: post.tags.map((id) => tagById.get(id)).filter(Boolean),
     thumb: post.featured?.thumb?.src ?? null,
     date: post.date,

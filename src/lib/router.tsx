@@ -96,9 +96,9 @@ export async function renderRoute(locale: Locale, segments: string[]) {
   );
 }
 
-function alternatesFor(path: string): Metadata["alternates"] {
+function alternatesFor(locale: Locale, path: string): Metadata["alternates"] {
   return {
-    canonical: absoluteUrl(asset(path === "/" ? "/" : path)),
+    canonical: absoluteUrl(asset(localePath(locale, path))),
     languages: {
       af: absoluteUrl(asset(path)),
       en: absoluteUrl(asset(`/en${path === "/" ? "/" : path}`)),
@@ -128,7 +128,7 @@ export async function routeMetadata(locale: Locale, segments: string[]): Promise
         ...base,
         title,
         description: tagline,
-        alternates: alternatesFor(plainPath),
+        alternates: alternatesFor(locale, plainPath),
         openGraph: { title: site.name, description: tagline, type: "website", siteName: site.name },
       };
     }
@@ -138,7 +138,7 @@ export async function routeMetadata(locale: Locale, segments: string[]): Promise
         ...base,
         title: `${route.term.name}${suffix} - ${site.name}`,
         description: route.term.description || `${route.term.name} - ${site.name}`,
-        alternates: alternatesFor(plainPath),
+        alternates: alternatesFor(locale, plainPath),
       };
     }
     case "post": {
@@ -148,7 +148,7 @@ export async function routeMetadata(locale: Locale, segments: string[]): Promise
         ...base,
         title: post.seo.title,
         description: post.seo.description ?? post.excerpt,
-        alternates: alternatesFor(plainPath),
+        alternates: alternatesFor(locale, plainPath),
         openGraph: {
           title: post.title,
           description: post.seo.description ?? post.excerpt,
@@ -166,7 +166,7 @@ export async function routeMetadata(locale: Locale, segments: string[]): Promise
         ...base,
         title: page.seo.title,
         description: page.seo.description,
-        alternates: alternatesFor(plainPath),
+        alternates: alternatesFor(locale, plainPath),
       };
     }
     case "search":
