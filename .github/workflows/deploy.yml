@@ -38,10 +38,18 @@ jobs:
             media-
 
       - name: Download missing media from WordPress
+        env:
+          MEDIA_CONCURRENCY: 4
         run: node scripts/download-media.mjs
 
       - name: Optimize media
         run: node scripts/optimize-media.mjs
+
+      - name: Compress media (jpegoptim/oxipng)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q jpegoptim oxipng || sudo apt-get install -y -q jpegoptim
+          node scripts/optimize-media-cli.mjs
 
       - name: Build static site
         env:

@@ -5,7 +5,8 @@ const manifest = JSON.parse(
   await readFile(new URL("../content/media-manifest.json", import.meta.url), "utf8"),
 );
 
-const CONCURRENCY = 8;
+const CONCURRENCY = Number(process.env.MEDIA_CONCURRENCY) || 8;
+const REQUEST_TIMEOUT_MS = 90_000;
 const FORCE = process.env.FORCE_MEDIA_REFRESH === "1";
 let done = 0;
 let downloaded = 0;
@@ -26,7 +27,10 @@ async function download({ url, path }) {
   if (!FORCE && (await exists(path))) return;
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      const res = await fetch(url, { headers: { "User-Agent": "marindakook-static-sync/1.0" } });
+      const res = await fetch(url, {
+        headers: { "User-Agent": "marindakook-static-sync/1.0" },
+        signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+      });
       if (res.status === 404 || res.status === 410) {
         missing++;
         console.log(`  gone at origin (${res.status}): ${url}`);
