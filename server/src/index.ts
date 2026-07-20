@@ -123,8 +123,12 @@ function buildPublishConfig(env: Env, github: GitHubClient | null): PublishConfi
   };
 }
 
-async function fetchCommittedJson<T>(url: string, schema: z.ZodType<T>): Promise<T | null> {
-  const response = await fetch(url);
+async function fetchCommittedJson<T>(
+  url: string,
+  schema: z.ZodType<T>,
+  fetchImpl: typeof fetch,
+): Promise<T | null> {
+  const response = await fetchImpl(url);
   if (!response.ok) {
     return null;
   }
@@ -132,18 +136,27 @@ async function fetchCommittedJson<T>(url: string, schema: z.ZodType<T>): Promise
   return parsed.success ? parsed.data : null;
 }
 
-// Reads committed content the edit/publish tools need. The site chrome and the
-// two pages are bundled (tiny, rarely change); existing posts are fetched from
-// the public repo's raw content so update_post sees live committed state.
-function buildContentSource(env: Env): ContentSource | undefined {
+// Reads committed content the edit/chrome/publish tools need. Every read fetches
+// LIVE committed state from the public repo's raw content, so chrome/page edits
+// merge onto the current on-main state rather than a frozen build-time bundle
+// (which would silently revert a prior edit). The bundled snapshot is only the
+// fallback when the fetch fails (network error / non-200). `fetchImpl` is
+// injected so tests drive the live-vs-fallback paths without the network.
+export function buildContentSource(
+  env: Pick<Env, "GITHUB_OWNER" | "GITHUB_REPO">,
+  fetchImpl: typeof fetch = fetch,
+): ContentSource | undefined {
   if (!env.GITHUB_OWNER || !env.GITHUB_REPO) {
     return undefined;
   }
   const rawBase = `https://raw.githubusercontent.com/${env.GITHUB_OWNER}/${env.GITHUB_REPO}/${BASE_BRANCH}/content`;
   return {
-    loadPost: (slug) => fetchCommittedJson(`${rawBase}/posts/${slug}.json`, postSchema),
-    loadPage: (slug) => bundledPages.find((page) => page.slug === slug) ?? null,
-    loadSite: () => bundledSite,
+    loadPost: (slug) => fetchCommittedJson(`${rawBase}/posts/${slug}.json`, postSchema, fetchImpl),
+    loadPage: async (slug) =>
+      (await fetchCommittedJson(`${rawBase}/pages/${slug}.json`, pageSchema, fetchImpl)) ??
+      (bundledPages.find((page) => page.slug === slug) ?? null),
+    loadSite: async () =>
+      (await fetchCommittedJson(`${rawBase}/site.json`, siteSchema, fetchImpl)) ?? bundledSite,
     pageSlugs: bundledPages.map((page) => page.slug),
   };
 }

@@ -158,6 +158,54 @@ describe("runTranslationJob", () => {
     expect(jobRecord(await store.getJob("d-1")).status).toBe("passing");
   });
 
+  it("fires the Joshua alert on a terminal Anthropic fault (401), and still stores the failing record", async () => {
+    const alertFetch = vi.fn(async () => new Response(null, { status: 200 }));
+    const fetchMock = vi.fn<typeof fetch>(async () => new Response("revoked key", { status: 401 }));
+    const deps: TranslationJobDeps = {
+      ...makeDeps(store, fetchMock),
+      alert: { webhookUrl: "https://alerts.example/joshua", fetch: alertFetch },
+    };
+
+    await runTranslationJob(deps, "d-1");
+
+    expect(alertFetch).toHaveBeenCalledTimes(1);
+    expect(alertFetch).toHaveBeenCalledWith(
+      "https://alerts.example/joshua",
+      expect.objectContaining({ method: "POST" }),
+    );
+    // Graceful degradation is preserved: the failing record still persists.
+    expect(jobRecord(await store.getJob("d-1")).status).toBe("failing");
+  });
+
+  it("fires the Joshua alert on an exhausted-credit / rate fault (429)", async () => {
+    const alertFetch = vi.fn(async () => new Response(null, { status: 200 }));
+    const fetchMock = vi.fn<typeof fetch>(async () => new Response("rate limited", { status: 429 }));
+    const deps: TranslationJobDeps = {
+      ...makeDeps(store, fetchMock),
+      alert: { webhookUrl: "https://alerts.example/joshua", fetch: alertFetch },
+    };
+
+    await runTranslationJob(deps, "d-1");
+
+    expect(alertFetch).toHaveBeenCalledTimes(1);
+    expect(jobRecord(await store.getJob("d-1")).status).toBe("failing");
+  });
+
+  it("does NOT alert when the model merely fails the validator (200 response, bad content)", async () => {
+    const alertFetch = vi.fn(async () => new Response(null, { status: 200 }));
+    const badCandidate = { id: "wrong", slug: "lemoenkoek", sourceHash: "", title: "", seo: { title: "" }, html: "<p>x</p>" };
+    const fetchMock = vi.fn<typeof fetch>(async () => anthropicResponse(badCandidate));
+    const deps: TranslationJobDeps = {
+      ...makeDeps(store, fetchMock),
+      alert: { webhookUrl: "https://alerts.example/joshua", fetch: alertFetch },
+    };
+
+    await runTranslationJob(deps, "d-1");
+
+    expect(alertFetch).not.toHaveBeenCalled();
+    expect(jobRecord(await store.getJob("d-1")).status).toBe("failing");
+  });
+
   it("re-runs when the draft content changed (sourceHash differs)", async () => {
     const source1 = buildTranslationSource(draft());
     const fetchMock = vi.fn<typeof fetch>(async () => {

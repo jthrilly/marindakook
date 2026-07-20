@@ -103,6 +103,10 @@ export interface ToolContext {
   translation?: TranslationConfig;
   content?: ContentSource;
   publishing?: PublishConfig;
+  // Escalation channel for TERMINAL faults that occur OUTSIDE guardToolThrows:
+  // the background translation job (past a tool's return) and the best-effort
+  // failing-translation PR (after the post is already live).
+  alert?: AlertConfig;
 }
 
 // The spec's internal terms (spec §198-209): never offered as recipe categories.
@@ -183,6 +187,7 @@ export function createMcpServer(deps: McpServerDeps): McpServer {
     translation: deps.translation,
     content: deps.content,
     publishing: deps.publishing,
+    alert: deps.alert,
   };
 
   const registrar = deps.alert === undefined ? server : guardToolThrows(server, deps.alert);

@@ -1,6 +1,6 @@
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { sourceHashOf } from "@site/lib/source-hash";
 import { postSchema, translationSchema } from "@site/lib/content-schema";
 import { compareTranslation } from "@site/lib/translation-check.mjs";
@@ -52,6 +52,28 @@ function passingTranslation(draft: DraftPost) {
   };
 }
 
+// A failing job WITH a candidate translation for the current source: a direct
+// publish then commits the post Afrikaans-only and best-effort PRs the failing
+// English for Joshua (the path Finding [6] covers).
+function failingTranslationJob(draft: DraftPost) {
+  const hash = sourceHashOf(buildTranslationSource(draft));
+  return {
+    status: "failing",
+    sourceHash: hash,
+    attempts: 4,
+    completedAt: NOW,
+    issues: ["title mismatch"],
+    translation: {
+      id: draft.draftId,
+      slug: draft.slug ?? draft.draftId,
+      sourceHash: hash,
+      title: "Milk tart",
+      seo: { title: "Milk tart - Marinda Kook", description: null },
+      html: "<p>Stir the filling</p>",
+    },
+  };
+}
+
 interface GitHubCalls {
   commits: { branch?: string; files: { path: string; content: string }[]; deletions?: string[]; message: string; draftId: string; requireAbsent?: string[]; expectShas?: Record<string, string> }[];
   branches: { name: string; fromSha: string }[];
@@ -65,6 +87,9 @@ interface FakeGitHubOptions {
   // Simulate GitHub answering the PR-create with a 422 "duplicate PR" (the case
   // a retry hits after a dropped openPullRequest response).
   openPrThrows422?: boolean;
+  // Make openPullRequest throw this error (e.g. a terminal 403) — used to drive
+  // the failing-translation-PR escalation path.
+  openPrError?: Error;
   // What findOpenPullRequest resolves for a head (defaults to whatever a prior
   // openPullRequest registered).
   findOpenPr?: (head: string) => PullRequestResult | null;
@@ -100,6 +125,9 @@ function makeGitHub(options: FakeGitHubOptions = {}): { github: GitHubClient; ca
       calls.branches.push({ name, fromSha });
     },
     async openPullRequest(input) {
+      if (options.openPrError !== undefined) {
+        throw options.openPrError;
+      }
       if (options.openPrThrows422 === true) {
         throw new GitHubError(`A pull request already exists for marinda:${input.head}`, { status: 422 });
       }
@@ -202,6 +230,7 @@ async function setup(opts: {
     categories: opts.categories,
     content: opts.content ?? contentSource(),
     publishing,
+    alert: opts.alert,
   };
   const server = createMcpServer(deps);
   const [ct, st] = InMemoryTransport.createLinkedPair();
@@ -498,6 +527,50 @@ describe("publish committed-translation contract", () => {
     // partial seo. CI recomputes sourceHashOf(post): excerpt "" and the built seo.
     // They must agree, or the deploy's `npm test` fails on the first real publish.
     expect(committedTranslation.sourceHash).toBe(sourceHashOf(committedPost));
+  });
+});
+
+describe("failing-translation PR terminal fault escalates to Joshua", () => {
+  it("fires the alert when opening the failing-translation PR hits a terminal GitHub fault, non-fatal to the live post", async () => {
+    const draft = fullDraft();
+    const alertFetch = vi.fn(async () => new Response(null, { status: 200 }));
+    const { github, calls } = makeGitHub({ openPrError: new GitHubError("forbidden", { status: 403 }) });
+    const { client, store } = await setup({
+      github,
+      pilotMode: false,
+      alert: { webhookUrl: "https://alerts.example/joshua", fetch: alertFetch },
+    });
+    await approve(store, draft);
+    await store.setJob("d-1", failingTranslationJob(draft));
+
+    const result = await call(client, "publish", { draftId: "d-1" });
+
+    // The Afrikaans post published fine (direct commit landed).
+    expect(result.isError).toBe(false);
+    expect(textOf(result)).toContain("net in Afrikaans");
+    expect(calls.commits.some((c) => c.files.some((f) => f.path === "content/posts/melktert.json"))).toBe(true);
+    // The terminal PR-open fault escalated to Joshua and is surfaced (non-fatal).
+    expect(alertFetch).toHaveBeenCalledTimes(1);
+    expect(String(result.structuredContent?.translationPrError)).toContain("Joshua");
+  });
+
+  it("does NOT alert when the failing-translation PR opens cleanly", async () => {
+    const draft = fullDraft();
+    const alertFetch = vi.fn(async () => new Response(null, { status: 200 }));
+    const { github } = makeGitHub();
+    const { client, store } = await setup({
+      github,
+      pilotMode: false,
+      alert: { webhookUrl: "https://alerts.example/joshua", fetch: alertFetch },
+    });
+    await approve(store, draft);
+    await store.setJob("d-1", failingTranslationJob(draft));
+
+    const result = await call(client, "publish", { draftId: "d-1" });
+
+    expect(result.isError).toBe(false);
+    expect(result.structuredContent?.translationPrError).toBeUndefined();
+    expect(alertFetch).not.toHaveBeenCalled();
   });
 });
 

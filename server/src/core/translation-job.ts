@@ -3,6 +3,7 @@ import { buildTranslatePrompt } from "@site/lib/translate-prompt";
 import { sourceHashOf } from "@site/lib/source-hash";
 import { compareTranslation } from "@site/lib/translation-check.mjs";
 import type { DraftPost } from "./draft-schema";
+import { type AlertConfig, terminal } from "./errors";
 import type { DraftStore, JsonValue } from "./store";
 
 // Feedback retries AFTER the first attempt (spec D5: "up to 3 feedback
@@ -21,6 +22,43 @@ export interface TranslationJobDeps {
   model: string;
   fetchImpl?: typeof fetch;
   now?: () => Date;
+  // Where a TERMINAL Anthropic fault (revoked key, exhausted credit/rate, or
+  // every attempt failing outright) escalates to Joshua. This job runs in the
+  // background past the tool's return, OUTSIDE guardToolThrows, so without this
+  // a broken ANTHROPIC_API_KEY would silently break Marinda's translations.
+  alert?: AlertConfig;
+}
+
+// An Anthropic API fault carrying the HTTP status so the terminal classifier can
+// tell a broken key / exhausted credit (→ alert Joshua) from a transient blip.
+class AnthropicError extends Error {
+  readonly status?: number;
+  constructor(message: string, options?: { status?: number }) {
+    super(message);
+    this.name = "AnthropicError";
+    this.status = options?.status;
+  }
+}
+
+// A terminal infra fault means Marinda's translations silently never work and
+// the graceful Afrikaans-only degradation hides it: a revoked/absent key
+// (401/403) or exhausted credit/rate limit (402/429) escalates directly to
+// Joshua. A 5xx or transport error is only terminal when EVERY attempt failed
+// with no candidate — handled separately via the `best === null` check.
+function anthropicFault(status: number | undefined): { terminal: boolean; code: string } {
+  if (status === 401 || status === 403) {
+    return { terminal: true, code: "AI-AUTH" };
+  }
+  if (status === 402 || status === 429) {
+    return { terminal: true, code: "AI-KREDIET" };
+  }
+  if (status !== undefined && status >= 500) {
+    return { terminal: false, code: "AI-5XX" };
+  }
+  if (status !== undefined) {
+    return { terminal: false, code: `AI-${status}` };
+  }
+  return { terminal: false, code: "AI-NET" };
 }
 
 // The Afrikaans "source" the model translates and compareTranslation validates
@@ -127,7 +165,9 @@ async function callAnthropic(deps: TranslationJobDeps, prompt: string): Promise<
     }),
   });
   if (!response.ok) {
-    throw new Error(`Anthropic API ${response.status}: ${await response.text()}`);
+    throw new AnthropicError(`Anthropic API ${response.status}: ${await response.text()}`, {
+      status: response.status,
+    });
   }
   return parseCandidate(extractResponseText(await response.json()));
 }
@@ -177,6 +217,10 @@ export async function runTranslationJob(deps: TranslationJobDeps, draftId: strin
   let best: { candidate: Record<string, JsonValue>; issues: string[] } | null = null;
   let corrections: string[] | null = null;
   let lastError: string | null = null;
+  // Terminal API fault seen on any attempt (auth/credit/rate); and the code of
+  // the last thrown fault (for the "every attempt failed, no candidate" case).
+  let terminalCode: string | null = null;
+  let lastFaultCode: string | null = null;
 
   for (let attempt = 1; attempt <= totalAttempts; attempt += 1) {
     const prompt = corrections === null ? basePrompt : withCorrections(basePrompt, corrections);
@@ -185,6 +229,11 @@ export async function runTranslationJob(deps: TranslationJobDeps, draftId: strin
       candidate = await callAnthropic(deps, prompt);
     } catch (err) {
       lastError = errorMessage(err);
+      const fault = anthropicFault(err instanceof AnthropicError ? err.status : undefined);
+      lastFaultCode = fault.code;
+      if (fault.terminal) {
+        terminalCode = fault.code;
+      }
       corrections = [lastError];
       continue;
     }
@@ -207,6 +256,16 @@ export async function runTranslationJob(deps: TranslationJobDeps, draftId: strin
       best = { candidate, issues };
     }
     corrections = issues;
+  }
+
+  // Terminal infra fault: a definite auth/credit/rate failure at any attempt, or
+  // every attempt failing outright with no candidate to fall back on. The Actions
+  // failure email only ever covers CI, which never runs when the Worker's own
+  // background job breaks — so escalate to Joshua directly. This is ADDITIONAL to
+  // the graceful Afrikaans-only degradation below: the 'failing' record still
+  // persists so publish can proceed Afrikaans-only.
+  if (deps.alert !== undefined && (terminalCode !== null || best === null)) {
+    await terminal(terminalCode ?? lastFaultCode ?? "AI-NET", deps.alert);
   }
 
   const failingIssues = best?.issues ?? (lastError === null ? ["geen geldige vertaling ontvang nie"] : [lastError]);

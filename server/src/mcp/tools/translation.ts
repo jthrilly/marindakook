@@ -43,6 +43,7 @@ export function registerTranslationTools(server: McpServer, ctx: ToolContext): v
         model: ctx.translation.model,
         fetchImpl: ctx.translation.fetch,
         now: ctx.now,
+        alert: ctx.alert,
       };
 
       // Return immediately; the job outlives this tool call via waitUntil. Chat

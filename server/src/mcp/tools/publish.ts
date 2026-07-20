@@ -2,6 +2,7 @@ import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import { pageSchema, postSchema, siteSchema, translationSchema, type Translation } from "@site/lib/content-schema";
 import { sourceHashOf } from "@site/lib/source-hash";
+import { type AlertConfig, toTaxonomyError } from "../../core/errors";
 import type { CommitFile, PullRequestInput, PullRequestResult } from "../../core/github";
 import { GitHubError } from "../../core/github";
 import { resolveSlug, slugify } from "../../core/slug";
@@ -453,12 +454,16 @@ async function commitPost(
     await ctx.store.setPublish(draft.draftId, { mode: "direct", commitSha: landed, slug: post.slug });
     const translationPrError =
       failingTranslationForPr !== null
-        ? await ensureFailingTranslationPr(cfg, {
-            slug: post.slug,
-            title: post.title,
-            translationPath,
-            translation: failingTranslationForPr,
-          })
+        ? await ensureFailingTranslationPr(
+            cfg,
+            {
+              slug: post.slug,
+              title: post.title,
+              translationPath,
+              translation: failingTranslationForPr,
+            },
+            ctx.alert,
+          )
         : undefined;
     return ok(directSuccessMessage(cfg, post.slug, input.translationExhausted), {
       draftId: draft.draftId,
@@ -546,12 +551,16 @@ async function commitPost(
   // successful post publish, so surface it rather than throw.
   const translationPrError =
     failingTranslationForPr !== null
-      ? await ensureFailingTranslationPr(cfg, {
-          slug: post.slug,
-          title: post.title,
-          translationPath,
-          translation: failingTranslationForPr,
-        })
+      ? await ensureFailingTranslationPr(
+          cfg,
+          {
+            slug: post.slug,
+            title: post.title,
+            translationPath,
+            translation: failingTranslationForPr,
+          },
+          ctx.alert,
+        )
       : undefined;
 
   return ok(directSuccessMessage(cfg, post.slug, input.translationExhausted), {
@@ -673,15 +682,23 @@ async function openFailingTranslationPr(
 
 // Best-effort wrapper: the post is already live, so a failing-translation-PR
 // error is returned (surfaced in structuredContent) rather than thrown, keeping
-// the successful publish honest instead of masking it as a failure.
+// the successful publish honest instead of masking it as a failure. A TERMINAL
+// GitHub fault (revoked auth, exhausted 5xx retries) still means the PR
+// persistently can't open, so it escalates to Joshua via the taxonomy exactly as
+// guardToolThrows does for a synchronous throw — the alert is fired as a side
+// effect of toTaxonomyError, and its honest Afrikaans message is surfaced.
 async function ensureFailingTranslationPr(
   cfg: PublishConfig,
   input: { slug: string; title: string; translationPath: string; translation: { [key: string]: JsonValue } },
+  alert?: AlertConfig,
 ): Promise<string | undefined> {
   try {
     await openFailingTranslationPr(cfg, input);
     return undefined;
   } catch (err) {
+    if (alert !== undefined) {
+      return (await toTaxonomyError(err, alert)).message;
+    }
     return err instanceof Error ? err.message : String(err);
   }
 }
