@@ -6,7 +6,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  # write is for the rendition commit-back below (Track D/D10); everything
+  # else the build job does is read-only.
+  contents: write
   pages: write
   id-token: write
 
@@ -66,6 +68,66 @@ jobs:
         env:
           MEDIA_CONCURRENCY: 4
         run: node scripts/download-media.mjs
+
+      # Track D/D10: the chat CMS Worker commits a new post's hero photo
+      # directly via the GitHub API (bypassing /public/media/'s .gitignore,
+      # same as legacy WordPress-sourced originals above) but only writes the
+      # deterministic `-WxH` rendition PATHS into the post JSON — WordPress
+      # used to generate the actual rendition files, so CI does it now.
+      # Placed after the media download/seed steps (so both Worker-committed
+      # and WordPress-mirrored originals are on disk) and before Optimize
+      # media (so freshly materialized crops get compressed in this run too).
+      #
+      # TRACK C COUPLING: Track C (WordPress decommission) will move media
+      # wholesale into git and is expected to rewrite this workflow (removing
+      # the download/seed/cache steps above). Track C must reconcile this
+      # step's placement and its commit-back below when it lands.
+      - name: Materialize renditions
+        run: node scripts/materialize-renditions.mjs > /tmp/materialized-renditions.txt
+
+      - name: Commit materialized renditions
+        run: |
+          if [ ! -s /tmp/materialized-renditions.txt ]; then
+            echo "No new renditions to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # public/media is gitignored (synced WordPress mirror); force-add
+          # only the specific files this run generated, never the whole tree.
+          while IFS= read -r path; do
+            git add -f -- "$path"
+          done < /tmp/materialized-renditions.txt
+          if git diff --cached --quiet; then
+            echo "Nothing to commit (a concurrent run already published these renditions)."
+            exit 0
+          fi
+          git commit -m "chore: materialize photo renditions [skip ci]"
+
+          push_ok=true
+          if ! git push; then
+            push_ok=false
+            echo "Push rejected; rebasing onto origin/main and retrying once."
+            if git fetch origin main && git rebase origin/main; then
+              if git push; then
+                push_ok=true
+              else
+                echo "Push still rejected after rebase; skipping commit-back for this run."
+              fi
+            else
+              echo "Fetch/rebase failed; abandoning commit-back for this run."
+              git rebase --abort 2>/dev/null || true
+            fi
+          fi
+          # Non-fatal either way: the renditions materialized above are
+          # already on disk for this run's build, so a lost race here just
+          # means the next run (Worker publish or scheduled sync) re-derives
+          # and commits them — never a failed deploy over a benign race.
+          if $push_ok; then
+            echo "Pushed rendition commit."
+          else
+            echo "Renditions used for this run's build but not committed back."
+          fi
 
       - name: Optimize media
         run: node scripts/optimize-media.mjs

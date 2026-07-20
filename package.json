@@ -15,7 +15,8 @@
     "check:translations": "tsx scripts/check-all-translations.mjs",
     "regress:translations": "tsx scripts/translation-regression.mjs",
     "validate:content": "tsx scripts/validate-content.mjs",
-    "optimize:media": "node scripts/optimize-media.mjs && node scripts/optimize-media-cli.mjs"
+    "optimize:media": "node scripts/optimize-media.mjs && node scripts/optimize-media-cli.mjs",
+    "materialize:renditions": "node scripts/materialize-renditions.mjs"
   },
   "dependencies": {
     "next": "16.2.10",
