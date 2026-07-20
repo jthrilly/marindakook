@@ -53,7 +53,10 @@ const [categories, tags] = await Promise.all([
   getAllPaged("/wp/v2/categories?_fields=id,name,slug,description,parent,count"),
   getAllPaged("/wp/v2/tags?_fields=id,name,slug,description,count"),
 ]);
-await writeJson("terms.json", { categories, tags });
+await writeJson("terms.json", {
+  categories: categories.map(({ count: _count, ...t }) => t),
+  tags: tags.map(({ count: _count, ...t }) => t),
+});
 
 console.log("Fetching posts…");
 const rawPosts = await getAllPaged(
@@ -171,7 +174,6 @@ for (const p of rawPosts) {
   });
 }
 postIndex.sort((a, b) => (a.date < b.date ? 1 : -1));
-await writeJson("posts-index.json", postIndex);
 
 console.log("Processing pages…");
 for (const p of rawPages) {
@@ -218,7 +220,6 @@ const readMore = home.querySelector(".readmore_button a")?.textContent.trim();
 const logoImg = home.querySelector(".navbar-brand-wpz img, .site-logo img, a.custom-logo-link img");
 
 const site = {
-  wpUrl: WP_URL,
   name: "Marinda Kook",
   tagline: "Maklike Suid-Afrikaanse Resepte",
   logo: logoImg

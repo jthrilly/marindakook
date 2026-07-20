@@ -1,7 +1,7 @@
 import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { postSchema, termsFileSchema, type Post } from "@/lib/content-schema";
+import { postSchema, type Post } from "@/lib/content-schema";
 import { derivePostIndex, deriveTermCounts } from "@/lib/content-derive";
 
 const CONTENT = join(process.cwd(), "content");
@@ -18,21 +18,23 @@ async function allPosts(): Promise<Post[]> {
 }
 
 describe("derived post index", () => {
-  it("deep-equals the committed posts-index.json", async () => {
-    const committed = JSON.parse(
-      await readFile(join(CONTENT, "posts-index.json"), "utf8"),
-    );
-    const derived = JSON.parse(JSON.stringify(derivePostIndex(await allPosts())));
-    expect(derived).toEqual(committed);
+  it("is date-descending with ascending-id tiebreak and unique slugs", async () => {
+    const index = derivePostIndex(await allPosts());
+    expect(index.length).toBe(397);
+    for (let i = 1; i < index.length; i++) {
+      const prev = index[i - 1];
+      const cur = index[i];
+      const ordered =
+        prev.date > cur.date || (prev.date === cur.date && prev.id < cur.id);
+      expect(ordered, `${prev.slug} -> ${cur.slug}`).toBe(true);
+    }
+    expect(new Set(index.map((p) => p.slug)).size).toBe(index.length);
   });
 
-  it("reproduces the committed WordPress term counts", async () => {
-    const counts = deriveTermCounts(derivePostIndex(await allPosts()));
-    const terms = termsFileSchema.parse(
-      JSON.parse(await readFile(join(CONTENT, "terms.json"), "utf8")),
-    );
-    for (const term of [...terms.categories, ...terms.tags]) {
-      expect(counts.get(term.id) ?? 0, `${term.slug}`).toBe(term.count);
-    }
+  it("counts every category and tag reference", async () => {
+    const index = derivePostIndex(await allPosts());
+    const counts = deriveTermCounts(index);
+    const total = index.reduce((n, p) => n + p.categories.length + p.tags.length, 0);
+    expect([...counts.values()].reduce((a, b) => a + b, 0)).toBe(total);
   });
 });

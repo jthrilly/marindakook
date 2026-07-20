@@ -107,7 +107,6 @@ export const translationSchema = z.strictObject({
 const navItemSchema = z.strictObject({ label: z.string(), path: z.string() });
 
 export const siteSchema = z.strictObject({
-  wpUrl: z.string(),
   name: z.string(),
   tagline: z.string(),
   logo: z
@@ -150,7 +149,6 @@ export const siteSchema = z.strictObject({
 
 const termSchema = z.strictObject({
   id: z.number().int(),
-  count: z.number().int(),
   description: z.string(),
   name: z.string(),
   slug: z.string(),
@@ -172,4 +170,4 @@ export type Page = z.infer<typeof pageSchema>;
 export type Translation = z.infer<typeof translationSchema>;
 export type NavItem = z.infer<typeof navItemSchema>;
 export type Site = z.infer<typeof siteSchema>;
-export type Term = z.infer<typeof termSchema>;
+export type Term = z.infer<typeof termSchema> & { count: number };
