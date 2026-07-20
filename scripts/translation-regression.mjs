@@ -2,6 +2,7 @@ import { readFile } from "node:fs/promises";
 import { parseArgs } from "node:util";
 import { compareTranslation } from "../src/lib/translation-check.mjs";
 import { buildTranslatePrompt } from "../src/lib/translate-prompt.ts";
+import { translationSchema } from "../src/lib/content-schema.ts";
 
 const DEFAULT_SLUGS = [
   "lemoen-stroopkoek",
@@ -20,6 +21,12 @@ export function parseModelJson(text) {
 
 export function scoreCandidate(af, candidate) {
   const issues = compareTranslation(af, candidate);
+  const schemaResult = translationSchema.safeParse(candidate);
+  if (!schemaResult.success) {
+    for (const issue of schemaResult.error.issues) {
+      issues.push(`schema: ${issue.path.join(".") || "(root)"} — ${issue.message}`);
+    }
+  }
   return { pass: issues.length === 0, issues };
 }
 

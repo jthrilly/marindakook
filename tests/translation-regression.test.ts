@@ -29,4 +29,22 @@ describe("translation regression harness (offline)", () => {
     expect(scored.pass).toBe(false);
     expect(scored.issues.length).toBeGreaterThan(0);
   });
+
+  it("scoreCandidate fails a candidate that violates the translation schema", async () => {
+    const CONTENT = join(process.cwd(), "content");
+    const af = JSON.parse(
+      await readFile(join(CONTENT, "posts", "lemoen-stroopkoek.json"), "utf8"),
+    );
+    const en = JSON.parse(
+      await readFile(
+        join(CONTENT, "translations", "en", "posts", "lemoen-stroopkoek.json"),
+        "utf8",
+      ),
+    );
+    const bad = structuredClone(en);
+    delete bad.title;
+    const scored = scoreCandidate(af, bad);
+    expect(scored.pass).toBe(false);
+    expect(scored.issues.some((issue) => issue.startsWith("schema:"))).toBe(true);
+  });
 });

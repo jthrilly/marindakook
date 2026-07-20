@@ -55,14 +55,22 @@ source has a `recipe`**. Do not emit any other top-level key.
    order, identical to the source. Do not add, remove, reorder, or re-style any
    tag. Only the words between tags change.
 6. **`recipe` (when present): same shape as the source.** Translate only
-   `recipe.title`, `recipe.summaryHtml` text, the three heading fields
+   `recipe.title`, `recipe.summaryHtml` text, `recipe.courses` (each course
+   name — see the course-name anchors below), the three heading fields
    (`ingredientsTitle`, `directionsTitle`, `notesTitle`), each ingredient item,
    each direction step, and each note. `recipe.title` must be non-empty.
-   - **`recipe.details` and `recipe.image`: copied unchanged**, byte-for-byte.
-     `details` contains Afrikaans labels like `"Voorbereiding"` and `"Kooktyd"`
-     — leave them in Afrikaans; do NOT translate anything inside `details`.
-   - Copy `style`, `author`, `courses`, `cuisines`, `difficulties`,
-     `summaryHtml`/`videoHtml` **tag structure**, `image` unchanged.
+   - **`recipe.style`, `recipe.author`, `recipe.details`, and `recipe.image`:
+     copied unchanged**, byte-for-byte. `details` contains Afrikaans labels
+     like `"Voorbereiding"` and `"Kooktyd"` — leave them in Afrikaans; do NOT
+     translate anything inside `details`.
+   - **`recipe.courses`: translate every entry.** These are the English
+     recipe category labels shown on the visible recipe card (e.g.
+     `"Hoofgereg"` -> `"Main course"`) — do not leave them in Afrikaans. Use
+     the course-name anchors below for the exact rendering; translate plainly
+     anything not listed there. `cuisines` and `difficulties` are usually
+     empty arrays across the corpus — if present, copy them unchanged.
+   - Preserve `summaryHtml`/`videoHtml` **tag structure** unchanged (only the
+     visible words inside `summaryHtml` are translated, per rule 5).
    - **Group and item counts preserved exactly.** Keep the same number of
      ingredient groups, of items in each group, of direction groups, of steps
      in each group, and of notes. Never split, merge, add, or drop an entry;
@@ -93,6 +101,25 @@ source has a `recipe`**. Do not emit any other top-level key.
 Units stay metric and unchanged (`ml`, `g`, `250 ml` -> `250 ml`). Note: in the
 **method**, "braai die uie" = "fry the onions" (pan-frying); "braai" as the fire
 or the social event stays "braai" — see the style guide.
+
+Course/category anchors (fixed af -> en; used for `recipe.courses` entries):
+
+| Afrikaans | English |
+| --- | --- |
+| Gebak | Baking |
+| Nagereg | Dessert |
+| Rooivleis | Red meat |
+| Hoofgereg | Main course |
+| Brood | Bread |
+| Hoender | Chicken |
+| Voorgereg | Starter |
+| Beesvleis | Beef |
+| Bykosse | Sides |
+| Groente | Vegetables |
+| Slaai | Salad |
+| Rys | Rice |
+| Varkvleis | Pork |
+| Seekos | Seafood |
 
 # Worked micro-example (an ingredient group with an embedded image)
 
