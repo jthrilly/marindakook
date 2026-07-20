@@ -12,7 +12,7 @@
     "sync": "node scripts/sync-content.mjs && node scripts/download-media.mjs",
     "sync:content": "node scripts/sync-content.mjs",
     "sync:media": "node scripts/download-media.mjs",
-    "check:translations": "node scripts/check-all-translations.mjs",
+    "check:translations": "tsx scripts/check-all-translations.mjs",
     "optimize:media": "node scripts/optimize-media.mjs && node scripts/optimize-media-cli.mjs"
   },
   "dependencies": {

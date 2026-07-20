@@ -1,5 +1,5 @@
 import { readdir } from "node:fs/promises";
-import { spawnSync } from "node:child_process";
+import { checkTranslation } from "./check-translation.mjs";
 
 const refs = [];
 for (const [type, dir] of [
@@ -14,17 +14,16 @@ for (const [type, dir] of [
 let missing = 0;
 let failed = 0;
 for (const ref of refs) {
-  const res = spawnSync("node", ["scripts/check-translation.mjs", ref], { encoding: "utf8" });
-  if (res.status !== 0) {
-    const out = (res.stderr || res.stdout).trim();
-    if (out.includes("cannot read translation")) {
-      missing++;
-      console.log(`MISSING ${ref}`);
-    } else {
-      failed++;
-      console.log(out);
-    }
+  const { status, issues } = await checkTranslation(ref);
+  if (status === "missing") {
+    missing++;
+    console.log(`MISSING ${ref}`);
+  } else if (status === "fail") {
+    failed++;
+    console.log(`FAIL ${ref}:\n${issues.map((i) => `  - ${i}`).join("\n")}`);
   }
 }
-console.log(`\n${refs.length} items: ${refs.length - missing - failed} ok, ${missing} missing, ${failed} failed`);
+console.log(
+  `\n${refs.length} items: ${refs.length - missing - failed} ok, ${missing} missing, ${failed} failed`,
+);
 if (missing + failed > 0) process.exitCode = 1;
