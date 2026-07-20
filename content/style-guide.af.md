@@ -1,7 +1,7 @@
 <!--
   Gegenereer 2026-07-20 deur korpus-analise van 44 poste + 2 bladsye (oor-my, optredes),
   gekies oor die hele argief heen (oudste ~2013 tot nuutste 2025), 'n mengsel van resep-
-  en niereseppos­te.
+  en nie-resep-poste.
 
   Gemonsterde slugs (posts/):
     broccolihoender-my-kinders-se-gunsteling, tamatiekos, nutellabroodpoeding,
@@ -155,8 +155,16 @@ Kenmerkende, herhalende woorde en uitroepe wat die stem onmiddellik herkenbaar m
   "Die mostert is regtig diep-lekker. Glo my wel!" — *soetmostert-3-bestandele-jy-gaan-nooit-weer-terugkyk-nie*
 - **Trosse uitroeptekens** vir opgewondenheid — nie net een nie, dikwels 'n hele string:
   "Hou dit vir ten minste 4 uur in die yskas voor jy dit sny. Tog so lekker!!!!!!!" — *kondensmelk-melktert-geen-bak-nodig*
-- **"Maklik!"** — 'n kort, trotse afsluiting op die metode (veral in later poste):
+- **"Maklik!"** — nie 'n droë funksionele slot nie, maar 'n **uitroep van behae en trots**
+  ("kyk hoe maklik!") wat 'n vinnige resep afrond; dis egte Marinda, veral in later poste:
   "Maklik!" — *klapperrys*
+
+> **Let wel — "Maklik!" teenoor 'n koue slot.** "Maklik!" weerspreek nie die reël (sien
+> *Struktuur van 'n pos* en *Moenie*) dat 'n pos nooit droog moet afsluit nie — dis sélf die
+> warm slag: 'n gedeelde oomblik van trots en gerusstelling, nie blote instruksie nie. Wat wél
+> vals klink, is 'n gevoellose funksionele slot soos 'n kaal "Bedien warm." sonder enige
+> persoonlike noot. Sluit dus af óf met 'n warm slotsin ("Jy sal welbehaaglik voel daarna." —
+> *tamatiekos*) óf met 'n opgewonde "Maklik!" — nooit met 'n droë, gevoellose reël nie.
 
 ---
 
@@ -174,8 +182,16 @@ Die resep word terloops ingelei, soms met 'n vooruitwysing na 'n wenk of variasi
 - "Die resep wat ek vandag gee, is die basiese resep. ... Ek sal dit ook bysit onderaan die resep." — *bobotie*
 
 In ouer poste staan die bestanddele en metode binne die storie self, met **hoofletter-
-skakels** soos "BENODIG:" en "NOU:" wat die leser deur die stappe lei. In nuwer poste is dit
-"Bestanddele / Metode" en 'n reël soos "Bedien X porsies" of "Maklik!".
+skakels** soos "BENODIG:" en "NOU:" wat die leser deur die stappe lei:
+
+- "BENODIG:" — *uie-marmelade-lekker-saam-met-alles*
+- "NOU:" — *nutellabroodpoeding*
+
+In nuwer poste is dit eerder "Bestanddele / Metode" met 'n netjiese slotreël soos
+"Bedien X porsies", "Lewer X porsies" of "Maklik!":
+
+- "Bestanddele" ... "Metode" ... "Lewer 4 ruim porsies." — *klapperrys*
+- "Bedien 6 porsies saam met groentes." — *marinda-se-varklies*
 
 Die pos **sluit warm af** — 'n slotsin wat terugbind na gevoel, familie of geluk, nie 'n
 droë "geniet" nie:
@@ -210,10 +226,12 @@ oog en smaak. Hoeveelhede is soms opsetlik vaag:
 - "Ek kan nie vir die resep hoeveelhede aanbied nie. ... Volg net die stadiums stap vir stap en geur dit na smaak." — *marmelade-en-kaneel-pampoen*
 
 Temperature word voluit geskryf ("180 grade Celsius"), en gaarheid word met sig- en
-tassein­tuie beskryf ("tot glaserig", "tot deurskynend", "tot sag", "tot bruin"). Bestanddele
+tassintuie beskryf ("tot glaserig", "tot deurskynend", "tot sag", "tot bruin"). Bestanddele
 in ouer poste staan as eenvoudige lyste onder "BENODIG:" met metrieke mate (ml, g, koppies).
 
 - "Bak dit vir 40 minute by 180 grade Celsius." — *nutellabroodpoeding*
+- "330 ml rys" ... "30 ml botter" (onder "BENODIG;") — *ryspoeding-sommer-net-vir-lekker*
+- "2 (500ml) koppies meel" — *pannekoek*; "500 g bruinsuiker" — *uie-marmelade-lekker-saam-met-alles*
 
 ---
 
