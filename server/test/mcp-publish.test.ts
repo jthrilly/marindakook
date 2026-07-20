@@ -464,6 +464,36 @@ describe("publish (pilot on)", () => {
     expect(calls.prs).toHaveLength(1);
   });
 
+  it("after the pilot PR is merged to main, a repeated publish reports live — not 'gestuur vir Joshua'", async () => {
+    let merged = false;
+    const { github, calls } = makeGitHub({ findDraftCommit: () => (merged ? "merged-sha" : null) });
+    const { client, store } = await setup({ github, pilotMode: true });
+    const draft = fullDraft();
+    await approve(store, draft);
+    await store.setJob("d-1", passingTranslation(draft));
+
+    // Attempt 1: opens the PR and records it (nothing on main yet).
+    const first = await call(client, "publish", { draftId: "d-1" });
+    expect(first.isError).toBe(false);
+    expect(textOf(first)).toContain("gestuur vir Joshua");
+    expect(calls.prs).toHaveLength(1);
+
+    // Joshua reviews and MERGES the PR: the draft's commit is now on main.
+    merged = true;
+
+    // Attempt 2: the merged commit is found on main → live/published success,
+    // NOT the stale "gestuur vir Joshua" awaiting-approval message.
+    const second = await call(client, "publish", { draftId: "d-1" });
+    expect(second.isError).toBe(false);
+    expect(textOf(second)).not.toContain("gestuur vir Joshua");
+    expect(textOf(second)).toContain("https://marindakook.co.za/melktert/");
+    expect(second.structuredContent?.alreadyPublished).toBe(true);
+    // The merged-detection path does no duplicate git work.
+    expect(calls.prs).toHaveLength(1);
+    expect(calls.branches).toHaveLength(1);
+    expect(calls.commits).toHaveLength(1);
+  });
+
   it("resolves an already-existing PR when openPullRequest 422s (dropped response), no error surfaced", async () => {
     const { github, calls } = makeGitHub({
       openPrThrows422: true,

@@ -213,7 +213,22 @@ async function publishChrome(
 ): Promise<ReturnType<typeof ok>> {
   const branch = baseBranchOf(cfg);
 
-  // Idempotency (pilot): replay the recorded PR without re-hitting GitHub.
+  // Idempotency: git is the authority. If the draft's commit is already on the
+  // base branch — a merged pilot PR or a direct-landed commit — report the live
+  // success, NOT the pilot "awaiting approval" message (a merged PR is live on
+  // main). Mirrors the order check_publish_status uses.
+  const landed = await cfg.github.findDraftCommit(draft.draftId, branch);
+  if (landed !== null) {
+    await ctx.store.setPublish(draft.draftId, { mode: "direct", commitSha: landed, kind: "chrome" });
+    return ok("Die webwerf-teks is reeds gepubliseer — niks verder om te doen nie.", {
+      draftId: draft.draftId,
+      alreadyPublished: true,
+    });
+  }
+
+  // Idempotency (pilot): nothing landed on main yet, but a prior attempt already
+  // opened the PR (its commit lands on the PR branch, not main). Replay the same
+  // honest "gestuur vir Joshua" success without re-hitting GitHub.
   if (cfg.pilotMode) {
     const recorded = await recordedPilotPr(ctx, draft.draftId);
     if (recorded !== null) {
@@ -223,15 +238,6 @@ async function publishChrome(
         url: recorded.url,
       });
     }
-  }
-
-  const landed = await cfg.github.findDraftCommit(draft.draftId, branch);
-  if (landed !== null) {
-    await ctx.store.setPublish(draft.draftId, { mode: "direct", commitSha: landed, kind: "chrome" });
-    return ok("Die webwerf-teks is reeds gepubliseer — niks verder om te doen nie.", {
-      draftId: draft.draftId,
-      alreadyPublished: true,
-    });
   }
 
   const site = await content.loadSite();
@@ -432,24 +438,10 @@ async function commitPost(
   const failingTranslationForPr =
     !cfg.pilotMode && input.translationFile === null ? input.failingTranslation : null;
 
-  // Idempotency (pilot): a prior attempt already opened the PR (its commit lands
-  // on the PR branch, not main, so findDraftCommit below can't see it). Replay
-  // the same honest success from the recorded PR without re-hitting GitHub.
-  if (cfg.pilotMode) {
-    const recorded = await recordedPilotPr(ctx, draft.draftId);
-    if (recorded !== null) {
-      await deleteStagedPhotos(ctx, draft.draftId);
-      return ok(pilotSuccessMessage(cfg, recorded.url), {
-        draftId: draft.draftId,
-        mode: "pilot",
-        slug: post.slug,
-        url: recorded.url,
-      });
-    }
-  }
-
-  // Idempotency (direct): a prior attempt may already have landed on the base
-  // branch. Re-attempt the failing-translation PR (idempotent) so a retry after
+  // Idempotency: git is the authority. If the draft's commit is already on the
+  // base branch — a merged pilot PR or a direct-landed commit — report the live
+  // success (NOT the pilot "awaiting approval" message: a merged PR is live on
+  // main). Re-attempt the failing-translation PR (idempotent) so a retry after
   // the main commit landed but before the English PR opened does not skip it.
   const landed = await cfg.github.findDraftCommit(draft.draftId, branch);
   if (landed !== null) {
@@ -470,6 +462,23 @@ async function commitPost(
       alreadyPublished: true,
       ...(translationPrError !== undefined ? { translationPrError } : {}),
     });
+  }
+
+  // Idempotency (pilot): nothing landed on main yet, but a prior attempt already
+  // opened the PR (its commit lands on the PR branch, not main, so findDraftCommit
+  // above can't see it). Replay the same honest "gestuur vir Joshua" success from
+  // the recorded PR without re-hitting GitHub.
+  if (cfg.pilotMode) {
+    const recorded = await recordedPilotPr(ctx, draft.draftId);
+    if (recorded !== null) {
+      await deleteStagedPhotos(ctx, draft.draftId);
+      return ok(pilotSuccessMessage(cfg, recorded.url), {
+        draftId: draft.draftId,
+        mode: "pilot",
+        slug: post.slug,
+        url: recorded.url,
+      });
+    }
   }
 
   const files = await photoCommitFiles(ctx, draft.draftId, input.subfolder);
@@ -564,7 +573,23 @@ async function commitPage(
 ): Promise<ReturnType<typeof ok>> {
   const branch = baseBranchOf(cfg);
 
-  // Idempotency (pilot): replay the recorded PR without re-hitting GitHub.
+  // Idempotency: git is the authority. If the draft's commit is already on the
+  // base branch — a merged pilot PR or a direct-landed commit — report the live
+  // success, NOT the pilot "awaiting approval" message (a merged PR is live on
+  // main). Mirrors the order check_publish_status uses.
+  const landed = await cfg.github.findDraftCommit(input.draft.draftId, branch);
+  if (landed !== null) {
+    await ctx.store.setPublish(input.draft.draftId, { mode: "direct", commitSha: landed, slug: input.slug });
+    return ok(`Klaar! Die bladsy «${input.title}» is bygewerk.`, {
+      draftId: input.draft.draftId,
+      slug: input.slug,
+      alreadyPublished: true,
+    });
+  }
+
+  // Idempotency (pilot): nothing landed on main yet, but a prior attempt already
+  // opened the PR (its commit lands on the PR branch, not main). Replay the same
+  // honest "gestuur vir Joshua" success without re-hitting GitHub.
   if (cfg.pilotMode) {
     const recorded = await recordedPilotPr(ctx, input.draft.draftId);
     if (recorded !== null) {
@@ -575,16 +600,6 @@ async function commitPage(
         url: recorded.url,
       });
     }
-  }
-
-  const landed = await cfg.github.findDraftCommit(input.draft.draftId, branch);
-  if (landed !== null) {
-    await ctx.store.setPublish(input.draft.draftId, { mode: "direct", commitSha: landed, slug: input.slug });
-    return ok(`Klaar! Die bladsy «${input.title}» is bygewerk.`, {
-      draftId: input.draft.draftId,
-      slug: input.slug,
-      alreadyPublished: true,
-    });
   }
 
   const state = await cfg.github.pathExists(input.docPath, branch);

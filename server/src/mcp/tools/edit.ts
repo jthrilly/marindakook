@@ -19,8 +19,17 @@ function recipeToDraft(recipe: Post["recipe"]): DraftPost["recipe"] {
   return rest;
 }
 
-function draftFromPost(post: Post, draftId: string, nowIso: string): DraftPost {
+function draftFromPost(
+  post: Post,
+  draftId: string,
+  nowIso: string,
+  featuredTermId: number | undefined,
+): DraftPost {
   const settled = ["title", "categories", "recipe", "story", "featured", "photo"];
+  // Seed featured from the loaded post's existing category membership so an
+  // edit-then-republish preserves it (applyFeaturedTerm strips the term whenever
+  // interview.featured !== true, which would silently un-feature the post).
+  const featured = featuredTermId !== undefined && post.categories.includes(featuredTermId);
   return {
     draftId,
     kind: "post",
@@ -34,7 +43,7 @@ function draftFromPost(post: Post, draftId: string, nowIso: string): DraftPost {
     html: post.html,
     seo: post.seo,
     recipe: recipeToDraft(post.recipe),
-    interview: { settled, pending: [], featured: false },
+    interview: { settled, pending: [], featured },
   };
 }
 
@@ -142,7 +151,7 @@ export function registerEditTools(server: McpServer, ctx: ToolContext): void {
       if (post === null) {
         return fail(`Ek kon geen pos met slug «${args.slug}» kry nie. Kyk met find_posts.`);
       }
-      await ctx.store.put(draftFromPost(post, draftId, nowIso));
+      await ctx.store.put(draftFromPost(post, draftId, nowIso, ctx.featuredTermId));
       return ok(
         `Ek het pos «${post.title}» in konsep «${draftId}» gelaai. Wysig dit met update_post; onthou die Engelse vertaling moet weer gemaak word voordat jy publiseer.`,
         { draftId, type, slug: post.slug, title: post.title },
@@ -167,6 +176,7 @@ export function registerEditTools(server: McpServer, ctx: ToolContext): void {
         html: z.unknown().optional().describe("Die volledige pos-inhoud as HTML."),
         seo: z.unknown().optional().describe("SEO-titel en -beskrywing."),
         recipe: z.unknown().optional().describe("Die resep-struktuur."),
+        featured: z.unknown().optional().describe("Moet dit op die voorblad wys? (waar/onwaar)"),
       },
     },
     async (args) => {
@@ -186,6 +196,14 @@ export function registerEditTools(server: McpServer, ctx: ToolContext): void {
           candidate[field] = args[field];
           changed = true;
         }
+      }
+      // `featured` lives nested under interview (mirroring save_draft), so it is
+      // applied onto interview.featured — letting an edit feature/un-feature a
+      // post. Value stays permissive; draftPostSchema below names a bad type.
+      if (args.featured !== undefined) {
+        const priorInterview = stored.draft.interview ?? { settled: [], pending: [] };
+        candidate.interview = { ...priorInterview, featured: args.featured };
+        changed = true;
       }
       if (!changed) {
         return fail("Jy het niks aangedui om te verander nie. Gee ten minste een veld.");
