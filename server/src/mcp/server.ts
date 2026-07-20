@@ -2,7 +2,18 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import type { PostSummary } from "@site/lib/content-derive";
 import type { DraftStore } from "../core/store";
 import { registerDraftTools } from "./tools/drafts";
+import { registerPhotoTools } from "./tools/photos";
+import { registerTranslationTools } from "./tools/translation";
 import { registerVoiceTools } from "./tools/voice";
+
+// The async-translation job's runtime configuration (env-provided). Injected so
+// tests can supply a mocked fetch and D9 can wire the real Anthropic secret.
+export interface TranslationConfig {
+  promptTemplate: string;
+  apiKey: string;
+  model: string;
+  fetch?: typeof fetch;
+}
 
 // A category the interview may offer Marinda. The Worker (or a test) supplies
 // the full term list; the internal bookkeeping terms are stripped here so they
@@ -26,6 +37,13 @@ export interface McpServerDeps {
   categories?: CategoryOption[];
   now?: () => Date;
   createDraftId?: () => string;
+  // Keeps a background job alive past a tool's return (the Worker passes the
+  // request's ExecutionContext.waitUntil; D9). Absent in non-translation tests.
+  waitUntil?: (promise: Promise<unknown>) => void;
+  // Builds the signed upload-page link for a draft. The real signer lands in
+  // D9; tests inject a stub. Absent means request_photo_upload is unavailable.
+  buildUploadLink?: (draftId: string) => string | Promise<string>;
+  translation?: TranslationConfig;
 }
 
 export interface ToolContext {
@@ -36,6 +54,9 @@ export interface ToolContext {
   offeredCategories: CategoryOption[];
   now: () => Date;
   createDraftId: () => string;
+  waitUntil: (promise: Promise<unknown>) => void;
+  buildUploadLink?: (draftId: string) => string | Promise<string>;
+  translation?: TranslationConfig;
 }
 
 // The spec's internal terms (spec §198-209): never offered as recipe categories.
@@ -68,10 +89,15 @@ export function createMcpServer(deps: McpServerDeps): McpServer {
     offeredCategories: (deps.categories ?? []).filter((category) => !isInternalTerm(category)),
     now: deps.now ?? (() => new Date()),
     createDraftId: deps.createDraftId ?? (() => crypto.randomUUID()),
+    waitUntil: deps.waitUntil ?? ((promise) => void promise.catch(() => undefined)),
+    buildUploadLink: deps.buildUploadLink,
+    translation: deps.translation,
   };
 
   registerDraftTools(server, context);
   registerVoiceTools(server, context);
+  registerPhotoTools(server, context);
+  registerTranslationTools(server, context);
 
   return server;
 }
