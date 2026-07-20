@@ -1,7 +1,7 @@
 import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { pageSchema, postSchema, translationSchema } from "@/lib/content-schema";
+import { pageSchema, postSchema, siteSchema, termsFileSchema, translationSchema } from "@/lib/content-schema";
 
 const CONTENT = join(process.cwd(), "content");
 
@@ -55,5 +55,21 @@ describe("translation contract", () => {
       }
     }
     expect(total).toBe(399);
+  });
+});
+
+describe("site + terms contract", () => {
+  it("parses site.json", async () => {
+    const result = siteSchema.safeParse(await readJson("site.json"));
+    expect(result.success, result.error?.message).toBe(true);
+  });
+
+  it("parses terms.json", async () => {
+    const result = termsFileSchema.safeParse(await readJson("terms.json"));
+    expect(result.success, result.error?.message).toBe(true);
+    if (result.success) {
+      expect(result.data.categories.length).toBe(32);
+      expect(result.data.tags.length).toBe(334);
+    }
   });
 });

@@ -104,6 +104,64 @@ export const translationSchema = z.strictObject({
   recipe: recipeSchema.nullable().optional(),
 });
 
+const navItemSchema = z.strictObject({ label: z.string(), path: z.string() });
+
+export const siteSchema = z.strictObject({
+  wpUrl: z.string(),
+  name: z.string(),
+  tagline: z.string(),
+  logo: z
+    .strictObject({
+      src: z.string(),
+      srcset: z.string().nullable(),
+      width: z.number().int().nullable(),
+      height: z.number().int().nullable(),
+    })
+    .nullable(),
+  nav: z.strictObject({ top: z.array(navItemSchema), main: z.array(navItemSchema) }),
+  social: z.array(z.strictObject({ network: z.string(), url: z.string(), color: z.string() })),
+  bio: z.strictObject({
+    name: z.string(),
+    about: z.string(),
+    photo: z.string().nullable(),
+    button: z.strictObject({ label: z.string(), path: z.string() }),
+  }),
+  sidebar: z.strictObject({
+    tabs: z.strictObject({ views: z.string(), comments: z.string() }),
+    popularViews: z.array(z.strictObject({ title: z.string(), slug: z.string() })),
+    popularComments: z.array(z.strictObject({ title: z.string(), slug: z.string() })),
+    featurePosts: z.strictObject({ title: z.string(), count: z.number().int() }),
+    socialWidget: z.strictObject({ title: z.string(), description: z.string() }),
+    categoriesWidget: z.strictObject({ title: z.string() }),
+  }),
+  home: z.strictObject({
+    sectionTitle: z.string(),
+    featuredCategory: z.string(),
+    readMore: z.string(),
+  }),
+  newsletter: z.strictObject({
+    heading: z.string(),
+    placeholder: z.string(),
+    button: z.string(),
+    action: z.string(),
+  }),
+  postsPerPage: z.number().int(),
+});
+
+const termSchema = z.strictObject({
+  id: z.number().int(),
+  count: z.number().int(),
+  description: z.string(),
+  name: z.string(),
+  slug: z.string(),
+  parent: z.number().int().optional(),
+});
+
+export const termsFileSchema = z.strictObject({
+  categories: z.array(termSchema),
+  tags: z.array(termSchema),
+});
+
 export type ImageRef = z.infer<typeof imageRefSchema>;
 export type FeaturedImage = z.infer<typeof featuredImageSchema>;
 export type RecipeDetail = z.infer<typeof recipeDetailSchema>;
@@ -112,3 +170,6 @@ export type Comment = z.infer<typeof commentSchema>;
 export type Post = z.infer<typeof postSchema>;
 export type Page = z.infer<typeof pageSchema>;
 export type Translation = z.infer<typeof translationSchema>;
+export type NavItem = z.infer<typeof navItemSchema>;
+export type Site = z.infer<typeof siteSchema>;
+export type Term = z.infer<typeof termSchema>;
