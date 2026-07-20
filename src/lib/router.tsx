@@ -6,10 +6,10 @@ import {
   getPost,
   getPostIndex,
   getSite,
+  getSiteStrings,
   getTerms,
   paginate,
 } from "@/lib/content";
-import { localizeSiteStrings } from "@/lib/i18n";
 import { absoluteUrl, asset, categoryPath, homePath, localePath, postPath, tagPath, SITE_URL } from "@/lib/paths";
 import type { Locale, Term } from "@/lib/content-schema";
 import { HomeView } from "@/views/HomeView";
@@ -110,8 +110,8 @@ function alternatesFor(locale: Locale, path: string): Metadata["alternates"] {
 export async function routeMetadata(locale: Locale, segments: string[]): Promise<Metadata> {
   const route = await resolveRoute(segments);
   const site = await getSite();
-  const en = localizeSiteStrings(locale);
-  const tagline = en ? en.tagline : site.tagline;
+  const strings = await getSiteStrings(locale);
+  const tagline = strings ? strings.tagline : site.tagline;
   const base: Metadata = { metadataBase: new URL(SITE_URL) };
   if (!route) return base;
 

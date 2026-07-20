@@ -1,8 +1,8 @@
 import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { pageSchema, postSchema } from "@/lib/content-schema";
-import { sourceHashOf, type TranslationSource } from "@/lib/source-hash";
+import { pageSchema, postSchema, siteSchema } from "@/lib/content-schema";
+import { siteChromeHashOf, sourceHashOf, type TranslationSource } from "@/lib/source-hash";
 
 const CONTENT = join(process.cwd(), "content");
 
@@ -45,5 +45,13 @@ describe("sourceHashOf", () => {
       const parsed = pageSchema.parse(raw);
       expect(sourceHashOf(parsed), file).toBe(sourceHashOf(raw));
     }
+  });
+});
+
+describe("siteChromeHashOf", () => {
+  it("matches the seeded site translation's stored hash", async () => {
+    const site = siteSchema.parse(await readJson("site.json"));
+    const translation = await readJson("translations", "en", "site.json");
+    expect(siteChromeHashOf(site)).toBe(translation.sourceHash);
   });
 });

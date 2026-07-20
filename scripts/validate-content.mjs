@@ -4,6 +4,7 @@ import {
   pageSchema,
   postSchema,
   siteSchema,
+  siteTranslationSchema,
   termsFileSchema,
   translationSchema,
 } from "../src/lib/content-schema.ts";
@@ -21,6 +22,17 @@ export async function validateContent(root) {
 
   const site = siteSchema.safeParse(await readJson("site.json"));
   if (!site.success) issues.push(...zodIssues("site.json", site.error));
+
+  try {
+    const siteTranslation = siteTranslationSchema.safeParse(
+      await readJson("translations", "en", "site.json"),
+    );
+    if (!siteTranslation.success) {
+      issues.push(...zodIssues("translations/en/site.json", siteTranslation.error));
+    }
+  } catch {
+    // Optional file; its staleness/absence is check:translations' domain.
+  }
 
   const terms = termsFileSchema.safeParse(await readJson("terms.json"));
   if (!terms.success) issues.push(...zodIssues("terms.json", terms.error));

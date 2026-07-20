@@ -1,0 +1,31 @@
+{
+ "sourceHash": "4206f36c4c7fc94ccadd7edd5c55555018fb30b4",
+ "tagline": "Easy South African Recipes",
+ "nav": {
+  "/": "Home",
+  "/category/voorgereg/": "Starters",
+  "/category/hoofgereg/": "Mains",
+  "/category/nagereg/": "Desserts",
+  "/category/bykosse/": "Sides",
+  "/category/gebak/": "Baking",
+  "/oor-my/": "About Me",
+  "/optredes/": "Bookings and Cookbooks"
+ },
+ "widgets": {
+  "Gewildste": "Most Popular",
+  "Kommentaar": "Comments",
+  "Nuwe Resepte": "New Recipes",
+  "Gesels saam": "Join the conversation",
+  "Kategoriëe": "Categories",
+  "Nuutste Resepte": "Latest Recipes",
+  "Nuusbrief": "Newsletter",
+  "Lees Meer": "Read More"
+ },
+ "bioAbout": "This is no fancy food blog. It's just a simple website so that my children and their friends, and their friends' friends, can learn to cook. So they don't have to phone me quite so often to ask: how does one make…",
+ "socialDescription": "Follow all of Marinda's antics on social media. Come join the conversation!",
+ "newsletter": {
+  "heading": "Newsletter",
+  "placeholder": "Email address",
+  "button": "Sign Up"
+ }
+}

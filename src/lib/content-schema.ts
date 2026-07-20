@@ -147,6 +147,23 @@ export const siteSchema = z.strictObject({
   postsPerPage: z.number().int(),
 });
 
+export const siteTranslationSchema = z.strictObject({
+  sourceHash: z.string(),
+  tagline: z.string(),
+  nav: z.record(z.string(), z.string()),
+  widgets: z.record(z.string(), z.string()),
+  bioAbout: z.string(),
+  socialDescription: z.string(),
+  newsletter: z.strictObject({
+    heading: z.string(),
+    placeholder: z.string(),
+    button: z.string(),
+  }),
+});
+
+export type SiteTranslation = z.infer<typeof siteTranslationSchema>;
+export type SiteStrings = Omit<SiteTranslation, "sourceHash">;
+
 const termSchema = z.strictObject({
   id: z.number().int(),
   description: z.string(),

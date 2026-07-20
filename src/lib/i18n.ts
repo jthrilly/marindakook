@@ -1,4 +1,4 @@
-import type { Locale, NavItem, Term } from "./content-schema";
+import type { Locale, NavItem, SiteStrings, Term } from "./content-schema";
 import enCategoryNames from "./en-category-names.json";
 
 export const locales: Locale[] = ["af", "en"];
@@ -84,61 +84,14 @@ export function getDict(locale: Locale): Dictionary {
   return dictionaries[locale];
 }
 
-// English translations of site chrome that site.json stores in Afrikaans.
-const enSiteStrings: {
-  nav: Record<string, string>;
-  widgets: Record<string, string>;
-  bioAbout: string;
-  socialDescription: string;
-  newsletter: { heading: string; placeholder: string; button: string };
-  tagline: string;
-} = {
-  nav: {
-    "/": "Home",
-    "/category/voorgereg/": "Starters",
-    "/category/hoofgereg/": "Mains",
-    "/category/nagereg/": "Desserts",
-    "/category/bykosse/": "Sides",
-    "/category/gebak/": "Baking",
-    "/oor-my/": "About Me",
-    "/optredes/": "Bookings and Cookbooks",
-  },
-  widgets: {
-    Gewildste: "Most Popular",
-    Kommentaar: "Comments",
-    "Nuwe Resepte": "New Recipes",
-    "Gesels saam": "Join the conversation",
-    "Kategoriëe": "Categories",
-    "Nuutste Resepte": "Latest Recipes",
-    Nuusbrief: "Newsletter",
-    "Lees Meer": "Read More",
-  },
-  bioAbout:
-    "This is no fancy food blog. It's just a simple website so that my children and their friends, and their friends' friends, can learn to cook. So they don't have to phone me quite so often to ask: how does one make…",
-  socialDescription: "Follow all of Marinda's antics on social media. Come join the conversation!",
-  newsletter: {
-    heading: "Newsletter",
-    placeholder: "Email address",
-    button: "Sign Up",
-  },
-  tagline: "Easy South African Recipes",
-};
-
-export function localizeNav(items: NavItem[], locale: Locale): NavItem[] {
-  if (locale === "af") return items;
-  return items.map((item) => ({
-    ...item,
-    label: enSiteStrings.nav[item.path] ?? item.label,
-  }));
+export function localizeNav(items: NavItem[], strings: SiteStrings | null): NavItem[] {
+  if (!strings) return items;
+  return items.map((item) => ({ ...item, label: strings.nav[item.path] ?? item.label }));
 }
 
-export function localizeWidgetTitle(title: string, locale: Locale): string {
-  if (locale === "af") return title;
-  return enSiteStrings.widgets[title.trim()] ?? title;
-}
-
-export function localizeSiteStrings(locale: Locale) {
-  return locale === "en" ? enSiteStrings : null;
+export function localizeWidgetTitle(title: string, strings: SiteStrings | null): string {
+  if (!strings) return title;
+  return strings.widgets[title.trim()] ?? title;
 }
 
 // Category display names for the en locale; tags keep their Afrikaans names

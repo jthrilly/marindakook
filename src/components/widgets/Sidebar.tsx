@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { getPostIndex, getPostSummary, getTerms } from "@/lib/content";
+import { getPostIndex, getPostSummary, getSiteStrings, getTerms } from "@/lib/content";
 import type { Dictionary } from "@/lib/i18n";
-import { formatDate, localizeSiteStrings, localizeTermName, localizeWidgetTitle } from "@/lib/i18n";
+import { formatDate, localizeTermName, localizeWidgetTitle } from "@/lib/i18n";
 import { asset, categoryPath, localePath, postPath } from "@/lib/paths";
 import type { Locale, Site } from "@/lib/content-schema";
 import type { PostSummary } from "@/lib/content-derive";
@@ -66,7 +66,7 @@ export async function Sidebar({
   dict: Dictionary;
 }) {
   const [index, terms] = await Promise.all([getPostIndex(), getTerms()]);
-  const en = localizeSiteStrings(locale);
+  const strings = await getSiteStrings(locale);
   const latest = await Promise.all(
     index.slice(0, site.sidebar.featurePosts.count).map(async (p) => (await getPostSummary(p.slug, locale)) ?? p),
   );
@@ -89,12 +89,12 @@ export async function Sidebar({
           />
         )}
         <h3 className="font-serif text-[26px]">{site.bio.name}</h3>
-        <p className="mt-4 text-[15px] leading-relaxed">{en ? en.bioAbout : site.bio.about}</p>
+        <p className="mt-4 text-[15px] leading-relaxed">{strings ? strings.bioAbout : site.bio.about}</p>
         <Link
           href={localePath(locale, site.bio.button.path)}
           className="mt-5 inline-block bg-accent px-[17px] py-[5px] text-[15px] text-white transition-colors hover:bg-navy"
         >
-          {localizeWidgetTitle(site.bio.button.label, locale)}
+          {localizeWidgetTitle(site.bio.button.label, strings)}
         </Link>
       </div>
 
@@ -102,11 +102,11 @@ export async function Sidebar({
         <PopularTabs
           tabs={[
             {
-              title: localizeWidgetTitle(site.sidebar.tabs.views, locale),
+              title: localizeWidgetTitle(site.sidebar.tabs.views, strings),
               content: <MiniPostList posts={popularViews} locale={locale} />,
             },
             {
-              title: localizeWidgetTitle(site.sidebar.tabs.comments, locale),
+              title: localizeWidgetTitle(site.sidebar.tabs.comments, strings),
               content: <MiniPostList posts={popularComments} locale={locale} />,
             },
           ]}
@@ -114,32 +114,32 @@ export async function Sidebar({
       </div>
 
       <div>
-        <WidgetTitle>{localizeWidgetTitle(site.sidebar.featurePosts.title, locale)}</WidgetTitle>
+        <WidgetTitle>{localizeWidgetTitle(site.sidebar.featurePosts.title, strings)}</WidgetTitle>
         <MiniPostList posts={latest} locale={locale} withDate />
       </div>
 
       <div>
-        <WidgetTitle>{localizeWidgetTitle(site.sidebar.socialWidget.title, locale)}</WidgetTitle>
-        <p className="mb-4 text-[15px]">{en ? en.socialDescription : site.sidebar.socialWidget.description}</p>
+        <WidgetTitle>{localizeWidgetTitle(site.sidebar.socialWidget.title, strings)}</WidgetTitle>
+        <p className="mb-4 text-[15px]">{strings ? strings.socialDescription : site.sidebar.socialWidget.description}</p>
         <SocialIcons social={site.social} size={34} />
       </div>
 
       <div className="bg-peach-soft px-7 py-10">
         <NewsletterForm
           action={site.newsletter.action}
-          heading={en ? en.newsletter.heading : site.newsletter.heading}
+          heading={strings ? strings.newsletter.heading : site.newsletter.heading}
           instructions={dict.newsletterInstructions}
           namePlaceholder={dict.newsletterName}
-          emailPlaceholder={en ? en.newsletter.placeholder : site.newsletter.placeholder}
-          buttonLabel={en ? en.newsletter.button : site.newsletter.button}
+          emailPlaceholder={strings ? strings.newsletter.placeholder : site.newsletter.placeholder}
+          buttonLabel={strings ? strings.newsletter.button : site.newsletter.button}
           variant="sidebar"
         />
       </div>
 
       <div>
-        <WidgetTitle>{localizeWidgetTitle(site.sidebar.categoriesWidget.title, locale)}</WidgetTitle>
+        <WidgetTitle>{localizeWidgetTitle(site.sidebar.categoriesWidget.title, strings)}</WidgetTitle>
         <CategoriesSelect
-          label={localizeWidgetTitle(site.sidebar.categoriesWidget.title, locale)}
+          label={localizeWidgetTitle(site.sidebar.categoriesWidget.title, strings)}
           options={categories.map((c) => ({
             value: asset(categoryPath(locale, c.slug)),
             label: `${localizeTermName(c, locale)} (${c.count})`,

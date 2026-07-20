@@ -6,16 +6,19 @@ import {
   pageSchema,
   postSchema,
   siteSchema,
+  siteTranslationSchema,
   termsFileSchema,
   translationSchema,
   type Locale,
   type Page,
   type Post,
   type Site,
+  type SiteStrings,
   type Term,
   type Translation,
 } from "./content-schema";
 import { derivePostIndex, deriveTermCounts, type PostSummary } from "./content-derive";
+import { siteChromeHashOf } from "./source-hash";
 
 const CONTENT_DIR = join(process.cwd(), "content");
 
@@ -24,6 +27,20 @@ async function readJson(...parts: string[]): Promise<unknown> {
 }
 
 export const getSite = cache(async (): Promise<Site> => siteSchema.parse(await readJson("site.json")));
+
+export const getSiteStrings = cache(async (locale: Locale): Promise<SiteStrings | null> => {
+  if (locale === "af") return null;
+  let raw: unknown;
+  try {
+    raw = await readJson("translations", "en", "site.json");
+  } catch {
+    return null;
+  }
+  const { sourceHash, ...strings } = siteTranslationSchema.parse(raw);
+  // Stale chrome translation falls back to Afrikaans, same policy as posts.
+  if (sourceHash !== siteChromeHashOf(await getSite())) return null;
+  return strings;
+});
 
 const getAllPosts = cache(async (): Promise<Post[]> => {
   const files = await readdir(join(CONTENT_DIR, "posts"));

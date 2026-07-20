@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Locale, Site } from "@/lib/content-schema";
 import type { Dictionary } from "@/lib/i18n";
 import { localizeNav } from "@/lib/i18n";
+import { getSiteStrings } from "@/lib/content";
 import { asset, localePath } from "@/lib/paths";
 import { SocialIcons } from "./SocialIcons";
 import { SearchForm } from "./SearchForm";
@@ -11,7 +12,7 @@ function stripLocale(path: string): string {
   return path.startsWith("/en/") ? path.slice(3) : path === "/en" ? "/" : path;
 }
 
-export function SiteHeader({
+export async function SiteHeader({
   site,
   locale,
   dict,
@@ -22,8 +23,9 @@ export function SiteHeader({
   dict: Dictionary;
   currentPath: string;
 }) {
-  const top = localizeNav(site.nav.top, locale).map((i) => ({ ...i, path: localePath(locale, i.path) }));
-  const main = localizeNav(site.nav.main, locale).map((i) => ({ ...i, path: localePath(locale, i.path) }));
+  const strings = await getSiteStrings(locale);
+  const top = localizeNav(site.nav.top, strings).map((i) => ({ ...i, path: localePath(locale, i.path) }));
+  const main = localizeNav(site.nav.main, strings).map((i) => ({ ...i, path: localePath(locale, i.path) }));
   const basePathOfCurrent = stripLocale(currentPath);
   const otherLocalePath = locale === "af" ? `/en${basePathOfCurrent}` : basePathOfCurrent;
 

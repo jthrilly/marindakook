@@ -1,4 +1,5 @@
-import { readdir } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
+import { siteChromeHashOf } from "../src/lib/source-hash.ts";
 import { checkTranslation } from "./check-translation.mjs";
 
 const refs = [];
@@ -10,6 +11,20 @@ for (const [type, dir] of [
     if (f.endsWith(".json")) refs.push(`${type}/${f.replace(/\.json$/, "")}`);
   }
 }
+
+const site = JSON.parse(
+  await readFile(new URL("../content/site.json", import.meta.url), "utf8"),
+);
+let siteStatus = "ok";
+try {
+  const t = JSON.parse(
+    await readFile(new URL("../content/translations/en/site.json", import.meta.url), "utf8"),
+  );
+  if (t.sourceHash !== siteChromeHashOf(site)) siteStatus = "stale";
+} catch {
+  siteStatus = "missing";
+}
+if (siteStatus !== "ok") console.log(`${siteStatus.toUpperCase()} site chrome`);
 
 let missing = 0;
 let failed = 0;
@@ -24,6 +39,6 @@ for (const ref of refs) {
   }
 }
 console.log(
-  `\n${refs.length} items: ${refs.length - missing - failed} ok, ${missing} missing, ${failed} failed`,
+  `\n${refs.length} items: ${refs.length - missing - failed} ok, ${missing} missing, ${failed} failed; site chrome: ${siteStatus}`,
 );
-if (missing + failed > 0) process.exitCode = 1;
+if (missing + failed > 0 || siteStatus !== "ok") process.exitCode = 1;

@@ -1,5 +1,5 @@
-import { getPostIndex, getSite, getTerms, localizeSummaries, paginate } from "@/lib/content";
-import { getDict, localizeSiteStrings, localizeWidgetTitle } from "@/lib/i18n";
+import { getPostIndex, getSite, getSiteStrings, getTerms, localizeSummaries, paginate } from "@/lib/content";
+import { getDict, localizeWidgetTitle } from "@/lib/i18n";
 import { homePath } from "@/lib/paths";
 import type { Locale } from "@/lib/content-schema";
 import { FeaturedGrid } from "@/components/FeaturedGrid";
@@ -11,7 +11,7 @@ import { Sidebar } from "@/components/widgets/Sidebar";
 export async function HomeView({ locale, page }: { locale: Locale; page: number }) {
   const [site, index, terms] = await Promise.all([getSite(), getPostIndex(), getTerms()]);
   const dict = getDict(locale);
-  const en = localizeSiteStrings(locale);
+  const strings = await getSiteStrings(locale);
 
   const featuredCat = terms.categories.find((c) => c.slug === site.home.featuredCategory);
   const featured = featuredCat
@@ -31,11 +31,11 @@ export async function HomeView({ locale, page }: { locale: Locale; page: number 
           <section className="-mx-4 mt-12 bg-peach-soft px-4 py-12">
             <NewsletterForm
               action={site.newsletter.action}
-              heading={en ? en.newsletter.heading : site.newsletter.heading}
+              heading={strings ? strings.newsletter.heading : site.newsletter.heading}
               instructions={dict.newsletterInstructions}
               namePlaceholder={dict.newsletterName}
-              emailPlaceholder={en ? en.newsletter.placeholder : site.newsletter.placeholder}
-              buttonLabel={en ? en.newsletter.button : site.newsletter.button}
+              emailPlaceholder={strings ? strings.newsletter.placeholder : site.newsletter.placeholder}
+              buttonLabel={strings ? strings.newsletter.button : site.newsletter.button}
               variant="band"
             />
           </section>
@@ -44,7 +44,7 @@ export async function HomeView({ locale, page }: { locale: Locale; page: number 
       <div className="flex flex-col gap-12 py-12 lg:flex-row lg:gap-[2%]">
         <section className="min-w-0 flex-1">
           <h2 className="mb-8 text-[32px] font-normal">
-            {localizeWidgetTitle(site.home.sectionTitle, locale)}
+            {localizeWidgetTitle(site.home.sectionTitle, strings)}
             {page > 1 ? ` — ${dict.pageSuffix(page)}` : ""}
           </h2>
           <div className="space-y-10">
