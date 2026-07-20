@@ -1,0 +1,281 @@
+import { beforeAll, describe, expect, it } from "vitest";
+import { GitHubApp, GitHubError } from "../src/core/github";
+
+// The App's RSA key is generated for real inside workerd so signing exercises
+// the same WebCrypto path production uses; the public half stays around to
+// verify the minted JWT's signature end-to-end.
+let keyPair: CryptoKeyPair;
+let privateKeyPkcs8Pem: string;
+
+beforeAll(async () => {
+  const generated = await crypto.subtle.generateKey(
+    {
+      name: "RSASSA-PKCS1-v1_5",
+      modulusLength: 2048,
+      publicExponent: new Uint8Array([1, 0, 1]),
+      hash: "SHA-256",
+    },
+    true,
+    ["sign", "verify"],
+  );
+  if (!("privateKey" in generated)) throw new Error("expected an RSA key pair");
+  keyPair = generated;
+  const pkcs8 = await crypto.subtle.exportKey("pkcs8", keyPair.privateKey);
+  if (!(pkcs8 instanceof ArrayBuffer)) throw new Error("expected pkcs8 ArrayBuffer");
+  privateKeyPkcs8Pem = toPkcs8Pem(pkcs8);
+});
+
+const OWNER = "marinda";
+const REPO = "site";
+const INSTALLATION_ID = "123";
+const APP_ID = "42";
+const FIXED_NOW = 1_700_000_000_000;
+
+interface RecordedCall {
+  method: string;
+  pathname: string;
+  search: string;
+  headers: Headers;
+  body: unknown;
+}
+
+type Route = (call: RecordedCall) => Response | Promise<Response> | undefined;
+
+function makeFetch(route: Route): { fetch: typeof fetch; calls: RecordedCall[] } {
+  const calls: RecordedCall[] = [];
+  const fetchImpl: typeof fetch = async (input, init) => {
+    const url = new URL(urlOf(input));
+    const rawBody = init?.body;
+    const call: RecordedCall = {
+      method: init?.method ?? "GET",
+      pathname: url.pathname,
+      search: url.search,
+      headers: new Headers(init?.headers),
+      body: typeof rawBody === "string" && rawBody.length > 0 ? JSON.parse(rawBody) : undefined,
+    };
+    calls.push(call);
+    const response = await route(call);
+    if (!response) {
+      throw new Error(`unrouted request: ${call.method} ${url.pathname}`);
+    }
+    return response;
+  };
+  return { fetch: fetchImpl, calls };
+}
+
+function json(data: unknown, status = 200): Response {
+  return new Response(JSON.stringify(data), {
+    status,
+    headers: { "content-type": "application/json" },
+  });
+}
+
+function newApp(fetchImpl: typeof fetch): GitHubApp {
+  return new GitHubApp({
+    appId: APP_ID,
+    installationId: INSTALLATION_ID,
+    privateKeyPkcs8Pem,
+    owner: OWNER,
+    repo: REPO,
+    fetch: fetchImpl,
+  });
+}
+
+function urlOf(input: RequestInfo | URL): string {
+  if (typeof input === "string") return input;
+  if (input instanceof URL) return input.toString();
+  return input.url;
+}
+
+function toPkcs8Pem(der: ArrayBuffer): string {
+  const b64 = bytesToBase64(new Uint8Array(der));
+  const lines = b64.match(/.{1,64}/g) ?? [];
+  return `-----BEGIN PRIVATE KEY-----\n${lines.join("\n")}\n-----END PRIVATE KEY-----\n`;
+}
+
+function bytesToBase64(bytes: Uint8Array): string {
+  let binary = "";
+  for (const b of bytes) binary += String.fromCharCode(b);
+  return btoa(binary);
+}
+
+function base64UrlToBytes(segment: string): Uint8Array {
+  const padded = segment.replace(/-/g, "+").replace(/_/g, "/");
+  const binary = atob(padded.padEnd(Math.ceil(padded.length / 4) * 4, "="));
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
+  return bytes;
+}
+
+function decodeSegment(segment: string): unknown {
+  return JSON.parse(new TextDecoder().decode(base64UrlToBytes(segment)));
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+describe("installationToken", () => {
+  it("posts a signed RS256 JWT to the installation endpoint and returns the token", async () => {
+    let capturedAuth: string | null = null;
+    const { fetch: fetchImpl, calls } = makeFetch((call) => {
+      if (
+        call.method === "POST" &&
+        call.pathname === `/app/installations/${INSTALLATION_ID}/access_tokens`
+      ) {
+        capturedAuth = call.headers.get("authorization");
+        return json({ token: "ghs_installtoken", expires_at: "2026-07-20T18:00:00Z" });
+      }
+      return undefined;
+    });
+
+    const token = await newApp(fetchImpl).installationToken(FIXED_NOW);
+
+    expect(token).toBe("ghs_installtoken");
+    expect(calls).toHaveLength(1);
+    expect(capturedAuth).toMatch(/^Bearer /);
+
+    const jwt = capturedAuth!.slice("Bearer ".length);
+    const segments = jwt.split(".");
+    expect(segments).toHaveLength(3);
+    for (const segment of segments) {
+      expect(segment).toMatch(/^[A-Za-z0-9_-]+$/);
+    }
+
+    const header = decodeSegment(segments[0]);
+    const payload = decodeSegment(segments[1]);
+    expect(header).toMatchObject({ alg: "RS256", typ: "JWT" });
+    expect(payload).toMatchObject({ iss: APP_ID });
+    if (!isRecord(payload)) throw new Error("payload not an object");
+    expect(payload.iat).toBe(Math.floor(FIXED_NOW / 1000) - 60);
+    expect(payload.exp).toBe(Math.floor(FIXED_NOW / 1000) + 600);
+
+    const verified = await crypto.subtle.verify(
+      { name: "RSASSA-PKCS1-v1_5" },
+      keyPair.publicKey,
+      base64UrlToBytes(segments[2]),
+      new TextEncoder().encode(`${segments[0]}.${segments[1]}`),
+    );
+    expect(verified).toBe(true);
+  });
+});
+
+describe("commitFiles create-only", () => {
+  const baseTreeSha = "basetree1";
+  const parentSha = "parentcommit1";
+
+  function routeCreate(treeEntries: { path: string }[]): {
+    fetch: typeof fetch;
+    calls: RecordedCall[];
+  } {
+    return makeFetch((call) => {
+      const { method, pathname } = call;
+      if (method === "POST" && pathname.endsWith("/access_tokens")) {
+        return json({ token: "ghs_x", expires_at: "2026-07-20T18:00:00Z" });
+      }
+      if (method === "GET" && pathname === `/repos/${OWNER}/${REPO}/commits`) {
+        return json([]);
+      }
+      if (method === "GET" && pathname === `/repos/${OWNER}/${REPO}/commits/main`) {
+        return json({ sha: parentSha, commit: { tree: { sha: baseTreeSha } } });
+      }
+      if (method === "GET" && pathname === `/repos/${OWNER}/${REPO}/git/trees/${baseTreeSha}`) {
+        return json({ sha: baseTreeSha, truncated: false, tree: treeEntries });
+      }
+      if (method === "POST" && pathname === `/repos/${OWNER}/${REPO}/git/blobs`) {
+        return json({ sha: "blob1" });
+      }
+      if (method === "POST" && pathname === `/repos/${OWNER}/${REPO}/git/trees`) {
+        return json({ sha: "newtree1" });
+      }
+      if (method === "POST" && pathname === `/repos/${OWNER}/${REPO}/git/commits`) {
+        return json({ sha: "newcommit1" });
+      }
+      if (method === "PATCH" && pathname === `/repos/${OWNER}/${REPO}/git/refs/heads/main`) {
+        return json({ object: { sha: "newcommit1" } });
+      }
+      return undefined;
+    });
+  }
+
+  it("runs blob→tree→commit→ref and embeds the Draft-Id trailer", async () => {
+    const { fetch: fetchImpl, calls } = routeCreate([{ path: "content/posts/other.json" }]);
+
+    const result = await newApp(fetchImpl).commitFiles({
+      files: [{ path: "content/posts/new.json", content: '{"title":"Nuwe"}' }],
+      message: "Publiseer Nuwe resep",
+      draftId: "draft-42",
+      requireAbsent: ["content/posts/new.json"],
+    });
+
+    expect(result).toEqual({ commitSha: "newcommit1", superseded: false });
+
+    expect(calls.map((c) => `${c.method} ${c.pathname}`)).toEqual([
+      `POST /app/installations/${INSTALLATION_ID}/access_tokens`,
+      `GET /repos/${OWNER}/${REPO}/commits`,
+      `GET /repos/${OWNER}/${REPO}/commits/main`,
+      `GET /repos/${OWNER}/${REPO}/git/trees/${baseTreeSha}`,
+      `POST /repos/${OWNER}/${REPO}/git/blobs`,
+      `POST /repos/${OWNER}/${REPO}/git/trees`,
+      `POST /repos/${OWNER}/${REPO}/git/commits`,
+      `PATCH /repos/${OWNER}/${REPO}/git/refs/heads/main`,
+    ]);
+
+    const treeCall = calls.find((c) => c.pathname.endsWith("/git/trees") && c.method === "POST");
+    expect(treeCall?.body).toMatchObject({ base_tree: baseTreeSha });
+
+    const commitCall = calls.find((c) => c.pathname.endsWith("/git/commits") && c.method === "POST");
+    if (!commitCall || !isRecord(commitCall.body)) throw new Error("missing commit body");
+    const commitBody = commitCall.body;
+    expect(commitBody.parents).toEqual([parentSha]);
+    expect(commitBody.tree).toBe("newtree1");
+    expect(typeof commitBody.message).toBe("string");
+    expect(String(commitBody.message)).toContain("\nDraft-Id: draft-42");
+  });
+
+  it("throws a create-collision error when a requireAbsent path already exists", async () => {
+    const { fetch: fetchImpl, calls } = routeCreate([{ path: "content/posts/new.json" }]);
+
+    await expect(
+      newApp(fetchImpl).commitFiles({
+        files: [{ path: "content/posts/new.json", content: "{}" }],
+        message: "Publiseer",
+        draftId: "draft-99",
+        requireAbsent: ["content/posts/new.json"],
+      }),
+    ).rejects.toThrowError(GitHubError);
+
+    expect(calls.some((c) => c.method === "POST" && c.pathname.endsWith("/git/commits"))).toBe(
+      false,
+    );
+  });
+});
+
+describe("findDraftCommit", () => {
+  function routeCommits(commits: { sha: string; message: string }[]): typeof fetch {
+    return makeFetch((call) => {
+      if (call.method === "POST" && call.pathname.endsWith("/access_tokens")) {
+        return json({ token: "ghs_x", expires_at: "2026-07-20T18:00:00Z" });
+      }
+      if (call.method === "GET" && call.pathname === `/repos/${OWNER}/${REPO}/commits`) {
+        return json(commits.map((c) => ({ sha: c.sha, commit: { message: c.message } })));
+      }
+      return undefined;
+    }).fetch;
+  }
+
+  it("returns the SHA of a recent commit carrying the Draft-Id trailer", async () => {
+    const fetchImpl = routeCommits([
+      { sha: "aaa", message: "Iets anders" },
+      { sha: "bbb", message: "Publiseer Nuwe resep\n\nDraft-Id: draft-42\n" },
+    ]);
+    const sha = await newApp(fetchImpl).findDraftCommit("draft-42", "main");
+    expect(sha).toBe("bbb");
+  });
+
+  it("returns null when no commit carries the trailer", async () => {
+    const fetchImpl = routeCommits([{ sha: "aaa", message: "Publiseer\n\nDraft-Id: draft-1\n" }]);
+    const sha = await newApp(fetchImpl).findDraftCommit("draft-42", "main");
+    expect(sha).toBeNull();
+  });
+});
