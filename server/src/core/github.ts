@@ -14,12 +14,33 @@ const COMMIT_SCAN_PER_PAGE = 50;
 
 export class GitHubError extends Error {
   readonly status?: number;
+  // Set when the low-level request path has already burned its bounded retries
+  // on a still-failing transient status (429/5xx). The classifier reads this to
+  // tell a persistently-broken GitHub (→ terminal + alert Joshua) from a one-off
+  // transient blip (→ "probeer oor 'n minuut weer").
+  readonly retriesExhausted: boolean;
 
-  constructor(message: string, options?: { status?: number }) {
+  constructor(message: string, options?: { status?: number; retriesExhausted?: boolean }) {
     super(message);
     this.name = "GitHubError";
     this.status = options?.status;
+    this.retriesExhausted = options?.retriesExhausted ?? false;
   }
+}
+
+// Transient GitHub faults (rate limiting + upstream 5xx) are retried in-client
+// with backoff before any error is surfaced, per spec §331-337: only once these
+// bounded retries are spent does a still-failing status escalate to a terminal
+// "sê vir Joshua" alert. 4xx (auth, validation) is never retried.
+const MAX_REQUEST_ATTEMPTS = 3;
+const RETRY_BACKOFF_MS = [500, 1500];
+
+function isTransientStatus(status: number): boolean {
+  return status === 429 || status >= 500;
+}
+
+function realSleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 export interface GitHubAppConfig {
@@ -29,6 +50,9 @@ export interface GitHubAppConfig {
   owner: string;
   repo: string;
   fetch: typeof fetch;
+  // Injected so tests run the retry backoff at zero delay and deterministically;
+  // defaults to a real setTimeout-based delay in production.
+  sleep?: (ms: number) => Promise<void>;
 }
 
 export interface CommitFile {
@@ -416,6 +440,14 @@ export class GitHubApp implements GitHubClient {
     return `${this.config.owner}/${this.config.repo}`;
   }
 
+  // Every API call funnels through here, so this is the one place transient
+  // faults are retried with backoff before an error can escape. Retrying is safe
+  // because the publish flow above is idempotent: findDraftCommit and the
+  // create-only / expectShas pre-checks stop a retried POST from double-landing,
+  // and blob/tree/commit creation is content-addressed. Non-transient (4xx)
+  // statuses throw on the first response, exactly as before. When the retry
+  // bound is spent on a still-failing transient status, the thrown GitHubError
+  // is marked `retriesExhausted` so the classifier escalates it to terminal.
   private async request(
     path: string,
     options: {
@@ -435,21 +467,37 @@ export class GitHubApp implements GitHubClient {
     if (options.body !== undefined) {
       headers["Content-Type"] = "application/json";
     }
-    const res = await this.config.fetch(`${API_BASE}${path}`, {
+    const url = `${API_BASE}${path}`;
+    const init = {
       method: options.method,
       headers,
       body: options.body === undefined ? undefined : JSON.stringify(options.body),
-    });
-    const tolerated =
-      (options.allowNotFound === true && res.status === 404) ||
-      (options.allowConflict === true && res.status === 422);
-    if (!res.ok && !tolerated) {
+    };
+    const sleep = this.config.sleep ?? realSleep;
+
+    for (let attempt = 1; attempt <= MAX_REQUEST_ATTEMPTS; attempt += 1) {
+      const res = await this.config.fetch(url, init);
+      const tolerated =
+        (options.allowNotFound === true && res.status === 404) ||
+        (options.allowConflict === true && res.status === 422);
+      if (res.ok || tolerated) {
+        return res;
+      }
+      const isTransient = isTransientStatus(res.status);
+      if (isTransient && attempt < MAX_REQUEST_ATTEMPTS) {
+        await sleep(RETRY_BACKOFF_MS[attempt - 1] ?? RETRY_BACKOFF_MS[RETRY_BACKOFF_MS.length - 1]);
+        continue;
+      }
       const detail = await safeText(res);
       throw new GitHubError(`GitHub ${options.method} ${path} failed: ${res.status} ${detail}`, {
         status: res.status,
+        retriesExhausted: isTransient,
       });
     }
-    return res;
+    // Unreachable: the final attempt always returns a Response or throws above.
+    throw new GitHubError(`GitHub ${options.method} ${path} exhausted retries`, {
+      retriesExhausted: true,
+    });
   }
 
   private importKey(): Promise<CryptoKey> {

@@ -50,6 +50,27 @@ describe("error taxonomy", () => {
     expect(classify(new Error("iets onbekend"))).toBe("terminal");
   });
 
+  it("classifies a retriesExhausted GitHubError as terminal — the client already retried", () => {
+    expect(classify(new GitHubError("still 5xx", { status: 503, retriesExhausted: true }))).toBe(
+      "terminal",
+    );
+    expect(classify(new GitHubError("still 429", { status: 429, retriesExhausted: true }))).toBe(
+      "terminal",
+    );
+  });
+
+  it("escalates an exhausted 5xx to a terminal Joshua alert via toTaxonomyError", async () => {
+    const alert = mockAlert();
+    const result = await toTaxonomyError(
+      new GitHubError("upstream down", { status: 503, retriesExhausted: true }),
+      alert,
+    );
+    expect(result.kind).toBe("terminal");
+    expect(result.message).toContain("sê asseblief vir Joshua");
+    expect(result.code).toBe("GH-5XX");
+    expect(alert.fetch).toHaveBeenCalledTimes(1);
+  });
+
   it("derives short stable codes from GitHub status", () => {
     expect(codeFor(new GitHubError("x", { status: 401 }))).toBe("GH-AUTH");
     expect(codeFor(new GitHubError("x", { status: 403 }))).toBe("GH-AUTH");

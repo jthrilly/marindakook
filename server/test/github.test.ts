@@ -70,7 +70,7 @@ function json(data: unknown, status = 200): Response {
   });
 }
 
-function newApp(fetchImpl: typeof fetch): GitHubApp {
+function newApp(fetchImpl: typeof fetch, sleep?: (ms: number) => Promise<void>): GitHubApp {
   return new GitHubApp({
     appId: APP_ID,
     installationId: INSTALLATION_ID,
@@ -78,8 +78,12 @@ function newApp(fetchImpl: typeof fetch): GitHubApp {
     owner: OWNER,
     repo: REPO,
     fetch: fetchImpl,
+    sleep,
   });
 }
+
+// Zero-delay sleep so the retry-backoff tests stay fast and deterministic.
+const zeroSleep = async (): Promise<void> => {};
 
 function urlOf(input: RequestInfo | URL): string {
   if (typeof input === "string") return input;
@@ -390,5 +394,70 @@ describe("findDraftCommit", () => {
     const fetchImpl = routeCommits([{ sha: "aaa", message: "Publiseer\n\nDraft-Id: draft-1\n" }]);
     const sha = await newApp(fetchImpl).findDraftCommit("draft-42", "main");
     expect(sha).toBeNull();
+  });
+});
+
+describe("request retries transient faults with backoff", () => {
+  const tokenPath = `/app/installations/${INSTALLATION_ID}/access_tokens`;
+
+  it("retries a transient 503 and succeeds on a later attempt", async () => {
+    const { fetch: fetchImpl, calls } = makeFetch((call) => {
+      if (call.method === "POST" && call.pathname === tokenPath) {
+        // First attempt is a 503; the retry succeeds.
+        return calls.length === 1
+          ? new Response("upstream boom", { status: 503 })
+          : json({ token: "ghs_retry_ok", expires_at: "2026-07-20T18:00:00Z" });
+      }
+      return undefined;
+    });
+
+    const token = await newApp(fetchImpl, zeroSleep).installationToken(FIXED_NOW);
+
+    expect(token).toBe("ghs_retry_ok");
+    expect(calls.length).toBe(2);
+  });
+
+  it("exhausts the bound on a persistent 503 and marks the error retriesExhausted", async () => {
+    const { fetch: fetchImpl, calls } = makeFetch((call) => {
+      if (call.method === "POST" && call.pathname === tokenPath) {
+        return new Response("still boom", { status: 503 });
+      }
+      return undefined;
+    });
+
+    let caught: unknown;
+    try {
+      await newApp(fetchImpl, zeroSleep).installationToken(FIXED_NOW);
+    } catch (error) {
+      caught = error;
+    }
+
+    expect(caught).toBeInstanceOf(GitHubError);
+    if (!(caught instanceof GitHubError)) throw new Error("expected a GitHubError");
+    expect(caught.retriesExhausted).toBe(true);
+    expect(caught.status).toBe(503);
+    expect(calls.length).toBe(3);
+  });
+
+  it("does not retry a non-transient 403 — throws immediately after one call", async () => {
+    const { fetch: fetchImpl, calls } = makeFetch((call) => {
+      if (call.method === "POST" && call.pathname === tokenPath) {
+        return new Response("forbidden", { status: 403 });
+      }
+      return undefined;
+    });
+
+    let caught: unknown;
+    try {
+      await newApp(fetchImpl, zeroSleep).installationToken(FIXED_NOW);
+    } catch (error) {
+      caught = error;
+    }
+
+    expect(caught).toBeInstanceOf(GitHubError);
+    if (!(caught instanceof GitHubError)) throw new Error("expected a GitHubError");
+    expect(caught.retriesExhausted).toBe(false);
+    expect(caught.status).toBe(403);
+    expect(calls.length).toBe(1);
   });
 });

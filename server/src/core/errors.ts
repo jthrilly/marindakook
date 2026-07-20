@@ -3,14 +3,15 @@ import { GitHubError } from "./github";
 // The error taxonomy behind the spec's guiding rule: "Marinda's draft is never
 // lost, and she always gets an honest answer in Afrikaans." Two outcomes:
 //
-// - TRANSIENT (network hiccup, an upstream 5xx that survived the tool's own
-//   retries): tell her to try again in a minute. No alert — this is expected
-//   noise, not a broken system.
-// - TERMINAL (upstream auth 401/403, credit/rate exhaustion, or any unhandled
-//   fault): tell her honestly that something on our side is broken and to ask
-//   Joshua, with a short code — AND fire a direct alert to Joshua, because the
-//   Actions failure email only ever covers CI, which never starts when the
-//   Worker itself fails.
+// - TRANSIENT (a passing network hiccup, or a 5xx that reached us WITHOUT the
+//   GitHub client having exhausted its bounded internal retries): tell her to
+//   try again in a minute. No alert — this is expected noise, not a broken
+//   system.
+// - TERMINAL (upstream auth 401/403, credit/rate exhaustion, GitHub still
+//   failing after the client's retries are spent, or any unhandled fault): tell
+//   her honestly that something on our side is broken and to ask Joshua, with a
+//   short code — AND fire a direct alert to Joshua, because the Actions failure
+//   email only ever covers CI, which never starts when the Worker itself fails.
 
 export type ErrorKind = "transient" | "terminal";
 
@@ -67,13 +68,21 @@ export async function terminal(code: string, alert: AlertConfig): Promise<Taxono
   return error;
 }
 
-// A GitHub 5xx that survived the client's own retries is the one thing we treat
-// as transient at this layer; everything else — auth, credit/rate limits, and
-// any error we do not recognise (an unhandled exception) — is terminal, so
-// Joshua is always told when something is genuinely broken.
+// The GitHub client retries transient statuses (429/5xx) internally, so a 5xx
+// or 429 that reaches this layer marked `retriesExhausted` has already survived
+// the client's bounded retries and is genuinely broken → terminal + alert
+// Joshua. A 5xx that somehow arrives un-retried is still treated as a one-off
+// blip → transient. Everything else — auth, credit/rate limits, and any error
+// we do not recognise (an unhandled exception) — is terminal, so Joshua is
+// always told when something is genuinely broken.
 export function classify(error: unknown): ErrorKind {
-  if (error instanceof GitHubError && typeof error.status === "number" && error.status >= 500) {
-    return "transient";
+  if (error instanceof GitHubError) {
+    if (error.retriesExhausted) {
+      return "terminal";
+    }
+    if (typeof error.status === "number" && error.status >= 500) {
+      return "transient";
+    }
   }
   return "terminal";
 }

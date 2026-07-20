@@ -81,6 +81,25 @@ describe("guardToolThrows wraps a thrown GitHubError in Afrikaans", () => {
     expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 
+  it("terminal (exhausted 5xx retries): honest Joshua message + a fired alert", async () => {
+    const fetchMock = vi.fn(async () => new Response(null, { status: 200 }));
+    const client = await connect(
+      baseDeps({
+        store: new FailingListStore(
+          new GitHubError("upstream", { status: 503, retriesExhausted: true }),
+        ),
+        alert: { webhookUrl: "https://alerts.example/joshua", fetch: fetchMock },
+      }),
+    );
+    const result = await client.callTool({ name: "list_drafts", arguments: {} });
+    expect(result.isError).toBe(true);
+    const text = textOf(result);
+    expect(text).toContain("sê asseblief vir Joshua");
+    expect(text).toContain("GH-5XX");
+    expect(text).not.toContain("upstream");
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+  });
+
   it("transient (5xx): retry message, no alert", async () => {
     const fetchMock = vi.fn(async () => new Response(null, { status: 200 }));
     const client = await connect(
