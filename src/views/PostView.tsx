@@ -1,6 +1,6 @@
 import { getPostIndex, getPostSummary, getSite, getTerms } from "@/lib/content";
 import { formatDate, getDict } from "@/lib/i18n";
-import type { Locale, Post } from "@/lib/types";
+import type { Locale, Post } from "@/lib/content-schema";
 import { CatLinks, CommentsLabel } from "@/components/PostCard";
 import { PostBody } from "@/components/post/PostBody";
 import { AuthorBox, CommentList, PrevNext, ShareRow, TagList } from "@/components/post/PostExtras";

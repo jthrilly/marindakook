@@ -1,4 +1,4 @@
-import type { Site } from "@/lib/types";
+import type { Site } from "@/lib/content-schema";
 
 export function SiteFooter({ site }: { site: Site }) {
   return (

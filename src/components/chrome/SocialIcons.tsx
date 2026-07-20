@@ -1,4 +1,4 @@
-import type { Site } from "@/lib/types";
+import type { Site } from "@/lib/content-schema";
 
 const ICON_PATHS: Record<string, React.ReactNode> = {
   facebook: (

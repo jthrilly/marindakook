@@ -1,4 +1,4 @@
-import type { Locale } from "./types";
+import type { Locale } from "./content-schema";
 
 // Origin only — basePath is applied separately via asset(), so a path-bearing
 // SITE_URL would double the base path in every absolute URL.

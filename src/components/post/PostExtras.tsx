@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
 import { formatDateTime } from "@/lib/i18n";
 import { absoluteUrl, asset, localePath, postPath, tagPath } from "@/lib/paths";
-import type { Comment, Locale, Post, PostSummary, Site, Term } from "@/lib/types";
+import type { Comment, Locale, Post, Site, Term } from "@/lib/content-schema";
+import type { PostSummary } from "@/lib/content-derive";
 import { SharePrintButton } from "./SharePrintButton";
 
 export function TagList({ ids, tags, locale }: { ids: number[]; tags: Term[]; locale: Locale }) {

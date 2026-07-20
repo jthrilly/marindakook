@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { Dictionary } from "@/lib/i18n";
 import { formatDate, localizeTermName } from "@/lib/i18n";
 import { asset, categoryPath, postPath } from "@/lib/paths";
-import type { Locale, PostSummary, Term } from "@/lib/types";
+import type { Locale, Term } from "@/lib/content-schema";
+import type { PostSummary } from "@/lib/content-derive";
 
 export function CatLinks({
   ids,

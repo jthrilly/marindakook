@@ -1,5 +1,5 @@
 import type { Dictionary } from "@/lib/i18n";
-import type { Locale, Site } from "@/lib/types";
+import type { Locale, Site } from "@/lib/content-schema";
 import { SiteHeader } from "./chrome/SiteHeader";
 import { SiteFooter } from "./chrome/SiteFooter";
 

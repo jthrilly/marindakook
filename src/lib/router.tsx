@@ -11,7 +11,7 @@ import {
 } from "@/lib/content";
 import { localizeSiteStrings } from "@/lib/i18n";
 import { absoluteUrl, asset, categoryPath, homePath, localePath, postPath, tagPath, SITE_URL } from "@/lib/paths";
-import type { Locale, Term } from "@/lib/types";
+import type { Locale, Term } from "@/lib/content-schema";
 import { HomeView } from "@/views/HomeView";
 import { ArchiveView } from "@/views/ArchiveView";
 import { PostView } from "@/views/PostView";

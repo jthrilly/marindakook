@@ -1,9 +1,16 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
+import { derivePostIndex } from "../src/lib/content-derive.ts";
 
 const CONTENT = new URL("../content/", import.meta.url);
 const PUBLIC = new URL("../public/", import.meta.url);
 
-const index = JSON.parse(await readFile(new URL("posts-index.json", CONTENT), "utf8"));
+const postsDir = new URL("posts/", CONTENT);
+const posts = await Promise.all(
+  (await readdir(postsDir))
+    .filter((f) => f.endsWith(".json"))
+    .map(async (f) => JSON.parse(await readFile(new URL(f, postsDir), "utf8"))),
+);
+const index = derivePostIndex(posts);
 const terms = JSON.parse(await readFile(new URL("terms.json", CONTENT), "utf8"));
 const enCategoryNames = JSON.parse(
   await readFile(new URL("../src/lib/en-category-names.json", import.meta.url), "utf8"),

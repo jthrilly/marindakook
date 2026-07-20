@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import type { NavItem } from "@/lib/types";
+import type { NavItem } from "@/lib/content-schema";
 
 export function MobileNav({
   main,

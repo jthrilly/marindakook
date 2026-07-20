@@ -1,5 +1,5 @@
 import { Bad_Script, Esteban, Rubik } from "next/font/google";
-import type { Locale } from "@/lib/types";
+import type { Locale } from "@/lib/content-schema";
 import "@/app/globals.css";
 
 const rubik = Rubik({

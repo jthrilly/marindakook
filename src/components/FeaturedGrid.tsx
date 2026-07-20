@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { asset, postPath } from "@/lib/paths";
-import type { Locale, PostSummary, Term } from "@/lib/types";
+import type { Locale, Term } from "@/lib/content-schema";
+import type { PostSummary } from "@/lib/content-derive";
 import { CatLinks } from "./PostCard";
 
 export function FeaturedGrid({

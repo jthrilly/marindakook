@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Locale, Site } from "@/lib/types";
+import type { Locale, Site } from "@/lib/content-schema";
 import type { Dictionary } from "@/lib/i18n";
 import { localizeNav } from "@/lib/i18n";
 import { asset, localePath } from "@/lib/paths";

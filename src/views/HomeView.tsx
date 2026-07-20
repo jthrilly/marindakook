@@ -1,7 +1,7 @@
 import { getPostIndex, getSite, getTerms, localizeSummaries, paginate } from "@/lib/content";
 import { getDict, localizeSiteStrings, localizeWidgetTitle } from "@/lib/i18n";
 import { homePath } from "@/lib/paths";
-import type { Locale } from "@/lib/types";
+import type { Locale } from "@/lib/content-schema";
 import { FeaturedGrid } from "@/components/FeaturedGrid";
 import { PostCard } from "@/components/PostCard";
 import { Pagination } from "@/components/Pagination";

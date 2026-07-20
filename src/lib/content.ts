@@ -2,37 +2,78 @@ import "server-only";
 import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { cache } from "react";
-import type { Locale, Page, Post, PostSummary, Site, Term, Translation } from "./types";
+import {
+  pageSchema,
+  postSchema,
+  siteSchema,
+  termsFileSchema,
+  translationSchema,
+  type Locale,
+  type Page,
+  type Post,
+  type Site,
+  type Term,
+  type Translation,
+} from "./content-schema";
+import { derivePostIndex, deriveTermCounts, type PostSummary } from "./content-derive";
 
 const CONTENT_DIR = join(process.cwd(), "content");
 
-async function readJson<T>(...parts: string[]): Promise<T> {
-  return JSON.parse(await readFile(join(CONTENT_DIR, ...parts), "utf8")) as T;
+async function readJson(...parts: string[]): Promise<unknown> {
+  return JSON.parse(await readFile(join(CONTENT_DIR, ...parts), "utf8"));
 }
 
-export const getSite = cache(() => readJson<Site>("site.json"));
+export const getSite = cache(async (): Promise<Site> => siteSchema.parse(await readJson("site.json")));
 
-export const getTerms = cache(() =>
-  readJson<{ categories: Term[]; tags: Term[] }>("terms.json"),
+const getAllPosts = cache(async (): Promise<Post[]> => {
+  const files = await readdir(join(CONTENT_DIR, "posts"));
+  return Promise.all(
+    files
+      .filter((f) => f.endsWith(".json"))
+      .map(async (f) => postSchema.parse(await readJson("posts", f))),
+  );
+});
+
+export const getPostIndex = cache(async (): Promise<PostSummary[]> =>
+  derivePostIndex(await getAllPosts()),
 );
 
-export const getPostIndex = cache(() => readJson<PostSummary[]>("posts-index.json"));
+export const getTerms = cache(
+  async (): Promise<{ categories: Term[]; tags: Term[] }> => {
+    const terms = termsFileSchema.parse(await readJson("terms.json"));
+    const counts = deriveTermCounts(await getPostIndex());
+    // Parameter is the file-parse shape (not Term) so this compiles unchanged
+    // when Task 7 removes `count` from the schema and redefines Term.
+    const withDerivedCounts = (list: typeof terms.categories): Term[] =>
+      list.map((t) => ({ ...t, count: counts.get(t.id) ?? 0 }));
+    return {
+      categories: withDerivedCounts(terms.categories),
+      tags: withDerivedCounts(terms.tags),
+    };
+  },
+);
 
 export const getPageSlugs = cache(async () => {
   const files = await readdir(join(CONTENT_DIR, "pages"));
   return files.filter((f) => f.endsWith(".json")).map((f) => f.replace(/\.json$/, ""));
 });
 
-const getTranslation = cache(async (type: "posts" | "pages", slug: string) => {
-  try {
-    return await readJson<Translation>("translations", "en", type, `${slug}.json`);
-  } catch {
-    return null;
-  }
-});
+const getTranslation = cache(
+  async (type: "posts" | "pages", slug: string): Promise<Translation | null> => {
+    let raw: unknown;
+    try {
+      raw = await readJson("translations", "en", type, `${slug}.json`);
+    } catch {
+      return null;
+    }
+    // Parse OUTSIDE the try: a malformed translation must fail the build
+    // loudly, not silently fall back to Afrikaans.
+    return translationSchema.parse(raw);
+  },
+);
 
 export const getPost = cache(async (slug: string, locale: Locale): Promise<Post> => {
-  const post = await readJson<Post>("posts", `${slug}.json`);
+  const post = postSchema.parse(await readJson("posts", `${slug}.json`));
   if (locale === "af") return post;
   const t = await getTranslation("posts", slug);
   if (!t) return post;
@@ -47,22 +88,24 @@ export const getPost = cache(async (slug: string, locale: Locale): Promise<Post>
 });
 
 export const getPage = cache(async (slug: string, locale: Locale): Promise<Page> => {
-  const page = await readJson<Page>("pages", `${slug}.json`);
+  const page = pageSchema.parse(await readJson("pages", `${slug}.json`));
   if (locale === "af") return page;
   const t = await getTranslation("pages", slug);
   if (!t) return page;
   return { ...page, title: t.title, seo: t.seo ?? page.seo, html: t.html };
 });
 
-export const getPostSummary = cache(async (slug: string, locale: Locale): Promise<PostSummary | null> => {
-  const index = await getPostIndex();
-  const summary = index.find((p) => p.slug === slug);
-  if (!summary) return null;
-  if (locale === "af") return summary;
-  const t = await getTranslation("posts", slug);
-  if (!t) return summary;
-  return { ...summary, title: t.title, excerpt: t.excerpt ?? summary.excerpt };
-});
+export const getPostSummary = cache(
+  async (slug: string, locale: Locale): Promise<PostSummary | null> => {
+    const index = await getPostIndex();
+    const summary = index.find((p) => p.slug === slug);
+    if (!summary) return null;
+    if (locale === "af") return summary;
+    const t = await getTranslation("posts", slug);
+    if (!t) return summary;
+    return { ...summary, title: t.title, excerpt: t.excerpt ?? summary.excerpt };
+  },
+);
 
 export async function localizeSummaries(posts: PostSummary[], locale: Locale) {
   if (locale === "af") return posts;

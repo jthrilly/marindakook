@@ -1,4 +1,4 @@
-import type { Locale, NavItem, Term } from "./types";
+import type { Locale, NavItem, Term } from "./content-schema";
 import enCategoryNames from "./en-category-names.json";
 
 export const locales: Locale[] = ["af", "en"];

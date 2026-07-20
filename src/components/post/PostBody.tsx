@@ -1,6 +1,6 @@
 import type { Dictionary } from "@/lib/i18n";
 import { withBasePath } from "@/lib/paths";
-import type { Recipe } from "@/lib/types";
+import type { Recipe } from "@/lib/content-schema";
 import { RecipeCard } from "./RecipeCard";
 
 const RECIPE_SLOT = /<div data-recipe-slot="1"><\/div>/;

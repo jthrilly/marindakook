@@ -1,5 +1,5 @@
 import { asset, localePath } from "@/lib/paths";
-import type { Locale } from "@/lib/types";
+import type { Locale } from "@/lib/content-schema";
 import type { Dictionary } from "@/lib/i18n";
 
 export function SearchForm({ locale, dict, className = "" }: { locale: Locale; dict: Dictionary; className?: string }) {

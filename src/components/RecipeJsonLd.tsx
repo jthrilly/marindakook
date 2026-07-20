@@ -1,5 +1,5 @@
 import { absoluteUrl, asset, postPath } from "@/lib/paths";
-import type { Locale, Post } from "@/lib/types";
+import type { Locale, Post } from "@/lib/content-schema";
 
 function parseDuration(pairs: { value: string; unit: string }[]): string | null {
   let minutes = 0;

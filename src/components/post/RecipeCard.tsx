@@ -1,6 +1,6 @@
 import type { Dictionary } from "@/lib/i18n";
 import { asset, withBasePath } from "@/lib/paths";
-import type { Recipe } from "@/lib/types";
+import type { Recipe } from "@/lib/content-schema";
 import { PrintButton } from "./PrintButton";
 
 const DETAIL_ICONS: Record<string, React.ReactNode> = {

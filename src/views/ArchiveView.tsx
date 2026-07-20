@@ -1,7 +1,7 @@
 import { getPostIndex, getSite, getTerms, localizeSummaries, paginate } from "@/lib/content";
 import { getDict, localizeTermName } from "@/lib/i18n";
 import { categoryPath, tagPath } from "@/lib/paths";
-import type { Locale, Term } from "@/lib/types";
+import type { Locale, Term } from "@/lib/content-schema";
 import { PostCard } from "@/components/PostCard";
 import { Pagination } from "@/components/Pagination";
 import { Sidebar } from "@/components/widgets/Sidebar";

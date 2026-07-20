@@ -1,6 +1,6 @@
 import { getSite } from "@/lib/content";
 import { getDict } from "@/lib/i18n";
-import type { Locale } from "@/lib/types";
+import type { Locale } from "@/lib/content-schema";
 import { Sidebar } from "@/components/widgets/Sidebar";
 import { SearchResults } from "@/components/SearchResults";
 
