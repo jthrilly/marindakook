@@ -86,12 +86,19 @@ export interface DraftStore {
 
   setUploadManifest(draftId: string, manifest: JsonValue): Promise<void>;
   getUploadManifest(draftId: string): Promise<JsonValue | null>;
+
+  // The publish outcome (commit sha for a direct publish, or the PR for a pilot
+  // publish). `check_publish_status` reads it to distinguish "awaiting Joshua's
+  // review" from "never published" and to surface the PR link.
+  setPublish(draftId: string, record: JsonValue): Promise<void>;
+  getPublish(draftId: string): Promise<JsonValue | null>;
 }
 
 const DRAFT_PREFIX = "draft:";
 const APPROVAL_PREFIX = "approval:";
 const JOB_PREFIX = "job:";
 const UPLOADS_PREFIX = "uploads:";
+const PUBLISH_PREFIX = "publish:";
 const PHOTO_ROOT = "staged";
 
 function draftKey(draftId: string): string {
@@ -108,6 +115,10 @@ function jobKey(draftId: string): string {
 
 function uploadsKey(draftId: string): string {
   return `${UPLOADS_PREFIX}${draftId}`;
+}
+
+function publishKey(draftId: string): string {
+  return `${PUBLISH_PREFIX}${draftId}`;
 }
 
 function photoPrefix(draftId: string): string {
@@ -186,6 +197,7 @@ export class InMemoryStore implements DraftStore {
   private readonly approvals = new Map<string, Approval>();
   private readonly jobs = new Map<string, JsonValue>();
   private readonly manifests = new Map<string, JsonValue>();
+  private readonly publishes = new Map<string, JsonValue>();
 
   async get(draftId: string): Promise<StoredDraft | null> {
     const stored = this.drafts.get(draftId);
@@ -208,6 +220,7 @@ export class InMemoryStore implements DraftStore {
     this.approvals.delete(draftId);
     this.jobs.delete(draftId);
     this.manifests.delete(draftId);
+    this.publishes.delete(draftId);
   }
 
   async putPhoto(draftId: string, filename: string, bytes: Uint8Array, meta: PhotoMeta): Promise<PhotoInfo> {
@@ -272,6 +285,15 @@ export class InMemoryStore implements DraftStore {
     const stored = this.manifests.get(draftId);
     return stored === undefined ? null : cloneJsonValue(stored);
   }
+
+  async setPublish(draftId: string, record: JsonValue): Promise<void> {
+    this.publishes.set(draftId, cloneJsonValue(record));
+  }
+
+  async getPublish(draftId: string): Promise<JsonValue | null> {
+    const stored = this.publishes.get(draftId);
+    return stored === undefined ? null : cloneJsonValue(stored);
+  }
 }
 
 function cloneStoredDraft(stored: StoredDraft): StoredDraft {
@@ -331,6 +353,7 @@ export class KvR2Store implements DraftStore {
       this.kv.delete(approvalKey(draftId)),
       this.kv.delete(jobKey(draftId)),
       this.kv.delete(uploadsKey(draftId)),
+      this.kv.delete(publishKey(draftId)),
     ]);
   }
 
@@ -414,6 +437,15 @@ export class KvR2Store implements DraftStore {
 
   async getUploadManifest(draftId: string): Promise<JsonValue | null> {
     const raw = await this.kv.get(uploadsKey(draftId));
+    return raw === null ? null : jsonValueSchema.parse(JSON.parse(raw));
+  }
+
+  async setPublish(draftId: string, record: JsonValue): Promise<void> {
+    await this.kv.put(publishKey(draftId), JSON.stringify(record));
+  }
+
+  async getPublish(draftId: string): Promise<JsonValue | null> {
+    const raw = await this.kv.get(publishKey(draftId));
     return raw === null ? null : jsonValueSchema.parse(JSON.parse(raw));
   }
 }

@@ -44,11 +44,23 @@ export interface CommitInput {
   branch?: string;
   requireAbsent?: string[];
   expectShas?: Record<string, string>;
+  // Paths to remove from the tree (a delete-commit sets the entry sha to null).
+  // Used by delete_post's PR flow, which carries no new blobs.
+  deletions?: string[];
 }
 
 export interface CommitResult {
   commitSha: string;
   superseded: boolean;
+}
+
+// A git tree entry. `sha: null` deletes the path (delete-commits); a string sha
+// points at a blob.
+interface TreeEntry {
+  path: string;
+  mode: string;
+  type: string;
+  sha: string | null;
 }
 
 export interface BaseTree {
@@ -79,7 +91,20 @@ export interface RunStatus {
   url: string;
 }
 
-export class GitHubApp {
+// The subset of the GitHub client the publish/status/delete tools depend on.
+// `GitHubApp` implements it; tests inject a fake, so the tools type against the
+// interface rather than the concrete class.
+export interface GitHubClient {
+  getBaseTree(ref: string): Promise<BaseTree>;
+  pathExists(path: string, ref: string): Promise<PathState>;
+  findDraftCommit(draftId: string, ref: string): Promise<string | null>;
+  commitFiles(input: CommitInput): Promise<CommitResult>;
+  createBranch(name: string, fromSha: string): Promise<void>;
+  openPullRequest(input: PullRequestInput): Promise<PullRequestResult>;
+  latestRunForSha(sha: string): Promise<RunStatus | null>;
+}
+
+export class GitHubApp implements GitHubClient {
   private readonly config: GitHubAppConfig;
   private keyPromise: Promise<CryptoKey> | null = null;
 
@@ -131,7 +156,7 @@ export class GitHubApp {
       await this.enforcePreconditions(token, base.treeSha, branch, input);
     }
 
-    const treeEntries = await Promise.all(
+    const blobEntries = await Promise.all(
       input.files.map(async (file) => ({
         path: file.path,
         mode: BLOB_MODE,
@@ -139,6 +164,13 @@ export class GitHubApp {
         sha: await this.createBlob(token, file),
       })),
     );
+    const deletionEntries: TreeEntry[] = (input.deletions ?? []).map((path) => ({
+      path,
+      mode: BLOB_MODE,
+      type: "blob",
+      sha: null,
+    }));
+    const treeEntries: TreeEntry[] = [...blobEntries, ...deletionEntries];
 
     const newTreeSha = await this.createTree(token, base.treeSha, treeEntries);
     const message = withDraftTrailer(input.message, input.draftId);
@@ -146,6 +178,19 @@ export class GitHubApp {
     await this.updateRef(token, branch, commitSha);
 
     return { commitSha, superseded: false };
+  }
+
+  // Create a branch ref at `fromSha`. `commitFiles` only updates an EXISTING
+  // ref, so the PR flows (pilot publish, delete_post) branch first. Idempotent:
+  // a 422 means the ref already exists (a retried publish), which is fine.
+  async createBranch(name: string, fromSha: string): Promise<void> {
+    const token = await this.installationToken();
+    await this.request(`/repos/${this.repoPath()}/git/refs`, {
+      method: "POST",
+      token,
+      body: { ref: `refs/heads/${name}`, sha: fromSha },
+      allowConflict: true,
+    });
   }
 
   async openPullRequest(input: PullRequestInput): Promise<PullRequestResult> {
@@ -310,7 +355,7 @@ export class GitHubApp {
   private async createTree(
     token: string,
     baseTreeSha: string,
-    entries: { path: string; mode: string; type: string; sha: string }[],
+    entries: TreeEntry[],
   ): Promise<string> {
     const res = await this.request(`/repos/${this.repoPath()}/git/trees`, {
       method: "POST",
@@ -350,7 +395,13 @@ export class GitHubApp {
 
   private async request(
     path: string,
-    options: { method: string; token: string; body?: unknown; allowNotFound?: boolean },
+    options: {
+      method: string;
+      token: string;
+      body?: unknown;
+      allowNotFound?: boolean;
+      allowConflict?: boolean;
+    },
   ): Promise<Response> {
     const headers: Record<string, string> = {
       Accept: "application/vnd.github+json",
@@ -366,7 +417,10 @@ export class GitHubApp {
       headers,
       body: options.body === undefined ? undefined : JSON.stringify(options.body),
     });
-    if (!res.ok && !(options.allowNotFound && res.status === 404)) {
+    const tolerated =
+      (options.allowNotFound === true && res.status === 404) ||
+      (options.allowConflict === true && res.status === 422);
+    if (!res.ok && !tolerated) {
       const detail = await safeText(res);
       throw new GitHubError(`GitHub ${options.method} ${path} failed: ${res.status} ${detail}`, {
         status: res.status,

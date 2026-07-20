@@ -251,6 +251,84 @@ describe("commitFiles create-only", () => {
   });
 });
 
+describe("createBranch", () => {
+  it("POSTs a fully-qualified ref at the given sha", async () => {
+    const { fetch: fetchImpl, calls } = makeFetch((call) => {
+      if (call.method === "POST" && call.pathname.endsWith("/access_tokens")) {
+        return json({ token: "ghs_x", expires_at: "2026-07-20T18:00:00Z" });
+      }
+      if (call.method === "POST" && call.pathname === `/repos/${OWNER}/${REPO}/git/refs`) {
+        return json({ ref: "refs/heads/cms/publiseer-d1" }, 201);
+      }
+      return undefined;
+    });
+
+    await newApp(fetchImpl).createBranch("cms/publiseer-d1", "parentsha");
+
+    const refCall = calls.find((c) => c.pathname.endsWith("/git/refs"));
+    expect(refCall?.body).toEqual({ ref: "refs/heads/cms/publiseer-d1", sha: "parentsha" });
+  });
+
+  it("tolerates a 422 (the ref already exists) so a retry is idempotent", async () => {
+    const fetchImpl = makeFetch((call) => {
+      if (call.method === "POST" && call.pathname.endsWith("/access_tokens")) {
+        return json({ token: "ghs_x", expires_at: "2026-07-20T18:00:00Z" });
+      }
+      if (call.method === "POST" && call.pathname === `/repos/${OWNER}/${REPO}/git/refs`) {
+        return json({ message: "Reference already exists" }, 422);
+      }
+      return undefined;
+    }).fetch;
+
+    await expect(newApp(fetchImpl).createBranch("cms/publiseer-d1", "parentsha")).resolves.toBeUndefined();
+  });
+});
+
+describe("commitFiles deletions", () => {
+  it("emits a null-sha tree entry for each deleted path (no blob created)", async () => {
+    const baseTreeSha = "basetree1";
+    const { fetch: fetchImpl, calls } = makeFetch((call) => {
+      const { method, pathname } = call;
+      if (method === "POST" && pathname.endsWith("/access_tokens")) {
+        return json({ token: "ghs_x", expires_at: "2026-07-20T18:00:00Z" });
+      }
+      if (method === "GET" && pathname === `/repos/${OWNER}/${REPO}/commits`) {
+        return json([]);
+      }
+      if (method === "GET" && pathname === `/repos/${OWNER}/${REPO}/commits/main`) {
+        return json({ sha: "parentcommit1", commit: { tree: { sha: baseTreeSha } } });
+      }
+      if (method === "POST" && pathname === `/repos/${OWNER}/${REPO}/git/trees`) {
+        return json({ sha: "newtree1" });
+      }
+      if (method === "POST" && pathname === `/repos/${OWNER}/${REPO}/git/commits`) {
+        return json({ sha: "newcommit1" });
+      }
+      if (method === "PATCH" && pathname === `/repos/${OWNER}/${REPO}/git/refs/heads/main`) {
+        return json({ object: { sha: "newcommit1" } });
+      }
+      return undefined;
+    });
+
+    const result = await newApp(fetchImpl).commitFiles({
+      files: [],
+      deletions: ["content/posts/gone.json", "content/translations/en/posts/gone.json"],
+      message: "Vee resep uit",
+      draftId: "draft-del",
+    });
+
+    expect(result.commitSha).toBe("newcommit1");
+    expect(calls.some((c) => c.method === "POST" && c.pathname.endsWith("/git/blobs"))).toBe(false);
+
+    const treeCall = calls.find((c) => c.pathname.endsWith("/git/trees") && c.method === "POST");
+    if (!treeCall || !isRecord(treeCall.body)) throw new Error("missing tree body");
+    expect(treeCall.body.tree).toEqual([
+      { path: "content/posts/gone.json", mode: "100644", type: "blob", sha: null },
+      { path: "content/translations/en/posts/gone.json", mode: "100644", type: "blob", sha: null },
+    ]);
+  });
+});
+
 describe("findDraftCommit", () => {
   function routeCommits(commits: { sha: string; message: string }[]): typeof fetch {
     return makeFetch((call) => {
