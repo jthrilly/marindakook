@@ -396,7 +396,7 @@ import { buildTranslatePrompt } from "../src/lib/translate-prompt.ts";
 
 const DEFAULT_SLUGS = [
   "lemoen-stroopkoek",
-  "3-bestandele-piesangbrood-vir-ontbyt",
+  "3-bestandele-piesangbrood-tog-te-lekker",
   "pampoenpoffertjies-wat-die-sous-opsuig",
   "spekko-dahl-kerrie-met-krispie-uie",
   "skons-net-3-bestandele",
