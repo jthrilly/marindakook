@@ -16,6 +16,11 @@ export default defineConfig({
       },
     }),
   ],
+  // Unit/integration tests run inside workerd (`*.test.ts`). The upload page's
+  // browser re-encode is exercised by Playwright against real Chromium
+  // (`test/e2e/*.spec.ts`, run via `npm run test:e2e`) — those must not be
+  // pulled into the workers pool, where `@playwright/test` cannot load.
+  test: { include: ["test/**/*.test.ts"] },
   resolve: {
     alias: { "@site": new URL("../src", import.meta.url).pathname },
   },

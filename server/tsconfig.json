@@ -15,5 +15,7 @@
       "@site/*": ["../src/*"]
     }
   },
-  "include": ["src", "test", "vitest.config.ts"]
+  "include": ["src", "test", "vitest.config.ts"],
+  "comment": "test/e2e and playwright.config.ts run in Node+Chromium (DOM globals), not workerd, and are transpiled by Playwright — excluded from the workers-typed program so `tsc --noEmit` stays sound without pulling in the DOM lib.",
+  "exclude": ["test/e2e", "playwright.config.ts"]
 }
