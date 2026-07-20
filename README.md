@@ -170,3 +170,17 @@ content/
   translations/en/     English content (sourceHash-tracked)
   media-manifest.json  every image the site needs (url → local path)
 ```
+
+## Chat CMS (`server/`)
+
+A Cloudflare Worker under `server/` lets Marinda write and publish recipes by
+chatting with Claude instead of using the WordPress admin: an MCP connector runs an
+Afrikaans interview, a mobile upload page collects photos, drafts translate to
+English automatically, and a preview/approval page gates publishing — which commits
+straight to this repo. It is **built and tested** (182 server tests + the root
+suite above, all green against mocked GitHub/Anthropic and local KV/R2/OAuth) but
+**not yet deployed or live**: going live needs both real-infrastructure provisioning
+(Cloudflare/GitHub App/Anthropic accounts and secrets) and the WordPress
+decommission (site media committed into git). See `server/README.md` for the full
+provisioning runbook and go-live checklist, and
+`docs/superpowers/specs/2026-07-20-chat-cms-design.md` for the design spec.
