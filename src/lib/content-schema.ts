@@ -83,9 +83,32 @@ export const postSchema = z.strictObject({
   comments: z.array(commentSchema),
 });
 
+export const pageSchema = z.strictObject({
+  id: z.number().int(),
+  slug: z.string(),
+  title: z.string(),
+  date: z.string(),
+  modified: z.string(),
+  seo: seoSchema,
+  html: z.string(),
+});
+
+export const translationSchema = z.strictObject({
+  id: z.number().int(),
+  slug: z.string(),
+  sourceHash: z.string(),
+  title: z.string(),
+  excerpt: z.string().optional(),
+  seo: seoSchema,
+  html: z.string(),
+  recipe: recipeSchema.nullable().optional(),
+});
+
 export type ImageRef = z.infer<typeof imageRefSchema>;
 export type FeaturedImage = z.infer<typeof featuredImageSchema>;
 export type RecipeDetail = z.infer<typeof recipeDetailSchema>;
 export type Recipe = z.infer<typeof recipeSchema>;
 export type Comment = z.infer<typeof commentSchema>;
 export type Post = z.infer<typeof postSchema>;
+export type Page = z.infer<typeof pageSchema>;
+export type Translation = z.infer<typeof translationSchema>;

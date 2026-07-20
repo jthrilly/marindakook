@@ -1,7 +1,7 @@
 import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { postSchema } from "@/lib/content-schema";
+import { pageSchema, postSchema, translationSchema } from "@/lib/content-schema";
 
 const CONTENT = join(process.cwd(), "content");
 
@@ -22,5 +22,38 @@ describe("post contract", () => {
       const result = postSchema.safeParse(raw);
       expect(result.success, `${file}: ${result.error?.message}`).toBe(true);
     }
+  });
+});
+
+describe("page contract", () => {
+  it("parses both committed pages", async () => {
+    const files = await listJson("pages");
+    expect(files.length).toBe(2);
+    for (const file of files) {
+      const result = pageSchema.safeParse(await readJson("pages", file));
+      expect(result.success, `${file}: ${result.error?.message}`).toBe(true);
+    }
+  });
+});
+
+describe("translation contract", () => {
+  it("parses all committed translations and cross-checks id/slug", async () => {
+    let total = 0;
+    for (const type of ["posts", "pages"] as const) {
+      for (const file of await listJson(join("translations", "en", type))) {
+        total++;
+        const raw = await readJson("translations", "en", type, file);
+        const result = translationSchema.safeParse(raw);
+        expect(result.success, `${type}/${file}: ${result.error?.message}`).toBe(true);
+        if (!result.success) continue;
+        const source =
+          type === "posts"
+            ? postSchema.parse(await readJson("posts", file))
+            : pageSchema.parse(await readJson("pages", file));
+        expect(result.data.id, `${type}/${file} id`).toBe(source.id);
+        expect(result.data.slug, `${type}/${file} slug`).toBe(source.slug);
+      }
+    }
+    expect(total).toBe(399);
   });
 });
