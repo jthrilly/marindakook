@@ -139,11 +139,31 @@ function contentBasisOf(draft: Draft): unknown {
 }
 
 async function revisionOf(draft: Draft): Promise<string> {
-  const basis = new TextEncoder().encode(JSON.stringify(contentBasisOf(draft)));
+  const basis = new TextEncoder().encode(stableStringify(contentBasisOf(draft)));
   const digest = await crypto.subtle.digest("SHA-256", basis);
   return Array.from(new Uint8Array(digest))
     .map((byte) => byte.toString(16).padStart(2, "0"))
     .join("");
+}
+
+// `JSON.stringify` is sensitive to object key insertion order, which is not
+// part of the content contract — two drafts with identical field values but
+// differently-ordered nested objects (e.g. `seo`) must hash the same. Sorting
+// keys recursively (arrays keep their order; only object keys are sorted)
+// makes the hash canonical.
+function stableStringify(value: unknown): string {
+  return JSON.stringify(sortKeysDeep(value));
+}
+
+function sortKeysDeep(value: unknown): unknown {
+  if (Array.isArray(value)) {
+    return value.map(sortKeysDeep);
+  }
+  if (value !== null && typeof value === "object") {
+    const entries = Object.entries(value).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0));
+    return Object.fromEntries(entries.map(([key, entryValue]) => [key, sortKeysDeep(entryValue)]));
+  }
+  return value;
 }
 
 // Two clone helpers rather than one generic: `Draft` is a narrower type than
@@ -284,7 +304,7 @@ export class KvR2Store implements DraftStore {
 
   async put(draft: Draft): Promise<StoredDraft> {
     const revision = await revisionOf(draft);
-    const stored: StoredDraft = { draft, revision };
+    const stored: StoredDraft = { draft: cloneDraft(draft), revision };
     await this.kv.put(draftKey(draft.draftId), JSON.stringify(stored));
     return stored;
   }

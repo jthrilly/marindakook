@@ -86,6 +86,66 @@ describe.each(implementations)("DraftStore contract ($name)", ({ makeStore }) =>
       expect(ids).not.toContain(draft.draftId);
     });
 
+    it("clears approval, job, and upload manifest state when a draft is deleted", async () => {
+      const store = makeStore();
+      const draft = samplePost({ draftId: "d-delete-cascades" });
+      const stored = await store.put(draft);
+      await store.setApproval(draft.draftId, { revision: stored.revision, approvedAt: "t" });
+      await store.setJob(draft.draftId, { status: "running" });
+      await store.setUploadManifest(draft.draftId, { files: [] });
+
+      await store.delete(draft.draftId);
+
+      expect(await store.getApproval(draft.draftId)).toBeNull();
+      expect(await store.getJob(draft.draftId)).toBeNull();
+      expect(await store.getUploadManifest(draft.draftId)).toBeNull();
+    });
+
+    it("does not let mutating the object returned from put() affect a subsequent get() or the caller's original draft", async () => {
+      const store = makeStore();
+      const draft = samplePost({ draftId: "d-put-return-aliasing" });
+
+      const stored = await store.put(draft);
+      if (stored.draft.kind !== "post") throw new Error("expected a post draft");
+      stored.draft.title = "MUTATED AFTER PUT";
+
+      expect(draft.title).toBe("Piesangbrood");
+      const fetched = await store.get(draft.draftId);
+      if (!fetched || fetched.draft.kind !== "post") throw new Error("expected a post draft");
+      expect(fetched.draft.title).toBe("Piesangbrood");
+    });
+
+    it("produces the same revision for content-identical drafts with different key insertion order", async () => {
+      const store = makeStore();
+      const draftA = samplePost({
+        draftId: "d-key-order-a",
+        seo: { title: "Piesangbrood resep", description: null },
+      });
+      const draftB = samplePost({
+        draftId: "d-key-order-b",
+        // Same `seo` content as draftA, but the object is built with the
+        // keys in reverse insertion order.
+        seo: { description: null, title: "Piesangbrood resep" },
+      });
+
+      const storedA = await store.put(draftA);
+      const storedB = await store.put(draftB);
+
+      expect(storedB.revision).toBe(storedA.revision);
+
+      // ...and a prior approval granted under one key order stays valid when
+      // re-derived from a differently-ordered but content-identical draft.
+      await store.setApproval(draftA.draftId, {
+        revision: storedA.revision,
+        approvedAt: "2026-07-20T09:30:00.000Z",
+      });
+      await store.put({ ...draftA, seo: draftB.seo });
+      expect(await store.getApproval(draftA.draftId)).toEqual({
+        revision: storedA.revision,
+        approvedAt: "2026-07-20T09:30:00.000Z",
+      });
+    });
+
     it("keeps the revision stable when only envelope metadata (updatedAt) changes", async () => {
       const store = makeStore();
       const draft = samplePost({ draftId: "d-revision-stable" });
