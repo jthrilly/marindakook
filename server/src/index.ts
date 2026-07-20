@@ -128,20 +128,29 @@ async function fetchCommittedJson<T>(
   schema: z.ZodType<T>,
   fetchImpl: typeof fetch,
 ): Promise<T | null> {
-  const response = await fetchImpl(url);
-  if (!response.ok) {
+  try {
+    const response = await fetchImpl(url);
+    if (!response.ok) {
+      return null;
+    }
+    const parsed = schema.safeParse(await response.json());
+    return parsed.success ? parsed.data : null;
+  } catch {
+    // Network rejection (DNS/TLS/connection) or a 200 with a non-JSON body
+    // (`response.json()` throwing) — either way, degrade to the bundle below
+    // rather than letting the exception propagate to `guardToolThrows`.
     return null;
   }
-  const parsed = schema.safeParse(await response.json());
-  return parsed.success ? parsed.data : null;
 }
 
 // Reads committed content the edit/chrome/publish tools need. Every read fetches
 // LIVE committed state from the public repo's raw content, so chrome/page edits
 // merge onto the current on-main state rather than a frozen build-time bundle
-// (which would silently revert a prior edit). The bundled snapshot is only the
-// fallback when the fetch fails (network error / non-200). `fetchImpl` is
-// injected so tests drive the live-vs-fallback paths without the network.
+// (which would silently revert a prior edit). The bundled snapshot is the
+// fallback for ANY fetch/parse failure — network error, non-200, or a bad body
+// (invalid JSON or schema mismatch) — so a transient hiccup degrades instead of
+// throwing. `fetchImpl` is injected so tests drive the live-vs-fallback paths
+// without the network.
 export function buildContentSource(
   env: Pick<Env, "GITHUB_OWNER" | "GITHUB_REPO">,
   fetchImpl: typeof fetch = fetch,

@@ -38,4 +38,26 @@ describe("buildContentSource.loadSite reads live committed state", () => {
 
     expect(site?.tagline).toBe(bundledSite.tagline);
   });
+
+  it("falls back to the bundled site when the fetch rejects (network/DNS/TLS error)", async () => {
+    const fetchMock = vi.fn<typeof fetch>(async () => {
+      throw new TypeError("fetch failed");
+    });
+
+    const content = buildContentSource(ENV, fetchMock);
+    const site = await content?.loadSite();
+
+    expect(site?.tagline).toBe(bundledSite.tagline);
+  });
+
+  it("falls back to the bundled site when the response body is not valid JSON", async () => {
+    const fetchMock = vi.fn<typeof fetch>(
+      async () => new Response("<html>not json</html>", { status: 200 }),
+    );
+
+    const content = buildContentSource(ENV, fetchMock);
+    const site = await content?.loadSite();
+
+    expect(site?.tagline).toBe(bundledSite.tagline);
+  });
 });
