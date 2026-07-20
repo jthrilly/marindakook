@@ -46,6 +46,8 @@ WordPress (CMS)  ──sync──▶  content/*.json + public/media  ──build
 | `npm run sync:content` | Content JSON only (what CI's sync workflow runs) |
 | `npm run sync:media` | Download missing images from the manifest |
 | `npm run check:translations` | Verify all English translations exist and match sources |
+| `npm run validate:content` | Validate all content JSON against the zod contract (CI runs this on every push) |
+| `npm test` | Contract + derivation test suite |
 | `npm run dev` | Dev server |
 | `npm run build` | Static build into `out/` (runs the search-index generator first) |
 
@@ -72,10 +74,10 @@ For each missing item, create `content/translations/en/posts/<slug>.json` with t
 same shape as the Afrikaans source in `content/posts/<slug>.json`: copy `id` and
 `slug`, translate `title`, `excerpt`, `seo`, `html` (translate text only — keep every
 tag and attribute), and the recipe text fields if present. Set `sourceHash` to the
-output of `node scripts/source-hash.mjs posts/<slug>`, then validate:
+output of `npx tsx scripts/source-hash.mjs posts/<slug>`, then validate:
 
 ```bash
-node scripts/check-translation.mjs posts/<slug>   # must print OK
+npx tsx scripts/check-translation.mjs posts/<slug>   # must print OK
 ```
 
 Commit and push. Untranslated posts simply show Afrikaans under `/en/` in the
@@ -163,7 +165,6 @@ Two GitHub Actions workflows:
 content/
   site.json            site chrome: nav, widgets, bio, newsletter, sidebar lists
   terms.json           categories + tags
-  posts-index.json     ordered post summaries (cards, archives)
   posts/<slug>.json    full post: html, recipe, comments, seo
   pages/<slug>.json    the two static pages (Oor My, Besprekings en Kookboeke)
   translations/en/     English content (sourceHash-tracked)

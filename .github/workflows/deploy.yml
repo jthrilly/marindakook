@@ -27,6 +27,9 @@ jobs:
 
       - run: npm ci
 
+      - name: Validate content
+        run: npm run validate:content
+
       # Run-unique key so the post-job save always happens (an exact-key cache
       # hit would skip saving, freezing the mirror at its first partial state).
       - name: Restore media mirror
