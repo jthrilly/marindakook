@@ -49,6 +49,85 @@ WordPress (CMS)  ──sync──▶  content/*.json + public/media  ──build
 | `npm run dev` | Dev server |
 | `npm run build` | Static build into `out/` (runs the search-index generator first) |
 
+## Common tasks
+
+### Publish or edit a post
+
+Write and publish in WordPress as always. The static site picks it up on the next
+content sync — automatically every Monday 04:00 UTC, or immediately via
+**GitHub → Actions → "Sync content from WordPress" → Run workflow**. The sync
+commits the new content and triggers a deploy by itself (~3 minutes). New posts
+appear in Afrikaans right away; English needs a translation (next task).
+
+To make a post appear in the big featured row on the homepage, give it the
+**Featured** category in WordPress (the row shows the three newest featured posts).
+
+### Translate new content to English
+
+```bash
+npm run check:translations        # lists MISSING and stale translations
+```
+
+For each missing item, create `content/translations/en/posts/<slug>.json` with the
+same shape as the Afrikaans source in `content/posts/<slug>.json`: copy `id` and
+`slug`, translate `title`, `excerpt`, `seo`, `html` (translate text only — keep every
+tag and attribute), and the recipe text fields if present. Set `sourceHash` to the
+output of `node scripts/source-hash.mjs posts/<slug>`, then validate:
+
+```bash
+node scripts/check-translation.mjs posts/<slug>   # must print OK
+```
+
+Commit and push. Untranslated posts simply show Afrikaans under `/en/` in the
+meantime. (Asking Claude Code to "translate the missing content" runs this whole
+flow, including validation.)
+
+### Preview locally
+
+```bash
+npm install
+npm run sync:media   # first time only — mirrors images into public/media
+npm run dev          # http://localhost:3000  (English at /en/)
+```
+
+On a fresh machine you can skip the slow origin download by seeding from the
+release instead: download `media-mirror.tar.gz` from the **media-seed** release and
+`tar xzf` it in the repo root before `npm run dev`.
+
+### Deploy manually
+
+Push to `main`, or **Actions → "Deploy to GitHub Pages" → Run workflow**. Content
+comes from what's committed in `content/` — run the sync workflow first if you
+want fresh WordPress content included.
+
+### Change site text, styling, or layout
+
+- UI strings and English chrome labels: `src/lib/i18n.ts`
+- English category display names: `src/lib/en-category-names.json`
+- Colors, fonts, post-content typography: `src/app/globals.css`
+- Header/nav/footer: `src/components/chrome/`; sidebar widgets:
+  `src/components/widgets/`; recipe card: `src/components/post/RecipeCard.tsx`
+- Nav menus, bio text, newsletter copy shown on the Afrikaans site come from
+  WordPress via `content/site.json` — edit them in WordPress and re-sync.
+
+### Fix or refresh images
+
+- A handful of images 404 on the WordPress site itself; the sync logs them as
+  "gone at origin" and they're skipped. Re-upload them in WordPress and re-sync
+  to heal them here.
+- If images changed in WordPress at the same URL, force a re-mirror locally with
+  `FORCE_MEDIA_REFRESH=1 npm run sync:media`, then `npm run optimize:media` and
+  refresh the seed (next task).
+
+### Refresh the media seed release
+
+After large media changes, update the seed CI uses on cold caches:
+
+```bash
+tar czf media-mirror.tar.gz public/media content/media-optimized.json
+gh release upload media-seed media-mirror.tar.gz --clobber
+```
+
 ## Deployment
 
 Two GitHub Actions workflows:
