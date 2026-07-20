@@ -167,20 +167,31 @@ async function approveCurrent(store: InMemoryStore, draftId: string): Promise<vo
   await store.setApproval(draftId, { revision: stored.revision, approvedAt: NOW });
 }
 
+function isNumberArray(value: unknown): value is number[] {
+  return Array.isArray(value) && value.every((item) => typeof item === "number");
+}
+
+// Reads a `number[]` field off a parsed-JSON `unknown` without an `as` cast:
+// narrows via real type guards and throws a clear test-failure message on any
+// shape mismatch instead of asserting the shape away.
+function numberArrayField(value: unknown, field: string): number[] {
+  if (value === null || typeof value !== "object" || Array.isArray(value)) {
+    throw new Error(`expected an object with a «${field}» field`);
+  }
+  const raw = Reflect.get(value, field);
+  if (!isNumberArray(raw)) {
+    throw new Error(`expected «${field}» to be a number array`);
+  }
+  return raw;
+}
+
 function publishedCategories(calls: GitHubCalls): number[] {
   const postFile = calls.commits[0]?.files.find((f) => f.path === "content/posts/melktert.json");
   if (postFile === undefined) {
     throw new Error("expected the post JSON in the commit");
   }
   const parsed: unknown = JSON.parse(postFile.content);
-  if (parsed === null || typeof parsed !== "object") {
-    throw new Error("bad post JSON");
-  }
-  const categories = (parsed as { categories: unknown }).categories;
-  if (!Array.isArray(categories)) {
-    throw new Error("expected a categories array");
-  }
-  return categories as number[];
+  return numberArrayField(parsed, "categories");
 }
 
 describe("edit preserves featured membership", () => {

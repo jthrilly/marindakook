@@ -476,6 +476,18 @@ describe("publish committed-translation contract", () => {
     expect(compareTranslation(committedPost, committedTranslation)).toEqual([]);
     // 3. Its sourceHash matches CI's recomputation over the built post.
     expect(committedTranslation.sourceHash).toBe(sourceHashOf(committedPost));
+    // 4. The committed recipe text is the candidate's ENGLISH text, not the
+    // Afrikaans post's — compareTranslation only checks structure/counts, so a
+    // regression that reverted reconciliation to Afrikaans text would still
+    // pass checks 1-3. recipe.title and the first translated direction step
+    // lock in that reconciliation overlays English, not the AF post.
+    if (committedTranslation.recipe === null || committedTranslation.recipe === undefined) {
+      throw new Error("expected a recipe in the committed translation");
+    }
+    expect(committedTranslation.recipe.title).toBe(job.translation.recipe.title);
+    expect(committedTranslation.recipe.directionGroups[0].steps[0]).toBe(
+      job.translation.recipe.directionGroups[0].steps[0],
+    );
   });
 
   it("stamps sourceHashOf(post) for a non-recipe post lacking excerpt + seo (excerpt/seo divergence)", async () => {
@@ -574,6 +586,24 @@ describe("failing-translation PR terminal fault escalates to Joshua", () => {
   });
 });
 
+function isNumberArray(value: unknown): value is number[] {
+  return Array.isArray(value) && value.every((item) => typeof item === "number");
+}
+
+// Reads a `number[]` field off a parsed-JSON `unknown` without an `as` cast:
+// narrows via real type guards and throws a clear test-failure message on any
+// shape mismatch instead of asserting the shape away.
+function numberArrayField(value: unknown, field: string): number[] {
+  if (value === null || typeof value !== "object" || Array.isArray(value)) {
+    throw new Error(`expected an object with a «${field}» field`);
+  }
+  const raw = Reflect.get(value, field);
+  if (!isNumberArray(raw)) {
+    throw new Error(`expected «${field}» to be a number array`);
+  }
+  return raw;
+}
+
 describe("publish featured term", () => {
   const TERMS = [
     { id: 366, name: "Featured", slug: "featured" },
@@ -588,10 +618,7 @@ describe("publish featured term", () => {
     await call(client, "publish", { draftId: "d-1" });
     const postFile = calls.commits[0].files.find((f) => f.path === "content/posts/melktert.json");
     const post: unknown = JSON.parse(postFile!.content);
-    if (post === null || typeof post !== "object") throw new Error("bad post");
-    const categories = (post as { categories: unknown }).categories;
-    if (!Array.isArray(categories)) throw new Error("expected categories array");
-    return categories as number[];
+    return numberArrayField(post, "categories");
   }
 
   it("adds the featured term (resolved by slug) when interview.featured is true", async () => {

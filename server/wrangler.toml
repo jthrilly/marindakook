@@ -13,6 +13,14 @@ compatibility_flags = ["nodejs_compat"]
 # binding = "DRAFTS"
 # id = "<provisioned-kv-namespace-id>"
 
+# OAuthProvider's own token store. @cloudflare/workers-oauth-provider requires
+# a KV binding literally named OAUTH_KV (it calls env.OAUTH_KV.get/put); the
+# namespace id is provisioned at deploy time, tests bind it via miniflare in
+# vitest.config.ts, so this stub stays commented.
+# [[kv_namespaces]]
+# binding = "OAUTH_KV"
+# id = "<provisioned-kv-namespace-id>"
+
 # Staged photo uploads awaiting publish (Task 3 / Task 7).
 # [[r2_buckets]]
 # binding = "PHOTOS"

@@ -15,7 +15,8 @@ function recipeToDraft(recipe: Post["recipe"]): DraftPost["recipe"] {
   if (recipe === null) {
     return undefined;
   }
-  const { image: _image, ...rest } = recipe;
+  const rest = { ...recipe };
+  Reflect.deleteProperty(rest, "image");
   return rest;
 }
 

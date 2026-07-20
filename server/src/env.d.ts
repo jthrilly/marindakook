@@ -51,7 +51,8 @@ declare namespace Cloudflare {
 
     // Non-secret configuration.
     SITE_BASE_URL?: string;
-    // "true" keeps publishes as PRs for Joshua; anything else publishes direct.
+    // Pilot mode (publish-as-PR) UNLESS PILOT_MODE is exactly "false"; unset /
+    // "true" / any other value stays in PR mode.
     PILOT_MODE?: string;
     // Joshua's GitHub handle, surfaced in PR titles/bodies.
     REVIEWER?: string;
