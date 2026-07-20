@@ -56,6 +56,9 @@ export async function validateContent(root) {
       continue;
     }
     pages.set(result.data.slug, result.data);
+    if (`${result.data.slug}.json` !== file) {
+      issues.push(`pages/${file}: slug "${result.data.slug}" does not match filename`);
+    }
     if (posts.has(result.data.slug)) {
       issues.push(`pages/${file}: slug collides with a post (posts win in the router)`);
     }
@@ -73,6 +76,9 @@ export async function validateContent(root) {
       if (!result.success) {
         issues.push(...zodIssues(name, result.error));
         continue;
+      }
+      if (`${result.data.slug}.json` !== file) {
+        issues.push(`${name}: slug "${result.data.slug}" does not match filename`);
       }
       const source = sources.get(result.data.slug);
       if (!source) {

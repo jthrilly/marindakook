@@ -78,7 +78,13 @@ Four tracks, each its own implementation plan:
 
 - **Track A — typed contract**: `src/lib/content-schema.ts` (zod), loader
   refactor, `validate-content` CI job, migration-proof fixtures, build-time
-  derivation of the post index and term counts. No dependencies.
+  derivation of the post index and term counts. No dependencies. Two
+  contract items are deliberately deferred out of Track A: the required
+  (non-nullable) featured-image variant for new chat-authored posts is
+  enforced by Track D's Worker draft schema, and the site-chrome English
+  translation file (`content/translations/en/site.json`, replacing
+  `enSiteStrings`) is built in Track B alongside the translation prompt
+  work.
 - **Track B — voice**: style guides (af/en), the committed translation prompt,
   translation regression harness. Depends only on A's schema shapes.
 - **Track C — WordPress decommission**: final sync/freeze, mirror

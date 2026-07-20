@@ -1,4 +1,4 @@
-import { cp, mkdtemp, readFile, writeFile } from "node:fs/promises";
+import { cp, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
@@ -12,14 +12,18 @@ describe("validateContent", () => {
 
   it("reports a corrupted post", async () => {
     const dir = await mkdtemp(join(tmpdir(), "content-"));
-    await cp(join(process.cwd(), "content"), dir, { recursive: true });
-    const victim = join(dir, "posts", "lemoen-stroopkoek.json");
-    const post = JSON.parse(await readFile(victim, "utf8"));
-    delete post.title;
-    post.bogus = true;
-    await writeFile(victim, JSON.stringify(post, null, 1));
-    const issues = await validateContent(dir);
-    expect(issues.length).toBeGreaterThan(0);
-    expect(issues.join("\n")).toContain("lemoen-stroopkoek");
+    try {
+      await cp(join(process.cwd(), "content"), dir, { recursive: true });
+      const victim = join(dir, "posts", "lemoen-stroopkoek.json");
+      const post = JSON.parse(await readFile(victim, "utf8"));
+      delete post.title;
+      post.bogus = true;
+      await writeFile(victim, JSON.stringify(post, null, 1));
+      const issues = await validateContent(dir);
+      expect(issues.length).toBeGreaterThan(0);
+      expect(issues.join("\n")).toContain("lemoen-stroopkoek");
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
   });
 });

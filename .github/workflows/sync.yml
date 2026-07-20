@@ -29,6 +29,9 @@ jobs:
       - name: Sync content from WordPress REST API
         run: node scripts/sync-content.mjs
 
+      - name: Validate content
+        run: npm run validate:content
+
       - name: Report untranslated content
         run: node scripts/check-all-translations.mjs || true
 

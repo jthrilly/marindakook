@@ -1,7 +1,7 @@
 import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { postSchema } from "@/lib/content-schema";
+import { pageSchema, postSchema } from "@/lib/content-schema";
 import { sourceHashOf, type TranslationSource } from "@/lib/source-hash";
 
 const CONTENT = join(process.cwd(), "content");
@@ -33,6 +33,16 @@ describe("sourceHashOf", () => {
     )) {
       const raw = await readJson("posts", file);
       const parsed = postSchema.parse(raw);
+      expect(sourceHashOf(parsed), file).toBe(sourceHashOf(raw));
+    }
+  });
+
+  it("is transparent to zod normalization of pages", async () => {
+    for (const file of (await readdir(join(CONTENT, "pages"))).filter((f) =>
+      f.endsWith(".json"),
+    )) {
+      const raw = await readJson("pages", file);
+      const parsed = pageSchema.parse(raw);
       expect(sourceHashOf(parsed), file).toBe(sourceHashOf(raw));
     }
   });

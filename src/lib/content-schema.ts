@@ -160,9 +160,7 @@ export const termsFileSchema = z.strictObject({
   tags: z.array(termSchema),
 });
 
-export type ImageRef = z.infer<typeof imageRefSchema>;
 export type FeaturedImage = z.infer<typeof featuredImageSchema>;
-export type RecipeDetail = z.infer<typeof recipeDetailSchema>;
 export type Recipe = z.infer<typeof recipeSchema>;
 export type Comment = z.infer<typeof commentSchema>;
 export type Post = z.infer<typeof postSchema>;

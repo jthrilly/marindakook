@@ -30,6 +30,9 @@ jobs:
       - name: Validate content
         run: npm run validate:content
 
+      - name: Run tests
+        run: npm test
+
       # Run-unique key so the post-job save always happens (an exact-key cache
       # hit would skip saving, freezing the mirror at its first partial state).
       - name: Restore media mirror

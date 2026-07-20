@@ -42,8 +42,8 @@ export const getTerms = cache(
   async (): Promise<{ categories: Term[]; tags: Term[] }> => {
     const terms = termsFileSchema.parse(await readJson("terms.json"));
     const counts = deriveTermCounts(await getPostIndex());
-    // Parameter is the file-parse shape (not Term) so this compiles unchanged
-    // when Task 7 removes `count` from the schema and redefines Term.
+    // Parameter is the file-parse shape: Term includes the derived count,
+    // which the file no longer carries.
     const withDerivedCounts = (list: typeof terms.categories): Term[] =>
       list.map((t) => ({ ...t, count: counts.get(t.id) ?? 0 }));
     return {
