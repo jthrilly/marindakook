@@ -122,14 +122,11 @@ After creating the App, GitHub gives you an **App ID** and an **Installation ID*
 **PKCS#8**, so convert it once:
 
 ```bash
-openssl pkcs8 -topk8 -inform PEM -outform PEM -nocrypt -in key.pem -out key-pkcs8.pem
+openssl pkcs8 -topk8 -inform PEM -outform PEM -nocrypt -in key.pem | npx wrangler secret put GITHUB_APP_PRIVATE_KEY
 ```
 
-Then set it as a secret (never commit the key or the converted file):
-
-```bash
-npx wrangler secret put GITHUB_APP_PRIVATE_KEY < key-pkcs8.pem
-```
+Piping straight into `wrangler secret put` avoids ever writing the converted key to disk. Never commit
+either the original or converted key.
 
 ### 5. Every other secret and var
 
