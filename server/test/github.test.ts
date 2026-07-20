@@ -329,6 +329,41 @@ describe("commitFiles deletions", () => {
   });
 });
 
+describe("findOpenPullRequest", () => {
+  it("queries the head-scoped open PR and returns its number/url", async () => {
+    const { fetch: fetchImpl, calls } = makeFetch((call) => {
+      if (call.method === "POST" && call.pathname.endsWith("/access_tokens")) {
+        return json({ token: "ghs_x", expires_at: "2026-07-20T18:00:00Z" });
+      }
+      if (call.method === "GET" && call.pathname === `/repos/${OWNER}/${REPO}/pulls`) {
+        return json([{ number: 7, html_url: "https://github.com/marinda/site/pull/7" }]);
+      }
+      return undefined;
+    });
+
+    const result = await newApp(fetchImpl).findOpenPullRequest("cms/publiseer-d1");
+
+    expect(result).toEqual({ number: 7, url: "https://github.com/marinda/site/pull/7" });
+    const pullsCall = calls.find((c) => c.pathname === `/repos/${OWNER}/${REPO}/pulls`);
+    expect(pullsCall?.search).toContain(`head=${encodeURIComponent(`${OWNER}:cms/publiseer-d1`)}`);
+    expect(pullsCall?.search).toContain("state=open");
+  });
+
+  it("returns null when no open PR exists for the head", async () => {
+    const fetchImpl = makeFetch((call) => {
+      if (call.method === "POST" && call.pathname.endsWith("/access_tokens")) {
+        return json({ token: "ghs_x", expires_at: "2026-07-20T18:00:00Z" });
+      }
+      if (call.method === "GET" && call.pathname === `/repos/${OWNER}/${REPO}/pulls`) {
+        return json([]);
+      }
+      return undefined;
+    }).fetch;
+
+    expect(await newApp(fetchImpl).findOpenPullRequest("cms/publiseer-none")).toBeNull();
+  });
+});
+
 describe("findDraftCommit", () => {
   function routeCommits(commits: { sha: string; message: string }[]): typeof fetch {
     return makeFetch((call) => {

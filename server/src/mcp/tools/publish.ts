@@ -2,7 +2,8 @@ import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import { pageSchema, postSchema, siteSchema, translationSchema } from "@site/lib/content-schema";
 import { sourceHashOf } from "@site/lib/source-hash";
-import type { CommitFile } from "../../core/github";
+import type { CommitFile, PullRequestInput, PullRequestResult } from "../../core/github";
+import { GitHubError } from "../../core/github";
 import { resolveSlug, slugify } from "../../core/slug";
 import { nextPostId } from "../../core/ids";
 import type { ChromeDraft, DraftPost } from "../../core/draft-schema";
@@ -10,6 +11,7 @@ import type { JsonValue } from "../../core/store";
 import { buildTranslationSource, parseJobRecord } from "../../core/translation-job";
 import {
   RESERVED_SLUGS,
+  applyFeaturedTerm,
   applySiteChrome,
   buildFeatured,
   buildPageCandidate,
@@ -88,6 +90,24 @@ function translationFileFrom(
   return file;
 }
 
+// Open a PR, tolerating the "a pull request already exists for this head" 422 a
+// retry hits after a dropped `openPullRequest` response: resolve and return the
+// existing open PR instead of surfacing a false failure. Every PR-open path
+// (pilot publish, delete_post, failing-translation PR) goes through this.
+async function openOrFindPr(cfg: PublishConfig, input: PullRequestInput): Promise<PullRequestResult> {
+  try {
+    return await cfg.github.openPullRequest(input);
+  } catch (err) {
+    if (err instanceof GitHubError && err.status === 422) {
+      const existing = await cfg.github.findOpenPullRequest(input.head);
+      if (existing !== null) {
+        return existing;
+      }
+    }
+    throw err;
+  }
+}
+
 interface LandResult {
   kind: "direct" | "pilot";
   commitSha?: string;
@@ -136,7 +156,7 @@ async function land(
     requireAbsent: input.requireAbsent,
     expectShas: input.expectShas,
   });
-  const pr = await cfg.github.openPullRequest({
+  const pr = await openOrFindPr(cfg, {
     title: input.prTitle,
     head: input.branchName,
     base: branch,
@@ -193,6 +213,18 @@ async function publishChrome(
 ): Promise<ReturnType<typeof ok>> {
   const branch = baseBranchOf(cfg);
 
+  // Idempotency (pilot): replay the recorded PR without re-hitting GitHub.
+  if (cfg.pilotMode) {
+    const recorded = await recordedPilotPr(ctx, draft.draftId);
+    if (recorded !== null) {
+      return ok(pilotSuccessMessage(cfg, recorded.url), {
+        draftId: draft.draftId,
+        mode: "pilot",
+        url: recorded.url,
+      });
+    }
+  }
+
   const landed = await cfg.github.findDraftCommit(draft.draftId, branch);
   if (landed !== null) {
     await ctx.store.setPublish(draft.draftId, { mode: "direct", commitSha: landed, kind: "chrome" });
@@ -238,7 +270,6 @@ async function publishPostOrPage(
   content: ContentSource,
   draft: DraftPost,
 ): Promise<ReturnType<typeof ok>> {
-  const branch = baseBranchOf(cfg);
   const now = ctx.now();
   const nowIso = wpDate(now);
   const rawSlug = draft.slug ?? slugify(draft.title ?? "");
@@ -267,8 +298,10 @@ async function publishPostOrPage(
   }
 
   // Posts: build the complete Post, preserving an existing post's imagery when
-  // an edit adds no new hero.
-  const subfolder = mediaSubfolder(now);
+  // an edit adds no new hero. Media paths derive from the draft's createdAt (a
+  // stable draft field), NOT publish-time `now`, so a retried commit reproduces
+  // byte-identical paths (spec §340).
+  const subfolder = mediaSubfolder(new Date(draft.createdAt));
   const photos = await ctx.store.listPhotos(draft.draftId);
   const heroFilename = draft.interview?.heroPhoto;
   const heroUrl =
@@ -285,12 +318,23 @@ async function publishPostOrPage(
   const recipeImage =
     heroUrl !== null ? buildRecipeImage(heroUrl, alt) : (existingPost?.recipe?.image ?? null);
 
+  // Reconcile the "featured" term against the interview's voorblad answer so a
+  // chat-published featured post lands in the homepage featured grid (and an
+  // un-featuring edit drops it). The term id is resolved by slug from the
+  // injected taxonomy; when absent the categories are left untouched.
+  const categories = applyFeaturedTerm(
+    draft.categories ?? [],
+    draft.interview?.featured === true,
+    ctx.featuredTermId ?? null,
+  );
+
   const candidate = buildPostCandidate(draft, slug, {
     id,
     date: existingPost?.date ?? nowIso,
     modified: nowIso,
     commentStatus: existingPost?.commentStatus ?? "closed",
     comments: existingPost?.comments ?? [],
+    categories,
     featured,
     recipeImage,
   });
@@ -307,6 +351,9 @@ async function publishPostOrPage(
   const job = parseJobRecord(await ctx.store.getJob(draft.draftId));
   let translationFile: { [key: string]: JsonValue } | null = null;
   let failingTranslation: { [key: string]: JsonValue } | null = null;
+  // Exhaustion (validator gave up for the current source) means publish proceeds
+  // Afrikaans-only with "Engels volg later" — true even when no candidate exists.
+  let translationExhausted = false;
 
   if (job !== null && job.sourceHash === currentHash && job.status === "passing") {
     const built = translationFileFrom(job.translation, id, slug, currentHash);
@@ -319,6 +366,7 @@ async function publishPostOrPage(
     }
     translationFile = built;
   } else if (job !== null && job.sourceHash === currentHash && job.status === "failing") {
+    translationExhausted = true;
     failingTranslation =
       job.translation === null ? null : translationFileFrom(job.translation, id, slug, currentHash);
   } else {
@@ -334,6 +382,7 @@ async function publishPostOrPage(
     subfolder,
     translationFile,
     failingTranslation,
+    translationExhausted,
   });
 }
 
@@ -370,22 +419,56 @@ async function commitPost(
     subfolder: string;
     translationFile: { [key: string]: JsonValue } | null;
     failingTranslation: { [key: string]: JsonValue } | null;
+    translationExhausted: boolean;
   },
 ): Promise<ReturnType<typeof ok>> {
   const branch = baseBranchOf(cfg);
   const { draft, post } = input;
   const docPath = `${POSTS_DIR}/${post.slug}.json`;
   const translationPath = `${POST_TRANSLATIONS_DIR}/${post.slug}.json`;
+  // Direct publish with a failing (exhausted) translation candidate: the English
+  // is PR'd for Joshua while Afrikaans goes live. Non-null exactly when such a
+  // best-effort PR is due (narrows the candidate for the PR calls below).
+  const failingTranslationForPr =
+    !cfg.pilotMode && input.translationFile === null ? input.failingTranslation : null;
 
-  // Idempotency: a prior attempt may already have landed on the base branch.
+  // Idempotency (pilot): a prior attempt already opened the PR (its commit lands
+  // on the PR branch, not main, so findDraftCommit below can't see it). Replay
+  // the same honest success from the recorded PR without re-hitting GitHub.
+  if (cfg.pilotMode) {
+    const recorded = await recordedPilotPr(ctx, draft.draftId);
+    if (recorded !== null) {
+      await deleteStagedPhotos(ctx, draft.draftId);
+      return ok(pilotSuccessMessage(cfg, recorded.url), {
+        draftId: draft.draftId,
+        mode: "pilot",
+        slug: post.slug,
+        url: recorded.url,
+      });
+    }
+  }
+
+  // Idempotency (direct): a prior attempt may already have landed on the base
+  // branch. Re-attempt the failing-translation PR (idempotent) so a retry after
+  // the main commit landed but before the English PR opened does not skip it.
   const landed = await cfg.github.findDraftCommit(draft.draftId, branch);
   if (landed !== null) {
     await deleteStagedPhotos(ctx, draft.draftId);
     await ctx.store.setPublish(draft.draftId, { mode: "direct", commitSha: landed, slug: post.slug });
-    return ok(directSuccessMessage(cfg, post.slug, input.failingTranslation !== null), {
+    const translationPrError =
+      failingTranslationForPr !== null
+        ? await ensureFailingTranslationPr(cfg, {
+            slug: post.slug,
+            title: post.title,
+            translationPath,
+            translation: failingTranslationForPr,
+          })
+        : undefined;
+    return ok(directSuccessMessage(cfg, post.slug, input.translationExhausted), {
       draftId: draft.draftId,
       slug: post.slug,
       alreadyPublished: true,
+      ...(translationPrError !== undefined ? { translationPrError } : {}),
     });
   }
 
@@ -446,21 +529,24 @@ async function commitPost(
   });
 
   // Direct publish with a failing translation: PR the failing English for Joshua
-  // (Afrikaans is already live).
-  if (input.failingTranslation !== null && input.translationFile === null) {
-    await openFailingTranslationPr(cfg, {
-      slug: post.slug,
-      title: post.title,
-      translationPath,
-      translation: input.failingTranslation,
-    });
-  }
+  // (Afrikaans is already live). Best-effort — a PR failure must not mask the
+  // successful post publish, so surface it rather than throw.
+  const translationPrError =
+    failingTranslationForPr !== null
+      ? await ensureFailingTranslationPr(cfg, {
+          slug: post.slug,
+          title: post.title,
+          translationPath,
+          translation: failingTranslationForPr,
+        })
+      : undefined;
 
-  return ok(directSuccessMessage(cfg, post.slug, input.failingTranslation !== null), {
+  return ok(directSuccessMessage(cfg, post.slug, input.translationExhausted), {
     draftId: draft.draftId,
     mode: "direct",
     slug: post.slug,
     commitSha: result.commitSha,
+    ...(translationPrError !== undefined ? { translationPrError } : {}),
   });
 }
 
@@ -477,6 +563,19 @@ async function commitPage(
   },
 ): Promise<ReturnType<typeof ok>> {
   const branch = baseBranchOf(cfg);
+
+  // Idempotency (pilot): replay the recorded PR without re-hitting GitHub.
+  if (cfg.pilotMode) {
+    const recorded = await recordedPilotPr(ctx, input.draft.draftId);
+    if (recorded !== null) {
+      return ok(pilotSuccessMessage(cfg, recorded.url), {
+        draftId: input.draft.draftId,
+        mode: "pilot",
+        slug: input.slug,
+        url: recorded.url,
+      });
+    }
+  }
 
   const landed = await cfg.github.findDraftCommit(input.draft.draftId, branch);
   if (landed !== null) {
@@ -528,6 +627,9 @@ async function commitPage(
   });
 }
 
+// Branch → commit → PR the failing English translation. Idempotent end-to-end:
+// createBranch tolerates a 422, commitFiles is branch-idempotent via the
+// Draft-Id trailer, and openOrFindPr resolves the existing PR on a retry.
 async function openFailingTranslationPr(
   cfg: PublishConfig,
   input: { slug: string; title: string; translationPath: string; translation: { [key: string]: JsonValue } },
@@ -542,7 +644,7 @@ async function openFailingTranslationPr(
     draftId: `vertaling-${input.slug}`,
     branch: branchName,
   });
-  await cfg.github.openPullRequest({
+  await openOrFindPr(cfg, {
     title: `Engelse vertaling: ${input.title} (vir ${reviewerOf(cfg)})`,
     head: branchName,
     base: branch,
@@ -550,11 +652,45 @@ async function openFailingTranslationPr(
   });
 }
 
+// Best-effort wrapper: the post is already live, so a failing-translation-PR
+// error is returned (surfaced in structuredContent) rather than thrown, keeping
+// the successful publish honest instead of masking it as a failure.
+async function ensureFailingTranslationPr(
+  cfg: PublishConfig,
+  input: { slug: string; title: string; translationPath: string; translation: { [key: string]: JsonValue } },
+): Promise<string | undefined> {
+  try {
+    await openFailingTranslationPr(cfg, input);
+    return undefined;
+  } catch (err) {
+    return err instanceof Error ? err.message : String(err);
+  }
+}
+
 const publishRecordSchema = z.object({
   mode: z.enum(["direct", "pilot"]),
   slug: z.string().optional(),
+  pr: z.number().optional(),
   url: z.string().optional(),
 });
+
+// A pilot publish records its PR (number+url) once opened. A retry reads it back
+// to short-circuit to the same honest "gestuur vir Joshua" success — mirroring
+// how direct mode short-circuits via findDraftCommit — without re-hitting GitHub.
+async function recordedPilotPr(
+  ctx: ToolContext,
+  draftId: string,
+): Promise<{ pr: number; url: string } | null> {
+  const raw = await ctx.store.getPublish(draftId);
+  if (raw === null) {
+    return null;
+  }
+  const parsed = publishRecordSchema.safeParse(raw);
+  if (!parsed.success || parsed.data.mode !== "pilot" || parsed.data.url === undefined) {
+    return null;
+  }
+  return { pr: parsed.data.pr ?? 0, url: parsed.data.url };
+}
 
 export function registerPublishTools(server: McpServer, ctx: ToolContext): void {
   server.registerTool(
@@ -708,7 +844,7 @@ export function registerPublishTools(server: McpServer, ctx: ToolContext): void 
         draftId: `verwyder-${args.slug}`,
         branch: branchName,
       });
-      const pr = await cfg.github.openPullRequest({
+      const pr = await openOrFindPr(cfg, {
         title: `Verwyder ${args.slug}`,
         head: branchName,
         base: branch,

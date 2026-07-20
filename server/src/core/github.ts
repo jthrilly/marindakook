@@ -101,6 +101,7 @@ export interface GitHubClient {
   commitFiles(input: CommitInput): Promise<CommitResult>;
   createBranch(name: string, fromSha: string): Promise<void>;
   openPullRequest(input: PullRequestInput): Promise<PullRequestResult>;
+  findOpenPullRequest(headBranch: string): Promise<PullRequestResult | null>;
   latestRunForSha(sha: string): Promise<RunStatus | null>;
 }
 
@@ -201,6 +202,28 @@ export class GitHubApp implements GitHubClient {
       body: { title: input.title, head: input.head, base: input.base, body: input.body ?? "" },
     });
     const record = readRecord(await readJson(res, "pull request"), "pull request");
+    return {
+      number: readNumber(record.number, "pull request .number"),
+      url: readString(record.html_url, "pull request .html_url"),
+    };
+  }
+
+  // Resolve the open PR for a head branch. Used to recover honestly from a
+  // dropped `openPullRequest` response: on a retry GitHub answers the create
+  // with a 422 "duplicate PR", and the caller falls back to this to return the
+  // PR that already exists rather than surfacing a false failure.
+  async findOpenPullRequest(headBranch: string): Promise<PullRequestResult | null> {
+    const token = await this.installationToken();
+    const head = `${this.config.owner}:${headBranch}`;
+    const res = await this.request(
+      `/repos/${this.repoPath()}/pulls?head=${encodeURIComponent(head)}&state=open`,
+      { method: "GET", token },
+    );
+    const list = readArray(await readJson(res, "pull requests"), "pull requests");
+    if (list.length === 0) {
+      return null;
+    }
+    const record = readRecord(list[0], "pull request");
     return {
       number: readNumber(record.number, "pull request .number"),
       url: readString(record.html_url, "pull request .html_url"),

@@ -5,7 +5,7 @@ import { sourceHashOf } from "@site/lib/source-hash";
 import type { Post, Site } from "@site/lib/content-schema";
 import type { PostSummary } from "@site/lib/content-derive";
 import { InMemoryStore } from "../src/core/store";
-import type { GitHubClient } from "../src/core/github";
+import { GitHubError, type GitHubClient, type PullRequestResult } from "../src/core/github";
 import type { DraftPost } from "../src/core/draft-schema";
 import { buildTranslationSource } from "../src/core/translation-job";
 import { createMcpServer, type ContentSource, type McpServerDeps, type PublishConfig } from "../src/mcp/server";
@@ -60,10 +60,17 @@ interface FakeGitHubOptions {
   findDraftCommit?: (draftId: string) => string | null;
   latestRun?: () => { status: string; conclusion: string | null; url: string } | null;
   pathSha?: string;
+  // Simulate GitHub answering the PR-create with a 422 "duplicate PR" (the case
+  // a retry hits after a dropped openPullRequest response).
+  openPrThrows422?: boolean;
+  // What findOpenPullRequest resolves for a head (defaults to whatever a prior
+  // openPullRequest registered).
+  findOpenPr?: (head: string) => PullRequestResult | null;
 }
 
 function makeGitHub(options: FakeGitHubOptions = {}): { github: GitHubClient; calls: GitHubCalls } {
   const calls: GitHubCalls = { commits: [], branches: [], prs: [] };
+  const openedPrs = new Map<string, PullRequestResult>();
   let prCounter = 0;
   const github: GitHubClient = {
     async getBaseTree() {
@@ -91,9 +98,20 @@ function makeGitHub(options: FakeGitHubOptions = {}): { github: GitHubClient; ca
       calls.branches.push({ name, fromSha });
     },
     async openPullRequest(input) {
+      if (options.openPrThrows422 === true) {
+        throw new GitHubError(`A pull request already exists for marinda:${input.head}`, { status: 422 });
+      }
       prCounter += 1;
       calls.prs.push({ title: input.title, head: input.head, base: input.base, body: input.body });
-      return { number: prCounter, url: `https://github.com/marinda/site/pull/${prCounter}` };
+      const result = { number: prCounter, url: `https://github.com/marinda/site/pull/${prCounter}` };
+      openedPrs.set(input.head, result);
+      return result;
+    },
+    async findOpenPullRequest(head) {
+      if (options.findOpenPr) {
+        return options.findOpenPr(head);
+      }
+      return openedPrs.get(head) ?? null;
     },
     async latestRunForSha() {
       return options.latestRun ? options.latestRun() : null;
@@ -178,7 +196,8 @@ async function setup(opts: {
     interviewProtocol: "PROTOCOL",
     styleGuides: { af: "AF", en: "EN" },
     postIndex: INDEX,
-    now: () => new Date(NOW),
+    now: opts.now ?? (() => new Date(NOW)),
+    categories: opts.categories,
     content: opts.content ?? contentSource(),
     publishing,
   };
@@ -335,6 +354,70 @@ describe("publish (pilot off)", () => {
   });
 });
 
+describe("publish featured term", () => {
+  const TERMS = [
+    { id: 366, name: "Featured", slug: "featured" },
+    { id: 12, name: "Nagereg", slug: "nagereg" },
+  ];
+
+  async function publishedCategories(draft: DraftPost): Promise<number[]> {
+    const { github, calls } = makeGitHub();
+    const { client, store } = await setup({ github, categories: TERMS });
+    await approve(store, draft);
+    await store.setJob("d-1", passingTranslation(draft));
+    await call(client, "publish", { draftId: "d-1" });
+    const postFile = calls.commits[0].files.find((f) => f.path === "content/posts/melktert.json");
+    const post: unknown = JSON.parse(postFile!.content);
+    if (post === null || typeof post !== "object") throw new Error("bad post");
+    const categories = (post as { categories: unknown }).categories;
+    if (!Array.isArray(categories)) throw new Error("expected categories array");
+    return categories as number[];
+  }
+
+  it("adds the featured term (resolved by slug) when interview.featured is true", async () => {
+    const draft = fullDraft({
+      categories: [12],
+      interview: { settled: ["featured"], pending: [], featured: true },
+    });
+    const categories = await publishedCategories(draft);
+    expect(categories).toContain(366);
+    expect(categories).toContain(12);
+  });
+
+  it("excludes the featured term when interview.featured is false (un-featuring an update)", async () => {
+    const draft = fullDraft({
+      categories: [12, 366],
+      interview: { settled: ["featured"], pending: [], featured: false },
+    });
+    const categories = await publishedCategories(draft);
+    expect(categories).not.toContain(366);
+    expect(categories).toContain(12);
+  });
+});
+
+describe("publish media-path determinism", () => {
+  async function heroPathFor(now: string): Promise<string> {
+    const { github, calls } = makeGitHub();
+    const { client, store } = await setup({ github, now: () => new Date(now) });
+    const draft = fullDraft({ createdAt: "2026-03-15T08:00:00.000Z" });
+    await approve(store, draft);
+    await store.setJob("d-1", passingTranslation(draft));
+    await store.putPhoto("d-1", "hero.jpg", new Uint8Array([1]), { contentType: "image/jpeg", uploadedAt: NOW });
+    await call(client, "publish", { draftId: "d-1" });
+    const mediaFile = calls.commits[0].files.find((f) => f.path.startsWith("public/media/uploads/"));
+    if (mediaFile === undefined) throw new Error("expected a media file");
+    return mediaFile.path;
+  }
+
+  it("derives the media year/month from the draft's createdAt, not publish-time now", async () => {
+    const early = await heroPathFor("2026-11-30T23:00:00.000Z");
+    const late = await heroPathFor("2027-05-01T06:00:00.000Z");
+    expect(early).toBe(late);
+    // Stable path comes from createdAt (2026-03), not either publish-time now.
+    expect(early).toBe("public/media/uploads/2026/03/hero.jpg");
+  });
+});
+
 describe("publish (pilot on)", () => {
   it("opens a PR and returns the 'gestuur vir Joshua' message", async () => {
     const { github, calls } = makeGitHub();
@@ -355,6 +438,53 @@ describe("publish (pilot on)", () => {
     expect(calls.prs[0].base).toBe("main");
     // The commit lands on the PR branch, not main.
     expect(calls.commits[0].branch).toBe("cms/publiseer-d-1");
+  });
+
+  it("a retry after a recorded PR short-circuits to success without a duplicate branch/commit/PR", async () => {
+    const { github, calls } = makeGitHub();
+    const { client, store } = await setup({ github, pilotMode: true });
+    const draft = fullDraft();
+    await approve(store, draft);
+    await store.setJob("d-1", passingTranslation(draft));
+
+    // Attempt 1 opens the PR and records it.
+    const first = await call(client, "publish", { draftId: "d-1" });
+    expect(first.isError).toBe(false);
+    const firstUrl = first.structuredContent?.url;
+    expect(firstUrl).toBe("https://github.com/marinda/site/pull/1");
+
+    // Attempt 2 (the dropped-response retry): the recorded PR short-circuits.
+    const second = await call(client, "publish", { draftId: "d-1" });
+    expect(second.isError).toBe(false);
+    expect(textOf(second)).toContain("gestuur vir Joshua");
+    expect(second.structuredContent?.url).toBe(firstUrl);
+    // No duplicate work: still exactly one branch, one commit, one PR.
+    expect(calls.branches).toHaveLength(1);
+    expect(calls.commits).toHaveLength(1);
+    expect(calls.prs).toHaveLength(1);
+  });
+
+  it("resolves an already-existing PR when openPullRequest 422s (dropped response), no error surfaced", async () => {
+    const { github, calls } = makeGitHub({
+      openPrThrows422: true,
+      findOpenPr: () => ({ number: 42, url: "https://github.com/marinda/site/pull/42" }),
+    });
+    const { client, store } = await setup({ github, pilotMode: true });
+    const draft = fullDraft();
+    await approve(store, draft);
+    await store.setJob("d-1", passingTranslation(draft));
+
+    const result = await call(client, "publish", { draftId: "d-1" });
+
+    expect(result.isError).toBe(false);
+    expect(textOf(result)).toContain("gestuur vir Joshua");
+    expect(textOf(result)).toContain("https://github.com/marinda/site/pull/42");
+    // The create was attempted once and threw; no duplicate branch/commit.
+    expect(calls.branches).toHaveLength(1);
+    expect(calls.commits).toHaveLength(1);
+    // The resolved PR is recorded so a later status check/retry is honest.
+    const record = await store.getPublish("d-1");
+    expect(record).toMatchObject({ mode: "pilot", pr: 42, url: "https://github.com/marinda/site/pull/42" });
   });
 });
 

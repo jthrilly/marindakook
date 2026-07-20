@@ -80,6 +80,10 @@ export interface ToolContext {
   styleGuides: { af: string; en: string };
   loadPostIndex: () => Promise<PostSummary[]>;
   offeredCategories: CategoryOption[];
+  // The "featured" bookkeeping term's id, resolved by slug from the injected
+  // taxonomy (never a hardcoded number — the term's id is data). Undefined when
+  // the taxonomy carries no such term; publish then leaves categories untouched.
+  featuredTermId?: number;
   now: () => Date;
   createDraftId: () => string;
   waitUntil: (promise: Promise<unknown>) => void;
@@ -90,13 +94,18 @@ export interface ToolContext {
 }
 
 // The spec's internal terms (spec §198-209): never offered as recipe categories.
-const INTERNAL_TERM_SLUGS = new Set(["featured", "uncategorised", "uncategorized", "eenhede"]);
+const FEATURED_TERM_SLUG = "featured";
+const INTERNAL_TERM_SLUGS = new Set([FEATURED_TERM_SLUG, "uncategorised", "uncategorized", "eenhede"]);
 
 function isInternalTerm(category: CategoryOption): boolean {
   return (
     INTERNAL_TERM_SLUGS.has(category.slug.toLowerCase()) ||
     INTERNAL_TERM_SLUGS.has(category.name.toLowerCase())
   );
+}
+
+function resolveFeaturedTermId(categories: CategoryOption[]): number | undefined {
+  return categories.find((category) => category.slug.toLowerCase() === FEATURED_TERM_SLUG)?.id;
 }
 
 function normalizePostIndex(
@@ -117,6 +126,7 @@ export function createMcpServer(deps: McpServerDeps): McpServer {
     styleGuides: deps.styleGuides,
     loadPostIndex: normalizePostIndex(deps.postIndex),
     offeredCategories: (deps.categories ?? []).filter((category) => !isInternalTerm(category)),
+    featuredTermId: resolveFeaturedTermId(deps.categories ?? []),
     now: deps.now ?? (() => new Date()),
     createDraftId: deps.createDraftId ?? (() => crypto.randomUUID()),
     waitUntil: deps.waitUntil ?? ((promise) => void promise.catch(() => undefined)),

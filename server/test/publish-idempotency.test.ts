@@ -108,6 +108,9 @@ describe("publish idempotency (git as authority)", () => {
       async openPullRequest() {
         return { number: 1, url: "https://x/pull/1" };
       },
+      async findOpenPullRequest() {
+        return null;
+      },
       async latestRunForSha() {
         return null;
       },

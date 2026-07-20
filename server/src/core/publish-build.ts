@@ -124,10 +124,31 @@ export interface PostServerFields {
   modified: string;
   commentStatus: string;
   comments: Comment[];
+  // The resolved category ids: the draft's chosen categories with the "featured"
+  // bookkeeping term added/removed to match the interview's voorblad answer
+  // (see applyFeaturedTerm). Server-managed, not authored verbatim.
+  categories: number[];
   // The resolved hero imagery: freshly built from a newly-staged hero, or the
   // existing post's imagery carried through an edit that added no new photo.
   featured: FeaturedImage | null;
   recipeImage: Recipe["image"];
+}
+
+// Reconcile the "featured" bookkeeping term against the interview's voorblad
+// answer: present exactly once when featured, absent otherwise. Order of the
+// other categories is preserved and the result is idempotent, so a retried
+// publish commits byte-identical categories. A null id (no "featured" term in
+// the injected taxonomy) leaves the categories untouched.
+export function applyFeaturedTerm(
+  categories: number[],
+  featured: boolean,
+  featuredTermId: number | null,
+): number[] {
+  if (featuredTermId === null) {
+    return categories;
+  }
+  const without = categories.filter((id) => id !== featuredTermId);
+  return featured ? [...without, featuredTermId] : without;
 }
 
 // Assemble the candidate Post. Content fields are copied as-is (a missing title
@@ -145,7 +166,7 @@ export function buildPostCandidate(
     date: server.date,
     modified: server.modified,
     excerpt: draft.excerpt ?? "",
-    categories: draft.categories ?? [],
+    categories: server.categories,
     tags: draft.tags ?? [],
     featured: server.featured,
     commentStatus: server.commentStatus,
