@@ -2,6 +2,8 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { describe, expect, it } from "vitest";
 import { sourceHashOf } from "@site/lib/source-hash";
+import { postSchema, translationSchema } from "@site/lib/content-schema";
+import { compareTranslation } from "@site/lib/translation-check.mjs";
 import type { Post, Site } from "@site/lib/content-schema";
 import type { PostSummary } from "@site/lib/content-derive";
 import { InMemoryStore } from "../src/core/store";
@@ -351,6 +353,151 @@ describe("publish (pilot off)", () => {
     expect(JSON.stringify(featured)).toContain("/media/uploads/2026/07/hero-760x760.jpg");
     expect(JSON.stringify(featured)).toContain("hero-760x990.jpg");
     expect(JSON.stringify(featured)).toContain("hero-150x150.jpg");
+  });
+});
+
+// The committed English translation must satisfy THREE consumers at once:
+// translationSchema (strict), the sync's compareTranslation against the built POST,
+// and CI's sourceHash net (hashed over the POST). The old fixture omitted recipe —
+// impossible for a real recipe draft — so it never exercised the contract. These
+// build a genuinely-passing recipe candidate and a non-recipe/no-excerpt candidate
+// and assert on the file publish actually committed.
+function recipeDraft(): DraftPost {
+  return fullDraft({
+    excerpt: "Klassieke melktert met 'n kaneelbolaag.",
+    html: "<p>Roer die vulsel tot dit verdik.</p>",
+    seo: { title: "Melktert - Marinda Kook", description: "Die beste melktert." },
+    recipe: {
+      style: "default",
+      title: "Melktert",
+      courses: ["Nagereg"],
+      summaryHtml: "<p>'n Klassieke Suid-Afrikaanse melktert.</p>",
+      ingredientGroups: [{ title: "Vulsel", items: ["500 ml melk", "2 eiers"] }],
+      directionGroups: [{ title: "Metode", steps: ["Roer die vulsel", "Bak vir 30 minute"] }],
+      notes: ["Bedien koud."],
+    },
+    interview: {
+      settled: ["title", "recipe", "story", "featured", "photo"],
+      pending: [],
+      featured: true,
+      heroPhoto: "hero.jpg",
+    },
+  });
+}
+
+// The model's PASSING candidate: translated text with structure + counts matching
+// the draft source. Loose/draft-shaped (no recipe image, sparse) — exactly what a
+// real translation job stores.
+function passingRecipeJob(draft: DraftPost) {
+  const hash = sourceHashOf(buildTranslationSource(draft));
+  return {
+    status: "passing",
+    sourceHash: hash,
+    attempts: 1,
+    completedAt: NOW,
+    translation: {
+      id: draft.draftId,
+      slug: draft.slug ?? draft.draftId,
+      sourceHash: hash,
+      title: "Milk tart",
+      excerpt: "Classic milk tart with a cinnamon topping.",
+      seo: { title: "Milk tart - Marinda Kook", description: "The best milk tart." },
+      html: "<p>Stir the filling until it thickens.</p>",
+      recipe: {
+        style: "default",
+        title: "Milk tart",
+        courses: ["Dessert"],
+        summaryHtml: "<p>A classic South African milk tart.</p>",
+        ingredientGroups: [{ title: "Filling", items: ["500 ml milk", "2 eggs"] }],
+        directionGroups: [{ title: "Method", steps: ["Stir the filling", "Bake for 30 minutes"] }],
+        notes: ["Serve cold."],
+      },
+    },
+  };
+}
+
+describe("publish committed-translation contract", () => {
+  it("reconciles a recipe translation to the built post (schema + compareTranslation + sourceHash net)", async () => {
+    const draft = recipeDraft();
+    const job = passingRecipeJob(draft);
+    // The stored candidate genuinely passes the validator against the DRAFT source.
+    expect(compareTranslation(buildTranslationSource(draft), job.translation)).toEqual([]);
+
+    const { github, calls } = makeGitHub();
+    const { client, store } = await setup({ github });
+    await approve(store, draft);
+    await store.setJob("d-1", job);
+    await store.putPhoto("d-1", "hero.jpg", new Uint8Array([1, 2, 3]), { contentType: "image/jpeg", uploadedAt: NOW });
+
+    const result = await call(client, "publish", { draftId: "d-1" });
+    expect(result.isError).toBe(false);
+
+    const postFile = calls.commits[0].files.find((f) => f.path === "content/posts/melktert.json");
+    const translationFile = calls.commits[0].files.find(
+      (f) => f.path === "content/translations/en/posts/melktert.json",
+    );
+    if (postFile === undefined || translationFile === undefined) throw new Error("expected post + translation files");
+    const committedPost = postSchema.parse(JSON.parse(postFile.content));
+    const rawTranslation: unknown = JSON.parse(translationFile.content);
+
+    // 1. The committed translation is valid against the strict content schema.
+    expect(() => translationSchema.parse(rawTranslation)).not.toThrow();
+    const committedTranslation = translationSchema.parse(rawTranslation);
+    // 2. It reconciles against the committed POST (image/details/counts/tags agree).
+    expect(compareTranslation(committedPost, committedTranslation)).toEqual([]);
+    // 3. Its sourceHash matches CI's recomputation over the built post.
+    expect(committedTranslation.sourceHash).toBe(sourceHashOf(committedPost));
+  });
+
+  it("stamps sourceHashOf(post) for a non-recipe post lacking excerpt + seo (excerpt/seo divergence)", async () => {
+    const draft = fullDraft({
+      title: "My storie",
+      slug: "my-storie",
+      excerpt: undefined,
+      seo: undefined,
+      html: "<p>Hallo daar.</p>",
+      recipe: undefined,
+      interview: { settled: ["title", "story"], pending: [], featured: false },
+    });
+    const hash = sourceHashOf(buildTranslationSource(draft));
+    const job = {
+      status: "passing",
+      sourceHash: hash,
+      attempts: 1,
+      completedAt: NOW,
+      translation: {
+        id: draft.draftId,
+        slug: draft.slug ?? draft.draftId,
+        sourceHash: hash,
+        title: "My story",
+        seo: { title: "My story - Marinda Kook", description: null },
+        html: "<p>Hello there.</p>",
+      },
+    };
+    expect(compareTranslation(buildTranslationSource(draft), job.translation)).toEqual([]);
+
+    const { github, calls } = makeGitHub();
+    const { client, store } = await setup({ github });
+    await approve(store, draft);
+    await store.setJob("d-1", job);
+
+    const result = await call(client, "publish", { draftId: "d-1" });
+    expect(result.isError).toBe(false);
+
+    const postFile = calls.commits[0].files.find((f) => f.path === "content/posts/my-storie.json");
+    const translationFile = calls.commits[0].files.find(
+      (f) => f.path === "content/translations/en/posts/my-storie.json",
+    );
+    if (postFile === undefined || translationFile === undefined) throw new Error("expected post + translation files");
+    const committedPost = postSchema.parse(JSON.parse(postFile.content));
+    const rawTranslation: unknown = JSON.parse(translationFile.content);
+
+    expect(() => translationSchema.parse(rawTranslation)).not.toThrow();
+    const committedTranslation = translationSchema.parse(rawTranslation);
+    // Old code stamped sourceHashOf(draftSource): excerpt omitted (->null) and a
+    // partial seo. CI recomputes sourceHashOf(post): excerpt "" and the built seo.
+    // They must agree, or the deploy's `npm test` fails on the first real publish.
+    expect(committedTranslation.sourceHash).toBe(sourceHashOf(committedPost));
   });
 });
 

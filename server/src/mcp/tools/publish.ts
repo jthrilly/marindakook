@@ -1,6 +1,6 @@
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { pageSchema, postSchema, siteSchema, translationSchema } from "@site/lib/content-schema";
+import { pageSchema, postSchema, siteSchema, translationSchema, type Translation } from "@site/lib/content-schema";
 import { sourceHashOf } from "@site/lib/source-hash";
 import type { CommitFile, PullRequestInput, PullRequestResult } from "../../core/github";
 import { GitHubError } from "../../core/github";
@@ -20,6 +20,7 @@ import {
   mediaCommitPath,
   mediaSubfolder,
   mediaUrl,
+  reconcileTranslation,
   serializeContent,
 } from "../../core/publish-build";
 import type { ContentSource, PublishConfig, ToolContext } from "../server";
@@ -355,14 +356,17 @@ async function publishPostOrPage(
   // which case publish proceeds Afrikaans-only and PRs the failing translation.
   const currentHash = sourceHashOf(buildTranslationSource(draft));
   const job = parseJobRecord(await ctx.store.getJob(draft.draftId));
-  let translationFile: { [key: string]: JsonValue } | null = null;
+  let translationFile: Translation | null = null;
   let failingTranslation: { [key: string]: JsonValue } | null = null;
   // Exhaustion (validator gave up for the current source) means publish proceeds
   // Afrikaans-only with "Engels volg later" — true even when no candidate exists.
   let translationExhausted = false;
 
   if (job !== null && job.sourceHash === currentHash && job.status === "passing") {
-    const built = translationFileFrom(job.translation, id, slug, currentHash);
+    // Reconcile the model's loose passing candidate against the built POST: the
+    // committed file carries the candidate's translated text over the post's strict
+    // recipe/image/details and is stamped sourceHashOf(post) — the basis CI checks.
+    const built = reconcileTranslation(job.translation, post);
     if (built === null) {
       return fail("Die gestoorde Engelse vertaling is stukkend. Vra 'n nuwe een aan met generate_translation.");
     }
@@ -370,7 +374,7 @@ async function publishPostOrPage(
     if (!check.success) {
       return fail(`Die Engelse vertaling is nie geldig nie — ${describeZodIssue(check.error.issues[0])}`);
     }
-    translationFile = built;
+    translationFile = check.data;
   } else if (job !== null && job.sourceHash === currentHash && job.status === "failing") {
     translationExhausted = true;
     failingTranslation =
@@ -423,7 +427,7 @@ async function commitPost(
     post: { slug: string; title: string; id: number };
     isCreate: boolean;
     subfolder: string;
-    translationFile: { [key: string]: JsonValue } | null;
+    translationFile: Translation | null;
     failingTranslation: { [key: string]: JsonValue } | null;
     translationExhausted: boolean;
   },
