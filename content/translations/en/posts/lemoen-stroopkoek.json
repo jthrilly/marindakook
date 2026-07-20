@@ -55,9 +55,6 @@
    }
   ],
   "ingredientsTitle": "Ingredients",
-  "directionsTitle": "Method",
-  "notesTitle": "Notes",
-  "notes": [],
   "ingredientGroups": [
    {
     "title": null,
@@ -83,6 +80,7 @@
     ]
    }
   ],
+  "directionsTitle": "Method",
   "directionGroups": [
    {
     "title": null,
@@ -101,6 +99,8 @@
     ]
    }
   ],
+  "notesTitle": "Notes",
+  "notes": [],
   "videoHtml": null
  }
 }
