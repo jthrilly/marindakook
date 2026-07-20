@@ -172,6 +172,33 @@ function renderApprovedPage(): Response {
   );
 }
 
+function renderAlreadyPublishedPage(): Response {
+  return htmlResponse(
+    pageShell(
+      "Reeds gepubliseer",
+      `<h1>Reeds gepubliseer</h1>
+<p>Hierdie resep is reeds gepubliseer. Vra in jou gesprek vir 'n nuwe skakel as jy dit wil wysig.</p>`,
+    ),
+  );
+}
+
+// A draft id is reused across a post's whole edit lifecycle, so once it has
+// been published we can't tell "already published, nothing to review" apart
+// from "published, then edited again" just from `store.get()` returning
+// non-null. `getApproval` re-derives validity against the draft's CURRENT
+// revision (see store.ts) and a successful publish requires approval, so a
+// still-valid approval on a published draft means nothing has changed since
+// that publish; a cleared one means a later edit bumped the revision and
+// genuinely needs fresh review.
+async function isPublishedAndUnchanged(deps: PreviewDeps, draftId: string): Promise<boolean> {
+  const publishRecord = await deps.store.getPublish(draftId);
+  if (publishRecord === null) {
+    return false;
+  }
+  const approval = await deps.store.getApproval(draftId);
+  return approval !== null;
+}
+
 function strOrEmpty(value: string | null | undefined): string {
   return value ?? "";
 }
@@ -374,6 +401,10 @@ export async function renderPreviewPage(draftId: string, deps: PreviewDeps): Pro
     return renderExpiredLinkPage();
   }
 
+  if (await isPublishedAndUnchanged(deps, draftId)) {
+    return renderAlreadyPublishedPage();
+  }
+
   const body =
     stored.draft.kind === "post"
       ? await renderPostBody(deps, draftId, stored.draft)
@@ -392,6 +423,10 @@ export async function handleApprove(req: Request, deps: PreviewDeps): Promise<Re
   const stored = await deps.store.get(claims.draftId);
   if (stored === null) {
     return renderExpiredLinkPage();
+  }
+
+  if (await isPublishedAndUnchanged(deps, claims.draftId)) {
+    return renderAlreadyPublishedPage();
   }
 
   const approvedAt = (deps.now ?? (() => new Date()))().toISOString();

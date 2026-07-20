@@ -225,6 +225,36 @@ describe("renderPreviewPage", () => {
     expect(html).toContain("verval");
     expect(html.toLowerCase()).toContain("nuwe skakel");
   });
+
+  it("renders the already-published page (not the preview/approve form) for a draft published and unchanged since", async () => {
+    const store = new InMemoryStore();
+    const stored = await store.put(postDraft());
+    await store.setApproval(DRAFT_ID, { revision: stored.revision, approvedAt: "2026-07-15T09:00:00.000Z" });
+    await store.setPublish(DRAFT_ID, { sha: "abc123" });
+
+    const res = await renderPreviewPage(DRAFT_ID, makeDeps(store));
+    expect(res.status).toBe(200);
+    const html = await res.text();
+    expect(html.toLowerCase()).toContain("reeds gepubliseer");
+    expect(html.toLowerCase()).toContain("nuwe skakel");
+    expect(html).not.toContain("Lyk reg");
+  });
+
+  it("renders the normal preview + approve form for a draft that was published but edited since", async () => {
+    const store = new InMemoryStore();
+    const stored = await store.put(postDraft());
+    await store.setApproval(DRAFT_ID, { revision: stored.revision, approvedAt: "2026-07-15T09:00:00.000Z" });
+    await store.setPublish(DRAFT_ID, { sha: "abc123" });
+
+    // A later edit bumps the revision, clearing the approval it was stamped with.
+    await store.put(postDraft({ title: "Nuwe titel" }));
+    expect(await store.getApproval(DRAFT_ID)).toBeNull();
+
+    const html = await (await renderPreviewPage(DRAFT_ID, makeDeps(store))).text();
+    expect(html).toContain("Nuwe titel");
+    expect(html).toContain("Lyk reg");
+    expect(html.toLowerCase()).not.toContain("reeds gepubliseer");
+  });
 });
 
 describe("handleApprove", () => {
@@ -276,5 +306,43 @@ describe("handleApprove", () => {
     expect(res.status).toBe(200);
     const html = await res.text();
     expect(html).toContain("verval");
+  });
+
+  it("returns the already-published page without touching approval state for a draft published and unchanged since", async () => {
+    const store = new InMemoryStore();
+    const stored = await store.put(postDraft());
+    const originalApprovedAt = "2026-07-15T09:00:00.000Z";
+    await store.setApproval(DRAFT_ID, { revision: stored.revision, approvedAt: originalApprovedAt });
+    await store.setPublish(DRAFT_ID, { sha: "abc123" });
+
+    const res = await handleApprove(approveRequest(GOOD_TOKEN), makeDeps(store));
+    expect(res.status).toBe(200);
+    const html = await res.text();
+    expect(html.toLowerCase()).toContain("reeds gepubliseer");
+
+    // Idempotent: the approval record is untouched (same approvedAt), not re-stamped.
+    const approvalAfter = await store.getApproval(DRAFT_ID);
+    expect(approvalAfter?.approvedAt).toBe(originalApprovedAt);
+  });
+
+  it("sets a fresh approval for a draft that was published but edited since", async () => {
+    const store = new InMemoryStore();
+    const stored = await store.put(postDraft());
+    await store.setApproval(DRAFT_ID, { revision: stored.revision, approvedAt: "2026-07-15T09:00:00.000Z" });
+    await store.setPublish(DRAFT_ID, { sha: "abc123" });
+
+    // A later edit bumps the revision, clearing the approval it was stamped with.
+    await store.put(postDraft({ title: "Nuwe titel" }));
+    expect(await store.getApproval(DRAFT_ID)).toBeNull();
+
+    const res = await handleApprove(approveRequest(GOOD_TOKEN), makeDeps(store));
+    expect(res.status).toBe(200);
+    const html = await res.text();
+    expect(html).toContain("Gaan terug na jou gesprek");
+
+    const approvalAfter = await store.getApproval(DRAFT_ID);
+    expect(approvalAfter).not.toBeNull();
+    const newStored = await store.get(DRAFT_ID);
+    expect(approvalAfter?.revision).toBe(newStored?.revision);
   });
 });
