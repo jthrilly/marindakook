@@ -152,7 +152,10 @@ ${bodyHtml}
 </html>`;
 }
 
-function renderExpiredLinkPage(): Response {
+// Exported so the Worker router can render it when a GET /upload or /preview
+// arrives with a bad signature — the spec's "never a bare 403" rule applies to
+// both pages, and this is the single friendly Afrikaans page they share.
+export function renderExpiredLinkPage(): Response {
   return htmlResponse(
     pageShell(
       "Skakel het verval",

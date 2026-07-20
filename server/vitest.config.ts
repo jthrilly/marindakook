@@ -11,8 +11,19 @@ export default defineConfig({
     cloudflareTest({
       wrangler: { configPath: "./wrangler.toml" },
       miniflare: {
-        kvNamespaces: ["DRAFTS"],
+        // OAUTH_KV backs the OAuthProvider's token store (D9); DRAFTS/PHOTOS are
+        // the draft + photo bindings (D3).
+        kvNamespaces: ["DRAFTS", "OAUTH_KV"],
         r2Buckets: ["PHOTOS"],
+        // Non-secret test fakes for the D9 routing/auth tests. Real secrets are
+        // set with `wrangler secret put` at provisioning time (spec D11).
+        bindings: {
+          LINK_SECRET: "toets-geheim-moenie-gebruik-nie",
+          OAUTH_MARINDA_USERNAME: "marinda",
+          OAUTH_MARINDA_PASSWORD: "wagwoord-marinda",
+          OAUTH_JOSHUA_USERNAME: "joshua",
+          OAUTH_JOSHUA_PASSWORD: "wagwoord-joshua",
+        },
       },
     }),
   ],

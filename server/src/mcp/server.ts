@@ -1,12 +1,15 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import type { CallToolResult } from "@modelcontextprotocol/sdk/types.js";
 import type { PostSummary } from "@site/lib/content-derive";
 import type { Page, Post, Site } from "@site/lib/content-schema";
+import { type AlertConfig, toTaxonomyError } from "../core/errors";
 import type { GitHubClient } from "../core/github";
 import type { DraftStore } from "../core/store";
 import { registerDraftTools } from "./tools/drafts";
 import { registerEditTools } from "./tools/edit";
 import { registerChromeTools } from "./tools/chrome";
 import { registerPhotoTools } from "./tools/photos";
+import { registerPreviewLinkTool } from "./tools/preview";
 import { registerPublishTools } from "./tools/publish";
 import { registerTranslationTools } from "./tools/translation";
 import { registerVoiceTools } from "./tools/voice";
@@ -69,9 +72,17 @@ export interface McpServerDeps {
   // Builds the signed upload-page link for a draft. The real signer lands in
   // D9; tests inject a stub. Absent means request_photo_upload is unavailable.
   buildUploadLink?: (draftId: string) => string | Promise<string>;
+  // Builds the signed preview/approval-page link. Absent means get_preview_link
+  // is unavailable (older tests that predate the tool).
+  buildPreviewLink?: (draftId: string) => string | Promise<string>;
   translation?: TranslationConfig;
   content?: ContentSource;
   publishing?: PublishConfig;
+  // When present, every tool's unhandled throw (notably a raw GitHubError from
+  // publish/delete) is converted to an honest Afrikaans answer and, for a
+  // terminal fault, a Joshua alert is fired — see `guardToolThrows`. Absent in
+  // unit tests that assert on raw throws.
+  alert?: AlertConfig;
 }
 
 export interface ToolContext {
@@ -88,6 +99,7 @@ export interface ToolContext {
   createDraftId: () => string;
   waitUntil: (promise: Promise<unknown>) => void;
   buildUploadLink?: (draftId: string) => string | Promise<string>;
+  buildPreviewLink?: (draftId: string) => string | Promise<string>;
   translation?: TranslationConfig;
   content?: ContentSource;
   publishing?: PublishConfig;
@@ -117,6 +129,42 @@ function normalizePostIndex(
   return async () => postIndex;
 }
 
+// Wraps a server so every tool handler registered through it is caught: a
+// thrown GitHubError (or any other unhandled fault) becomes an honest Afrikaans
+// answer instead of a raw English error string leaking to the model, and a
+// terminal fault also alerts Joshua. Tools that return `fail()` normally are
+// untouched — only actual throws are intercepted. Implemented as a Proxy that
+// rewrites the handler argument of `registerTool`; the tools themselves call
+// only `registerTool`, and the REAL server (not the proxy) is returned so
+// later `.connect()` calls reach its private state directly.
+function guardToolThrows(server: McpServer, alert: AlertConfig): McpServer {
+  return new Proxy(server, {
+    get(target, prop, receiver) {
+      if (prop !== "registerTool") {
+        return Reflect.get(target, prop, receiver);
+      }
+      return (...args: unknown[]) => {
+        const handler = args[args.length - 1];
+        if (typeof handler === "function") {
+          args[args.length - 1] = async (...handlerArgs: unknown[]): Promise<CallToolResult> => {
+            try {
+              return await handler(...handlerArgs);
+            } catch (error) {
+              const taxonomy = await toTaxonomyError(error, alert);
+              return {
+                content: [{ type: "text", text: taxonomy.message }],
+                isError: true,
+                structuredContent: { errorKind: taxonomy.kind, code: taxonomy.code },
+              };
+            }
+          };
+        }
+        return Reflect.apply(target.registerTool, target, args);
+      };
+    },
+  });
+}
+
 export function createMcpServer(deps: McpServerDeps): McpServer {
   const server = new McpServer({ name: "marindakook-cms", version: "0.1.0" });
 
@@ -131,18 +179,22 @@ export function createMcpServer(deps: McpServerDeps): McpServer {
     createDraftId: deps.createDraftId ?? (() => crypto.randomUUID()),
     waitUntil: deps.waitUntil ?? ((promise) => void promise.catch(() => undefined)),
     buildUploadLink: deps.buildUploadLink,
+    buildPreviewLink: deps.buildPreviewLink,
     translation: deps.translation,
     content: deps.content,
     publishing: deps.publishing,
   };
 
-  registerDraftTools(server, context);
-  registerVoiceTools(server, context);
-  registerPhotoTools(server, context);
-  registerTranslationTools(server, context);
-  registerEditTools(server, context);
-  registerChromeTools(server, context);
-  registerPublishTools(server, context);
+  const registrar = deps.alert === undefined ? server : guardToolThrows(server, deps.alert);
+
+  registerDraftTools(registrar, context);
+  registerVoiceTools(registrar, context);
+  registerPhotoTools(registrar, context);
+  registerPreviewLinkTool(registrar, context);
+  registerTranslationTools(registrar, context);
+  registerEditTools(registrar, context);
+  registerChromeTools(registrar, context);
+  registerPublishTools(registrar, context);
 
   return server;
 }
