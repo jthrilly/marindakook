@@ -20,7 +20,9 @@ const draftSeoSchema = z.strictObject({
 // Recipe content the interview fills in over time. Mirrors recipeSchema but
 // every field is optional; `image` is omitted because the recipe card image is
 // derived from the hero photo at publish, not authored in the draft.
-const draftRecipeSchema = z.strictObject({
+// Exported so the preview page (D8) can re-parse the same loose shape out of
+// an English translation-job candidate — one schema, not a hand-rolled twin.
+export const draftRecipeSchema = z.strictObject({
   style: z.string().optional(),
   title: z.string().optional(),
   author: z.string().nullable().optional(),
@@ -145,3 +147,4 @@ export const chromeDraftSchema = z.strictObject({
 
 export type DraftPost = z.infer<typeof draftPostSchema>;
 export type ChromeDraft = z.infer<typeof chromeDraftSchema>;
+export type DraftRecipe = z.infer<typeof draftRecipeSchema>;
