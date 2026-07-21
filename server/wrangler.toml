@@ -32,6 +32,10 @@ bucket_name = "marindakook-cms-photos"
 [vars]
 GITHUB_OWNER = "jthrilly"
 GITHUB_REPO = "marindakook"
+# GitHub App identifiers — non-secret (they appear in URLs/API responses and
+# grant nothing without the private key, which stays a wrangler secret).
+GITHUB_APP_ID = "4353887"
+GITHUB_INSTALLATION_ID = "147987181"
 # Pilot mode ON (publish opens a PR for review) unless set literally to "false".
 # Leave this "true" for the first weeks — see server/README go-live checklist.
 PILOT_MODE = "true"
