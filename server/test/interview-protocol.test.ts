@@ -34,4 +34,9 @@ describe("interview-af.md protocol file", () => {
   it("instructs never inventing quantities", () => {
     expect(protocol).toContain("Versin nooit hoeveelhede nie");
   });
+
+  it("instructs the model to translate in-conversation via request_translation and submit_translation", () => {
+    expect(protocol).toContain("request_translation");
+    expect(protocol).toContain("submit_translation");
+  });
 });

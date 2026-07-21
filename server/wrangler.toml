@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 # NO account_id here: it is per-user provisioning, filled in at deploy time
 # (see server/README, Task 11 / spec D11). Never commit an account id.
 
-# Draft + translation-job + approval + page/chat handoff state (Task 3).
+# Draft + translation-record + approval + page/chat handoff state (Task 3).
 # Tests bind DRAFTS via miniflare in vitest.config.ts; this is the real
 # provisioned namespace used at deploy time.
 [[kv_namespaces]]
@@ -26,8 +26,9 @@ binding = "PHOTOS"
 bucket_name = "marindakook-cms-photos"
 
 # Non-secret configuration. Secrets (GITHUB_APP_ID, GITHUB_INSTALLATION_ID,
-# GITHUB_APP_PRIVATE_KEY, ANTHROPIC_API_KEY, OAuth passwords, alert webhook)
-# are set with `wrangler secret put` and never committed. Documented in
+# GITHUB_APP_PRIVATE_KEY, OAuth passwords, alert webhook) are set with
+# `wrangler secret put` and never committed. No LLM API key is needed —
+# translation is done by the connected chat model in-conversation. Documented in
 # server/README (spec D11).
 [vars]
 GITHUB_OWNER = "jthrilly"

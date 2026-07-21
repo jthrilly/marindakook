@@ -1,12 +1,11 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { beforeEach, describe, expect, it } from "vitest";
 import { sourceHashOf } from "@site/lib/source-hash";
 import type { DraftPost } from "../src/core/draft-schema";
-import { InMemoryStore } from "../src/core/store";
+import { InMemoryStore, type JsonValue } from "../src/core/store";
 import {
   buildTranslationSource,
-  MAX_TRANSLATION_RETRIES,
-  runTranslationJob,
-  type TranslationJobDeps,
+  parseJobRecord,
+  validateAndStoreTranslation,
 } from "../src/core/translation-job";
 
 const NOW = "2026-07-20T09:00:00.000Z";
@@ -37,8 +36,8 @@ function draft(overrides: Partial<DraftPost> = {}): DraftPost {
 // A structurally-valid English translation of the draft above: same tag
 // signatures, same recipe counts, id/slug copied, details unchanged. It passes
 // compareTranslation. `sourceHash: ""` is what the prompt asks the model for;
-// the job stamps the real hash.
-function goodCandidate(source: ReturnType<typeof buildTranslationSource>): Record<string, unknown> {
+// validateAndStoreTranslation stamps the real hash.
+function goodTranslation(source: ReturnType<typeof buildTranslationSource>): Record<string, JsonValue> {
   return {
     id: source.id,
     slug: source.slug,
@@ -58,25 +57,6 @@ function goodCandidate(source: ReturnType<typeof buildTranslationSource>): Recor
   };
 }
 
-function anthropicResponse(candidate: unknown): Response {
-  return new Response(
-    JSON.stringify({ content: [{ type: "text", text: JSON.stringify(candidate) }] }),
-    { status: 200, headers: { "content-type": "application/json" } },
-  );
-}
-
-function makeDeps(store: InMemoryStore, fetchImpl: typeof fetch): TranslationJobDeps {
-  return {
-    store,
-    promptTemplate: "STYLE:{{STYLE_GUIDE}}\nSOURCE:{{SOURCE_JSON}}",
-    styleGuide: "English style guide",
-    apiKey: "test-key",
-    model: "claude-test",
-    fetchImpl,
-    now: () => new Date(NOW),
-  };
-}
-
 function jobRecord(value: unknown): Record<string, unknown> {
   if (value === null || typeof value !== "object" || Array.isArray(value)) {
     throw new Error(`expected a job record object, got ${JSON.stringify(value)}`);
@@ -84,7 +64,7 @@ function jobRecord(value: unknown): Record<string, unknown> {
   return { ...value };
 }
 
-describe("runTranslationJob", () => {
+describe("validateAndStoreTranslation", () => {
   let store: InMemoryStore;
 
   beforeEach(async () => {
@@ -92,135 +72,54 @@ describe("runTranslationJob", () => {
     await store.put(draft());
   });
 
-  it("stores a passing result whose sourceHash === sourceHashOf(af) on a good translation", async () => {
+  it("stores a passing record (sourceHash === sourceHashOf(source), stamped into translation) on a good translation", async () => {
     const source = buildTranslationSource(draft());
-    const fetchMock = vi.fn<typeof fetch>(async () => anthropicResponse(goodCandidate(source)));
+    const result = await validateAndStoreTranslation({ store, now: () => new Date(NOW) }, draft(), goodTranslation(source));
 
-    await runTranslationJob(makeDeps(store, fetchMock), "d-1");
-
-    expect(fetchMock).toHaveBeenCalledTimes(1);
+    expect(result).toEqual({ ok: true });
     const record = jobRecord(await store.getJob("d-1"));
     expect(record.status).toBe("passing");
     expect(record.sourceHash).toBe(sourceHashOf(source));
+    expect(record.attempts).toBe(1);
+    expect(record.completedAt).toBe(NOW);
     const translation = jobRecord(record.translation);
     expect(translation.sourceHash).toBe(sourceHashOf(source));
+    // The stored passing record parses back through the shared schema unchanged.
+    expect(parseJobRecord(await store.getJob("d-1"))?.status).toBe("passing");
   });
 
-  it("posts to the Anthropic Messages API with the prompt and key from deps", async () => {
-    const source = buildTranslationSource(draft());
-    const fetchMock = vi.fn<typeof fetch>(async () => anthropicResponse(goodCandidate(source)));
+  it("returns the structural issues and stores a FAILING record (never passing) on a bad translation", async () => {
+    // Wrong id + empty title: compareTranslation flags both.
+    const bad: Record<string, JsonValue> = {
+      id: "wrong",
+      slug: "lemoenkoek",
+      sourceHash: "",
+      title: "",
+      seo: { title: "" },
+      html: "<p>x</p>",
+    };
+    const result = await validateAndStoreTranslation({ store, now: () => new Date(NOW) }, draft(), bad);
 
-    await runTranslationJob(makeDeps(store, fetchMock), "d-1");
-
-    const [url, init] = fetchMock.mock.calls[0];
-    expect(String(url)).toBe("https://api.anthropic.com/v1/messages");
-    const headers = new Headers(init?.headers);
-    expect(headers.get("x-api-key")).toBe("test-key");
-    expect(headers.get("anthropic-version")).toBe("2023-06-01");
-    const body = JSON.parse(String(init?.body));
-    expect(body.model).toBe("claude-test");
-    expect(body.messages[0].content).toContain("STYLE:English style guide");
-    expect(body.messages[0].content).toContain("Lemoenkoek");
-  });
-
-  it("retries with validator feedback then records a failing result after exhaustion", async () => {
-    // A candidate that always fails: empty title + id mismatch.
-    const badCandidate = { id: "wrong", slug: "lemoenkoek", sourceHash: "", title: "", seo: { title: "" }, html: "<p>x</p>" };
-    const fetchMock = vi.fn<typeof fetch>(async () => anthropicResponse(badCandidate));
-
-    await runTranslationJob(makeDeps(store, fetchMock), "d-1");
-
-    // 1 initial attempt + MAX_TRANSLATION_RETRIES feedback retries.
-    expect(fetchMock).toHaveBeenCalledTimes(MAX_TRANSLATION_RETRIES + 1);
-
-    // The retries after the first carry the validator issues as correction guidance.
-    const secondPrompt = String(JSON.parse(String(fetchMock.mock.calls[1][1]?.body)).messages[0].content);
-    expect(secondPrompt.toLowerCase()).toContain("id mismatch");
-
+    expect(result.ok).toBe(false);
+    if (!result.ok) {
+      expect(result.issues.length).toBeGreaterThan(0);
+      expect(result.issues.join(" ").toLowerCase()).toContain("id mismatch");
+    }
     const record = jobRecord(await store.getJob("d-1"));
     expect(record.status).toBe("failing");
-    const issues = record.issues;
-    expect(Array.isArray(issues)).toBe(true);
-    if (Array.isArray(issues)) {
-      expect(issues.length).toBeGreaterThan(0);
-    }
+    expect(record.status).not.toBe("passing");
+    // The candidate is retained so publish can degrade to Afrikaans-only + a PR.
+    expect(record.translation).not.toBeNull();
   });
 
-  it("is idempotent per draft+sourceHash: a repeat call reuses the stored result with no new API call", async () => {
+  it("overwrites a prior failing record with a passing one once a good translation is submitted", async () => {
     const source = buildTranslationSource(draft());
-    const fetchMock = vi.fn<typeof fetch>(async () => anthropicResponse(goodCandidate(source)));
-    const deps = makeDeps(store, fetchMock);
+    const bad: Record<string, JsonValue> = { id: "wrong", slug: "lemoenkoek", sourceHash: "", title: "", seo: { title: "" }, html: "<p>x</p>" };
 
-    await runTranslationJob(deps, "d-1");
-    await runTranslationJob(deps, "d-1");
+    await validateAndStoreTranslation({ store }, draft(), bad);
+    expect(jobRecord(await store.getJob("d-1")).status).toBe("failing");
 
-    expect(fetchMock).toHaveBeenCalledTimes(1);
+    await validateAndStoreTranslation({ store }, draft(), goodTranslation(source));
     expect(jobRecord(await store.getJob("d-1")).status).toBe("passing");
-  });
-
-  it("fires the Joshua alert on a terminal Anthropic fault (401), and still stores the failing record", async () => {
-    const alertFetch = vi.fn(async () => new Response(null, { status: 200 }));
-    const fetchMock = vi.fn<typeof fetch>(async () => new Response("revoked key", { status: 401 }));
-    const deps: TranslationJobDeps = {
-      ...makeDeps(store, fetchMock),
-      alert: { webhookUrl: "https://alerts.example/joshua", fetch: alertFetch },
-    };
-
-    await runTranslationJob(deps, "d-1");
-
-    expect(alertFetch).toHaveBeenCalledTimes(1);
-    expect(alertFetch).toHaveBeenCalledWith(
-      "https://alerts.example/joshua",
-      expect.objectContaining({ method: "POST" }),
-    );
-    // Graceful degradation is preserved: the failing record still persists.
-    expect(jobRecord(await store.getJob("d-1")).status).toBe("failing");
-  });
-
-  it("fires the Joshua alert on an exhausted-credit / rate fault (429)", async () => {
-    const alertFetch = vi.fn(async () => new Response(null, { status: 200 }));
-    const fetchMock = vi.fn<typeof fetch>(async () => new Response("rate limited", { status: 429 }));
-    const deps: TranslationJobDeps = {
-      ...makeDeps(store, fetchMock),
-      alert: { webhookUrl: "https://alerts.example/joshua", fetch: alertFetch },
-    };
-
-    await runTranslationJob(deps, "d-1");
-
-    expect(alertFetch).toHaveBeenCalledTimes(1);
-    expect(jobRecord(await store.getJob("d-1")).status).toBe("failing");
-  });
-
-  it("does NOT alert when the model merely fails the validator (200 response, bad content)", async () => {
-    const alertFetch = vi.fn(async () => new Response(null, { status: 200 }));
-    const badCandidate = { id: "wrong", slug: "lemoenkoek", sourceHash: "", title: "", seo: { title: "" }, html: "<p>x</p>" };
-    const fetchMock = vi.fn<typeof fetch>(async () => anthropicResponse(badCandidate));
-    const deps: TranslationJobDeps = {
-      ...makeDeps(store, fetchMock),
-      alert: { webhookUrl: "https://alerts.example/joshua", fetch: alertFetch },
-    };
-
-    await runTranslationJob(deps, "d-1");
-
-    expect(alertFetch).not.toHaveBeenCalled();
-    expect(jobRecord(await store.getJob("d-1")).status).toBe("failing");
-  });
-
-  it("re-runs when the draft content changed (sourceHash differs)", async () => {
-    const source1 = buildTranslationSource(draft());
-    const fetchMock = vi.fn<typeof fetch>(async () => {
-      const current = await store.get("d-1");
-      const src = current && current.draft.kind === "post" ? buildTranslationSource(current.draft) : source1;
-      return anthropicResponse(goodCandidate(src));
-    });
-    const deps = makeDeps(store, fetchMock);
-
-    await runTranslationJob(deps, "d-1");
-    expect(fetchMock).toHaveBeenCalledTimes(1);
-
-    // Edit the draft content -> new sourceHash -> job must run again.
-    await store.put(draft({ title: "Lemoen-en-amandelkoek" }));
-    await runTranslationJob(deps, "d-1");
-    expect(fetchMock).toHaveBeenCalledTimes(2);
   });
 });

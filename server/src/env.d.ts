@@ -42,10 +42,6 @@ declare namespace Cloudflare {
     GITHUB_OWNER?: string;
     GITHUB_REPO?: string;
 
-    // Anthropic key + model for the async translation job (D5).
-    ANTHROPIC_API_KEY?: string;
-    ANTHROPIC_MODEL?: string;
-
     // Where terminal errors alert Joshua (in-Worker webhook, D9).
     ALERT_WEBHOOK?: string;
 

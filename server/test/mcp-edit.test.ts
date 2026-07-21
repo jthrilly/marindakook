@@ -105,6 +105,7 @@ async function setup(post: Post, github: GitHubClient): Promise<Harness> {
     store,
     interviewProtocol: "PROTOCOL",
     styleGuides: { af: "AF", en: "EN" },
+    translatePrompt: "TRANSLATE PROMPT",
     postIndex: INDEX,
     now: () => new Date(NOW),
     createDraftId: () => "d-edit",

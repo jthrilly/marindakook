@@ -216,11 +216,11 @@ export function registerEditTools(server: McpServer, ctx: ToolContext): void {
       }
       await ctx.store.put(parsed.data);
       // Editing the content invalidates any prior translation; clear the job so
-      // check_translation_status/publish know a fresh one is required.
+      // publish knows a fresh one is required.
       await ctx.store.setJob(args.draftId, null);
 
       return ok(
-        `Ek het konsep «${args.draftId}» bygewerk. Die 'modified'-datum sal by publiseer opdateer, en die Engelse vertaling is nou verouderd — vra 'n nuwe een aan met generate_translation.`,
+        `Ek het konsep «${args.draftId}» bygewerk. Die 'modified'-datum sal by publiseer opdateer, en die Engelse vertaling is nou verouderd — maak 'n nuwe een met request_translation en submit_translation.`,
         { draftId: args.draftId, translationStale: true },
       );
     },

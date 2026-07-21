@@ -2,7 +2,8 @@
   CANONICAL Afrikaans -> English translation prompt for Marinda Kook.
   This is the SINGLE source of truth, loaded (with the placeholders below
   substituted) by three consumers that MUST behave identically:
-    1. the publish Worker's `generate_translation` (Track D),
+    1. the Worker's `request_translation` tool, which serves this prompt in full
+       to the chat model that produces the translation in-conversation (Track D),
     2. the CI translation safety net, and
     3. the regression harness (tests).
   Edit the prompt HERE only. `{{STYLE_GUIDE}}` is filled from

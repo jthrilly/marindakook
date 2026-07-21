@@ -6,17 +6,19 @@ A single Cloudflare Worker (`server/`) that lets Marinda write and publish recip
 by chatting with Claude instead of using the WordPress admin. Claude connects to the
 Worker as an MCP connector; the tools run an Afrikaans interview (title, categories,
 ingredients, method, story, photos, featured), collect photos through a mobile-first
-upload page, translate the result to English, show a preview/approval page in both
+upload page, have the connected chat model translate the result to English
+in-conversation (the Worker only validates it — no LLM API key), show a
+preview/approval page in both
 languages, and — once approved — publish by committing directly to this GitHub repo
 (or opening a PR in pilot mode). Everything model-facing (tool text, validation
 errors, both web pages) is in Afrikaans.
 
-The Worker is **built and tested — 182 server tests (19 files) plus the root repo's
-29 tests all green, run against mocked GitHub/Anthropic and miniflare KV/R2/OAuth
+The Worker is **built and tested — 191 server tests (20 files) plus the root
+repo's tests all green, run against mocked GitHub and miniflare KV/R2/OAuth
 bindings — but it is not deployed and not live.** Two gates stand between this state
 and a real publish, and both are outside the scope of the code in `server/`:
 
-1. **Provisioning** (this document) — creating the Cloudflare/GitHub/Anthropic
+1. **Provisioning** (this document) — creating the Cloudflare/GitHub
    accounts and secrets only the repo owner can create.
 2. **Track C** (WordPress decommission, tracked separately) — committing site media
    into git. `public/media/` is currently entirely gitignored; a real `publish` would
@@ -28,8 +30,9 @@ and a real publish, and both are outside the scope of the code in `server/`:
 
 ## Provisioning steps
 
-Run these once, in order. They require a Cloudflare account, a GitHub account with
-admin rights on this repo, and an Anthropic API key.
+Run these once, in order. They require a Cloudflare account and a GitHub account with
+admin rights on this repo. **No LLM API key is needed** — translation is done by the
+connected chat model in-conversation (see step 5).
 
 ### 1. Cloudflare account + Worker
 
@@ -44,7 +47,7 @@ admin rights on this repo, and an Anthropic API key.
 
 The Worker needs **two** KV namespaces and **one** R2 bucket:
 
-- `DRAFTS` — draft posts, translation-job state, approval flags, upload manifests
+- `DRAFTS` — draft posts, translation-record state, approval flags, upload manifests
   (`server/src/core/store.ts`).
 - `OAUTH_KV` — required by `@cloudflare/workers-oauth-provider` itself (it stores
   token/grant state; see the library's README, "requires ... a Workers KV namespace
@@ -175,8 +178,6 @@ value; never appears in `wrangler.toml`) and the plain vars either the same way 
 | `GITHUB_APP_PRIVATE_KEY` | secret | The App's private key, **converted to PKCS#8** (step 4 above). |
 | `GITHUB_OWNER` | secret or var | The repo owner/org (e.g. the GitHub username hosting this repo). |
 | `GITHUB_REPO` | secret or var | The repo name (e.g. `marindakook`). |
-| `ANTHROPIC_API_KEY` | secret | Anthropic API key used by the async translation job (`core/translation-job.ts`) to call the Messages API. |
-| `ANTHROPIC_MODEL` | var (optional) | Model id for translation; defaults to `claude-sonnet-4-5` in code (`index.ts`) if unset. |
 | `ALERT_WEBHOOK` | secret (optional) | Webhook URL the Worker POSTs to on a terminal error, to alert Joshua directly (`core/errors.ts`). If unset, terminal errors still return the honest Afrikaans message to Marinda, just without the ping. |
 | `SITE_BASE_URL` | var (optional) | Base URL used to build the "live" link shown after a direct (non-pilot) publish. If unset, it's derived as `https://<GITHUB_OWNER>.github.io/<GITHUB_REPO>`. |
 | `PILOT_MODE` | var | `"true"`/unset = pilot mode ON (publish opens a PR); set literally to `"false"` to publish direct to `main`. Pilot ON is the safe default — see the go-live checklist below. |
@@ -184,6 +185,15 @@ value; never appears in `wrangler.toml`) and the plain vars either the same way 
 
 `DRAFTS`, `OAUTH_KV`, and `PHOTOS` are bindings, not secrets/vars — set in
 `wrangler.toml` per step 2, not with `wrangler secret put`.
+
+**No LLM API key is needed.** The English translation is produced by the chat
+model already connected to the Worker (on Marinda's own subscription): the
+`request_translation` tool hands that model the Afrikaans source, the full
+`prompts/translate-en.md` prompt, and the EN style guide; the model translates in
+the conversation and calls `submit_translation`, which the Worker validates
+structurally (`compareTranslation`) and stores. The Worker never calls Anthropic
+or any other LLM, so there is no `ANTHROPIC_API_KEY`/`ANTHROPIC_MODEL` (or OpenAI
+key) to provision.
 
 ### 6. Deploy
 
@@ -278,15 +288,17 @@ Work through these in order — each gate is explicit, not implied:
 ## What the local tests cover vs. NOT
 
 ```bash
-npm test --prefix server       # 182 tests, 19 files
+npm test --prefix server       # 191 tests, 20 files
 npm run test:e2e --prefix server   # Playwright, real Chromium
 ```
 
 `npm test --prefix server` runs inside `workerd` via
 `@cloudflare/vitest-pool-workers`, with **miniflare-backed KV/R2** bindings
 (`DRAFTS`, `OAUTH_KV`, `PHOTOS` — see `server/vitest.config.ts`) and mocked
-GitHub (`GitHubApp`'s injected `fetch`) and mocked Anthropic (the translation job's
-injected `fetch`). It covers: every MCP tool (interview/draft, voice, photos,
+GitHub (`GitHubApp`'s injected `fetch`). Translation needs no network mock: the
+model translates in-conversation and the Worker only validates the submitted
+result (`request_translation`/`submit_translation` → `compareTranslation`). It
+covers: every MCP tool (interview/draft, voice, photos,
 translation, edit/chrome, publish/status/delete), publish create-only + idempotency
 (a dropped commit response on retry must not double-commit), the GitHub App's JWT
 minting + bounded transient-fault retry, signed-link round-trip/tamper handling, the
@@ -351,9 +363,10 @@ them):
   instructions are a thin pointer specifically so this file is the only place the
   protocol can be edited.
 - `content/style-guide.af.md` / `content/style-guide.en.md` — voice guides
-  `get_style_guide` returns, and the reference material for the async translation
-  job's prompt.
-- `server/prompts/translate-en.md` — the committed translation prompt template.
+  `get_style_guide` returns; the EN guide is also served (via `request_translation`)
+  to the chat model that produces the in-conversation translation.
+- `server/prompts/translate-en.md` — the committed translation prompt template,
+  served in full to that chat model by `request_translation`.
 
 **Pilot flag:** `PILOT_MODE` (see the go-live checklist above) — the single control
 for whether `publish` commits direct to `main` or opens a review PR.

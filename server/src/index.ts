@@ -13,7 +13,6 @@ import {
   type ContentSource,
   type McpServerDeps,
   type PublishConfig,
-  type TranslationConfig,
 } from "./mcp/server";
 import { handleAuthorize } from "./pages/auth";
 import { handleApprove, renderExpiredLinkPage, renderPreviewPage } from "./pages/preview";
@@ -80,7 +79,6 @@ const bundledPages: Page[] = [
 ];
 const bundledPostIndex: PostSummary[] = z.array(postSummarySchema).parse(JSON.parse(postIndexRaw));
 
-const DEFAULT_MODEL = "claude-sonnet-4-5";
 const BASE_BRANCH = "main";
 
 function buildGitHub(env: Env): GitHubClient | null {
@@ -172,18 +170,6 @@ export function buildContentSource(
   };
 }
 
-function buildTranslationConfig(env: Env): TranslationConfig | undefined {
-  if (!env.ANTHROPIC_API_KEY) {
-    return undefined;
-  }
-  return {
-    promptTemplate: translatePromptText,
-    apiKey: env.ANTHROPIC_API_KEY,
-    model: env.ANTHROPIC_MODEL ?? DEFAULT_MODEL,
-    fetch,
-  };
-}
-
 function buildLinkBuilder(env: Env, origin: string, kind: LinkKind): (draftId: string) => Promise<string> {
   const page = kind === "upload" ? "upload" : "preview";
   return async (draftId) => `${origin}/${page}?sig=${await signLink({ draftId, kind }, env.LINK_SECRET)}`;
@@ -195,12 +181,12 @@ function buildMcpDeps(env: Env, ctx: ExecutionContext, origin: string): McpServe
     store: new KvR2Store({ kv: env.DRAFTS, r2: env.PHOTOS }),
     interviewProtocol: interviewProtocolText,
     styleGuides: { af: styleGuideAfText, en: styleGuideEnText },
+    translatePrompt: translatePromptText,
     postIndex: bundledPostIndex,
     categories: bundledCategories,
     waitUntil: (promise) => ctx.waitUntil(promise),
     buildUploadLink: buildLinkBuilder(env, origin, "upload"),
     buildPreviewLink: buildLinkBuilder(env, origin, "preview"),
-    translation: buildTranslationConfig(env),
     content: buildContentSource(env),
     publishing: buildPublishConfig(env, github),
     alert: { webhookUrl: env.ALERT_WEBHOOK, fetch },

@@ -63,6 +63,7 @@ async function newClient(github: GitHubClient): Promise<{ client: Client; store:
     store,
     interviewProtocol: "P",
     styleGuides: { af: "AF", en: "EN" },
+    translatePrompt: "TRANSLATE PROMPT",
     postIndex: INDEX,
     now: () => new Date(NOW),
     content,

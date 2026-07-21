@@ -14,15 +14,6 @@ import { registerPublishTools } from "./tools/publish";
 import { registerTranslationTools } from "./tools/translation";
 import { registerVoiceTools } from "./tools/voice";
 
-// The async-translation job's runtime configuration (env-provided). Injected so
-// tests can supply a mocked fetch and D9 can wire the real Anthropic secret.
-export interface TranslationConfig {
-  promptTemplate: string;
-  apiKey: string;
-  model: string;
-  fetch?: typeof fetch;
-}
-
 // A category the interview may offer Marinda. The Worker (or a test) supplies
 // the full term list; the internal bookkeeping terms are stripped here so they
 // can never be offered as real choices.
@@ -62,6 +53,11 @@ export interface McpServerDeps {
   store: DraftStore;
   interviewProtocol: string;
   styleGuides: { af: string; en: string };
+  // The canonical Afrikaans→English translate prompt (server/prompts/translate-en.md),
+  // served in full to the chat model by request_translation. Injected like the
+  // interview protocol / style guides so tests pass a fixture and the Worker the
+  // bundled `?raw` text.
+  translatePrompt: string;
   postIndex: PostSummary[] | (() => PostSummary[] | Promise<PostSummary[]>);
   categories?: CategoryOption[];
   now?: () => Date;
@@ -75,7 +71,6 @@ export interface McpServerDeps {
   // Builds the signed preview/approval-page link. Absent means get_preview_link
   // is unavailable (older tests that predate the tool).
   buildPreviewLink?: (draftId: string) => string | Promise<string>;
-  translation?: TranslationConfig;
   content?: ContentSource;
   publishing?: PublishConfig;
   // When present, every tool's unhandled throw (notably a raw GitHubError from
@@ -89,6 +84,7 @@ export interface ToolContext {
   store: DraftStore;
   interviewProtocol: string;
   styleGuides: { af: string; en: string };
+  translatePrompt: string;
   loadPostIndex: () => Promise<PostSummary[]>;
   offeredCategories: CategoryOption[];
   // The "featured" bookkeeping term's id, resolved by slug from the injected
@@ -100,7 +96,6 @@ export interface ToolContext {
   waitUntil: (promise: Promise<unknown>) => void;
   buildUploadLink?: (draftId: string) => string | Promise<string>;
   buildPreviewLink?: (draftId: string) => string | Promise<string>;
-  translation?: TranslationConfig;
   content?: ContentSource;
   publishing?: PublishConfig;
   // Escalation channel for TERMINAL faults that occur OUTSIDE guardToolThrows:
@@ -176,6 +171,7 @@ export function createMcpServer(deps: McpServerDeps): McpServer {
     store: deps.store,
     interviewProtocol: deps.interviewProtocol,
     styleGuides: deps.styleGuides,
+    translatePrompt: deps.translatePrompt,
     loadPostIndex: normalizePostIndex(deps.postIndex),
     offeredCategories: (deps.categories ?? []).filter((category) => !isInternalTerm(category)),
     featuredTermId: resolveFeaturedTermId(deps.categories ?? []),
@@ -184,7 +180,6 @@ export function createMcpServer(deps: McpServerDeps): McpServer {
     waitUntil: deps.waitUntil ?? ((promise) => void promise.catch(() => undefined)),
     buildUploadLink: deps.buildUploadLink,
     buildPreviewLink: deps.buildPreviewLink,
-    translation: deps.translation,
     content: deps.content,
     publishing: deps.publishing,
     alert: deps.alert,

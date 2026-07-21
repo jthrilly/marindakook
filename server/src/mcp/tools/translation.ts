@@ -1,30 +1,34 @@
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { sourceHashOf } from "@site/lib/source-hash";
-import {
-  buildTranslationSource,
-  parseJobRecord,
-  runTranslationJob,
-  type TranslationJobDeps,
-} from "../../core/translation-job";
+import { buildTranslatePrompt } from "@site/lib/translate-prompt";
+import { buildTranslationSource, validateAndStoreTranslation } from "../../core/translation-job";
 import { ok, fail } from "../result";
 import type { ToolContext } from "../server";
 
+// The translation is produced by the chat model in-conversation (on Marinda's own
+// subscription), so the Worker makes NO LLM API call. `request_translation` hands
+// the model everything it needs to translate; `submit_translation` validates the
+// model's result structurally and stores a passing record for preview/publish. The
+// correction loop lives in the conversation: on issues, the model fixes and
+// resubmits.
+
+// Accepted at runtime (the inputSchema uses z.unknown() so the SDK's JSON-schema
+// generation stays simple — mirrors chrome.ts's `site`); a non-object submission
+// is rejected with an Afrikaans hint.
+const translationObjectSchema = z.record(z.string(), z.json());
+
 export function registerTranslationTools(server: McpServer, ctx: ToolContext): void {
   server.registerTool(
-    "generate_translation",
+    "request_translation",
     {
-      title: "Maak die Engelse vertaling",
+      title: "Kry alles om die Engelse vertaling self te maak",
       description:
-        "Begin die Engelse vertaling van hierdie resep. Dit loop op die agtergrond — kom kyk oor 'n minuut met check_translation_status.",
+        "Gee die Afrikaanse bron, die volledige vertaal-instruksies en die Engelse stylgids terug sodat jy self die Engelse vertaling kan maak en met submit_translation kan instuur.",
       inputSchema: {
         draftId: z.string().describe("Die konsep-ID om te vertaal."),
       },
     },
     async (args) => {
-      if (ctx.translation === undefined) {
-        return fail("Vertaling is nie opgestel nie. Kontak Joshua.");
-      }
       const stored = await ctx.store.get(args.draftId);
       if (stored === null) {
         return fail(
@@ -35,77 +39,76 @@ export function registerTranslationTools(server: McpServer, ctx: ToolContext): v
         return fail(`Konsep «${args.draftId}» is nie 'n resep-konsep nie — daar is niks om te vertaal nie.`);
       }
 
-      const jobDeps: TranslationJobDeps = {
-        store: ctx.store,
-        promptTemplate: ctx.translation.promptTemplate,
+      const source = buildTranslationSource(stored.draft);
+      // buildTranslatePrompt embeds the EN style guide and the Afrikaans source
+      // into the canonical translate prompt — the same text the old server-side
+      // job sent, now served to the chat model in full.
+      const instructions = buildTranslatePrompt({
+        template: ctx.translatePrompt,
         styleGuide: ctx.styleGuides.en,
-        apiKey: ctx.translation.apiKey,
-        model: ctx.translation.model,
-        fetchImpl: ctx.translation.fetch,
-        now: ctx.now,
-        alert: ctx.alert,
-      };
-
-      // Return immediately; the job outlives this tool call via waitUntil. Chat
-      // clients hard-cap tool duration, but a long post plus validator retries
-      // can exceed that — so we never await the job here.
-      ctx.waitUntil(runTranslationJob(jobDeps, args.draftId));
-
-      return ok("Die Engelse vertaling word gemaak — kyk oor 'n minuut met check_translation_status.", {
-        draftId: args.draftId,
-        status: "started",
+        sourceJson: JSON.stringify(source, null, 2),
       });
+
+      const message = [
+        "Jy maak nou SELF die Engelse vertaling — daar is geen aparte vertaaldiens nie.",
+        "Volg die instruksies hieronder presies, maak die Engelse vertaling as 'n enkele JSON-objek volgens die uitvoer-kontrak, en roep dan submit_translation met daardie JSON as die «translation»-argument.",
+        "As submit_translation probleme terugstuur, maak net dié reg en stuur weer — herhaal tot dit «Vertaling ontvang en gekontroleer ✓» terugstuur.",
+        "",
+        "────────────────────────────────────────",
+        "",
+        instructions,
+      ].join("\n");
+
+      return ok(message, { draftId: args.draftId });
     },
   );
 
   server.registerTool(
-    "check_translation_status",
+    "submit_translation",
     {
-      title: "Kyk hoe ver is die vertaling",
-      description: "Gee die stand van die Engelse vertaling terug (nog besig, geslaag, of misluk).",
+      title: "Stuur die Engelse vertaling in vir kontrole",
+      description:
+        "Stuur jou Engelse vertaling (as 'n JSON-objek) in. Die Worker kontroleer die struktuur en stoor dit as dit slaag; andersins kry jy die probleme terug om reg te maak en weer te stuur.",
       inputSchema: {
-        draftId: z.string().describe("Die konsep-ID om na te gaan."),
+        draftId: z.string().describe("Die konsep-ID wat vertaal is."),
+        translation: z
+          .unknown()
+          .describe("Die volledige Engelse vertaling as 'n JSON-objek, volgens request_translation se uitvoer-kontrak."),
       },
     },
     async (args) => {
-      const record = parseJobRecord(await ctx.store.getJob(args.draftId));
-      if (record === null) {
-        return ok("Daar is nog geen vertaling vir hierdie konsep aangevra nie. Gebruik generate_translation.", {
-          draftId: args.draftId,
-          status: "none",
-        });
+      const stored = await ctx.store.get(args.draftId);
+      if (stored === null) {
+        return fail(
+          `Ek kon nie 'n konsep met ID «${args.draftId}» kry nie. Begin met begin_draft of kyk na list_drafts.`,
+        );
+      }
+      if (stored.draft.kind !== "post") {
+        return fail(`Konsep «${args.draftId}» is nie 'n resep-konsep nie — daar is niks om te vertaal nie.`);
       }
 
-      if (record.status === "pending") {
-        return ok("Die Engelse vertaling is nog besig — kyk oor 'n oomblik weer.", {
-          draftId: args.draftId,
-          status: "pending",
-        });
-      }
-
-      if (record.status === "failing") {
-        return ok(
-          `Die vertaling kon nie die keuring ná ${record.attempts} pogings slaag nie. Joshua sal dit met die hand nagaan wanneer jy publiseer; die pos kan intussen net in Afrikaans verskyn.`,
-          { draftId: args.draftId, status: "failing", issues: record.issues },
+      const parsed = translationObjectSchema.safeParse(args.translation);
+      if (!parsed.success) {
+        return fail(
+          "Die vertaling moet 'n JSON-objek wees (soos request_translation se uitvoer-kontrak beskryf). Roep request_translation as jy die formaat nodig het.",
         );
       }
 
-      // Passing: flag it as stale if the draft's content moved on since.
-      const stored = await ctx.store.get(args.draftId);
-      if (stored !== null && stored.draft.kind === "post") {
-        const currentHash = sourceHashOf(buildTranslationSource(stored.draft));
-        if (currentHash !== record.sourceHash) {
-          return ok(
-            "Die vorige vertaling is verouderd — die resep se inhoud het sedertdien verander. Vra 'n nuwe vertaling aan met generate_translation.",
-            { draftId: args.draftId, status: "stale" },
-          );
-        }
+      const result = await validateAndStoreTranslation(
+        { store: ctx.store, now: ctx.now },
+        stored.draft,
+        parsed.data,
+      );
+
+      if (!result.ok) {
+        const list = result.issues.map((issue) => `- ${issue}`).join("\n");
+        return ok(
+          `Die Engelse vertaling het nog probleme — maak reg en stuur weer met submit_translation:\n${list}`,
+          { draftId: args.draftId, status: "failing", issues: result.issues },
+        );
       }
 
-      return ok("Die Engelse vertaling is klaar en het die keuring geslaag.", {
-        draftId: args.draftId,
-        status: "passing",
-      });
+      return ok("Vertaling ontvang en gekontroleer ✓", { draftId: args.draftId, status: "passing" });
     },
   );
 }

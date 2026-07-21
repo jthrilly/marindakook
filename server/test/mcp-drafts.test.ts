@@ -55,6 +55,7 @@ function makeDeps(overrides: Partial<McpServerDeps> = {}): McpServerDeps {
     store: new InMemoryStore(),
     interviewProtocol: PROTOCOL_FIXTURE,
     styleGuides: { af: STYLE_AF, en: STYLE_EN },
+    translatePrompt: "TRANSLATE PROMPT",
     postIndex: POST_INDEX,
     categories: CATEGORIES,
     now: () => new Date('2026-07-20T09:00:00.000Z'),

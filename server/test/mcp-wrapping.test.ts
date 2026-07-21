@@ -15,6 +15,7 @@ function baseDeps(overrides: Partial<McpServerDeps> = {}): McpServerDeps {
     store: new InMemoryStore(),
     interviewProtocol,
     styleGuides: STYLE,
+    translatePrompt: "TRANSLATE PROMPT",
     postIndex: [],
     now: () => new Date("2026-07-20T09:00:00.000Z"),
     createDraftId: () => "d-toets",

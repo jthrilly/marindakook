@@ -225,6 +225,7 @@ async function setup(opts: {
     store,
     interviewProtocol: "PROTOCOL",
     styleGuides: { af: "AF", en: "EN" },
+    translatePrompt: "TRANSLATE PROMPT",
     postIndex: INDEX,
     now: opts.now ?? (() => new Date(NOW)),
     categories: opts.categories,

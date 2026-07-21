@@ -369,7 +369,7 @@ async function publishPostOrPage(
     // recipe/image/details and is stamped sourceHashOf(post) — the basis CI checks.
     const built = reconcileTranslation(job.translation, post);
     if (built === null) {
-      return fail("Die gestoorde Engelse vertaling is stukkend. Vra 'n nuwe een aan met generate_translation.");
+      return fail("Die gestoorde Engelse vertaling is stukkend. Maak 'n nuwe een met request_translation en submit_translation.");
     }
     const check = translationSchema.safeParse(built);
     if (!check.success) {
@@ -382,7 +382,7 @@ async function publishPostOrPage(
       job.translation === null ? null : translationFileFrom(job.translation, id, slug, currentHash);
   } else {
     return fail(
-      "Die Engelse vertaling is nog nie gereed nie. Vra dit aan met generate_translation en kyk met check_translation_status voor jy publiseer.",
+      "Die Engelse vertaling is nog nie gereed nie. Maak dit met request_translation en submit_translation (tot dit ✓ terugstuur) voor jy publiseer.",
     );
   }
 
