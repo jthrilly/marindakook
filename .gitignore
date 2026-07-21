@@ -41,6 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # synced site assets (rebuilt from content/media-manifest.json)
-/public/media/
 /public/search-index.*.json
-/content/media-optimized.json
+.superpowers/
