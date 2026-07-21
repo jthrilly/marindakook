@@ -151,6 +151,25 @@ describe('MCP draft + interview tools', () => {
     expect(serialised).not.toContain('Eenhede');
   });
 
+  it('begin_draft lists the offered categories with ids in the reply text', async () => {
+    // The model discovers categories from this text, not a separate tool call —
+    // claude.ai's tool-search can hide list_categories on a large connector.
+    const result = await call(client, 'begin_draft', { title: 'Iets nuuts' });
+    const text = textOf(result);
+    expect(text).toContain('Beskikbare kategorieë');
+    expect(text).toContain('Nagereg (id 10)');
+    expect(text).toContain('Vleis (id 11)');
+    expect(text).not.toContain('Featured');
+  });
+
+  it('resume_draft also lists the offered categories in the reply text', async () => {
+    const begin = await call(client, 'begin_draft', { title: 'Wortelkoek met kaneel' });
+    const draftId = stringField(begin, 'draftId');
+    const resumed = await call(client, 'resume_draft', { draftId });
+    expect(textOf(resumed)).toContain('Beskikbare kategorieë');
+    expect(textOf(resumed)).toContain('Nagereg (id 10)');
+  });
+
   it('save_draft accepts a partial {title} and list_drafts then shows it', async () => {
     const begin = await call(client, 'begin_draft', { title: 'Wortelkoek met kaneel' });
     const draftId = stringField(begin, 'draftId');

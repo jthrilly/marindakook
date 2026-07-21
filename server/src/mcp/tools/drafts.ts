@@ -26,6 +26,22 @@ function draftTitle(draft: DraftPost): string {
   return typeof draft.title === "string" && draft.title.length > 0 ? draft.title : "(sonder titel)";
 }
 
+// The category list is appended to begin_draft/resume_draft text so the model
+// always has the valid ids without a separate tool call — claude.ai surfaces a
+// large connector's tools via search, which can hide list_categories, so the
+// protocol points here instead.
+function categoriesBlock(ctx: ToolContext): string[] {
+  const cats = ctx.offeredCategories;
+  if (cats.length === 0) {
+    return ["", "Beskikbare kategorieë: (geen is gekonfigureer nie)"];
+  }
+  const lines = ["", "Beskikbare kategorieë (kies die id's):"];
+  for (const cat of cats) {
+    lines.push(`- ${cat.name} (id ${cat.id})`);
+  }
+  return lines;
+}
+
 interface DraftSummary {
   draftId: string;
   kind: "post" | "chrome";
@@ -110,6 +126,7 @@ export function registerDraftTools(server: McpServer, ctx: ToolContext): void {
         lines.push(
           "Sê 'gaan voort met daardie konsep' om aan te sluit, of 'begin 'n splinternuwe resep' om in elk geval 'n nuwe een te begin.",
         );
+        lines.push(...categoriesBlock(ctx));
         return ok(lines.join("\n"), {
           created: false,
           protocol: ctx.interviewProtocol,
@@ -140,6 +157,7 @@ export function registerDraftTools(server: McpServer, ctx: ToolContext): void {
           lines.push(`- ${post.title} (/${post.slug})`);
         }
       }
+      lines.push(...categoriesBlock(ctx));
 
       return ok(lines.join("\n"), {
         created: true,
@@ -196,6 +214,7 @@ export function registerDraftTools(server: McpServer, ctx: ToolContext): void {
         lines.push(`Konsep «${stored.draft.draftId}» — titel: ${draftTitle(stored.draft)}.`);
         lines.push(`Reeds gestel: ${interview.settled.join(", ") || "niks"}.`);
         lines.push(`Nog uitstaande: ${interview.pending.join(", ") || "niks"}.`);
+        lines.push(...categoriesBlock(ctx));
         return ok(lines.join("\n"), {
           draftId: stored.draft.draftId,
           kind: "post",

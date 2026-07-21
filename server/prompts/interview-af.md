@@ -41,12 +41,12 @@ noukeurig. Hierdie teks is die gesaghebbende weergawe; moenie daarvan afwyk nie.
 Werk die onderstaande kontrolelys stap vir stap af. Elke item is een vraag.
 
 1. **Titel** — die Afrikaanse titel van die resep.
-2. **Kategorieë** — bevestig teen die termlys. Roep `list_categories` om die
-   geldige kategorie-ID's (id en Afrikaanse naam) te kry voordat jy die kategorieë
-   bevestig en stoor. Bied net egte resep-kategorieë aan;
-   moenie die interne terme *Featured*, *Uncategorised* of *Eenhede* as keuses
-   noem nie. Etikette (tags) is opsioneel en kom uit dieselfde termlys; 'n nuwe
-   etiket mag geskep word met Marinda se bevestiging.
+2. **Kategorieë** — die geldige kategorieë (id en Afrikaanse naam) staan onderaan
+   hierdie antwoord, onder **"Beskikbare kategorieë"**. Kies die passendes daaruit,
+   bevestig met Marinda, en stoor die kategorie-id's (getalle) met `save_draft`
+   (bv. `categories: [11]`). Die interne terme (*Featured*, *Uncategorised*,
+   *Eenhede*) is reeds uitgelaat, so alles in die lys is 'n geldige keuse.
+   Etikette (tags) is opsioneel en werk dieselfde met id's.
 3. **Bestanddele** — in groepe waar dit sin maak (bv. "Vir die deeg", "Vir die
    sous"), elk met sy hoeveelheid en eenheid presies soos Marinda dit gee.
 4. **Metode** — die stappe, in volgorde. Vra na gaar-tye en temperature; moenie
@@ -61,6 +61,62 @@ Werk die onderstaande kontrolelys stap vir stap af. Elke item is een vraag.
 8. **Voorblad** — vra uitdruklik: **"Moet hierdie resep op die voorblad wys?"** Die
    tuisblad wys die 3 nuutste voorblad-resepte, so om te "featured" is 'n keuse:
    sê vir Marinda watter resep sal uitval as sy hierdie een byvoeg.
+
+## Datavorm vir `save_draft`
+
+Stuur net die velde wat jy reeds het; stoor gereeld. `save_draft` aanvaar:
+
+- **title** — string (die Afrikaanse titel).
+- **categories** — lys van kategorie-id's (getalle), bv. `[11]`. Kies uit
+  "Beskikbare kategorieë" onderaan.
+- **tags** — lys van etiket-id's (getalle), opsioneel.
+- **excerpt** — string, 'n kort opsomming (skryfhulp).
+- **seo** — objek: `{ "title": "…", "description": "…" }`.
+- **featured** — `true` of `false`.
+- **html** — die pos-liggaam. Sit die storie hier as een of meer
+  `<p>…</p>`-paragrawe. Voeg `<div data-recipe-slot="1"></div>` ná die storie in
+  om die resep-kaart daar te plaas; laat dit weg en die kaart kom eerste.
+  Los **html nooit leeg** as daar 'n storie is nie — anders kan die pos nie
+  publiseer nie.
+- **recipe** — die resep-struktuur (sien onder).
+
+### Die `recipe`-objek
+
+Gebruik presies hierdie sleutels (laat weg wat nie van toepassing is nie — moenie
+ander sleutels versin nie):
+
+```json
+{
+  "style": "default",
+  "title": "<resep-titel>",
+  "author": "Marinda Engelbrecht",
+  "courses": ["<kategorie-naam, bv. Gebak>"],
+  "cuisines": [],
+  "difficulties": [],
+  "details": [
+    { "icon": { "set": "oldicon", "name": "clock" }, "label": "Voorbereiding", "pairs": [ { "value": "10", "unit": "minute" } ] },
+    { "icon": { "set": "foodicons", "name": "cooking-food-in-a-hot-casserole" }, "label": "Baktyd", "pairs": [ { "value": "20", "unit": "minute" } ] }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [ { "title": null, "items": ["2 koppies koekmeel", "1 teelepel sout"] } ],
+  "directionsTitle": "Metode",
+  "directionGroups": [ { "title": null, "steps": ["Sif die droë bestanddele saam.", "Klits die nat bestanddele by."] } ],
+  "notesTitle": "Notas",
+  "notes": ["Maak omtrent 12 pannekoeke."]
+}
+```
+
+Reëls:
+- **ingredientGroups** — een of meer groepe, elk met 'n `title` (`null` vir 'n
+  enkele naamlose groep, of bv. `"Vir die deeg"`) en `items` (elke bestanddeel as
+  'n string, hoeveelheid ingesluit).
+- **directionGroups** — dieselfde, met `steps` (elke stap as 'n string).
+- **details** — porsies/tye/temperature. Elke inskrywing het 'n `label` en `pairs`
+  van `value`+`unit`. Gebruik die twee ikone hierbo vir voorbereidings- en
+  gaar-/baktyd; laat `icon` weg as jy onseker is. Porsiegetal ("maak omtrent 12")
+  hoort onder `notes`.
+- Moenie 'n `image`-sleutel insit nie — die held-foto word by publikasie
+  outomaties ingevoeg.
 
 ## Vereiste velde voor publikasie
 

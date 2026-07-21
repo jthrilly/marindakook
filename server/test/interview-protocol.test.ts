@@ -6,6 +6,7 @@ import { describe, expect, it } from "vitest";
 // (unavailable in the vitest-pool-workers sandbox) is needed. The
 // `*?raw` module type comes from vite/client (referenced above).
 import protocol from "../prompts/interview-af.md?raw";
+import { draftRecipeSchema } from "../src/core/draft-schema";
 
 // Guards against `server/prompts/interview-af.md` drifting from what the MCP
 // tests assume. mcp-drafts.test.ts injects a hand-authored fixture instead of
@@ -21,14 +22,33 @@ describe("interview-af.md protocol file", () => {
     expect(protocol).toContain("Moet hierdie resep op die voorblad wys?");
   });
 
-  it("instructs excluding the internal categories from the offered choices", () => {
-    expect(protocol).toContain(
-      "moenie die interne terme *Featured*, *Uncategorised* of *Eenhede* as keuses",
-    );
+  it("notes the internal categories are already excluded from the offered list", () => {
+    expect(protocol).toContain("interne terme");
+    expect(protocol).toContain("is reeds uitgelaat");
   });
 
-  it("instructs calling list_categories to get valid category IDs before confirming", () => {
-    expect(protocol).toContain("list_categories");
+  it("points the model at the category list begin_draft provides, not a separate tool", () => {
+    // The categories are appended to begin_draft/resume_draft text as
+    // "Beskikbare kategorieë" (drafts.ts categoriesBlock), so the model never has
+    // to find list_categories — which claude.ai's tool-search can hide.
+    expect(protocol).toContain("Beskikbare kategorieë");
+  });
+
+  it("documents the exact recipe structure so the model never guesses the keys", () => {
+    expect(protocol).toContain("ingredientGroups");
+    expect(protocol).toContain("directionGroups");
+    expect(protocol).toContain("Die `recipe`-objek");
+  });
+
+  it("the documented recipe example is valid against draftRecipeSchema (docs cannot drift)", () => {
+    // Pull the first ```json fence (the worked recipe example) straight from the
+    // protocol and validate it, so the shape the model is told to copy is proven
+    // schema-valid and can never silently diverge from draftRecipeSchema.
+    const match = protocol.match(/```json\n([\s\S]*?)\n```/);
+    expect(match).not.toBeNull();
+    const example = JSON.parse(match![1]);
+    const parsed = draftRecipeSchema.safeParse(example);
+    expect(parsed.success).toBe(true);
   });
 
   it("instructs asking one question at a time", () => {
