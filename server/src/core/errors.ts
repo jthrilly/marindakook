@@ -32,8 +32,10 @@ export interface AlertConfig {
 const TRANSIENT_MESSAGE =
   "Ek kon dit nou-nou nie klaarmaak nie — probeer asseblief oor 'n minuut weer.";
 
-function terminalMessage(code: string): string {
-  return `Iets is stukkend aan my kant — sê asseblief vir Joshua. (Kode: ${code})`;
+// Marinda-facing: plain Afrikaans, NO code. The short code lives on the
+// TaxonomyError (for the Joshua alert + logs), never in her message.
+function terminalMessage(): string {
+  return `Iets is stukkend aan my kant — sê asseblief vir Joshua, dan kry ons dit reg.`;
 }
 
 export function transient(code: string): TaxonomyError {
@@ -63,7 +65,7 @@ async function fireJoshuaAlert(error: TaxonomyError, alert: AlertConfig): Promis
 }
 
 export async function terminal(code: string, alert: AlertConfig): Promise<TaxonomyError> {
-  const error: TaxonomyError = { kind: "terminal", code, message: terminalMessage(code) };
+  const error: TaxonomyError = { kind: "terminal", code, message: terminalMessage() };
   await fireJoshuaAlert(error, alert);
   return error;
 }

@@ -55,6 +55,13 @@ describe("interview-af.md protocol file", () => {
     expect(protocol).toContain("Een vraag op 'n slag");
   });
 
+  it("forbids exposing technical detail (tool/field names, IDs, jargon) to Marinda", () => {
+    expect(protocol).toContain("Praat mensetaal");
+    expect(protocol).toContain("nooit tegniese detail");
+    // The machine-facing data-shape section is flagged internal-only.
+    expect(protocol).toContain("INTERN — moenie dit vir Marinda wys");
+  });
+
   it("instructs never inventing quantities", () => {
     expect(protocol).toContain("Versin nooit hoeveelhede nie");
   });

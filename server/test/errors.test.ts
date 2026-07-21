@@ -22,7 +22,9 @@ describe("error taxonomy", () => {
     const error = await terminal("GH-AUTH", alert);
     expect(error.kind).toBe("terminal");
     expect(error.message).toContain("sê asseblief vir Joshua");
-    expect(error.message).toContain("GH-AUTH");
+    // The code is captured for the alert/logs, but NOT shown in Marinda's message.
+    expect(error.code).toBe("GH-AUTH");
+    expect(error.message).not.toContain("GH-AUTH");
     expect(alert.fetch).toHaveBeenCalledTimes(1);
     expect(alert.fetch).toHaveBeenCalledWith(WEBHOOK, expect.objectContaining({ method: "POST" }));
   });

@@ -77,7 +77,9 @@ describe("guardToolThrows wraps a thrown GitHubError in Afrikaans", () => {
     expect(result.isError).toBe(true);
     const text = textOf(result);
     expect(text).toContain("sê asseblief vir Joshua");
-    expect(text).toContain("GH-AUTH");
+    // The code rides in structuredContent (for logs/alerts), never in Marinda's text.
+    expect(JSON.stringify(result.structuredContent)).toContain('"code":"GH-AUTH"');
+    expect(text).not.toContain("GH-AUTH");
     expect(text).not.toContain("forbidden");
     expect(fetchMock).toHaveBeenCalledTimes(1);
   });
@@ -96,7 +98,8 @@ describe("guardToolThrows wraps a thrown GitHubError in Afrikaans", () => {
     expect(result.isError).toBe(true);
     const text = textOf(result);
     expect(text).toContain("sê asseblief vir Joshua");
-    expect(text).toContain("GH-5XX");
+    expect(JSON.stringify(result.structuredContent)).toContain('"code":"GH-5XX"');
+    expect(text).not.toContain("GH-5XX");
     expect(text).not.toContain("upstream");
     expect(fetchMock).toHaveBeenCalledTimes(1);
   });

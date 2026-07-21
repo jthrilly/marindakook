@@ -14,6 +14,22 @@ import type { ToolContext } from "../server";
 // for each lives in the interview protocol (prompts/interview-af.md).
 const REQUIRED_STATE = ["title", "categories", "recipe", "story", "featured", "photo"];
 
+// Friendly Afrikaans labels for the internal checklist keys. The human-facing
+// reply text uses these so nothing machine-shaped ("recipe", "featured") ever
+// reaches Marinda; structuredContent keeps the raw keys for the model/tests.
+const STATE_LABELS: Record<string, string> = {
+  title: "titel",
+  categories: "kategorieë",
+  recipe: "resep",
+  story: "storie",
+  featured: "voorblad-keuse",
+  photo: "foto",
+};
+
+function labelState(keys: string[]): string {
+  return keys.map((key) => STATE_LABELS[key] ?? key).join(", ");
+}
+
 const SEPARATOR = "———";
 
 type Interview = NonNullable<DraftPost["interview"]>;
@@ -211,9 +227,9 @@ export function registerDraftTools(server: McpServer, ctx: ToolContext): void {
       const lines = [ctx.interviewProtocol, "", SEPARATOR];
       if (stored.draft.kind === "post") {
         const interview = stored.draft.interview ?? defaultInterview();
-        lines.push(`Konsep «${stored.draft.draftId}» — titel: ${draftTitle(stored.draft)}.`);
-        lines.push(`Reeds gestel: ${interview.settled.join(", ") || "niks"}.`);
-        lines.push(`Nog uitstaande: ${interview.pending.join(", ") || "niks"}.`);
+        lines.push(`Ons gaan voort met «${draftTitle(stored.draft)}».`);
+        lines.push(`Reeds klaar: ${labelState(interview.settled) || "niks"}.`);
+        lines.push(`Nog oor: ${labelState(interview.pending) || "niks"}.`);
         lines.push(...categoriesBlock(ctx));
         return ok(lines.join("\n"), {
           draftId: stored.draft.draftId,
@@ -353,7 +369,7 @@ export function registerDraftTools(server: McpServer, ctx: ToolContext): void {
       await ctx.store.put(parsed.data);
       const settledList = [...settled];
       return ok(
-        `Ek het konsep «${draftId}» gestoor. Reeds gestel: ${settledList.join(", ") || "niks"}. Nog uitstaande: ${pending.join(", ") || "niks"}.`,
+        `Gestoor ✓ Reeds klaar: ${labelState(settledList) || "niks"}. Nog oor: ${labelState(pending) || "niks"}.`,
         { draftId, settled: settledList, pending },
       );
     },
