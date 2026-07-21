@@ -47,7 +47,7 @@ function postDraft(overrides: Partial<DraftPost> = {}): DraftPost {
 }
 
 // A structurally-matching English translation candidate for postDraft() above
-// (same shape `runTranslationJob` would have stored on success).
+// (same shape `submit_translation` stores on a passing validation).
 function englishCandidate(draft: DraftPost): Record<string, JsonValue> {
   const source = buildTranslationSource(draft);
   return {
