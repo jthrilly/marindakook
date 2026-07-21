@@ -474,9 +474,14 @@ export class GitHubApp implements GitHubClient {
       body: options.body === undefined ? undefined : JSON.stringify(options.body),
     };
     const sleep = this.config.sleep ?? realSleep;
+    // Call the injected fetch as a bare reference, NOT `this.config.fetch(...)`:
+    // the Workers runtime rejects native `fetch` invoked with a receiver other
+    // than the global scope ("Illegal invocation"). A bare call passes `this` as
+    // undefined, which both native fetch and test mocks accept.
+    const doFetch = this.config.fetch;
 
     for (let attempt = 1; attempt <= MAX_REQUEST_ATTEMPTS; attempt += 1) {
-      const res = await this.config.fetch(url, init);
+      const res = await doFetch(url, init);
       const tolerated =
         (options.allowNotFound === true && res.status === 404) ||
         (options.allowConflict === true && res.status === 422);

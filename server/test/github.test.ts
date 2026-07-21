@@ -162,6 +162,27 @@ describe("installationToken", () => {
     );
     expect(verified).toBe(true);
   });
+
+  // Regression: the Workers runtime throws "Illegal invocation" when native
+  // `fetch` is called with a receiver other than the global scope, so `request`
+  // must invoke the injected fetch as a bare reference — never `this.config.fetch(...)`.
+  // A regular (non-arrow) function captures the call-site `this`; a bare call in
+  // a strict ES module passes `this` as undefined.
+  it("invokes the injected fetch without a receiver (no Illegal invocation)", async () => {
+    let capturedThis: unknown = "unset";
+    const fetchImpl = function (
+      this: unknown,
+      _input: RequestInfo | URL,
+      _init?: RequestInit,
+    ): Promise<Response> {
+      capturedThis = this;
+      return Promise.resolve(json({ token: "ghs_x", expires_at: "2026-07-20T18:00:00Z" }));
+    } as typeof fetch;
+
+    await newApp(fetchImpl).installationToken(FIXED_NOW);
+
+    expect(capturedThis).toBeUndefined();
+  });
 });
 
 describe("commitFiles create-only", () => {

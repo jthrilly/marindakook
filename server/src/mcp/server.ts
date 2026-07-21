@@ -143,12 +143,21 @@ function guardToolThrows(server: McpServer, alert: AlertConfig): McpServer {
         return Reflect.get(target, prop, receiver);
       }
       return (...args: unknown[]) => {
+        const toolName = typeof args[0] === "string" ? args[0] : "unknown";
         const handler = args[args.length - 1];
         if (typeof handler === "function") {
           args[args.length - 1] = async (...handlerArgs: unknown[]): Promise<CallToolResult> => {
             try {
               return await handler(...handlerArgs);
             } catch (error) {
+              // A thrown tool error is a genuine fault: log it so it is
+              // diagnosable from the Worker logs (the Afrikaans message and the
+              // Joshua alert both omit the stack). Without this, a terminal
+              // fault leaves no trace of its cause.
+              console.error(
+                `[tool-throw] ${toolName}:`,
+                error instanceof Error ? (error.stack ?? error.message) : String(error),
+              );
               const taxonomy = await toTaxonomyError(error, alert);
               return {
                 content: [{ type: "text", text: taxonomy.message }],
