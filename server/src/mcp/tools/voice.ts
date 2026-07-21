@@ -26,6 +26,29 @@ export function registerVoiceTools(server: McpServer, ctx: ToolContext): void {
   );
 
   server.registerTool(
+    "list_categories",
+    {
+      title: "Wys beskikbare kategorieë",
+      description:
+        "Gee die beskikbare resep-kategorieë (id en Afrikaanse naam) terug sodat jy die regte kategorie-ID's kan kies voor jy kategorieë bevestig. Die interne terme (Featured, Uncategorised, Eenhede) word uitgelaat.",
+    },
+    async () => {
+      const categories = ctx.offeredCategories.map((category) => ({
+        id: category.id,
+        name: category.name,
+      }));
+      if (categories.length === 0) {
+        return ok("Daar is tans geen kategorieë beskikbaar nie.", { categories: [] });
+      }
+      const lines = ["Beskikbare kategorieë:"];
+      for (const category of categories) {
+        lines.push(`- ${category.name} (id ${category.id})`);
+      }
+      return ok(lines.join("\n"), { categories });
+    },
+  );
+
+  server.registerTool(
     "get_similar_posts",
     {
       title: "Kry soortgelyke poste",

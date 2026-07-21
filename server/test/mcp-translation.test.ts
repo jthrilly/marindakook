@@ -145,6 +145,21 @@ describe("MCP photo + translation tools", () => {
     expect(html).toContain("Milk tart");
   });
 
+  it("submit_translation accepts the translation sent as a JSON string (real MCP client) and stores a passing record", async () => {
+    const { client, store } = await setup();
+    await store.put(draft());
+
+    // A real Claude MCP client serialises the structured `translation` object as a
+    // JSON STRING because the field is advertised as z.unknown() (no JSON-schema type).
+    const result = await call(client, "submit_translation", {
+      draftId: "d-9",
+      translation: JSON.stringify(goodTranslation()),
+    });
+    expect(result.isError).toBe(false);
+    expect(result.structuredContent?.status).toBe("passing");
+    expect(parseJobRecord(await store.getJob("d-9"))?.status).toBe("passing");
+  });
+
   it("submit_translation returns the Afrikaans issues and does NOT store a passing record on a bad translation", async () => {
     const { client, store } = await setup();
     await store.put(draft());

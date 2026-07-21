@@ -1,6 +1,7 @@
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import { chromeDraftSchema, type ChromeDraft } from "../../core/draft-schema";
+import { coerceJsonStrings } from "../coerce";
 import { describeZodIssue } from "../issues";
 import { ok, fail } from "../result";
 import type { ToolContext } from "../server";
@@ -69,7 +70,9 @@ export function registerChromeTools(server: McpServer, ctx: ToolContext): void {
       const existing = await findChromeDraft(ctx);
       const nowIso = ctx.now().toISOString();
 
-      const patch = args.site;
+      // A real MCP client sends the structured `site` object as a JSON string;
+      // coerce it back before validation (an already-object value passes through).
+      const patch = coerceJsonStrings(args, ["site"]).site;
       if (patch === null || typeof patch !== "object" || Array.isArray(patch)) {
         return fail("Die veld «site» moet 'n voorwerp met webwerf-teks-velde wees.");
       }

@@ -41,7 +41,9 @@ noukeurig. Hierdie teks is die gesaghebbende weergawe; moenie daarvan afwyk nie.
 Werk die onderstaande kontrolelys stap vir stap af. Elke item is een vraag.
 
 1. **Titel** — die Afrikaanse titel van die resep.
-2. **Kategorieë** — bevestig teen die termlys. Bied net egte resep-kategorieë aan;
+2. **Kategorieë** — bevestig teen die termlys. Roep `list_categories` om die
+   geldige kategorie-ID's (id en Afrikaanse naam) te kry voordat jy die kategorieë
+   bevestig en stoor. Bied net egte resep-kategorieë aan;
    moenie die interne terme *Featured*, *Uncategorised* of *Eenhede* as keuses
    noem nie. Etikette (tags) is opsioneel en kom uit dieselfde termlys; 'n nuwe
    etiket mag geskep word met Marinda se bevestiging.

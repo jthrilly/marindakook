@@ -27,6 +27,10 @@ describe("interview-af.md protocol file", () => {
     );
   });
 
+  it("instructs calling list_categories to get valid category IDs before confirming", () => {
+    expect(protocol).toContain("list_categories");
+  });
+
   it("instructs asking one question at a time", () => {
     expect(protocol).toContain("Een vraag op 'n slag");
   });

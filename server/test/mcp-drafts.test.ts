@@ -178,6 +178,48 @@ describe('MCP draft + interview tools', () => {
     expect(text).not.toContain('Invalid arguments');
   });
 
+  it('save_draft accepts structured fields sent as JSON strings (real MCP client) and stores them parsed', async () => {
+    const begin = await call(client, 'begin_draft', { title: 'Wortelkoek met kaneel' });
+    const draftId = stringField(begin, 'draftId');
+
+    // A real Claude MCP client serialises structured values as JSON STRINGS
+    // because the input fields are advertised as z.unknown() (no JSON-schema type).
+    const saved = await call(client, 'save_draft', {
+      draftId,
+      title: 'Wortelkoek',
+      categories: '[10]',
+      tags: '[20]',
+      featured: 'true',
+      seo: '{"title":"Wortelkoek - Marinda Kook","description":null}',
+      recipe: '{"ingredientGroups":[{"title":"Deeg","items":["2 koppies meel"]}]}',
+    });
+    expect(saved.isError).toBe(false);
+
+    const stored = await deps.store.get(draftId);
+    const draft = stored?.draft;
+    if (draft === undefined || draft.kind !== 'post') {
+      throw new Error('expected a stored post draft');
+    }
+    expect(draft.categories).toEqual([10]);
+    expect(draft.tags).toEqual([20]);
+    expect(draft.seo?.title).toBe('Wortelkoek - Marinda Kook');
+    expect(draft.recipe?.ingredientGroups?.[0]?.items).toEqual(['2 koppies meel']);
+    expect(draft.interview?.featured).toBe(true);
+  });
+
+  it('list_categories returns offered categories (id + Afrikaanse naam) and excludes internal terms', async () => {
+    const result = await call(client, 'list_categories');
+    expect(result.isError).toBe(false);
+    const serialised = JSON.stringify(result.structuredContent);
+    expect(serialised).toContain('Nagereg');
+    expect(serialised).toContain('Vleis');
+    expect(serialised).toContain('"id":10');
+    expect(serialised).toContain('"id":11');
+    expect(serialised).not.toContain('Featured');
+    expect(serialised).not.toContain('Uncategorised');
+    expect(serialised).not.toContain('Eenhede');
+  });
+
   it('resume_draft returns the protocol text plus the settled/pending interview state', async () => {
     const begin = await call(client, 'begin_draft', { title: 'Wortelkoek met kaneel' });
     const draftId = stringField(begin, 'draftId');

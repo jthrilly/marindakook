@@ -3,6 +3,7 @@ import { z } from "zod";
 import { draftPostSchema, type DraftPost } from "../../core/draft-schema";
 import type { StoredDraft } from "../../core/store";
 import { findNearDuplicatePosts, isNearDuplicateTitle } from "../similarity";
+import { coerceJsonStrings, STRUCTURED_DRAFT_FIELDS } from "../coerce";
 import { describeZodIssue } from "../issues";
 import { ok, fail } from "../result";
 import type { ToolContext } from "../server";
@@ -266,7 +267,10 @@ export function registerDraftTools(server: McpServer, ctx: ToolContext): void {
     },
     async (args) => {
       const { draftId, ...rest } = args;
-      const patch: Record<string, unknown> = rest;
+      // A real MCP client sends structured fields (categories, recipe, …) as JSON
+      // strings; coerce them back before validation so the loose draft schema
+      // accepts them (genuine strings and already-parsed values pass through).
+      const patch = coerceJsonStrings(rest, STRUCTURED_DRAFT_FIELDS);
 
       const stored = await ctx.store.get(draftId);
       if (stored === null) {

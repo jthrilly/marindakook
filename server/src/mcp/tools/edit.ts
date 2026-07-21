@@ -3,6 +3,7 @@ import { z } from "zod";
 import type { Page, Post } from "@site/lib/content-schema";
 import { draftPostSchema, type DraftPost } from "../../core/draft-schema";
 import { rankSimilarPosts } from "../similarity";
+import { coerceJsonStrings, STRUCTURED_DRAFT_FIELDS } from "../coerce";
 import { describeZodIssue } from "../issues";
 import { ok, fail } from "../result";
 import type { ToolContext } from "../server";
@@ -189,21 +190,26 @@ export function registerEditTools(server: McpServer, ctx: ToolContext): void {
         return fail(`Konsep «${args.draftId}» is nie 'n pos-konsep nie — gebruik die webwerf-teks-gereedskap.`);
       }
 
+      // A real MCP client sends structured fields (categories, recipe, featured, …)
+      // as JSON strings; coerce them back before validation so the loose draft
+      // schema accepts them (genuine strings and already-parsed values pass through).
+      const patch = coerceJsonStrings(args, STRUCTURED_DRAFT_FIELDS);
+
       const candidate: Record<string, unknown> = { ...stored.draft };
       candidate.updatedAt = ctx.now().toISOString();
       let changed = false;
       for (const field of EDIT_FIELDS) {
-        if (field in args && args[field] !== undefined) {
-          candidate[field] = args[field];
+        if (field in patch && patch[field] !== undefined) {
+          candidate[field] = patch[field];
           changed = true;
         }
       }
       // `featured` lives nested under interview (mirroring save_draft), so it is
       // applied onto interview.featured — letting an edit feature/un-feature a
       // post. Value stays permissive; draftPostSchema below names a bad type.
-      if (args.featured !== undefined) {
+      if (patch.featured !== undefined) {
         const priorInterview = stored.draft.interview ?? { settled: [], pending: [] };
-        candidate.interview = { ...priorInterview, featured: args.featured };
+        candidate.interview = { ...priorInterview, featured: patch.featured };
         changed = true;
       }
       if (!changed) {

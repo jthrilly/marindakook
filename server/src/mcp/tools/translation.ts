@@ -2,6 +2,7 @@ import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import { buildTranslatePrompt } from "@site/lib/translate-prompt";
 import { buildTranslationSource, validateAndStoreTranslation } from "../../core/translation-job";
+import { coerceJsonStrings } from "../coerce";
 import { ok, fail } from "../result";
 import type { ToolContext } from "../server";
 
@@ -87,7 +88,11 @@ export function registerTranslationTools(server: McpServer, ctx: ToolContext): v
         return fail(`Konsep «${args.draftId}» is nie 'n resep-konsep nie — daar is niks om te vertaal nie.`);
       }
 
-      const parsed = translationObjectSchema.safeParse(args.translation);
+      // A real MCP client sends the structured `translation` object as a JSON
+      // string; coerce it back before validation (an already-object value and a
+      // non-JSON string both pass through, the latter rejected below in Afrikaans).
+      const translation = coerceJsonStrings(args, ["translation"]).translation;
+      const parsed = translationObjectSchema.safeParse(translation);
       if (!parsed.success) {
         return fail(
           "Die vertaling moet 'n JSON-objek wees (soos request_translation se uitvoer-kontrak beskryf). Roep request_translation as jy die formaat nodig het.",
