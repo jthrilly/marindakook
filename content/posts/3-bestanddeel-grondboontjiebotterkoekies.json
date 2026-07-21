@@ -1,0 +1,86 @@
+{
+ "id": 7622,
+ "slug": "3-bestanddeel-grondboontjiebotterkoekies",
+ "title": "3-bestanddeel grondboontjiebotterkoekies",
+ "date": "2026-07-21T11:58:08",
+ "modified": "2026-07-21T11:58:08",
+ "excerpt": "Vinnige grondboontjiebotterkoekies met net drie bestanddele: grondboontjiebotter, strooisuiker en 'n eier.",
+ "categories": [],
+ "tags": [],
+ "featured": null,
+ "commentStatus": "closed",
+ "seo": {
+  "title": "3-bestanddeel grondboontjiebotterkoekies - Marinda Kook",
+  "description": "Maklike grondboontjiebotterkoekies met net drie bestanddele — meng, rol, druk plat en bak 10 tot 12 minute tot goudbruin."
+ },
+ "html": "<p class=\"wp-block-paragraph\">'n Maklike toetsresep, net drie bestanddele, perfek wanneer die kinders skielik koekies wil hê.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "3-bestanddeel grondboontjiebotterkoekies",
+  "author": "Marinda Engelbrecht",
+  "image": null,
+  "courses": [
+   "Gebak"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Voorbereiding",
+    "pairs": [
+     {
+      "value": "10",
+      "unit": "minute"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Baktyd",
+    "pairs": [
+     {
+      "value": "12",
+      "unit": "minute"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1 koppie grondboontjiebotter",
+     "1 koppie strooisuiker",
+     "1 groot eier"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Voorverhit die oond tot 180 grade C.",
+     "Meng al drie bestanddele goed.",
+     "Rol in balletjies en druk plat met 'n vurk.",
+     "Bak 10 tot 12 minute tot goudbruin."
+    ]
+   }
+  ],
+  "notesTitle": "Notas",
+  "notes": [
+   "Maak omtrent 24 koekies."
+  ],
+  "videoHtml": null
+ },
+ "comments": []
+}

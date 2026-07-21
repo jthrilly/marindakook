@@ -1,0 +1,80 @@
+{
+ "id": 7622,
+ "slug": "3-bestanddeel-grondboontjiebotterkoekies",
+ "sourceHash": "83bdc44e1860fb0ccc4705a54536b021a4933a61",
+ "title": "3-Ingredient Peanut Butter Biscuits",
+ "excerpt": "Quick peanut butter biscuits with just three ingredients: peanut butter, castor sugar and an egg.",
+ "seo": {
+  "title": "3-Ingredient Peanut Butter Biscuits - Marinda Kook",
+  "description": "Easy peanut butter biscuits with just three ingredients — mix, roll, press flat and bake for 10 to 12 minutes until golden brown."
+ },
+ "html": "<p class=\"wp-block-paragraph\">An easy test recipe, just three ingredients, perfect for when the kids suddenly want biscuits.</p>\n\n\n<div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "3-Ingredient Peanut Butter Biscuits",
+  "author": "Marinda Engelbrecht",
+  "image": null,
+  "courses": [
+   "Baking"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Voorbereiding",
+    "pairs": [
+     {
+      "value": "10",
+      "unit": "minute"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Baktyd",
+    "pairs": [
+     {
+      "value": "12",
+      "unit": "minute"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "1 cup peanut butter",
+     "1 cup castor sugar",
+     "1 large egg"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Preheat the oven to 180 degrees C.",
+     "Mix all three ingredients well.",
+     "Roll into little balls and press flat with a fork.",
+     "Bake for 10 to 12 minutes until golden brown."
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "Makes about 24 biscuits."
+  ],
+  "videoHtml": null
+ }
+}
