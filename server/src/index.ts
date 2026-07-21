@@ -28,11 +28,13 @@ import { handleUploadDelete, handleUploadPost, renderUploadPage } from "./pages/
 // cannot read the repo's files from disk.
 //
 // Bundled with Vite's `?raw` (text) and validated through the shared schemas so
-// there is no cast and a corrupt bundle fails loudly at startup. NOTE for D11's
-// deploy build: `?raw` is a Vite feature; a raw `wrangler deploy` (esbuild)
-// needs a Text module rule for `.md`/`.json`, or the Cloudflare Vite build.
-import interviewProtocolText from "./prompts/interview-af.md?raw";
-import translatePromptText from "./prompts/translate-en.md?raw";
+// there is no cast and a corrupt bundle fails loudly at startup. `?raw` is a Vite
+// feature, so BOTH the tests (`@cloudflare/vitest-pool-workers`) and the deploy
+// build (`@cloudflare/vite-plugin`, `server/vite.config.ts` — run via
+// `npm run build`/`npm run deploy`) resolve and inline these files identically. A
+// bare esbuild `wrangler deploy` cannot resolve the `?raw` suffix; see README step 3.
+import interviewProtocolText from "../prompts/interview-af.md?raw";
+import translatePromptText from "../prompts/translate-en.md?raw";
 import styleGuideAfText from "../../content/style-guide.af.md?raw";
 import styleGuideEnText from "../../content/style-guide.en.md?raw";
 import termsRaw from "../../content/terms.json?raw";

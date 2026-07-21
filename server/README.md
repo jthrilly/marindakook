@@ -79,26 +79,53 @@ binding = "PHOTOS"
 bucket_name = "marindakook-cms-photos"
 ```
 
-### 3. The `?raw` text-import rule (needed for `wrangler deploy`)
+### 3. The `?raw` text-import bundling (resolved — build via the Cloudflare Vite plugin)
 
-`server/src/index.ts` bundles several text/JSON files at build time with Vite's
-`?raw` import suffix (the interview protocol, both style guides, the translate
-prompt, `terms.json`, `site.json`, the two page JSONs, and the generated post-index
-snapshot) — see the comment at the top of `index.ts`. `?raw` is a Vite feature that
-works under `vitest` (via `@cloudflare/vitest-pool-workers`) but a plain
-`wrangler deploy` bundles with esbuild, which does not understand `?raw` out of the
-box. Before deploying, either:
+`server/src/index.ts` bundles nine text/JSON files at build time with Vite's `?raw`
+import suffix (the interview protocol, both style guides, the translate prompt,
+`terms.json`, `site.json`, the two page JSONs, and the generated post-index snapshot)
+— see the comment at the top of `index.ts`. `?raw` is a Vite feature: it resolves
+under `vitest` (via `@cloudflare/vitest-pool-workers`, which is Vite-based), but a
+plain `wrangler deploy` bundles with esbuild, which does not understand the `?raw`
+query suffix — a Wrangler `[[rules]]` `type = "Text"` block cannot fix this either,
+because those rules match by file glob while `?raw` is a *query suffix* esbuild treats
+as a different, unresolvable path.
 
-- add a [Wrangler build rule](https://developers.cloudflare.com/workers/wrangler/configuration/#build)
-  in `wrangler.toml` that treats `.md` and the specific `?raw`-imported `.json` files
-  as `Text` modules, or
-- deploy via the Cloudflare Vite plugin/build (`@cloudflare/vite-plugin`) instead of
-  raw `wrangler deploy`, so the same Vite pipeline the tests use also produces the
-  deploy bundle.
+**Implemented fix:** the deploy build runs through the **Cloudflare Vite plugin**
+(`@cloudflare/vite-plugin`, in `server/vite.config.ts`) — the same Vite pipeline the
+tests already use — so every `?raw` import resolves and is inlined into the bundle
+identically. The `.md`/`.json` imports in `index.ts` are left exactly as-is. No
+esbuild Text rule is used or needed, and the tests are untouched.
 
-This was flagged during D9 (OAuth/routing task) and not yet exercised against a real
-`wrangler deploy` — verify whichever approach you pick actually resolves all nine
-`?raw` imports before trusting a deploy.
+Build and deploy with:
+
+```bash
+cd server
+npm run build     # vite build -> dist/marindakook_cms/{index.js,wrangler.json}
+npm run deploy    # vite build && wrangler deploy (auto-uses the vite output)
+```
+
+`vite build` produces `dist/marindakook_cms/index.js` (the fully-bundled Worker, with
+all nine text files inlined as string literals) plus a generated
+`dist/marindakook_cms/wrangler.json` (`no_bundle: true`, `main: index.js`) and a
+`.wrangler/deploy/config.json` redirect, so a subsequent `wrangler deploy` uploads the
+Vite output as-is instead of re-bundling with esbuild. (`dist/` and `.wrangler/` are
+gitignored.)
+
+**Verified** offline (no Cloudflare account needed) via a dry run:
+
+```bash
+cd server
+npm run build
+npx wrangler deploy --dry-run --outdir /tmp/wr-bundle   # succeeds; no auth required
+```
+
+Both `vite build` and the `--dry-run` succeed, and all nine `?raw` modules appear
+inlined in `/tmp/wr-bundle/index.js` (each as its own `//#region <path>?raw` section —
+interview protocol, both style guides, translate prompt, and the five JSON snapshots),
+with zero unresolved-import errors. What a dry run does **not** cover is the actual
+upload/activation — run a real `npm run deploy` (authenticated, `wrangler login`) once
+the account and bindings from steps 1–2 are in place to fully confirm.
 
 ### 4. The GitHub App
 
@@ -162,8 +189,12 @@ value; never appears in `wrangler.toml`) and the plain vars either the same way 
 
 ```bash
 cd server
-npx wrangler deploy
+npm run deploy    # = vite build && wrangler deploy (the Vite plugin bundles the ?raw imports; see step 3)
 ```
+
+Do **not** run a bare `npx wrangler deploy` from a clean checkout — without the
+`vite build` first, wrangler would fall back to bundling `src/index.ts` with esbuild,
+which cannot resolve the `?raw` imports. `npm run deploy` runs the build first.
 
 Confirm all nine `?raw` imports resolved (step 3) and that all three bindings
 (`DRAFTS`, `OAUTH_KV`, `PHOTOS`) show up in the deploy summary.
@@ -280,10 +311,11 @@ provisioning**, before trusting a production deploy:
   own machinery; only the login page and credential check are unit-tested here. The
   never-expiring refresh token / 30-day access token semantics need a live provider
   to confirm.
-- **A real `wrangler deploy` bundle.** The nine `?raw` text imports build fine under
-  Vite (the test pool); a raw esbuild-based `wrangler deploy` needs the build-rule or
-  Cloudflare-Vite-plugin workaround in step 3 above — untested until someone actually
-  runs it.
+- **A real (authenticated) `wrangler deploy` upload.** The nine `?raw` text imports
+  now bundle correctly for deploy via the Cloudflare Vite plugin (step 3), and this is
+  verified offline: `npm run build` + `wrangler deploy --dry-run` both succeed and
+  inline all nine files. The only remaining unexercised part is the authenticated
+  upload/activation itself, which needs the account + bindings from steps 1–2.
 - **The deploy.yml rendition commit-back's push/rebase race**, per go-live-checklist
   item 2 above.
 - **Duplicate-detection freshness.** `begin_draft`'s near-duplicate check runs over
