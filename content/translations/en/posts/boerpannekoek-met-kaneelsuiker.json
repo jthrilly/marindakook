@@ -1,0 +1,86 @@
+{
+ "id": 7622,
+ "slug": "boerpannekoek-met-kaneelsuiker",
+ "sourceHash": "953aeb026e6c3e6ff8f6780bea223bd09ac3b316",
+ "title": "Boerpannekoek with Cinnamon Sugar",
+ "excerpt": "A thin, soft boerpannekoek batter with a splash of vinegar and 30 minutes' rest as the secret — sprinkled with cinnamon sugar, rolled up and served warm.",
+ "seo": {
+  "title": "Boerpannekoek with Cinnamon Sugar - Marinda Kook",
+  "description": "An easy boerpannekoek recipe with cinnamon sugar — thin, soft pancakes thanks to a splash of vinegar and 30 minutes' resting time. Perfect for a rainy Sunday afternoon."
+ },
+ "html": "<p>Nothing says a rainy Sunday afternoon like a stack of warm boerpannekoek with cinnamon sugar. This batter is my mother's — the splash of vinegar makes them thin and soft, and the 30 minutes' rest is the secret.</p><div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Boerpannekoek with Cinnamon Sugar",
+  "author": "Marinda Engelbrecht",
+  "image": null,
+  "courses": [
+   "Baking"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Voorbereiding",
+    "pairs": [
+     {
+      "value": "10",
+      "unit": "minute"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Baktyd",
+    "pairs": [
+     {
+      "value": "20",
+      "unit": "minute"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Ingredients",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 cups cake flour",
+     "1 teaspoon salt",
+     "2 large eggs",
+     "2 cups milk",
+     "1 cup water",
+     "2 tablespoons sunflower oil",
+     "1 tablespoon vinegar"
+    ]
+   }
+  ],
+  "directionsTitle": "Method",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Sift the cake flour and salt together in a large mixing bowl.",
+     "Whisk the eggs, milk, water and oil together and gradually mix into the dry ingredients until smooth.",
+     "Stir in the vinegar last and let the batter rest for about 30 minutes.",
+     "Heat a little oil in a pan and pour in a thin layer of batter; swirl the pan so it spreads evenly.",
+     "Cook until the edges come loose, flip, and cook the other side lightly.",
+     "Sprinkle with cinnamon sugar, roll up and serve warm."
+    ]
+   }
+  ],
+  "notesTitle": "Notes",
+  "notes": [
+   "Makes about 12 pancakes."
+  ],
+  "videoHtml": null
+ }
+}

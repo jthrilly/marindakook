@@ -1,0 +1,94 @@
+{
+ "id": 7622,
+ "slug": "boerpannekoek-met-kaneelsuiker",
+ "title": "Boerpannekoek met kaneelsuiker",
+ "date": "2026-07-21T12:54:52",
+ "modified": "2026-07-21T12:54:52",
+ "excerpt": "'n Dun, sagte boerpannekoek-beslag met 'n bietjie asyn en 30 minute se rus as geheim — bestrooi met kaneelsuiker, opgerol en warm voorgesit.",
+ "categories": [
+  5
+ ],
+ "tags": [],
+ "featured": null,
+ "commentStatus": "closed",
+ "seo": {
+  "title": "Boerpannekoek met kaneelsuiker - Marinda Kook",
+  "description": "'n Maklike boerpannekoek-resep met kaneelsuiker — dun, sagte pannekoeke dank sy 'n bietjie asyn en 30 minute se rustyd. Perfek vir 'n reënerige Sondagmiddag."
+ },
+ "html": "<p>Niks sê 'n reënerige Sondagmiddag soos 'n stapel warm pannekoeke met kaneelsuiker nie. Dié beslag is my ma s'n — die bietjie asyn maak hulle dun en sag, en die 30 minute se rus is die geheim.</p><div data-recipe-slot=\"1\"></div>",
+ "recipe": {
+  "style": "default",
+  "title": "Boerpannekoek met kaneelsuiker",
+  "author": "Marinda Engelbrecht",
+  "image": null,
+  "courses": [
+   "Gebak"
+  ],
+  "cuisines": [],
+  "difficulties": [],
+  "summaryHtml": null,
+  "details": [
+   {
+    "icon": {
+     "set": "oldicon",
+     "name": "clock"
+    },
+    "label": "Voorbereiding",
+    "pairs": [
+     {
+      "value": "10",
+      "unit": "minute"
+     }
+    ]
+   },
+   {
+    "icon": {
+     "set": "foodicons",
+     "name": "cooking-food-in-a-hot-casserole"
+    },
+    "label": "Baktyd",
+    "pairs": [
+     {
+      "value": "20",
+      "unit": "minute"
+     }
+    ]
+   }
+  ],
+  "ingredientsTitle": "Bestanddele",
+  "ingredientGroups": [
+   {
+    "title": null,
+    "items": [
+     "2 koppies koekmeel",
+     "1 teelepel sout",
+     "2 groot eiers",
+     "2 koppies melk",
+     "1 koppie water",
+     "2 eetlepels sonneblomolie",
+     "1 eetlepel asyn"
+    ]
+   }
+  ],
+  "directionsTitle": "Metode",
+  "directionGroups": [
+   {
+    "title": null,
+    "steps": [
+     "Sif die koekmeel en sout saam in 'n groot mengbak.",
+     "Klits die eiers, melk, water en olie saam en meng geleidelik by die droë bestanddele tot glad.",
+     "Roer die asyn laaste in en laat die beslag omtrent 30 minute rus.",
+     "Verhit 'n bietjie olie in 'n pan en gooi 'n dun lagie beslag in; swaai die pan sodat dit eweredig versprei.",
+     "Bak tot die kante loskom, keer om en bak die ander kant liggies.",
+     "Besprinkel met kaneelsuiker, rol op en sit warm voor."
+    ]
+   }
+  ],
+  "notesTitle": "Notas",
+  "notes": [
+   "Maak omtrent 12 pannekoeke."
+  ],
+  "videoHtml": null
+ },
+ "comments": []
+}
