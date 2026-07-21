@@ -6,30 +6,32 @@ compatibility_flags = ["nodejs_compat"]
 # NO account_id here: it is per-user provisioning, filled in at deploy time
 # (see server/README, Task 11 / spec D11). Never commit an account id.
 
-# Draft + translation-job + approval + page/chat handoff state (Task 3). The
-# namespace id is provisioned at deploy time; tests bind DRAFTS via miniflare
-# in vitest.config.ts, so these stubs stay commented.
-# [[kv_namespaces]]
-# binding = "DRAFTS"
-# id = "<provisioned-kv-namespace-id>"
+# Draft + translation-job + approval + page/chat handoff state (Task 3).
+# Tests bind DRAFTS via miniflare in vitest.config.ts; this is the real
+# provisioned namespace used at deploy time.
+[[kv_namespaces]]
+binding = "DRAFTS"
+id = "fefc36e8b0264991b331ff1752cd4e6a"
 
 # OAuthProvider's own token store. @cloudflare/workers-oauth-provider requires
-# a KV binding literally named OAUTH_KV (it calls env.OAUTH_KV.get/put); the
-# namespace id is provisioned at deploy time, tests bind it via miniflare in
-# vitest.config.ts, so this stub stays commented.
-# [[kv_namespaces]]
-# binding = "OAUTH_KV"
-# id = "<provisioned-kv-namespace-id>"
+# a KV binding literally named OAUTH_KV (it calls env.OAUTH_KV.get/put).
+[[kv_namespaces]]
+binding = "OAUTH_KV"
+id = "3825559be2ce42d89276bd23518dfda5"
 
-# Staged photo uploads awaiting publish (Task 3 / Task 7).
-# [[r2_buckets]]
-# binding = "PHOTOS"
-# bucket_name = "marindakook-cms-photos"
+# Staged photo uploads awaiting publish (Task 3 / Task 7). The binding name
+# must be PHOTOS (env.PHOTOS in the code); bucket_name is the actual R2 bucket.
+[[r2_buckets]]
+binding = "PHOTOS"
+bucket_name = "marindakook-cms-photos"
 
 # Non-secret configuration. Secrets (GITHUB_APP_ID, GITHUB_INSTALLATION_ID,
 # GITHUB_APP_PRIVATE_KEY, ANTHROPIC_API_KEY, OAuth passwords, alert webhook)
 # are set with `wrangler secret put` and never committed. Documented in
 # server/README (spec D11).
-# [vars]
-# GITHUB_OWNER = "<owner>"
-# GITHUB_REPO = "marindakook"
+[vars]
+GITHUB_OWNER = "jthrilly"
+GITHUB_REPO = "marindakook"
+# Pilot mode ON (publish opens a PR for review) unless set literally to "false".
+# Leave this "true" for the first weeks — see server/README go-live checklist.
+PILOT_MODE = "true"
